@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Command Line Tool - Programming the Cloud</title>
+        <title>serve - Programming the Cloud</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> mdBook</a></li><li class="expanded "><a href="../cli/index.html" class="active"><strong aria-hidden="true">2.</strong> Command Line Tool</a></li><li><ol class="section"><li class="expanded "><a href="../cli/init.html"><strong aria-hidden="true">2.1.</strong> init</a></li><li class="expanded "><a href="../cli/build.html"><strong aria-hidden="true">2.2.</strong> build</a></li><li class="expanded "><a href="../cli/watch.html"><strong aria-hidden="true">2.3.</strong> watch</a></li><li class="expanded "><a href="../cli/serve.html"><strong aria-hidden="true">2.4.</strong> serve</a></li><li class="expanded "><a href="../cli/test.html"><strong aria-hidden="true">2.5.</strong> test</a></li><li class="expanded "><a href="../cli/clean.html"><strong aria-hidden="true">2.6.</strong> clean</a></li></ol></li><li class="expanded "><a href="../format/index.html"><strong aria-hidden="true">3.</strong> Format</a></li><li><ol class="section"><li class="expanded "><a href="../format/summary.html"><strong aria-hidden="true">3.1.</strong> SUMMARY.md</a></li><li class="expanded "><a href="../format/config.html"><strong aria-hidden="true">3.2.</strong> Configuration</a></li><li class="expanded "><a href="../format/theme/index.html"><strong aria-hidden="true">3.3.</strong> Theme</a></li><li><ol class="section"><li class="expanded "><a href="../format/theme/index-hbs.html"><strong aria-hidden="true">3.3.1.</strong> index.hbs</a></li><li class="expanded "><a href="../format/theme/syntax-highlighting.html"><strong aria-hidden="true">3.3.2.</strong> Syntax highlighting</a></li><li class="expanded "><a href="../format/theme/editor.html"><strong aria-hidden="true">3.3.3.</strong> Editor</a></li></ol></li><li class="expanded "><a href="../format/mathjax.html"><strong aria-hidden="true">3.4.</strong> MathJax Support</a></li><li class="expanded "><a href="../format/mdbook.html"><strong aria-hidden="true">3.5.</strong> mdBook specific features</a></li></ol></li><li class="expanded "><a href="../continuous-integration.html"><strong aria-hidden="true">4.</strong> Continuous Integration</a></li><li class="expanded "><a href="../for_developers/index.html"><strong aria-hidden="true">5.</strong> For Developers</a></li><li><ol class="section"><li class="expanded "><a href="../for_developers/backends.html"><strong aria-hidden="true">5.1.</strong> Alternative Backends</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Programming The Cloud</a></li><li><ol class="section"><li class="expanded "><a href="../ptc/init.html"><strong aria-hidden="true">1.1.</strong> init</a></li><li class="expanded "><a href="../ptc/build.html"><strong aria-hidden="true">1.2.</strong> build</a></li><li class="expanded "><a href="../ptc/watch.html"><strong aria-hidden="true">1.3.</strong> watch</a></li><li class="expanded "><a href="../ptc/serve.html" class="active"><strong aria-hidden="true">1.4.</strong> serve</a></li><li class="expanded "><a href="../ptc/test.html"><strong aria-hidden="true">1.5.</strong> test</a></li><li class="expanded "><a href="../ptc/clean.html"><strong aria-hidden="true">1.6.</strong> clean</a></li></ol></li><li class="expanded "><a href="../fewtech/index.html"><strong aria-hidden="true">2.</strong> Front End Web Technologies</a></li><li><ol class="section"><li class="expanded "><a href="../fewtech/backends.html"><strong aria-hidden="true">2.1.</strong> Alternative Backends</a></li></ol></li><li class="expanded "><a href="../fullstack/index.html"><strong aria-hidden="true">3.</strong> Full Stack Programming</a></li><li><ol class="section"><li class="expanded "><a href="../fullstack/summary.html"><strong aria-hidden="true">3.1.</strong> SUMMARY.md</a></li><li class="expanded "><a href="../fullstack/config.html"><strong aria-hidden="true">3.2.</strong> Configuration</a></li><li class="expanded "><a href="../fullstack/theme/index.html"><strong aria-hidden="true">3.3.</strong> Theme</a></li><li><ol class="section"><li class="expanded "><a href="../fullstack/theme/index-hbs.html"><strong aria-hidden="true">3.3.1.</strong> index.hbs</a></li><li class="expanded "><a href="../fullstack/theme/syntax-highlighting.html"><strong aria-hidden="true">3.3.2.</strong> Syntax highlighting</a></li><li class="expanded "><a href="../fullstack/theme/editor.html"><strong aria-hidden="true">3.3.3.</strong> Editor</a></li></ol></li><li class="expanded "><a href="../fullstack/mathjax.html"><strong aria-hidden="true">3.4.</strong> MathJax Support</a></li><li class="expanded "><a href="../fullstack/mdbook.html"><strong aria-hidden="true">3.5.</strong> mdBook specific features</a></li></ol></li><li class="expanded "><a href="../iot/index.html"><strong aria-hidden="true">4.</strong> Programming IoT</a></li><li><ol class="section"><li class="expanded "><a href="../iot/backends.html"><strong aria-hidden="true">4.1.</strong> Alternative Backends</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -151,55 +151,51 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#command-line-tool" id="command-line-tool">Command Line Tool</a></h1>
-<p>mdBook can be used either as a command line tool or a <a href="https://crates.io/crates/mdbook">Rust
-crate</a>. Let's focus on the command line tool
-capabilities first.</p>
-<h2><a class="header" href="#install-from-binaries" id="install-from-binaries">Install From Binaries</a></h2>
-<p>Precompiled binaries are provided for major platforms on a best-effort basis.
-Visit <a href="https://github.com/rust-lang/mdBook/releases">the releases page</a>
-to download the appropriate version for your platform.</p>
-<h2><a class="header" href="#install-from-source" id="install-from-source">Install From Source</a></h2>
-<p>mdBook can also be installed from source</p>
-<h3><a class="header" href="#pre-requisite" id="pre-requisite">Pre-requisite</a></h3>
-<p>mdBook is written in <strong><a href="https://www.rust-lang.org/">Rust</a></strong> and therefore needs
-to be compiled with <strong>Cargo</strong>. If you haven't already installed Rust, please go
-ahead and <a href="https://www.rust-lang.org/tools/install">install it</a> now.</p>
-<h3><a class="header" href="#install-cratesio-version" id="install-cratesio-version">Install Crates.io version</a></h3>
-<p>Installing mdBook is relatively easy if you already have Rust and Cargo
-installed. You just have to type this snippet in your terminal:</p>
-<pre><code class="language-bash">cargo install mdbook
+                        <h1><a class="header" href="#the-serve-command" id="the-serve-command">The serve command</a></h1>
+<p>The serve command is used to preview a book by serving it over HTTP at
+<code>localhost:3000</code> by default. Additionally it watches the book's directory for
+changes, rebuilding the book and refreshing clients for each change. A websocket
+connection is used to trigger the client-side refresh.</p>
+<p><em><strong>Note:</strong></em> <em>The <code>serve</code> command is for testing a book's HTML output, and is not
+intended to be a complete HTTP server for a website.</em></p>
+<h4><a class="header" href="#specify-a-directory" id="specify-a-directory">Specify a directory</a></h4>
+<p>The <code>serve</code> command can take a directory as an argument to use as the book's
+root instead of the current working directory.</p>
+<pre><code class="language-bash">mdbook serve path/to/book
 </code></pre>
-<p>This will fetch the source code for the latest release from
-<a href="https://crates.io/">Crates.io</a> and compile it. You will have to add Cargo's
-<code>bin</code> directory to your <code>PATH</code>.</p>
-<p>Run <code>mdbook help</code> in your terminal to verify if it works. Congratulations, you
-have installed mdBook!</p>
-<h3><a class="header" href="#install-git-version" id="install-git-version">Install Git version</a></h3>
-<p>The <strong><a href="https://github.com/rust-lang/mdBook">git version</a></strong> contains all
-the latest bug-fixes and features, that will be released in the next version on
-<strong>Crates.io</strong>, if you can't wait until the next release. You can build the git
-version yourself. Open your terminal and navigate to the directory of you
-choice. We need to clone the git repository and then build it with Cargo.</p>
-<pre><code class="language-bash">git clone --depth=1 https://github.com/rust-lang/mdBook.git
-cd mdBook
-cargo build --release
+<h4><a class="header" href="#server-options" id="server-options">Server options</a></h4>
+<p><code>serve</code> has four options: the HTTP port, the WebSocket port, the HTTP hostname
+to listen on, and the hostname for the browser to connect to for WebSockets.</p>
+<p>For example: suppose you have an nginx server for SSL termination which has a
+public address of 192.168.1.100 on port 80 and proxied that to 127.0.0.1 on port
+8000. To run use the nginx proxy do:</p>
+<pre><code class="language-bash">mdbook serve path/to/book -p 8000 -n 127.0.0.1 --websocket-hostname 192.168.1.100
 </code></pre>
-<p>The executable <code>mdbook</code> will be in the <code>./target/release</code> folder, this should be
-added to the path.</p>
+<p>If you were to want live reloading for this you would need to proxy the
+websocket calls through nginx as well from <code>192.168.1.100:&lt;WS_PORT&gt;</code> to
+<code>127.0.0.1:&lt;WS_PORT&gt;</code>. The <code>-w</code> flag allows for the websocket port to be
+configured.</p>
+<h4><a class="header" href="#--open" id="--open">--open</a></h4>
+<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the book in your
+default web browser after starting the server.</p>
+<h4><a class="header" href="#--dest-dir" id="--dest-dir">--dest-dir</a></h4>
+<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
+book. Relative paths are interpreted relative to the book's root directory. If
+not specified it will default to the value of the <code>build.build-dir</code> key in
+<code>book.toml</code>, or to <code>./book</code>.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../ptc/watch.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../cli/init.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../ptc/test.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -211,13 +207,13 @@ added to the path.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../ptc/watch.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a href="../cli/init.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../ptc/test.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

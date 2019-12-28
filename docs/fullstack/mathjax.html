@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Format - Programming the Cloud</title>
+        <title>MathJax Support - Programming the Cloud</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> mdBook</a></li><li class="expanded "><a href="../cli/index.html"><strong aria-hidden="true">2.</strong> Command Line Tool</a></li><li><ol class="section"><li class="expanded "><a href="../cli/init.html"><strong aria-hidden="true">2.1.</strong> init</a></li><li class="expanded "><a href="../cli/build.html"><strong aria-hidden="true">2.2.</strong> build</a></li><li class="expanded "><a href="../cli/watch.html"><strong aria-hidden="true">2.3.</strong> watch</a></li><li class="expanded "><a href="../cli/serve.html"><strong aria-hidden="true">2.4.</strong> serve</a></li><li class="expanded "><a href="../cli/test.html"><strong aria-hidden="true">2.5.</strong> test</a></li><li class="expanded "><a href="../cli/clean.html"><strong aria-hidden="true">2.6.</strong> clean</a></li></ol></li><li class="expanded "><a href="../format/index.html" class="active"><strong aria-hidden="true">3.</strong> Format</a></li><li><ol class="section"><li class="expanded "><a href="../format/summary.html"><strong aria-hidden="true">3.1.</strong> SUMMARY.md</a></li><li class="expanded "><a href="../format/config.html"><strong aria-hidden="true">3.2.</strong> Configuration</a></li><li class="expanded "><a href="../format/theme/index.html"><strong aria-hidden="true">3.3.</strong> Theme</a></li><li><ol class="section"><li class="expanded "><a href="../format/theme/index-hbs.html"><strong aria-hidden="true">3.3.1.</strong> index.hbs</a></li><li class="expanded "><a href="../format/theme/syntax-highlighting.html"><strong aria-hidden="true">3.3.2.</strong> Syntax highlighting</a></li><li class="expanded "><a href="../format/theme/editor.html"><strong aria-hidden="true">3.3.3.</strong> Editor</a></li></ol></li><li class="expanded "><a href="../format/mathjax.html"><strong aria-hidden="true">3.4.</strong> MathJax Support</a></li><li class="expanded "><a href="../format/mdbook.html"><strong aria-hidden="true">3.5.</strong> mdBook specific features</a></li></ol></li><li class="expanded "><a href="../continuous-integration.html"><strong aria-hidden="true">4.</strong> Continuous Integration</a></li><li class="expanded "><a href="../for_developers/index.html"><strong aria-hidden="true">5.</strong> For Developers</a></li><li><ol class="section"><li class="expanded "><a href="../for_developers/backends.html"><strong aria-hidden="true">5.1.</strong> Alternative Backends</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Programming The Cloud</a></li><li><ol class="section"><li class="expanded "><a href="../ptc/init.html"><strong aria-hidden="true">1.1.</strong> init</a></li><li class="expanded "><a href="../ptc/build.html"><strong aria-hidden="true">1.2.</strong> build</a></li><li class="expanded "><a href="../ptc/watch.html"><strong aria-hidden="true">1.3.</strong> watch</a></li><li class="expanded "><a href="../ptc/serve.html"><strong aria-hidden="true">1.4.</strong> serve</a></li><li class="expanded "><a href="../ptc/test.html"><strong aria-hidden="true">1.5.</strong> test</a></li><li class="expanded "><a href="../ptc/clean.html"><strong aria-hidden="true">1.6.</strong> clean</a></li></ol></li><li class="expanded "><a href="../fewtech/index.html"><strong aria-hidden="true">2.</strong> Front End Web Technologies</a></li><li><ol class="section"><li class="expanded "><a href="../fewtech/backends.html"><strong aria-hidden="true">2.1.</strong> Alternative Backends</a></li></ol></li><li class="expanded "><a href="../fullstack/index.html"><strong aria-hidden="true">3.</strong> Full Stack Programming</a></li><li><ol class="section"><li class="expanded "><a href="../fullstack/summary.html"><strong aria-hidden="true">3.1.</strong> SUMMARY.md</a></li><li class="expanded "><a href="../fullstack/config.html"><strong aria-hidden="true">3.2.</strong> Configuration</a></li><li class="expanded "><a href="../fullstack/theme/index.html"><strong aria-hidden="true">3.3.</strong> Theme</a></li><li><ol class="section"><li class="expanded "><a href="../fullstack/theme/index-hbs.html"><strong aria-hidden="true">3.3.1.</strong> index.hbs</a></li><li class="expanded "><a href="../fullstack/theme/syntax-highlighting.html"><strong aria-hidden="true">3.3.2.</strong> Syntax highlighting</a></li><li class="expanded "><a href="../fullstack/theme/editor.html"><strong aria-hidden="true">3.3.3.</strong> Editor</a></li></ol></li><li class="expanded "><a href="../fullstack/mathjax.html" class="active"><strong aria-hidden="true">3.4.</strong> MathJax Support</a></li><li class="expanded "><a href="../fullstack/mdbook.html"><strong aria-hidden="true">3.5.</strong> mdBook specific features</a></li></ol></li><li class="expanded "><a href="../iot/index.html"><strong aria-hidden="true">4.</strong> Programming IoT</a></li><li><ol class="section"><li class="expanded "><a href="../iot/backends.html"><strong aria-hidden="true">4.1.</strong> Alternative Backends</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -151,27 +151,50 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#format" id="format">Format</a></h1>
-<p>In this section you will learn how to:</p>
-<ul>
-<li>Structure your book correctly</li>
-<li>Format your <code>SUMMARY.md</code> file</li>
-<li>Configure your book using <code>book.toml</code></li>
-<li>Customize your theme</li>
-</ul>
+                        <h1><a class="header" href="#mathjax-support" id="mathjax-support">MathJax Support</a></h1>
+<p>mdBook has optional support for math equations through
+<a href="https://www.mathjax.org/">MathJax</a>.</p>
+<p>To enable MathJax, you need to add the <code>mathjax-support</code> key to your <code>book.toml</code>
+under the <code>output.html</code> section.</p>
+<pre><code class="language-toml">[output.html]
+mathjax-support = true
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> The usual delimiters MathJax uses are not yet supported. You can't
+currently use <code>$$ ... $$</code> as delimiters and the <code>\[ ... \]</code> delimiters need an
+extra backslash to work. Hopefully this limitation will be lifted soon.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> When you use double backslashes in MathJax blocks (for example in
+commands such as <code>\begin{cases} \frac 1 2 \\ \frac 3 4 \end{cases}</code>) you need
+to add <em>two extra</em> backslashes (e.g., <code>\begin{cases} \frac 1 2 \\\\ \frac 3 4 \end{cases}</code>).</p>
+</blockquote>
+<h3><a class="header" href="#inline-equations" id="inline-equations">Inline equations</a></h3>
+<p>Inline equations are delimited by <code>\\(</code> and <code>\\)</code>. So for example, to render the
+following inline equation \( \int x dx = \frac{x^2}{2} + C \) you would write
+the following:</p>
+<pre><code>\\( \int x dx = \frac{x^2}{2} + C \\)
+</code></pre>
+<h3><a class="header" href="#block-equations" id="block-equations">Block equations</a></h3>
+<p>Block equations are delimited by <code>\\[</code> and <code>\\]</code>. To render the following
+equation</p>
+<p>\[ \mu = \frac{1}{N} \sum_{i=0} x_i \]</p>
+<p>you would write:</p>
+<pre><code class="language-bash">\\[ \mu = \frac{1}{N} \sum_{i=0} x_i \\]
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../cli/clean.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../fullstack/theme/editor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../format/summary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../fullstack/mdbook.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -183,13 +206,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="../cli/clean.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../fullstack/theme/editor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a href="../format/summary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../fullstack/mdbook.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

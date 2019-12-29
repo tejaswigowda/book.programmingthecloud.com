@@ -12,6 +12,7 @@ The *For Developers* chapters are here to show you the more advanced usage of
 The two main ways a developer can hook into the book's build process is via,
 
 <img src='../imgs/mdedit.gif'>
+
 - [Preprocessors](intro.md)
 - [Alternative Backends](backends.md)
 

@@ -1,0 +1,16 @@
+#menu-bar i, #menu-bar .icon-button{
+  font-size: 40px;
+}
+
+.right-buttons{
+  display:none;
+}
+
+#theme-toggle{
+  display:none;
+}
+
+button, button:focus
+{
+  outline: none;
+}

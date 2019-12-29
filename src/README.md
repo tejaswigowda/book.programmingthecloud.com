@@ -1,4 +1,4 @@
-# mdBook
+# Programming the Cloud
 
 **mdBook** is a command line tool and Rust crate to create books using Markdown
 files. It's very similar to Gitbook but written in

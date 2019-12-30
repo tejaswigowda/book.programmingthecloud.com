@@ -15,8 +15,13 @@ button, button:focus
   outline: none;
 }
 
-@media (max-width:700px){
+@media (max-width:1000px){
   .sidebar-visible body{
     overflow: hidden;
   }
+}
+
+.rust .mobile-nav-chapters
+{
+  background: rgba(0,0,0,0);
 }

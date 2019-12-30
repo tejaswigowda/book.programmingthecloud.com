@@ -1,13 +1,13 @@
 setTimeout(function(){
   var hours = new Date().getHours();
-
+  console.log(hours)
   if(hours < 7 || hours >=20){
     $("html").removeClass("rust").addClass("coal");
   }
   else{
     $("html").removeClass("coal").addClass("rust");
   }
-}, 3000);
+}, 100);
 
 
 $("#content").on("touchstart", function(){

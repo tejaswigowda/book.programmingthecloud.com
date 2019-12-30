@@ -9,5 +9,5 @@ else{
 
 
 $("#page-wrapper").on("touchstart", function(){
-  $("html").removeClass("sidebar-visible").addClass("sidebar-hidden");
+  setTimeout($("html").removeClass("sidebar-visible").addClass("sidebar-hidden"), 500);
 })

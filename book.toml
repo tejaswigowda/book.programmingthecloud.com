@@ -11,8 +11,8 @@ create-missing = false
 
 [output.html]
 mathjax-support = true
-additional-css = ["custom.css", "CNAME"]
-additional-js = ["jquery-3.4.1.min.js", "custom.js"]
+additional-css = ["theme/custom.css", "theme/CNAME"]
+additional-js = ["theme/jquery-3.4.1.min.js", "theme/custom.js"]
 default-theme = "rust"
 
 [output.html.playpen]

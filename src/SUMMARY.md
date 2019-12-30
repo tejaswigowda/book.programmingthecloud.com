@@ -1,12 +1,8 @@
 # Summary
 
 - [Programming The Cloud](README.md)
-    - [init](ptc/init.md)
-    - [build](ptc/build.md)
-    - [watch](ptc/watch.md)
-    - [serve](ptc/serve.md)
-    - [test](ptc/test.md)
-    - [clean](ptc/clean.md)
+    - [Preliminaries](ptc/prelims/README.md)
+    - [Basic Skills](ptc/skills/README.md)
 - [Front End Web Technologies](fewtech/README.md)
     - [Introduction](fewtech/intro.md)
     - [Alternative Backends](fewtech/backends.md)

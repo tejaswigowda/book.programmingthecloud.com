@@ -7,7 +7,7 @@ setTimeout(function(){
   else{
     $("html").removeClass("coal").addClass("rust");
   }
-}, 1000);
+}, 3000);
 
 
 $("#content").on("touchstart", function(){

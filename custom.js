@@ -1,7 +1,7 @@
 setTimeout(function(){
   var hours = new Date().getHours();
 
-  if(hours < 7 && hours >=20){
+  if(hours < 7 || hours >=20){
     $("html").removeClass("rust").addClass("coal");
   }
   else{

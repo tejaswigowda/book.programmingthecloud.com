@@ -21,5 +21,5 @@ overview.
 
 ## License
 
-mdBook, all the source code, is released under the [Mozilla Public License
+Programming the Cloud, all the source code, is released under the [Mozilla Public License
 v2.0](https://www.mozilla.org/MPL/2.0/).

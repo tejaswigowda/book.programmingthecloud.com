@@ -1,5 +1,5 @@
 #menu-bar i, #menu-bar .icon-button{
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .right-buttons{
@@ -13,4 +13,10 @@
 button, button:focus
 {
   outline: none;
+}
+
+@media (max-width:700px){
+  .sidebar-visible body{
+    overflow: hidden;
+  }
 }

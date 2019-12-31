@@ -1,16 +1,26 @@
 # Programming the Cloud
 
-**mdBook** is a command line tool and Rust crate to create books using Markdown
-files. It's very similar to Gitbook but written in
-[Rust](http://www.rust-lang.org).
+**Programming the Cloud (PtC)** is reference for learning by example the
+following:
 
-What you are reading serves as an example of the output of mdBook and at the
-same time as a high-level documentation.
+1. Front end web technologies (html, css and js).
+2. Full stack architecture design.
+3. Backend server using Node.js
+4. Administrating and programming mongoDb.
+5. Building apps using Cordova and Capacitor.
+6. Advanced JS concepts like the event model, anonymous functions,
+   callbacks etc.
+7. Program internet/bluetooth enabled microcontrollers (focus on esp32).
+8. Design/implement voice UI for Amazon Echo, Google Nest etc.
 
-mdBook is free and open source, you can find the source code on
-[GitHub](https://github.com/rust-lang/mdBook). Issues and feature
+.... and much, much more.
+
+
+PtC is free and open source, you can find the source code on
+[GitHub](https://github.com/tejaswigowda/programmingthecloud).
+ Issues and feature
 requests can be posted on the [GitHub issue
-tracker](https://github.com/rust-lang/mdBook/issues).
+tracker](https://github.com/tejaswigowda/programmingthecloud/issues).
 
 ## License
 

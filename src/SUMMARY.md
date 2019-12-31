@@ -9,6 +9,7 @@
         - [BASH](ptc/skills/bash.md)
         - [GIT](ptc/skills/bash.md)
         - [Editor](ptc/skills/codeEditor.md)
+    - [Organization](ptc/org.md)
 - [Front End Web Technologies](fewtech/README.md)
     - [Introduction](fewtech/intro.md)
     - [Alternative Backends](fewtech/backends.md)

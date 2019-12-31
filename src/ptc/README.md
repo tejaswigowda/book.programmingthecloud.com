@@ -1,4 +1,4 @@
-# Command Line Tool
+# Introduction
 
 mdBook can be used either as a command line tool or a [Rust
 crate](https://crates.io/crates/mdbook). Let's focus on the command line tool

@@ -2,7 +2,13 @@
 
 - [Programming The Cloud](README.md)
     - [Preliminaries](ptc/prelims/README.md)
+        - [Programming Model](ptc/prelims/theComputer.md)
+        - [The Internet](ptc/prelims/theInternet.md)
+        - [Client Server Model](ptc/prelims/clientServer.md)
     - [Basic Skills](ptc/skills/README.md)
+        - [BASH](ptc/skills/bash.md)
+        - [GIT](ptc/skills/bash.md)
+        - [Editor](ptc/skills/codeEditor.md)
 - [Front End Web Technologies](fewtech/README.md)
     - [Introduction](fewtech/intro.md)
     - [Alternative Backends](fewtech/backends.md)

@@ -589,7 +589,7 @@ function playpen_text(playpen) {
         if (menu.classList.contains('folded') && document.scrollingElement.scrollTop < previousScrollTop) {
             menu.classList.remove('folded');
         } else if (!menu.classList.contains('folded') && document.scrollingElement.scrollTop > previousScrollTop) {
-            menu.classList.add('folded');
+          //  menu.classList.add('folded');
         }
 
         if (!menu.classList.contains('bordered') && document.scrollingElement.scrollTop > 0) {

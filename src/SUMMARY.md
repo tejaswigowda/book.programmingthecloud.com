@@ -2,29 +2,28 @@
 
 - [Programming The Cloud](README.md)
     - [Preliminaries](ptc/prelims/README.md)
+        - [Client Server Model](ptc/prelims/clientServer.md)
         - [Programming Model](ptc/prelims/theComputer.md)
         - [The Internet](ptc/prelims/theInternet.md)
-        - [Client Server Model](ptc/prelims/clientServer.md)
+        - [URL](ptc/prelims/url.md)
     - [Basic Skills](ptc/skills/README.md)
         - [BASH](ptc/skills/bash.md)
         - [GIT](ptc/skills/bash.md)
         - [Editor](ptc/skills/codeEditor.md)
-    - [Organization](ptc/org.md)
-- [Front End Web Technologies](fewtech/README.md)
-    - [Introduction](fewtech/intro.md)
-    - [Alternative Backends](fewtech/backends.md)
-- [Full Stack Programming](fullstack/README.md)
-    - [SUMMARY.md](fullstack/summary.md)
-    - [Configuration](fullstack/config.md)
-    - [Theme](fullstack/theme/README.md)
-        - [index.hbs](fullstack/theme/index-hbs.md)
-        - [Syntax highlighting](fullstack/theme/syntax-highlighting.md)
-        - [Editor](fullstack/theme/editor.md)
-    - [MathJax Support](fullstack/mathjax.md)
-    - [mdBook specific features](fullstack/mdbook.md)
-- [Programming IoT](iot/README.md)
-    - [Alternative Backends](iot/backends.md)
+        - [Code Management](ptc/skills/codeMgmt.md)
+    - [Book Organization](ptc/org.md)
 
 -----------
 
-[Contributors](misc/contributors.md)
+- [Front End Web Technologies](fewtech/README.md)
+
+-----------
+
+- [Full Stack Programming](fullstack/README.md)
+
+-----------
+
+- [Programming IoT](iot/README.md)
+
+-----------
+

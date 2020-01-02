@@ -1,3 +1,8 @@
+html, body{
+overflow-x: hidden;
+max-width: 100vw;
+}
+
 #menu-bar i, #menu-bar .icon-button{
   font-size: 32px;
 }
@@ -24,4 +29,11 @@ button, button:focus
 .rust .mobile-nav-chapters
 {
   background: rgba(0,0,0,0);
+}
+
+
+.coal .menu-title,
+.coal .fa
+{
+  color: white;
 }

@@ -7,9 +7,9 @@ setTimeout(function(){
   else{
     $("html").removeClass("coal").addClass("rust");
   }
-}, 100);
+}, 0);
 
 
 $("#content").on("touchstart", function(){
-  setTimeout($("html").removeClass("sidebar-visible").addClass("sidebar-hidden"), 100);
+  setTimeout('$("html").removeClass("sidebar-visible").addClass("sidebar-hidden")', 100);
 })

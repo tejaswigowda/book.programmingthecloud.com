@@ -13,7 +13,7 @@ create-missing = false
 mathjax-support = true
 additional-css = ["custom.css", "CNAME"]
 additional-js = ["jquery-3.4.1.min.js", "custom.js"]
-default-theme = "rust"
+default-theme = "coal"
 
 [output.html.playpen]
 editable = true

@@ -494,8 +494,8 @@ function playpen_text(playpen) {
         var xDiff = curX - firstContact.x,
             tDiff = Date.now() - firstContact.time;
 
-        if (tDiff < 250 && Math.abs(xDiff) >= 150) {
-            if (xDiff >= 0 && firstContact.x < 5)
+        if (tDiff < 250 && Math.abs(xDiff) >= 50) {
+            if (xDiff >= 0 && firstContact.x < Math.min(document.body.clientWidth * 0.05, 10))
                 showSidebar();
             else if (xDiff < 0 && curX < 300)
                 hideSidebar();

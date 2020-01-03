@@ -23,5 +23,6 @@ tracker](https://github.com/tejaswigowda/programmingthecloud/issues).
 
 ## License
 
-"Programming the Cloud" book, all the source code, is released under the [Mozilla Public License
-v2.0](https://www.mozilla.org/MPL/2.0/).
+"Programming the Cloud" book, all the source code, is released under the
+[GNU General Public License v2](https://github.com/tejaswigowda/programmingthecloud/blob/master/LICENSE).
+

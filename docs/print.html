@@ -90,7 +90,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programming The Cloud</a></li><li><ol class="section"><li class="expanded "><a href="ptc/prelims/index.html"><strong aria-hidden="true">1.1.</strong> Preliminaries</a></li><li><ol class="section"><li class="expanded "><a href="ptc/prelims/clientServer.html"><strong aria-hidden="true">1.1.1.</strong> Client Server Model</a></li><li class="expanded "><a href="ptc/prelims/theComputer.html"><strong aria-hidden="true">1.1.2.</strong> Programming Model</a></li><li class="expanded "><a href="ptc/prelims/theInternet.html"><strong aria-hidden="true">1.1.3.</strong> The Internet</a></li><li class="expanded "><a href="ptc/prelims/url.html"><strong aria-hidden="true">1.1.4.</strong> URL</a></li></ol></li><li class="expanded "><a href="ptc/skills/index.html"><strong aria-hidden="true">1.2.</strong> Basic Skills</a></li><li><ol class="section"><li class="expanded "><a href="ptc/skills/bash.html"><strong aria-hidden="true">1.2.1.</strong> BASH</a></li><li class="expanded "><a href="ptc/skills/bash.html"><strong aria-hidden="true">1.2.2.</strong> GIT</a></li><li class="expanded "><a href="ptc/skills/codeEditor.html"><strong aria-hidden="true">1.2.3.</strong> Editor</a></li><li class="expanded "><a href="ptc/skills/codeMgmt.html"><strong aria-hidden="true">1.2.4.</strong> Code Management</a></li></ol></li><li class="expanded "><a href="ptc/org.html"><strong aria-hidden="true">1.3.</strong> Book Organization</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="fewtech/index.html"><strong aria-hidden="true">2.</strong> Front End Web Technologies</a></li><li class="spacer"></li><li class="expanded "><a href="fullstack/index.html"><strong aria-hidden="true">3.</strong> Full Stack Programming</a></li><li class="spacer"></li><li class="expanded "><a href="iot/index.html"><strong aria-hidden="true">4.</strong> Programming IoT</a></li><li class="spacer"></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programming The Cloud</a></li><li><ol class="section"><li class="expanded "><a href="ptc/prelims/index.html"><strong aria-hidden="true">1.1.</strong> Preliminaries</a></li><li><ol class="section"><li class="expanded "><a href="ptc/prelims/clientServer.html"><strong aria-hidden="true">1.1.1.</strong> Client Server Model</a></li><li class="expanded "><a href="ptc/prelims/theComputer.html"><strong aria-hidden="true">1.1.2.</strong> Programming Model</a></li><li class="expanded "><a href="ptc/prelims/theInternet.html"><strong aria-hidden="true">1.1.3.</strong> The Internet</a></li><li class="expanded "><a href="ptc/prelims/url.html"><strong aria-hidden="true">1.1.4.</strong> URL</a></li></ol></li><li class="expanded "><a href="ptc/skills/index.html"><strong aria-hidden="true">1.2.</strong> Basic Skills</a></li><li><ol class="section"><li class="expanded "><a href="ptc/skills/bash.html"><strong aria-hidden="true">1.2.1.</strong> BASH</a></li><li class="expanded "><a href="ptc/skills/git.html"><strong aria-hidden="true">1.2.2.</strong> GIT</a></li><li class="expanded "><a href="ptc/skills/codeEditor.html"><strong aria-hidden="true">1.2.3.</strong> Editor</a></li><li class="expanded "><a href="ptc/skills/codeMgmt.html"><strong aria-hidden="true">1.2.4.</strong> Code Management</a></li></ol></li><li class="expanded "><a href="ptc/org.html"><strong aria-hidden="true">1.3.</strong> Book Organization</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="fewtech/index.html"><strong aria-hidden="true">2.</strong> Front End Web Technologies</a></li><li class="spacer"></li><li class="expanded "><a href="fullstack/index.html"><strong aria-hidden="true">3.</strong> Full Stack Programming</a></li><li class="spacer"></li><li class="expanded "><a href="iot/index.html"><strong aria-hidden="true">4.</strong> Programming IoT</a></li><li class="spacer"></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -177,8 +177,8 @@ Issues and feature
 requests can be posted on the <a href="https://github.com/tejaswigowda/programmingthecloud/issues">GitHub issue
 tracker</a>.</p>
 <h2><a class="header" href="#license" id="license">License</a></h2>
-<p>&quot;Programming the Cloud&quot; book, all the source code, is released under the <a href="https://www.mozilla.org/MPL/2.0/">Mozilla Public License
-v2.0</a>.</p>
+<p>&quot;Programming the Cloud&quot; book, all the source code, is released under the
+<a href="https://github.com/tejaswigowda/programmingthecloud/blob/master/LICENSE">GNU General Public License v2</a>.</p>
 <h1><a class="header" href="#preliminaries" id="preliminaries">Preliminaries</a></h1>
 <p>In this section we will develop a concept map and vocabulary that will
 serve as a foundation for our discussion throughout this book. We will
@@ -334,6 +334,85 @@ not specified it will default to the value of the <code>build.build-dir</code> k
 <hr />
 <p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
 the source directory</em></p>
+<h1><a class="header" href="#git-basics" id="git-basics">GIT Basics</a></h1>
+<p>This guide teaches you step-by-step how to get started with github, or other flavors of git (using the command line).</p>
+<h2><a class="header" href="#installation" id="installation">Installation</a></h2>
+<h3><a class="header" href="#mac-os" id="mac-os">Mac OS:</a></h3>
+<ol>
+<li>
+<p>Open terminal.</p>
+</li>
+<li>
+<p>$ <code>git --version</code></p>
+<p>If you see output like:</p>
+<p><code>git version 2.20.1 (Apple Git-117)</code>; Git is installed.</p>
+<p>Otherwise you will be prompted to install xcode tools. Please follow steps to install these.</p>
+</li>
+</ol>
+<h3><a class="header" href="#linux" id="linux">Linux</a></h3>
+<p>In console</p>
+<p>$ <code>sudo apt install git</code>.</p>
+<h3><a class="header" href="#windows" id="windows">Windows</a></h3>
+<p>Download Installer</p>
+<p>https://git-scm.com/download/win</p>
+<p>Please install git-bash as well. We will assume you are using git-bash to follow along with this tutorial on Windows.</p>
+<br>    
+## Motivation
+<p>Why use Git? If you are interested in doing any/all of the following</p>
+<ol>
+<li>
+<p>Use GIT for maintaining your code/design project files.</p>
+</li>
+<li>
+<p>Collaborate with teammates over the cloud (think Google docs but for project files).</p>
+</li>
+<li>
+<p>Better than backups: https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</p>
+<img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
+</li>
+<li>
+<p>Publish/access open source code.</p>
+</li>
+</ol>
+<br>
+## Lifecycle
+<p>The git lifecycle includes creating versions (&quot;commits&quot;) of your development folder as and when it changes. You will 
+&quot;add&quot; files to be &quot;tracked&quot; in your folder by the <code>git add</code> command. You stage the added files for a &quot;commit&quot; (version) by using the <code>git commit</code>. If your repository is maintained on the cloud, you will need <code>git push</code> to sync the new version created with your cloud (remote) repository.
+<img style="display:block;margin:auto" src='../../imgs/lifecycle.png'></p>
+<p>You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like <a href="https://github.com/">GitHub</a>, <a href="https://gitlab.com">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a> etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.</p>
+<br>
+## Tutorial
+<ol>
+<li>
+<p>Create a Github account</p>
+</li>
+<li>
+<p>Create a Github Repo
+<img style="" src='../.../imgs/plus.png'>
+<img style="display:block;margin:auto" src='../../imgs/new.png'></p>
+</li>
+<li>
+<p>Find repo url
+<img style="display:block;margin:auto" src='../../imgs/clone.png'></p>
+</li>
+<li>
+<p>Clone repo
+$ <code>git clone &lt;yout repo-url&gt; </code>
+This will create a folder with the repo name and &quot;checkout&quot; the lastest commit.</p>
+</li>
+<li>
+<p>cd to new folder created, you can now add/edit delete/files from thgis folder.</p>
+</li>
+<li>
+<p>To create new commit
+$<code> git add *</code>
+$<code> git commit -m &quot;&lt;your-message&gt;&quot;</code></p>
+</li>
+<li>
+<p>To sync your repo with cloud repo
+$<code> git push</code></p>
+</li>
+</ol>
 <h1><a class="header" href="#the-build-command-4" id="the-build-command-4">The build command</a></h1>
 <p>The build command is used to render your book:</p>
 <pre><code class="language-bash">mdbook build
@@ -399,30 +478,6 @@ root instead of the current working directory.</p>
 <p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
 your default web browser after building it.</p>
 <h4><a class="header" href="#--dest-dir-6" id="--dest-dir-6">--dest-dir</a></h4>
-<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the <code>build.build-dir</code> key in
-<code>book.toml</code>, or to <code>./book</code>.</p>
-<hr />
-<p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
-the source directory</em></p>
-<h1><a class="header" href="#the-build-command-7" id="the-build-command-7">The build command</a></h1>
-<p>The build command is used to render your book:</p>
-<pre><code class="language-bash">mdbook build
-</code></pre>
-<p>It will try to parse your <code>SUMMARY.md</code> file to understand the structure of your
-book and fetch the corresponding files.</p>
-<p>The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.</p>
-<h4><a class="header" href="#specify-a-directory-7" id="specify-a-directory-7">Specify a directory</a></h4>
-<p>The <code>build</code> command can take a directory as an argument to use as the book's
-root instead of the current working directory.</p>
-<pre><code class="language-bash">mdbook build path/to/book
-</code></pre>
-<h4><a class="header" href="#--open-7" id="--open-7">--open</a></h4>
-<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
-your default web browser after building it.</p>
-<h4><a class="header" href="#--dest-dir-7" id="--dest-dir-7">--dest-dir</a></h4>
 <p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
 book. Relative paths are interpreted relative to the book's root directory. If
 not specified it will default to the value of the <code>build.build-dir</code> key in

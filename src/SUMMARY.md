@@ -8,7 +8,7 @@
         - [URL](ptc/prelims/url.md)
     - [Basic Skills](ptc/skills/README.md)
         - [BASH](ptc/skills/bash.md)
-        - [GIT](ptc/skills/bash.md)
+        - [GIT](ptc/skills/git.md)
         - [Editor](ptc/skills/codeEditor.md)
         - [Code Management](ptc/skills/codeMgmt.md)
     - [Book Organization](ptc/org.md)

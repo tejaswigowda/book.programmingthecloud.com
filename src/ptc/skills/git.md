@@ -1,39 +1,91 @@
-# The build command
 
-The build command is used to render your book:
 
-```bash
-mdbook build
-```
+# GIT Basics
 
-It will try to parse your `SUMMARY.md` file to understand the structure of your
-book and fetch the corresponding files.
+This guide teaches you step-by-step how to get started with github, or other flavors of git (using the command line).
 
-The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.
 
-#### Specify a directory
 
-The `build` command can take a directory as an argument to use as the book's
-root instead of the current working directory.
+## Installation
 
-```bash
-mdbook build path/to/book
-```
+### Mac OS:
 
-#### --open
+1. Open terminal.
+2. $ ``git --version``
 
-When you use the `--open` (`-o`) flag, mdbook will open the rendered book in
-your default web browser after building it.
+    If you see output like:
+    
+    ``git version 2.20.1 (Apple Git-117)``; Git is installed.
+    
+    Otherwise you will be prompted to install xcode tools. Please follow steps to install these.
+    
+### Linux
 
-#### --dest-dir
+In console
 
-The `--dest-dir` (`-d`) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the `build.build-dir` key in
-`book.toml`, or to `./book`.
+$ ``sudo apt install git``.
 
--------------------
+### Windows
 
-***Note:*** *Make sure to run the build command in the root directory and not in
-the source directory*
+Download Installer
+
+https://git-scm.com/download/win
+
+Please install git-bash as well. We will assume you are using git-bash to follow along with this tutorial on Windows.
+
+    
+    
+<br>    
+## Motivation
+
+Why use Git? If you are interested in doing any/all of the following
+
+1. Use GIT for maintaining your code/design project files.
+2. Collaborate with teammates over the cloud (think Google docs but for project files).
+3. Better than backups: https://git-scm.com/book/en/v1/Getting-Started-Git-Basics
+
+    <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
+4. Publish/access open source code.
+
+
+
+
+
+<br>
+## Lifecycle
+
+The git lifecycle includes creating versions ("commits") of your development folder as and when it changes. You will 
+"add" files to be "tracked" in your folder by the `git add` command. You stage the added files for a "commit" (version) by using the `git commit`. If your repository is maintained on the cloud, you will need `git push` to sync the new version created with your cloud (remote) repository.
+ <img style="display:block;margin:auto" src='../../imgs/lifecycle.png'>
+
+You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like [GitHub](https://github.com/), [GitLab](https://gitlab.com), [Bitbucket](https://bitbucket.org/) etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.
+
+
+
+
+
+<br>
+## Tutorial
+
+1. Create a Github account
+2. Create a Github Repo
+    <img style="" src='../.../imgs/plus.png'>
+    <img style="display:block;margin:auto" src='../../imgs/new.png'>
+    
+3. Find repo url
+        <img style="display:block;margin:auto" src='../../imgs/clone.png'>
+
+4. Clone repo
+    $ ``git clone <yout repo-url> ``
+    This will create a folder with the repo name and "checkout" the lastest commit.
+    
+5. cd to new folder created, you can now add/edit delete/files from thgis folder.
+
+6. To create new commit
+    $`` git add *``
+    $`` git commit -m "<your-message>"``
+    
+7. To sync your repo with cloud repo
+        $`` git push``
+
+

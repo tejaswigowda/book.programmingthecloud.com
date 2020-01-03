@@ -6,3 +6,19 @@ first discuss what the Client-Server Model is, then learn where in the
 "Programmer's model" of a computer these client server programs reside.
 We finally learn how these client-server programs communicate with each
 other over the internet using URLs.
+
+By the end of this section you should have a working definition and
+concept map linking the following terms
+
+- client
+- server
+- computer
+- program
+- port
+- IP address
+- URL
+- Internet
+- HTTP
+- HTTP request
+- HTTP response
+  

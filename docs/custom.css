@@ -48,7 +48,7 @@ button, button:focus
 }
 
 
-.menu-bar#menu-bar{
+.sidebar-visible .menu-bar#menu-bar{
     position: fixed;
-    width: calc(100% - var(--page-padding));
+    width: calc(100% - var(--sidebar-width));
 }

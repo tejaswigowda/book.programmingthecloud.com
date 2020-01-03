@@ -47,6 +47,9 @@ button, button:focus
   color: white;
 }
 
+button{
+    outline:none;
+}
 
 .sidebar-visible .menu-bar#menu-bar{
     position: fixed;

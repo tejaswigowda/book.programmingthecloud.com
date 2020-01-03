@@ -41,6 +41,10 @@ button, button:focus
 }
 
 
+.menu-title, .fa{
+  transition-duration: 0s;
+}
+
 .coal .menu-title,
 .coal .fa
 {

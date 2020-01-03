@@ -59,3 +59,7 @@ button{
 :not(pre):not(a) > .hljs{
   color:#eeeeee;
 }
+
+.sidebar-visible #sidebar-toggle .fa.fa-bars:before{
+  content: "\f00d";
+}

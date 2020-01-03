@@ -52,3 +52,7 @@ button, button:focus
     position: fixed;
     width: calc(100% - var(--sidebar-width));
 }
+
+:not(pre):not(a) > .hljs{
+  color:#eeeeee;
+}

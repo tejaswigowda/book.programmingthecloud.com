@@ -227,42 +227,7 @@ hierarchy called the Open Systems Interconnection (OSI) Model. </p>
 <table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'></th></tr></thead><tbody>
 <tr><td align="center"><figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption></td></tr>
 </tbody></table>
-<h1><a class="header" href="#command-line-tool" id="command-line-tool">Command Line Tool</a></h1>
-<p>mdBook can be used either as a command line tool or a <a href="https://crates.io/crates/mdbook">Rust
-crate</a>. Let's focus on the command line tool
-capabilities first.</p>
-<h2><a class="header" href="#install-from-binaries" id="install-from-binaries">Install From Binaries</a></h2>
-<p>Precompiled binaries are provided for major platforms on a best-effort basis.
-Visit <a href="https://github.com/rust-lang/mdBook/releases">the releases page</a>
-to download the appropriate version for your platform.</p>
-<h2><a class="header" href="#install-from-source" id="install-from-source">Install From Source</a></h2>
-<p>mdBook can also be installed from source</p>
-<h3><a class="header" href="#pre-requisite" id="pre-requisite">Pre-requisite</a></h3>
-<p>mdBook is written in <strong><a href="https://www.rust-lang.org/">Rust</a></strong> and therefore needs
-to be compiled with <strong>Cargo</strong>. If you haven't already installed Rust, please go
-ahead and <a href="https://www.rust-lang.org/tools/install">install it</a> now.</p>
-<h3><a class="header" href="#install-cratesio-version" id="install-cratesio-version">Install Crates.io version</a></h3>
-<p>Installing mdBook is relatively easy if you already have Rust and Cargo
-installed. You just have to type this snippet in your terminal:</p>
-<pre><code class="language-bash">cargo install mdbook
-</code></pre>
-<p>This will fetch the source code for the latest release from
-<a href="https://crates.io/">Crates.io</a> and compile it. You will have to add Cargo's
-<code>bin</code> directory to your <code>PATH</code>.</p>
-<p>Run <code>mdbook help</code> in your terminal to verify if it works. Congratulations, you
-have installed mdBook!</p>
-<h3><a class="header" href="#install-git-version" id="install-git-version">Install Git version</a></h3>
-<p>The <strong><a href="https://github.com/rust-lang/mdBook">git version</a></strong> contains all
-the latest bug-fixes and features, that will be released in the next version on
-<strong>Crates.io</strong>, if you can't wait until the next release. You can build the git
-version yourself. Open your terminal and navigate to the directory of you
-choice. We need to clone the git repository and then build it with Cargo.</p>
-<pre><code class="language-bash">git clone --depth=1 https://github.com/rust-lang/mdBook.git
-cd mdBook
-cargo build --release
-</code></pre>
-<p>The executable <code>mdbook</code> will be in the <code>./target/release</code> folder, this should be
-added to the path.</p>
+<h1><a class="header" href="#basic-skills" id="basic-skills">Basic Skills</a></h1>
 <h1><a class="header" href="#using-bash" id="using-bash">Using BASH</a></h1>
 <h1><a class="header" href="#using-git" id="using-git">Using GIT</a></h1>
 <h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
@@ -396,30 +361,7 @@ not specified it will default to the value of the <code>build.build-dir</code> k
 <hr />
 <p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
 the source directory</em></p>
-<h1><a class="header" href="#the-build-command-1" id="the-build-command-1">The build command</a></h1>
-<p>The build command is used to render your book:</p>
-<pre><code class="language-bash">mdbook build
-</code></pre>
-<p>It will try to parse your <code>SUMMARY.md</code> file to understand the structure of your
-book and fetch the corresponding files.</p>
-<p>The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.</p>
-<h4><a class="header" href="#specify-a-directory-1" id="specify-a-directory-1">Specify a directory</a></h4>
-<p>The <code>build</code> command can take a directory as an argument to use as the book's
-root instead of the current working directory.</p>
-<pre><code class="language-bash">mdbook build path/to/book
-</code></pre>
-<h4><a class="header" href="#--open-1" id="--open-1">--open</a></h4>
-<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
-your default web browser after building it.</p>
-<h4><a class="header" href="#--dest-dir-1" id="--dest-dir-1">--dest-dir</a></h4>
-<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the <code>build.build-dir</code> key in
-<code>book.toml</code>, or to <code>./book</code>.</p>
-<hr />
-<p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
-the source directory</em></p>
+<h1><a class="header" href="#book-organization" id="book-organization">Book Organization</a></h1>
 <h1><a class="header" href="#for-developers" id="for-developers">For Developers</a></h1>
 <p>While <code>mdbook</code> is mainly used as a command line tool, you can also import the
 underlying library directly and use that to manage a book. It also has a fairly

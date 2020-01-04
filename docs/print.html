@@ -310,31 +310,8 @@ cargo build --release
 </code></pre>
 <p>The executable <code>mdbook</code> will be in the <code>./target/release</code> folder, this should be
 added to the path.</p>
-<h1><a class="header" href="#the-build-command-3" id="the-build-command-3">The build command</a></h1>
-<p>The build command is used to render your book:</p>
-<pre><code class="language-bash">mdbook build
-</code></pre>
-<p>It will try to parse your <code>SUMMARY.md</code> file to understand the structure of your
-book and fetch the corresponding files.</p>
-<p>The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.</p>
-<h4><a class="header" href="#specify-a-directory-3" id="specify-a-directory-3">Specify a directory</a></h4>
-<p>The <code>build</code> command can take a directory as an argument to use as the book's
-root instead of the current working directory.</p>
-<pre><code class="language-bash">mdbook build path/to/book
-</code></pre>
-<h4><a class="header" href="#--open-3" id="--open-3">--open</a></h4>
-<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
-your default web browser after building it.</p>
-<h4><a class="header" href="#--dest-dir-3" id="--dest-dir-3">--dest-dir</a></h4>
-<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the <code>build.build-dir</code> key in
-<code>book.toml</code>, or to <code>./book</code>.</p>
-<hr />
-<p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
-the source directory</em></p>
-<h1><a class="header" href="#git-basics" id="git-basics">GIT Basics</a></h1>
+<h1><a class="header" href="#using-bash" id="using-bash">Using BASH</a></h1>
+<h1><a class="header" href="#using-git" id="using-git">Using GIT</a></h1>
 <h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
 <p>Why use Git? If you are interested in doing any/all of the following</p>
 <ol>
@@ -381,7 +358,7 @@ to execute bash commonds on Windows.</p>
 <tr><td align="center"><figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption></td></tr>
 </tbody></table>
 <p>You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like <a href="https://github.com/">GitHub</a>, <a href="https://gitlab.com">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a> etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.</p>
-<h2><a class="header" href="#tutorial" id="tutorial">Tutorial</a></h2>
+<h2><a class="header" href="#step-by-step" id="step-by-step">Step-by-step</a></h2>
 <ol>
 <li>Create a Github account</li>
 <li>Create a Github Repo</li>
@@ -402,7 +379,7 @@ $ <code>git clone &lt;yout repo-url&gt; </code>
 This will create a folder with the repo name and &quot;checkout&quot; the lastest commit.</p>
 </li>
 <li>
-<p>cd to new folder created, you can now add/edit delete/files from thgis folder.</p>
+<p>cd to new folder created, you can now add/edit delete/files from this folder.</p>
 </li>
 <li>
 <p>To create new commit
@@ -413,7 +390,35 @@ $<code> git commit -m &quot;&lt;your-message&gt;&quot;</code></p>
 <p>To sync your repo with cloud repo
 $<code> git push</code></p>
 </li>
+<li>
+<p>Continue editiong your project files and to create a new version use
+git commands add -&gt; commit -&gt; push (Figure 1.2.2).</p>
+</li>
 </ol>
+<h1><a class="header" href="#the-build-command-3" id="the-build-command-3">The build command</a></h1>
+<p>The build command is used to render your book:</p>
+<pre><code class="language-bash">mdbook build
+</code></pre>
+<p>It will try to parse your <code>SUMMARY.md</code> file to understand the structure of your
+book and fetch the corresponding files.</p>
+<p>The rendered output will maintain the same directory structure as the source for
+convenience. Large books will therefore remain structured when rendered.</p>
+<h4><a class="header" href="#specify-a-directory-3" id="specify-a-directory-3">Specify a directory</a></h4>
+<p>The <code>build</code> command can take a directory as an argument to use as the book's
+root instead of the current working directory.</p>
+<pre><code class="language-bash">mdbook build path/to/book
+</code></pre>
+<h4><a class="header" href="#--open-3" id="--open-3">--open</a></h4>
+<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
+your default web browser after building it.</p>
+<h4><a class="header" href="#--dest-dir-3" id="--dest-dir-3">--dest-dir</a></h4>
+<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
+book. Relative paths are interpreted relative to the book's root directory. If
+not specified it will default to the value of the <code>build.build-dir</code> key in
+<code>book.toml</code>, or to <code>./book</code>.</p>
+<hr />
+<p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
+the source directory</em></p>
 <h1><a class="header" href="#the-build-command-4" id="the-build-command-4">The build command</a></h1>
 <p>The build command is used to render your book:</p>
 <pre><code class="language-bash">mdbook build
@@ -455,30 +460,6 @@ root instead of the current working directory.</p>
 <p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
 your default web browser after building it.</p>
 <h4><a class="header" href="#--dest-dir-5" id="--dest-dir-5">--dest-dir</a></h4>
-<p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the <code>build.build-dir</code> key in
-<code>book.toml</code>, or to <code>./book</code>.</p>
-<hr />
-<p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
-the source directory</em></p>
-<h1><a class="header" href="#the-build-command-6" id="the-build-command-6">The build command</a></h1>
-<p>The build command is used to render your book:</p>
-<pre><code class="language-bash">mdbook build
-</code></pre>
-<p>It will try to parse your <code>SUMMARY.md</code> file to understand the structure of your
-book and fetch the corresponding files.</p>
-<p>The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.</p>
-<h4><a class="header" href="#specify-a-directory-6" id="specify-a-directory-6">Specify a directory</a></h4>
-<p>The <code>build</code> command can take a directory as an argument to use as the book's
-root instead of the current working directory.</p>
-<pre><code class="language-bash">mdbook build path/to/book
-</code></pre>
-<h4><a class="header" href="#--open-6" id="--open-6">--open</a></h4>
-<p>When you use the <code>--open</code> (<code>-o</code>) flag, mdbook will open the rendered book in
-your default web browser after building it.</p>
-<h4><a class="header" href="#--dest-dir-6" id="--dest-dir-6">--dest-dir</a></h4>
 <p>The <code>--dest-dir</code> (<code>-d</code>) option allows you to change the output directory for the
 book. Relative paths are interpreted relative to the book's root directory. If
 not specified it will default to the value of the <code>build.build-dir</code> key in

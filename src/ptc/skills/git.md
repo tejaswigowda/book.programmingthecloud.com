@@ -1,6 +1,4 @@
-
-
-# GIT Basics
+# Using GIT 
     
 ## Motivation
 
@@ -70,7 +68,7 @@ You can create a remote repository by hosting your own git server, or use Git-as
 
 
 
-## Tutorial
+##  Step-by-step
 
 1. Create a Github account
 2. Create a Github Repo
@@ -99,4 +97,4 @@ You can create a remote repository by hosting your own git server, or use Git-as
         $`` git push``
 
 8. Continue editiong your project files and to create a new version use
-   git commands add -> commit -> push (Figure 1.2.1).
+   git commands add -> commit -> push (Figure 1.2.2).

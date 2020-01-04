@@ -371,87 +371,9 @@ not specified it will default to the value of the <code>build.build-dir</code> k
 <p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
 the source directory</em></p>
 <h1><a class="header" href="#book-organization" id="book-organization">Book Organization</a></h1>
-<h1><a class="header" href="#for-developers" id="for-developers">For Developers</a></h1>
-<p>While <code>mdbook</code> is mainly used as a command line tool, you can also import the
-underlying library directly and use that to manage a book. It also has a fairly
-flexible plugin mechanism, allowing you to create your own custom tooling and
-consumers (often referred to as <em>backends</em>) if you need to do some analysis of
-the book or render it in a different format.</p>
-<p>The <em>For Developers</em> chapters are here to show you the more advanced usage of
-<code>mdbook</code>.</p>
-<p>The two main ways a developer can hook into the book's build process is via,</p>
-<img src='../imgs/mdedit.gif'>
-<ul>
-<li><a href="fewtech/intro.html">Preprocessors</a></li>
-<li><a href="fewtech/backends.html">Alternative Backends</a></li>
-</ul>
-<h2><a class="header" href="#the-build-process" id="the-build-process">The Build Process</a></h2>
-<p>The process of rendering a book project goes through several steps.</p>
-<ol>
-<li>Load the book
-<ul>
-<li>Parse the <code>book.toml</code>, falling back to the default <code>Config</code> if it doesn't
-exist</li>
-<li>Load the book chapters into memory</li>
-<li>Discover which preprocessors/backends should be used</li>
-</ul>
-</li>
-<li>Run the preprocessors</li>
-<li>Call each backend in turn</li>
-</ol>
-<h2><a class="header" href="#using-mdbook-as-a-library" id="using-mdbook-as-a-library">Using <code>mdbook</code> as a Library</a></h2>
-<p>The <code>mdbook</code> binary is just a wrapper around the <code>mdbook</code> crate, exposing its
-functionality as a command-line program. As such it is quite easy to create your
-own programs which use <code>mdbook</code> internally, adding your own functionality (e.g.
-a custom preprocessor) or tweaking the build process.</p>
-<p>The easiest way to find out how to use the <code>mdbook</code> crate is by looking at the
-<a href="https://docs.rs/mdbook/*/mdbook/">API Docs</a>. The top level documentation explains how one would use the
-<a href="https://docs.rs/mdbook/*/mdbook/book/struct.MDBook.html"><code>MDBook</code></a> type to load and build a book, while the <a href="https://docs.rs/mdbook/*/mdbook/config/index.html">config</a> module gives a good
-explanation on the configuration system.</p>
-<h1><a class="header" href="#format" id="format">Format</a></h1>
-<p>In this section you will learn how to:</p>
-<ul>
-<li>Structure your book correctly</li>
-<li>Format your <code>SUMMARY.md</code> file</li>
-<li>Configure your book using <code>book.toml</code></li>
-<li>Customize your theme</li>
-</ul>
-<h1><a class="header" href="#for-developers-1" id="for-developers-1">For Developers</a></h1>
-<p>While <code>mdbook</code> is mainly used as a command line tool, you can also import the
-underlying library directly and use that to manage a book. It also has a fairly
-flexible plugin mechanism, allowing you to create your own custom tooling and
-consumers (often referred to as <em>backends</em>) if you need to do some analysis of
-the book or render it in a different format.</p>
-<p>The <em>For Developers</em> chapters are here to show you the more advanced usage of
-<code>mdbook</code>.</p>
-<p>The two main ways a developer can hook into the book's build process is via,</p>
-<ul>
-<li><a href="iot/preprocessors.html">Preprocessors</a></li>
-<li><a href="iot/backends.html">Alternative Backends</a></li>
-</ul>
-<h2><a class="header" href="#the-build-process-1" id="the-build-process-1">The Build Process</a></h2>
-<p>The process of rendering a book project goes through several steps.</p>
-<ol>
-<li>Load the book
-<ul>
-<li>Parse the <code>book.toml</code>, falling back to the default <code>Config</code> if it doesn't
-exist</li>
-<li>Load the book chapters into memory</li>
-<li>Discover which preprocessors/backends should be used</li>
-</ul>
-</li>
-<li>Run the preprocessors</li>
-<li>Call each backend in turn</li>
-</ol>
-<h2><a class="header" href="#using-mdbook-as-a-library-1" id="using-mdbook-as-a-library-1">Using <code>mdbook</code> as a Library</a></h2>
-<p>The <code>mdbook</code> binary is just a wrapper around the <code>mdbook</code> crate, exposing its
-functionality as a command-line program. As such it is quite easy to create your
-own programs which use <code>mdbook</code> internally, adding your own functionality (e.g.
-a custom preprocessor) or tweaking the build process.</p>
-<p>The easiest way to find out how to use the <code>mdbook</code> crate is by looking at the
-<a href="https://docs.rs/mdbook/*/mdbook/">API Docs</a>. The top level documentation explains how one would use the
-<a href="https://docs.rs/mdbook/*/mdbook/book/struct.MDBook.html"><code>MDBook</code></a> type to load and build a book, while the <a href="https://docs.rs/mdbook/*/mdbook/config/index.html">config</a> module gives a good
-explanation on the configuration system.</p>
+<h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
+<h1><a class="header" href="#full-stack-programming" id="full-stack-programming">Full Stack Programming</a></h1>
+<h1><a class="header" href="#programming-the-internet-of-things-iot" id="programming-the-internet-of-things-iot">Programming the Internet of Things (IoT)</a></h1>
 
                     </main>
 

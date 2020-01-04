@@ -35,7 +35,6 @@ Please install git-bash as well. We will assume you are using git-bash to follow
 
     
     
-<br>    
 ## Motivation
 
 Why use Git? If you are interested in doing any/all of the following
@@ -51,7 +50,6 @@ Why use Git? If you are interested in doing any/all of the following
 
 
 
-<br>
 ## Lifecycle
 
 The git lifecycle includes creating versions ("commits") of your development folder as and when it changes. You will 
@@ -64,7 +62,6 @@ You can create a remote repository by hosting your own git server, or use Git-as
 
 
 
-<br>
 ## Tutorial
 
 1. Create a Github account

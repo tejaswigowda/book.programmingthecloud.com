@@ -80,7 +80,10 @@ You can create a remote repository by hosting your own git server, or use Git-as
 | <figcaption> Fig: 1.2.3. Create new repository </figcaption>     |
     
 3. Find repo url
-        <img style="display:block;margin:auto" src='../../imgs/clone.png'>
+
+| <img style="display:block;margin:auto" src='../../imgs/clone.png'> | 
+| :--:                                                               |
+| <figcaption> Fig: 1.2.4. Clone repository </figcaption>            | 
 
 4. Clone repo
     $ ``git clone <yout repo-url> ``

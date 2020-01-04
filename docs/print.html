@@ -338,21 +338,17 @@ the source directory</em></p>
 <h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
 <p>Why use Git? If you are interested in doing any/all of the following</p>
 <ol>
-<li>
-<p>Use GIT for maintaining your code/design project files.</p>
-</li>
-<li>
-<p>Collaborate with teammates over the cloud (think Google docs but for project files).</p>
-</li>
-<li>
-<p>Better than backups:
+<li>Use GIT for maintaining your code/design project files.</li>
+<li>Collaborate with teammates over the cloud (think Google docs but for project files).</li>
+<li>Better than backups:
 <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a> (GIT
 stores entire files that have been changed -- see Figure below. For each version of GIT we
-have to manually &quot;stage&quot; the changed files to be included.</p>
-<img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
-</li>
+have to manually &quot;stage&quot; the changed files to be included.</li>
 </ol>
-<figcaption> Fig: 1.2.1. Traditional Version Control System vs. GIT </figcaption>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.2.1. Traditional Version Control System vs. GIT</td></tr>
+</tbody></table>
+</figcaption> |
 <ol start="4">
 <li>Publish/access open source code.</li>
 </ol>
@@ -380,19 +376,20 @@ have to manually &quot;stage&quot; the changed files to be included.</p>
 to execute bash commonds on Windows.</p>
 <h2><a class="header" href="#lifecycle" id="lifecycle">Lifecycle</a></h2>
 <p>The git lifecycle includes creating versions (&quot;commits&quot;) of your development folder as and when it changes. You will 
-&quot;add&quot; files to be &quot;tracked&quot; in your folder by the <code>git add</code> command. You stage the added files for a &quot;commit&quot; (version) by using the <code>git commit</code>. If your repository is maintained on the cloud, you will need <code>git push</code> to sync the new version created with your cloud (remote) repository.
-<img style="display:block;margin:auto" src='../../imgs/lifecycle.png'></p>
+&quot;add&quot; files to be &quot;tracked&quot; in your folder by the <code>git add</code> command. You stage the added files for a &quot;commit&quot; (version) by using the <code>git commit</code>. If your repository is maintained on the cloud, you will need <code>git push</code> to sync the new version created with your cloud (remote) repository.</p>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/lifecycle.png'></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption></td></tr>
+</tbody></table>
 <p>You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like <a href="https://github.com/">GitHub</a>, <a href="https://gitlab.com">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a> etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.</p>
 <h2><a class="header" href="#tutorial" id="tutorial">Tutorial</a></h2>
 <ol>
-<li>
-<p>Create a Github account</p>
-</li>
-<li>
-<p>Create a Github Repo
-<img style="" src='../.../imgs/plus.png'>
-<img style="display:block;margin:auto" src='../../imgs/new.png'></p>
-</li>
+<li>Create a Github account</li>
+<li>Create a Github Repo</li>
+</ol>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/new.png'></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.2.3. Create new repository </figcaption></td></tr>
+</tbody></table>
+<ol start="3">
 <li>
 <p>Find repo url
 <img style="display:block;margin:auto" src='../../imgs/clone.png'></p>

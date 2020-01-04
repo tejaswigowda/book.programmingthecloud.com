@@ -13,8 +13,7 @@ have to manually "stage" the changed files to be included.
 
 | <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'> |   
 | :--:                                                                  |   
-| <figcaption> Fig: 1.2.2.1. Traditional Version Control System vs. GIT
-</figcaption> |
+| <figcaption> Fig: 1.2.2.1. Traditional Version Control System vs. GIT</figcaption> |
 
 4. Publish/access open source code.
 
@@ -79,9 +78,9 @@ You can create a remote repository by hosting your own git server, or use Git-as
     
 3. Find repo url
 
-| <img style="display:block;margin:auto" src='../../imgs/clone.png'> |   |
-| :--:                                                               |   |
-| <figcaption> Fig: 1.2.2.4. Clone repository </figcaption>          |   |
+| <img style="display:block;margin:auto" src='../../imgs/clone.png'> |
+| :--:                                                               | 
+| <figcaption> Fig: 1.2.2.4. Clone repository </figcaption>          |  
 
 4. Clone repo
     $ ``git clone <yout repo-url> ``
@@ -97,4 +96,4 @@ You can create a remote repository by hosting your own git server, or use Git-as
         $`` git push``
 
 8. Continue editiong your project files and to create a new version use
-   git commands add -> commit -> push (Figure 1.2.2).
+   git commands add -> commit -> push (Figure 1.2.2.2).

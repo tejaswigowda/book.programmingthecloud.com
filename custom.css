@@ -74,3 +74,9 @@ figcaption{
   font-size: 120%;
   text-align:center;
 }
+
+table thead,
+table thead tr{
+  background: transparent;
+  border:none;
+}

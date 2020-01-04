@@ -1,6 +1,6 @@
 # Summary
 
-- [Programming The Cloud](README.md)
+- [Programming The Cloud](ptc/README.md)
     - [Preliminaries](ptc/prelims/README.md)
         - [Client Server Model](ptc/prelims/clientServer.md)
         - [Programming Model](ptc/prelims/theComputer.md)

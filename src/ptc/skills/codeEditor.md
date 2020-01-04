@@ -1,39 +1,27 @@
-# The build command
+# Editing Code
 
-The build command is used to render your book:
+The examples in this book will need you to edit code/document format
+files (HTML, CSS, JS, C++ etc.). You can use any editor you are
+comfortable with. It is recommended that you use an editir with syntax
+highlighting.
 
-```bash
-mdbook build
-```
+Here is a list of recommended code editors
+- [Atom]()
+- [Brackets]()
+- [Sublime]()
+- [TextMate]()
+- [VI]()
+- [Emacs]()
 
-It will try to parse your `SUMMARY.md` file to understand the structure of your
-book and fetch the corresponding files.
+The first 4 are What-you-see-is-what-you-get (WYSIWYG) editors and
+simple to use with a userfereindly GUI. VI and EMAcs on the other has
+are commandline (bash) editors. Thgis will come in handy when you need
+to edit on a remote machine. However both have steep learning curves and
+will take practice to perfect. If you are new to programming this book
+suggests you start with Atom Editor (first choice in the above list). It
+has a tabbed editor and a project manager pane (Figure 1.2.3.1). You can easily add new
+files, manage folders and edit/modify/save individual files.
 
-The rendered output will maintain the same directory structure as the source for
-convenience. Large books will therefore remain structured when rendered.
-
-#### Specify a directory
-
-The `build` command can take a directory as an argument to use as the book's
-root instead of the current working directory.
-
-```bash
-mdbook build path/to/book
-```
-
-#### --open
-
-When you use the `--open` (`-o`) flag, mdbook will open the rendered book in
-your default web browser after building it.
-
-#### --dest-dir
-
-The `--dest-dir` (`-d`) option allows you to change the output directory for the
-book. Relative paths are interpreted relative to the book's root directory. If
-not specified it will default to the value of the `build.build-dir` key in
-`book.toml`, or to `./book`.
-
--------------------
-
-***Note:*** *Make sure to run the build command in the root directory and not in
-the source directory*
+| <img style="display:block;margin:auto" src='../../imgs/lifecycle.png'> |   
+| :--:                                                                   |   
+| <figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption>                    |  

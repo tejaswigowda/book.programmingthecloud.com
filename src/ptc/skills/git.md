@@ -13,7 +13,7 @@ have to manually "stage" the changed files to be included.
 
 | <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'> |   
 | :--:                                                                  |   
-| <figcaption> Fig: 1.2.1. Traditional Version Control System vs. GIT
+| <figcaption> Fig: 1.2.2.1. Traditional Version Control System vs. GIT
 </figcaption> |
 
 4. Publish/access open source code.
@@ -58,9 +58,9 @@ to execute bash commonds on Windows.
 The git lifecycle includes creating versions ("commits") of your development folder as and when it changes. You will 
 "add" files to be "tracked" in your folder by the `git add` command. You stage the added files for a "commit" (version) by using the `git commit`. If your repository is maintained on the cloud, you will need `git push` to sync the new version created with your cloud (remote) repository.
 
-| <img style="display:block;margin:auto" src='../../imgs/lifecycle.png'> |   
-| :--:                                                                   |   
-| <figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption>                    |  
+| <img style="display:block;margin:auto" src='../../imgs/lifecycle.png'> |   |
+| :--:                                                                   |   |
+| <figcaption> Fig: 1.2.2.2. GIT Lifecycle</figcaption>                  |   |
 
 You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like [GitHub](https://github.com/), [GitLab](https://gitlab.com), [Bitbucket](https://bitbucket.org/) etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.
 
@@ -75,13 +75,13 @@ You can create a remote repository by hosting your own git server, or use Git-as
 
 | <img style="display:block;margin:auto" src='../../imgs/new.png'> |
 | :--:                                                             |
-| <figcaption> Fig: 1.2.3. Create new repository </figcaption>     |
+| <figcaption> Fig: 1.2.2.3. Create new repository </figcaption>   |
     
 3. Find repo url
 
-| <img style="display:block;margin:auto" src='../../imgs/clone.png'> | 
-| :--:                                                               |
-| <figcaption> Fig: 1.2.4. Clone repository </figcaption>            | 
+| <img style="display:block;margin:auto" src='../../imgs/clone.png'> |   |
+| :--:                                                               |   |
+| <figcaption> Fig: 1.2.2.4. Clone repository </figcaption>          |   |
 
 4. Clone repo
     $ ``git clone <yout repo-url> ``

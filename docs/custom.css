@@ -7,8 +7,8 @@ max-width: 100vw;
 margin-top: 60px;
 }
 
-h1 a.header{
-padding-top: 60px;
+.sidebar-visible h1 a.header{
+padding-top: 50px;
 display:block;
 }
 

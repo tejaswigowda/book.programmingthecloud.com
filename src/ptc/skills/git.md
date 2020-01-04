@@ -89,7 +89,7 @@ You can create a remote repository by hosting your own git server, or use Git-as
     $ ``git clone <yout repo-url> ``
     This will create a folder with the repo name and "checkout" the lastest commit.
     
-5. cd to new folder created, you can now add/edit delete/files from thgis folder.
+5. cd to new folder created, you can now add/edit delete/files from this folder.
 
 6. To create new commit
     $`` git add *``
@@ -98,4 +98,5 @@ You can create a remote repository by hosting your own git server, or use Git-as
 7. To sync your repo with cloud repo
         $`` git push``
 
-
+8. Continue editiong your project files and to create a new version use
+   git commands add -> commit -> push (Figure 1.2.1).

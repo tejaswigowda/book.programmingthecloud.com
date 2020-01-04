@@ -10,14 +10,16 @@ other over the internet using URLs.
 By the end of this section you should have a working definition and
 concept map linking the following terms
 
-- client
-- server
-- computer
-- program
-- port
+- Client
+- Server
+- Computer
+- Program
+- Programmer's Model
+- Port
 - IP address
 - URL
 - Internet
+- OSI Model
 - HTTP
 - HTTP request
 - HTTP response

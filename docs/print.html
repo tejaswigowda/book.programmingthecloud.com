@@ -335,6 +335,24 @@ not specified it will default to the value of the <code>build.build-dir</code> k
 <p><em><strong>Note:</strong></em> <em>Make sure to run the build command in the root directory and not in
 the source directory</em></p>
 <h1><a class="header" href="#git-basics" id="git-basics">GIT Basics</a></h1>
+<h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
+<p>Why use Git? If you are interested in doing any/all of the following</p>
+<ol>
+<li>
+<p>Use GIT for maintaining your code/design project files.</p>
+</li>
+<li>
+<p>Collaborate with teammates over the cloud (think Google docs but for project files).</p>
+</li>
+<li>
+<p>Better than backups:
+<a href="https://git-scm.com/book/en/v1/Getting-Started-Git-Basics">https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</a>
+<img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'></p>
+</li>
+<li>
+<p>Publish/access open source code.</p>
+</li>
+</ol>
 <p>This guide teaches you step-by-step how to get started with github, or other flavors of git (using the command line).</p>
 <h2><a class="header" href="#installation" id="installation">Installation</a></h2>
 <h3><a class="header" href="#mac-os" id="mac-os">Mac OS:</a></h3>
@@ -354,25 +372,9 @@ the source directory</em></p>
 <p>$ <code>sudo apt install git</code>.</p>
 <h3><a class="header" href="#windows" id="windows">Windows</a></h3>
 <p>Download Installer</p>
-<p>https://git-scm.com/download/win</p>
-<p>Please install git-bash as well. We will assume you are using git-bash to follow along with this tutorial on Windows.</p>
-<h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
-<p>Why use Git? If you are interested in doing any/all of the following</p>
-<ol>
-<li>
-<p>Use GIT for maintaining your code/design project files.</p>
-</li>
-<li>
-<p>Collaborate with teammates over the cloud (think Google docs but for project files).</p>
-</li>
-<li>
-<p>Better than backups: https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</p>
-<img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
-</li>
-<li>
-<p>Publish/access open source code.</p>
-</li>
-</ol>
+<p><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+<p>Please install git-bash as well. We will assume you are using git-bash
+to execute bash commonds on Windows.</p>
 <h2><a class="header" href="#lifecycle" id="lifecycle">Lifecycle</a></h2>
 <p>The git lifecycle includes creating versions (&quot;commits&quot;) of your development folder as and when it changes. You will 
 &quot;add&quot; files to be &quot;tracked&quot; in your folder by the <code>git add</code> command. You stage the added files for a &quot;commit&quot; (version) by using the <code>git commit</code>. If your repository is maintained on the cloud, you will need <code>git push</code> to sync the new version created with your cloud (remote) repository.

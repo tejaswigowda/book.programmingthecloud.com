@@ -1,10 +1,20 @@
 
 
 # GIT Basics
+    
+## Motivation
+
+Why use Git? If you are interested in doing any/all of the following
+
+1. Use GIT for maintaining your code/design project files.
+2. Collaborate with teammates over the cloud (think Google docs but for project files).
+3. Better than backups:
+   <https://git-scm.com/book/en/v1/Getting-Started-Git-Basics>
+    <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
+
+4. Publish/access open source code.
 
 This guide teaches you step-by-step how to get started with github, or other flavors of git (using the command line).
-
-
 
 ## Installation
 
@@ -29,24 +39,13 @@ $ ``sudo apt install git``.
 
 Download Installer
 
-https://git-scm.com/download/win
+<https://git-scm.com/download/win>
 
-Please install git-bash as well. We will assume you are using git-bash to follow along with this tutorial on Windows.
+
+Please install git-bash as well. We will assume you are using git-bash
+to execute bash commonds on Windows.
 
     
-    
-## Motivation
-
-Why use Git? If you are interested in doing any/all of the following
-
-1. Use GIT for maintaining your code/design project files.
-2. Collaborate with teammates over the cloud (think Google docs but for project files).
-3. Better than backups: https://git-scm.com/book/en/v1/Getting-Started-Git-Basics
-
-    <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
-4. Publish/access open source code.
-
-
 
 
 

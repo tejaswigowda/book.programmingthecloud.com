@@ -9,8 +9,12 @@ Why use Git? If you are interested in doing any/all of the following
 1. Use GIT for maintaining your code/design project files.
 2. Collaborate with teammates over the cloud (think Google docs but for project files).
 3. Better than backups:
-   <https://git-scm.com/book/en/v1/Getting-Started-Git-Basics>
+   <https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F> (GIT
+stores entire files that have been changed -- see Figure below. For each version of GIT we
+have to manually "stage" the changed files to be included.
+
     <img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>
+<figcaption> Fig: 1.2.1. Traditional Version Control System vs. GIT </figcaption>
 
 4. Publish/access open source code.
 

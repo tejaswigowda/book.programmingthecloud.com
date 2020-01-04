@@ -1,6 +1,6 @@
 # Programming the Cloud
 
-**Programming the Cloud (PtC)** is reference for learning by example the
+**Programming the Cloud (PtC)** is a reference for learning by example the
 following:
 
 1. Front end web technologies ([HTML](), [CSS]() and [JavaScript]()).

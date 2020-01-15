@@ -217,9 +217,8 @@ to each other. There are 2 rules in the client server protocol:</p>
 then sends a <b>response</b> back.</p>
 </li>
 </ol>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/clientServer.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.1.1. The Client Server Model</figcaption></td><td></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/clientServer.png'>    
+ <figcaption> Fig: 1.1.1.1. The Client Server Model</figcaption>              
 <p>The server is an application program and can hence respond differently
 based on the request URL <b>path</b>. For Eg: the URLs <a href="https://google.com">https://google.com</a> and
 <a href="https://google.com/maps">https://google.com/maps</a> both send a request to google.com, but based on the
@@ -228,9 +227,8 @@ path (if it has &quot;maps&quot; or not) a different page is <b>served</b>.</p>
 <p>We now know that clients and servers can communicate with one another
 using the client server model. But <i>where within the nodes of the Internet
 (computers, phones, tablets) do clients and servers exist?</i>.</p>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/pModel.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/pModel.png'>      
+ <figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption>   
 <p>Clients and servers are applications that reside in the application
 layer of a computer (see Figure below). For eg. Github.com is a server which can be
 accessed via a web browser (on computers and phones) or apps (also on
@@ -248,17 +246,15 @@ firmware).</p>
 visualize a computer (as seen in last section), the Internet can
 defined using different deinitions. These definitions are related by a
 hierarchy called the Open Systems Interconnection (OSI) Model. </p>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/iNet.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.3.1. OSI Model of Internet</figcaption></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/iNet.png'>  
+ <figcaption> Fig: 1.1.3.1. OSI Model of Internet</figcaption>        
 <p>To learn more about the OSI model please read this:
 <a href="https://en.wikipedia.org/wiki/OSI_model">https://en.wikipedia.org/wiki/OSI_model</a></p>
-<h1><a class="header" href="#uniform-resorce-locator-url" id="uniform-resorce-locator-url">Uniform Resorce Locator (URL)</a></h1>
+<h1><a class="header" href="#uniform-resource-locator-url" id="uniform-resource-locator-url">Uniform Resource Locator (URL)</a></h1>
 <p>The client <i>addresses</i> the server and embed all the parameters of
 the request using the URL. The Figure below shows an example of a URL.</p>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlEg.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.4.1 URL example</figcaption></td><td></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/urlEg.png'>    
+ <figcaption> Fig: 1.1.4.1 URL example</figcaption>                    
 <p>The URL provides the following basic information in order to route the
 request to the right server:</p>
 <ol start="0">
@@ -271,12 +267,11 @@ the same computer. </li>
 <li>a query string that provides arguments to the request handler in
 key-value pairs.</li>
 </ol>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/ytURL.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption></td><td></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/ytURL.png'>    
+ <figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption>                 
 <p>Routing these request correctly is what
-makes youtube.com respond with the video. Dependiong on the video ID
-(agrument <code>v</code>) a
+makes youtube.com respond with the video. Depending on the video ID
+(argument <code>v</code>) a
 different video is served. A playlist is displayed if a valid <code>list</code>
 argument is present. Try opeing the following 2 urls:</p>
 <ol>
@@ -285,9 +280,8 @@ argument is present. Try opeing the following 2 urls:</p>
 </ol>
 <p>Can you notice the difference?</p>
 <p>The Figure below shows the parts of a generic URL.</p>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.1.4.2 URL Grammar</figcaption></td><td></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'>    
+ <figcaption> Fig: 1.1.4.2 URL Grammar</figcaption>                         
 <h1><a class="header" href="#basic-skills" id="basic-skills">Basic Skills</a></h1>
 <p>This section covers the basic skills needed to follow along the code
 examples in this book. If unfamiliar using the command line the section
@@ -445,11 +439,48 @@ files, manage folders and edit/modify/save individual files.</p>
 </tbody></table>
 <h1><a class="header" href="#book-organization" id="book-organization">Book Organization</a></h1>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
-<img style="display:block;margin:auto" src='../../imgs/html5-css-javascript-logos.png'>
+<img style="display:block;margin:auto" src='../imgs/html5-css-javascript-logos.png'>
 <p>HTML5, CSS3 and JavaScript (ECMA Script) are the principal web technologies that allow
 us to make clients (websites and apps). This chapter will teach you each
 of these (and related tech like jQuery, JSON) in that order.</p>
 <h1><a class="header" href="#html" id="html">HTML</a></h1>
+<p>Hypertext markup language (HTML) is the lingua franca of the World Wide
+Web (www). It is also a medium for designing websites and apps. It is
+however NOT a programming language. <i>Then what is HTML?</i> IT is a
+<b>document format</b> much like pdf. You can create documents using
+HTML, style them using CSS (a sub-set of HTML). But such pages will lack
+interaction (like a pdf document). Interactivity can be added by adding
+JavaScript to HTML. More on this later.</p>
+<p>HTML can be rendered by Browsers like Chrome, Firefox and Safari. In
+order to edit html files however we will need a text editor (see Figure
+below). It is
+convenient to use code editors for this purpose as they provide syntax
+highlighting, autocomplete, lint and other tools.</p>
+<img style="display:block;margin:auto" src='../../imgs/htmlSource.png'>  
+ <figcaption> Fig: 2.1.1. HTML Source and Output</figcaption>        
+<p>There are 2 main concepts in HTML <b>Tags</b> and
+<b>Attributes</b>. </p>
+<h1><a class="header" href="#tags" id="tags">Tags</a></h1>
+<p>Tags are used to <b> mark up </b> content; this is where &quot;markup
+language&quot; in HTML's acronym comes from. HTML is ust one of the many
+markup languages, and definitely the most popular one. In recent years a
+new open standard for HTML is being created. This is called HTML5.
+Everything discussed in here is current with this latest version of
+HTML. </p>
+<p>A HTML tag has 3 parts</p>
+<ol>
+<li>Start of Tag, writen with the tag name within angle brackets</li>
+<li>Content -- any valid html</li>
+<li>End of Tag -- Similar to start but the tag name has a forward slash
+(/) prefix.</li>
+</ol>
+<pre><code class="language-html">&lt;TAG_NAME&gt;
+
+      content
+
+&lt;/TAG_NAME&gt;
+</code></pre>
+<p>Let us start by wring out first HTML</p>
 <h1><a class="header" href="#preprocessors" id="preprocessors">Preprocessors</a></h1>
 <p>A <em>preprocessor</em> is simply a bit of code which gets run immediately after the
 book is loaded and before it gets rendered, allowing you to update and mutate
@@ -685,100 +716,6 @@ be adapted for other preprocessors.</p>
 </span></code></pre></pre>
 </details>
 <h2><a class="header" href="#hints-for-implementing-a-preprocessor-2" id="hints-for-implementing-a-preprocessor-2">Hints For Implementing A Preprocessor</a></h2>
-<p>By pulling in <code>mdbook</code> as a library, preprocessors can have access to the
-existing infrastructure for dealing with books.</p>
-<p>For example, a custom preprocessor could use the
-<a href="https://docs.rs/mdbook/latest/mdbook/preprocess/trait.Preprocessor.html#method.parse_input"><code>CmdPreprocessor::parse_input()</code></a> function to deserialize the JSON written to
-<code>stdin</code>. Then each chapter of the <code>Book</code> can be mutated in-place via
-<a href="https://docs.rs/mdbook/latest/mdbook/book/struct.Book.html#method.for_each_mut"><code>Book::for_each_mut()</code></a>, and then written to <code>stdout</code> with the <code>serde_json</code>
-crate.</p>
-<p>Chapters can be accessed either directly (by recursively iterating over
-chapters) or via the <code>Book::for_each_mut()</code> convenience method.</p>
-<p>The <code>chapter.content</code> is just a string which happens to be markdown. While it's
-entirely possible to use regular expressions or do a manual find &amp; replace,
-you'll probably want to process the input into something more computer-friendly.
-The <a href="https://crates.io/crates/pulldown-cmark"><code>pulldown-cmark</code></a> crate implements a production-quality event-based
-Markdown parser, with the <a href="https://crates.io/crates/pulldown-cmark-to-cmark"><code>pulldown-cmark-to-cmark</code></a> allowing you to
-translate events back into markdown text.</p>
-<p>The following code block shows how to remove all emphasis from markdown,
-without accidentally breaking the document.</p>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>fn remove_emphasis(
-    num_removed_items: &amp;mut usize,
-    chapter: &amp;mut Chapter,
-) -&gt; Result&lt;String&gt; {
-    let mut buf = String::with_capacity(chapter.content.len());
-
-    let events = Parser::new(&amp;chapter.content).filter(|e| {
-        let should_keep = match *e {
-            Event::Start(Tag::Emphasis)
-            | Event::Start(Tag::Strong)
-            | Event::End(Tag::Emphasis)
-            | Event::End(Tag::Strong) =&gt; false,
-            _ =&gt; true,
-        };
-        if !should_keep {
-            *num_removed_items += 1;
-        }
-        should_keep
-    });
-
-    cmark(events, &amp;mut buf, None).map(|_| buf).map_err(|err| {
-        Error::from(format!(&quot;Markdown serialization failed: {}&quot;, err))
-    })
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p>For everything else, have a look [at the complete example][example].</p>
-<h1><a class="header" href="#preprocessors-3" id="preprocessors-3">Preprocessors</a></h1>
-<p>A <em>preprocessor</em> is simply a bit of code which gets run immediately after the
-book is loaded and before it gets rendered, allowing you to update and mutate
-the book. Possible use cases are:</p>
-<ul>
-<li>Creating custom helpers like <code>{{#include /path/to/file.md}}</code></li>
-<li>Updating links so <code>[some chapter](some_chapter.md)</code> is automatically changed
-to <code>[some chapter](some_chapter.html)</code> for the HTML renderer</li>
-<li>Substituting in latex-style expressions (<code>$$ \frac{1}{3} $$</code>) with their
-mathjax equivalents</li>
-</ul>
-<h2><a class="header" href="#hooking-into-mdbook-3" id="hooking-into-mdbook-3">Hooking Into MDBook</a></h2>
-<p>MDBook uses a fairly simple mechanism for discovering third party plugins.
-A new table is added to <code>book.toml</code> (e.g. <code>preprocessor.foo</code> for the <code>foo</code>
-preprocessor) and then <code>mdbook</code> will try to invoke the <code>mdbook-foo</code> program as
-part of the build process.</p>
-<p>While preprocessors can be hard-coded to specify which backend it should be run
-for (e.g. it doesn't make sense for MathJax to be used for non-HTML renderers)
-with the <code>preprocessor.foo.renderer</code> key.</p>
-<pre><code class="language-toml">[book]
-title = &quot;My Book&quot;
-authors = [&quot;Michael-F-Bryan&quot;]
-
-[preprocessor.foo]
-# The command can also be specified manually
-command = &quot;python3 /path/to/foo.py&quot;
-# Only run the `foo` preprocessor for the HTML and EPUB renderer
-renderer = [&quot;html&quot;, &quot;epub&quot;]
-</code></pre>
-<p>In typical unix style, all inputs to the plugin will be written to <code>stdin</code> as
-JSON and <code>mdbook</code> will read from <code>stdout</code> if it is expecting output.</p>
-<p>The easiest way to get started is by creating your own implementation of the
-<code>Preprocessor</code> trait (e.g. in <code>lib.rs</code>) and then creating a shell binary which
-translates inputs to the correct <code>Preprocessor</code> method. For convenience, there
-is [an example no-op preprocessor] in the <code>examples/</code> directory which can easily
-be adapted for other preprocessors.</p>
-<details>
-<summary>Example no-op preprocessor</summary>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>// nop-preprocessors.rs
-
-<span class="boring">}
-</span></code></pre></pre>
-</details>
-<h2><a class="header" href="#hints-for-implementing-a-preprocessor-3" id="hints-for-implementing-a-preprocessor-3">Hints For Implementing A Preprocessor</a></h2>
 <p>By pulling in <code>mdbook</code> as a library, preprocessors can have access to the
 existing infrastructure for dealing with books.</p>
 <p>For example, a custom preprocessor could use the

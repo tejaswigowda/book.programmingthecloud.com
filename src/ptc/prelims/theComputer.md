@@ -4,9 +4,8 @@ We now know that clients and servers can communicate with one another
 using the client server model. But <i>where within the nodes of the Internet
 (computers, phones, tablets) do clients and servers exist?</i>.
 
-| <img style="display:block;margin:auto" src='../../imgs/pModel.png'>      |
-| :--:                                                                     | 
-| <figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption> |  
+ <img style="display:block;margin:auto" src='../../imgs/pModel.png'>      
+ <figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption>   
 
 Clients and servers are applications that reside in the application
 layer of a computer (see Figure below). For eg. Github.com is a server which can be

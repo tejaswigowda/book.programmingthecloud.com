@@ -23,4 +23,3 @@ concept map linking the following terms
 - HTTP
 - HTTP request
 - HTTP response
-  

@@ -16,6 +16,12 @@
 -----------
 
 - [Front End Web Technologies](fewtech/README.md)
+    - [HTML](fewtech/html/README.md)
+        - [Tags](fewtech/html/concepts/tags.md)
+        - [Attributes](fewtech/html/concepts/attrs.md)
+        - [Other Concepts](fewtech/html/concepts/other.md)
+        - [Single Page Resume](fewtech/html/singlePage.md)
+        - [Host Resume (gh-pages)](fewtech/html/ghPages.md)
 
 -----------
 

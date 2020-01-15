@@ -22,6 +22,5 @@ suggests you start with Atom Editor (first choice in the above list). It
 has a tabbed editor and a project manager pane (Figure 1.2.3.1). You can easily add new
 files, manage folders and edit/modify/save individual files.
 
-| <img style="display:block;margin:auto" src='../../imgs/lifecycle.png'> |   
-| :--:                                                                   |   
-| <figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption>                    |  
+ <img style="display:block;margin:auto" src='../../imgs/atom.png'> |   
+ <figcaption> Fig: 1.2.3.1 Atom Editor </figcaption>                    |  

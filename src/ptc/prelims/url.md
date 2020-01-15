@@ -6,7 +6,7 @@ the request using the URL. The Figure below shows an example of a URL.
 
 | <img style="display:block;margin:auto" src='../../imgs/urlEg.png'> |   |
 | :--:                                                               |   |
-| <figcaption> Fig: 1.2.4.1 URL example</figcaption>                 |   |
+| <figcaption> Fig: 1.1.4.1 URL example</figcaption>                 |   |
 
 The URL provides the following basic information in order to route the
 request to the right server:
@@ -23,17 +23,24 @@ request to the right server:
 
 | <img style="display:block;margin:auto" src='../../imgs/ytURL.png'> |   |
 | :--:                                                               |   |
-| <figcaption> Fig: 1.2.4.3 Parts of a URL</figcaption>              |   |
+| <figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption>              |   |
 
 Routing these request correctly is what
-makes youtube.com respond with the video. 
+makes youtube.com respond with the video. Dependiong on the video ID
+(agrument `v`) a
+different video is served. A playlist is displayed if a valid `list`
+argument is present. Try opeing the following 2 urls:
+1. <https://www.youtube.com/watch?v=BKo3SBfjiX4&list=PLbpi6ZahtOH4iOdBSB7PLd079Nw9-2ep4>
+2. <https://www.youtube.com/watch?v=BKo3SBfjiX4>
 
 
-The figure below shows the parts of a generic URL.
+Can you notice the difference?
+
+The Figure below shows the parts of a generic URL.
 
 | <img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'> |   |
 | :--:                                                                    |   |
-| <figcaption> Fig: 1.2.4.2 URL Grammar</figcaption>                      |   |
+| <figcaption> Fig: 1.1.4.2 URL Grammar</figcaption>                      |   |
 
 
 

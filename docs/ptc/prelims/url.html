@@ -156,11 +156,39 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#uniform-resorce-locator-url" id="uniform-resorce-locator-url">Uniform Resorce Locator (URL)</a></h1>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlEg.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption></td></tr>
+<p>The client <i>addresses</i> the server and embed all the parameters of
+the request using the URL. The Figure below shows an example of a URL.</p>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlEg.png'></th><th></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.1.4.1 URL example</figcaption></td><td></td></tr>
 </tbody></table>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2. GIT Lifecycle</figcaption></td></tr>
+<p>The URL provides the following basic information in order to route the
+request to the right server:</p>
+<ol start="0">
+<li>Protocol scheme (http or https in case of websites/apps).</li>
+<li>IP address (or DNS name which resolves to an IP address), which is
+unique to every computer including the server.</li>
+<li>Port. This allows request to be sent to different server programs on
+the same computer. </li>
+<li>Path, invoking the right request handler in the server.</li>
+<li>a query string that provides arguments to the request handler in
+key-value pairs.</li>
+</ol>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/ytURL.png'></th><th></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption></td><td></td></tr>
+</tbody></table>
+<p>Routing these request correctly is what
+makes youtube.com respond with the video. Dependiong on the video ID
+(agrument <code>v</code>) a
+different video is served. A playlist is displayed if a valid <code>list</code>
+argument is present. Try opeing the following 2 urls:</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=BKo3SBfjiX4&amp;list=PLbpi6ZahtOH4iOdBSB7PLd079Nw9-2ep4">https://www.youtube.com/watch?v=BKo3SBfjiX4&amp;list=PLbpi6ZahtOH4iOdBSB7PLd079Nw9-2ep4</a></li>
+<li><a href="https://www.youtube.com/watch?v=BKo3SBfjiX4">https://www.youtube.com/watch?v=BKo3SBfjiX4</a></li>
+</ol>
+<p>Can you notice the difference?</p>
+<p>The Figure below shows the parts of a generic URL.</p>
+<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/urlGrammar.png'></th><th></th></tr></thead><tbody>
+<tr><td align="center"><figcaption> Fig: 1.1.4.2 URL Grammar</figcaption></td><td></td></tr>
 </tbody></table>
 
                     </main>

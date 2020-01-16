@@ -10,7 +10,7 @@
         - [BASH](ptc/skills/bash.md)
         - [GIT](ptc/skills/git.md)
         - [Editor](ptc/skills/codeEditor.md)
-        - [Code Management](ptc/skills/codeMgmt.md)
+        - [Code Deployment](ptc/skills/codeMgmt.md)
     - [Book Organization](ptc/org.md)
 
 -----------
@@ -26,6 +26,10 @@
 -----------
 
 - [Full Stack Programming](fullstack/README.md)
+    - [Basic Servers](fullstack/html/README.md)
+        - [Tags](fewtech/html/concepts/tags.md)
+        - [Attributes](fewtech/html/concepts/attrs.md)
+        - [Other Concepts](fewtech/html/concepts/other.md)
 
 -----------
 

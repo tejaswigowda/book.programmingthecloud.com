@@ -161,14 +161,16 @@
 <p><strong>Programming the Cloud (PtC)</strong> is a reference for learning by example the
 following:</p>
 <ol>
-<li>Front end web technologies (<a href="ptc/">HTML</a>, <a href="ptc/">CSS</a> and <a href="ptc/">JavaScript</a>).</li>
-<li><a href="ptc/">Full-stack</a> architecture design.</li>
-<li>Backend server using <a href="ptc/">Node.js</a>.</li>
-<li>Administrating and programming <a href="ptc/">mongoDb</a>.</li>
-<li>Building apps using <a href="ptc/">Cordova</a>, <a href="ptc/">Capacitor</a> and <a href="ptc/">Electron</a>.</li>
-<li>Advanced JS concepts like the <a href="ptc/">event-model</a>, <a href="ptc/">anonymous functions</a>, <a href="ptc/">callbacks</a> etc.</li>
-<li>Program internet/bluetooth enabled microcontrollers (focus on <a href="ptc/">esp32</a>).</li>
-<li>Design/implement <a href="ptc/">Voice UI</a> for Amazon Echo, Google Nest etc.</li>
+<li>Front end web technologies (<a href="https://www.w3schools.com/html/">HTML</a>,
+<a href="https://www.w3schools.com/css/">CSS</a> and
+<a href="https://www.w3schools.com/js/">JavaScript</a>).</li>
+<li><a href="https://skillcrush.com/2017/02/27/front-end-back-end-full-stack/">Full-stack</a> architecture design.</li>
+<li>Backend server using <a href="https://nodejs.org/en/">Node.js</a>.</li>
+<li>Administrating and programming <a href="https://www.mongodb.com/">mongoDb</a>.</li>
+<li>Building apps using <a href="https://cordova.apache.org/">Cordova</a>, <a href="https://capacitor.ionicframework.com/">Capacitor</a> and <a href="https://electronjs.org/">Electron</a>.</li>
+<li>Advanced JS concepts like the <a href="https://en.wikipedia.org/wiki/Event_(computing)">event-model</a>, <a href="https://en.wikibooks.org/wiki/JavaScript/Anonymous_functions">anonymous functions</a>, <a href="https://www.learn-js.org/en/Callbacks">callbacks</a> etc.</li>
+<li>Program internet/bluetooth enabled microcontrollers (focus on <a href="https://www.espressif.com/en/products/hardware/esp32/overview">esp32</a>).</li>
+<li>Design/implement <a href="https://en.wikipedia.org/wiki/Voice_user_interface">Voice UI</a> for Amazon Echo, Google Nest etc.</li>
 </ol>
 <div style='text-align:right'>.... and much, much more.</div>
 <p>PtC is free and open source, you can find the source code on
@@ -436,9 +438,16 @@ files, manage folders and edit/modify/save individual files.</p>
 <img style="display:block;margin:auto" src='../../imgs/atom.png'>    
  <figcaption> Fig: 1.2.3.1 Atom Editor </figcaption>               
 <h1><a class="header" href="#code-deployment" id="code-deployment">Code Deployment</a></h1>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/codeMgmt.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.4.1. Deploy server code to IaaS server</figcaption></td><td></td></tr>
-</tbody></table>
+<p>Some of the code examples (usually server or db management) need to be
+deployed on a remote machine provisioned by you (you can provision such
+machines using IaaSs like Amazon Web Services, Google Cloud Compute, Ali
+Yun, Microsoft Azure and others).</p>
+<p>When you provision a Linux machine on these remote servers you only have
+shell access via SSH. In such circumstances use a cloud git repository
+to transfer your development code to the remote server. The figure below
+sketches this workflow.</p>
+<img style="display:block;margin:auto" src='../../imgs/codeMgmt.png'>    
+ <figcaption> Fig: 1.2.4.1. Deploy server code to IaaS server</figcaption> 
 <h1><a class="header" href="#book-organization" id="book-organization">Book Organization</a></h1>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
 <img style="display:block;margin:auto" src='../imgs/html5-css-javascript-logos.png'>

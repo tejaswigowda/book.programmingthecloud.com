@@ -182,12 +182,12 @@ tracker</a>.</p>
 <h1><a class="header" href="#preliminaries" id="preliminaries">Preliminaries</a></h1>
 <p>In this section we will develop a concept map and vocabulary that will
 serve as a foundation for our discussion throughout this book. We will
-first discuss what the Client-Server Model is, then learn where in the
-&quot;Programmer's model&quot; of a computer these client server programs reside.
+first discuss the Client-Server Model; then learn where in the
+&quot;Programmer's model&quot; of a computer these client and server programs reside.
 We finally learn how these client-server programs communicate with each
-other over the internet using URLs.</p>
+other over the Internet using URLs.</p>
 <p>By the end of this section you should have a working definition and
-concept map linking the following terms</p>
+a concept map linking the following terms</p>
 <ul>
 <li>Client</li>
 <li>Server</li>
@@ -205,8 +205,8 @@ concept map linking the following terms</p>
 </ul>
 <h1><a class="header" href="#the-client-server-model" id="the-client-server-model">The Client Server Model</a></h1>
 <p>The world wide web is build on top of the client server model. The
-client server model consists of clients and servers that can communicate
-to each other. There are 2 rules in the client server protocol:</p>
+client server model consists of clients and servers that communicate
+with each other. There are 2 rules in the client server protocol:</p>
 <ol>
 <li>
 <p>The client initiates contact with the server by sending a
@@ -214,7 +214,7 @@ to each other. There are 2 rules in the client server protocol:</p>
 </li>
 <li>
 <p>The server (whose job is to <b>listen</b> to these client requests),
-then sends a <b>response</b> back.</p>
+processes the request and then sends a <b>response</b> back.</p>
 </li>
 </ol>
 <img style="display:block;margin:auto" src='../../imgs/clientServer.png'>    
@@ -229,10 +229,10 @@ using the client server model. But <i>where within the nodes of the Internet
 (computers, phones, tablets) do clients and servers exist?</i>.</p>
 <img style="display:block;margin:auto" src='../../imgs/pModel.png'>      
  <figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption>   
-<p>Clients and servers are applications that reside in the application
-layer of a computer (see Figure below). For eg. Github.com is a server which can be
+<p>Clients and servers are <b>applications</b> that reside in the application
+layer of a computer (see Figure above). For eg. YouTube.com is a server which can be
 accessed via a web browser (on computers and phones) or apps (also on
-computers and phone). Other examples include YouTube.com, Slack,
+computers and phone). Other examples include GitHub.com, Slack,
 Facebook, Google etc. All these &quot;Internet Software&quot; have a server and
 client apps as part of their ecosystem. Developing and maintaining these
 is referred to as <b>devops</b> (Developer Operations).</p>
@@ -251,10 +251,14 @@ hierarchy called the Open Systems Interconnection (OSI) Model. </p>
 <p>To learn more about the OSI model please read this:
 <a href="https://en.wikipedia.org/wiki/OSI_model">https://en.wikipedia.org/wiki/OSI_model</a></p>
 <h1><a class="header" href="#uniform-resource-locator-url" id="uniform-resource-locator-url">Uniform Resource Locator (URL)</a></h1>
-<p>The client <i>addresses</i> the server and embed all the parameters of
-the request using the URL. The Figure below shows an example of a URL.</p>
+<p>URL is how the client constructs the request sent to a server.
+The client <i>addresses</i> the server and embed all the parameters of
+the request in a URL. The Figures below shows an example of a URL, and
+components that make up a URL.</p>
 <img style="display:block;margin:auto" src='../../imgs/urlEg.png'>    
  <figcaption> Fig: 1.1.4.1 URL example</figcaption>                    
+<img style="display:block;margin:auto" src='../../imgs/ytURL.png'>    
+ <figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption>                 
 <p>The URL provides the following basic information in order to route the
 request to the right server:</p>
 <ol start="0">
@@ -262,13 +266,12 @@ request to the right server:</p>
 <li>IP address (or DNS name which resolves to an IP address), which is
 unique to every computer including the server.</li>
 <li>Port. This allows request to be sent to different server programs on
-the same computer. </li>
+the same computer. Hidden in case of http/https and defaults to
+80/443. </li>
 <li>Path, invoking the right request handler in the server.</li>
 <li>a query string that provides arguments to the request handler in
 key-value pairs.</li>
 </ol>
-<img style="display:block;margin:auto" src='../../imgs/ytURL.png'>    
- <figcaption> Fig: 1.1.4.3 Parts of a URL</figcaption>                 
 <p>Routing these request correctly is what
 makes youtube.com respond with the video. Depending on the video ID
 (argument <code>v</code>) a
@@ -288,7 +291,7 @@ examples in this book. If unfamiliar using the command line the section
 on Bash will introduce you to the BASH shell. This shell is available on
 all major operating systems -- Linux, Mac OS and Windows, via git-bash.
 Once we have some familiarity with the command line, we will learn to
-use GIT for managing our code. The chapter ends witha  discussion on
+use GIT for managing our code. The chapter ends with a discussion on
 code editors and how to deploy code on remote machines.</p>
 <h1><a class="header" href="#using-bash" id="using-bash">Using BASH</a></h1>
 <p>Bash is available by default on Mac and Linux and can be access via
@@ -311,18 +314,22 @@ system).</p>
 <p>$ <code>ls</code>
 List the contents of the present working directory. You can also </p>
 <ul>
-<li>$<code>ls -a</code></li>
-<li>$<code>ls -l</code></li>
+<li>$<code>ls -a</code> : lists all files including hidden ones.</li>
+<li>$<code>ls -l</code> : list files with details</li>
 </ul>
 </li>
 <li>
-<p>$ <code>cd &lt;directory path&gt;</code></p>
+<p>$ <code>cd &lt;directory path&gt;</code>
+Change directory. If no directory name is specified then
+present working directory is set to your $HOME.</p>
 </li>
 <li>
-<p>$ <code>cat &lt;filename&gt;</code></p>
+<p>$ <code>cat &lt;filename&gt;</code>
+Prints the contect of file <code>&lt;filename&gt;</code>.</p>
 </li>
 <li>
-<p>$ <code>man &lt;command&gt;</code></p>
+<p>$ <code>man &lt;command&gt;</code>
+Prints the manual for <code>&lt;command&gt;</code>.</p>
 </li>
 </ol>
 <h1><a class="header" href="#using-git" id="using-git">Using GIT</a></h1>
@@ -336,9 +343,8 @@ List the contents of the present working directory. You can also </p>
 stores entire files that have been changed -- see Figure below. For each version of GIT we
 have to manually &quot;stage&quot; the changed files to be included.</li>
 </ol>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2.1. Traditional Version Control System vs. GIT</figcaption></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/vcsVSgit.png'>    
+ <figcaption> Fig: 1.2.2.1. Traditional Version Control System vs. GIT</figcaption> 
 <ol start="4">
 <li>Publish/access open source code.</li>
 </ol>
@@ -367,24 +373,21 @@ to execute bash commonds on Windows.</p>
 <h2><a class="header" href="#lifecycle" id="lifecycle">Lifecycle</a></h2>
 <p>The git lifecycle includes creating versions (&quot;commits&quot;) of your development folder as and when it changes. You will 
 &quot;add&quot; files to be &quot;tracked&quot; in your folder by the <code>git add</code> command. You stage the added files for a &quot;commit&quot; (version) by using the <code>git commit</code>. If your repository is maintained on the cloud, you will need <code>git push</code> to sync the new version created with your cloud (remote) repository.</p>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/lifecycle.png'></th><th></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2.2. GIT Lifecycle</figcaption></td><td></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/lifecycle.png'>    
+ <figcaption> Fig: 1.2.2.2. GIT Lifecycle</figcaption>                     
 <p>You can create a remote repository by hosting your own git server, or use Git-as-a-Service(GaaS) providewrs like <a href="https://github.com/">GitHub</a>, <a href="https://gitlab.com">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a> etc. The following tutorial uses Github as GaaS, but the commain-line steps should work the same with any GaaS.</p>
 <h2><a class="header" href="#step-by-step" id="step-by-step">Step-by-step</a></h2>
 <ol>
 <li>Create a Github account</li>
 <li>Create a Github Repo</li>
 </ol>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/new.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2.3. Create new repository </figcaption></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/new.png'> 
+ <figcaption> Fig: 1.2.2.3. Create new repository </figcaption>   
 <ol start="3">
 <li>Find repo url</li>
 </ol>
-<table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/clone.png'></th></tr></thead><tbody>
-<tr><td align="center"><figcaption> Fig: 1.2.2.4. Clone repository </figcaption></td></tr>
-</tbody></table>
+<img style="display:block;margin:auto" src='../../imgs/clone.png'> 
+ <figcaption> Fig: 1.2.2.4. Clone repository </figcaption>            
 <ol start="4">
 <li>
 <p>Clone repo
@@ -430,8 +433,8 @@ will take practice to perfect. If you are new to programming this book
 suggests you start with Atom Editor (first choice in the above list). It
 has a tabbed editor and a project manager pane (Figure 1.2.3.1). You can easily add new
 files, manage folders and edit/modify/save individual files.</p>
-<figcaption> Fig: 1.2.3.1 Atom Editor </figcaption>                    |  
- <img style="display:block;margin:auto" src='../../imgs/atom.png'> |   
+<img style="display:block;margin:auto" src='../../imgs/atom.png'>    
+ <figcaption> Fig: 1.2.3.1 Atom Editor </figcaption>               
 <h1><a class="header" href="#code-deployment" id="code-deployment">Code Deployment</a></h1>
 <table><thead><tr><th align="center"><img style="display:block;margin:auto" src='../../imgs/codeMgmt.png'></th><th></th></tr></thead><tbody>
 <tr><td align="center"><figcaption> Fig: 1.2.4.1. Deploy server code to IaaS server</figcaption></td><td></td></tr>
@@ -470,7 +473,7 @@ HTML. </p>
 <ol>
 <li>Start of Tag, writen with the tag name within angle brackets</li>
 <li>Content -- any valid html</li>
-<li>End of Tag -- Similar to start but the tag name has a forward slash
+<li>End of Tag -- similar to start but the tag name has a forward slash
 (/) prefix.</li>
 </ol>
 <pre><code class="language-html">&lt;TAG_NAME&gt;
@@ -479,289 +482,41 @@ HTML. </p>
 
 &lt;/TAG_NAME&gt;
 </code></pre>
-<p>Let us start by wring out first HTML</p>
-<h1><a class="header" href="#preprocessors" id="preprocessors">Preprocessors</a></h1>
-<p>A <em>preprocessor</em> is simply a bit of code which gets run immediately after the
-book is loaded and before it gets rendered, allowing you to update and mutate
-the book. Possible use cases are:</p>
-<ul>
-<li>Creating custom helpers like <code>{{#include /path/to/file.md}}</code></li>
-<li>Updating links so <code>[some chapter](some_chapter.md)</code> is automatically changed
-to <code>[some chapter](some_chapter.html)</code> for the HTML renderer</li>
-<li>Substituting in latex-style expressions (<code>$$ \frac{1}{3} $$</code>) with their
-mathjax equivalents</li>
-</ul>
-<h2><a class="header" href="#hooking-into-mdbook" id="hooking-into-mdbook">Hooking Into MDBook</a></h2>
-<p>MDBook uses a fairly simple mechanism for discovering third party plugins.
-A new table is added to <code>book.toml</code> (e.g. <code>preprocessor.foo</code> for the <code>foo</code>
-preprocessor) and then <code>mdbook</code> will try to invoke the <code>mdbook-foo</code> program as
-part of the build process.</p>
-<p>While preprocessors can be hard-coded to specify which backend it should be run
-for (e.g. it doesn't make sense for MathJax to be used for non-HTML renderers)
-with the <code>preprocessor.foo.renderer</code> key.</p>
-<pre><code class="language-toml">[book]
-title = &quot;My Book&quot;
-authors = [&quot;Michael-F-Bryan&quot;]
+<p>Let us start by writing out first HTML.</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
 
-[preprocessor.foo]
-# The command can also be specified manually
-command = &quot;python3 /path/to/foo.py&quot;
-# Only run the `foo` preprocessor for the HTML and EPUB renderer
-renderer = [&quot;html&quot;, &quot;epub&quot;]
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt; Hello World &lt;/title&gt;
+&lt;/head&gt;
+&lt;/body&gt;
+  &lt;h1&gt; Hello World &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
-<p>In typical unix style, all inputs to the plugin will be written to <code>stdin</code> as
-JSON and <code>mdbook</code> will read from <code>stdout</code> if it is expecting output.</p>
-<p>The easiest way to get started is by creating your own implementation of the
-<code>Preprocessor</code> trait (e.g. in <code>lib.rs</code>) and then creating a shell binary which
-translates inputs to the correct <code>Preprocessor</code> method. For convenience, there
-is [an example no-op preprocessor] in the <code>examples/</code> directory which can easily
-be adapted for other preprocessors.</p>
-<details>
-<summary>Example no-op preprocessor</summary>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>// nop-preprocessors.rs
-
-<span class="boring">}
-</span></code></pre></pre>
-</details>
-<h2><a class="header" href="#hints-for-implementing-a-preprocessor" id="hints-for-implementing-a-preprocessor">Hints For Implementing A Preprocessor</a></h2>
-<p>By pulling in <code>mdbook</code> as a library, preprocessors can have access to the
-existing infrastructure for dealing with books.</p>
-<p>For example, a custom preprocessor could use the
-<a href="https://docs.rs/mdbook/latest/mdbook/preprocess/trait.Preprocessor.html#method.parse_input"><code>CmdPreprocessor::parse_input()</code></a> function to deserialize the JSON written to
-<code>stdin</code>. Then each chapter of the <code>Book</code> can be mutated in-place via
-<a href="https://docs.rs/mdbook/latest/mdbook/book/struct.Book.html#method.for_each_mut"><code>Book::for_each_mut()</code></a>, and then written to <code>stdout</code> with the <code>serde_json</code>
-crate.</p>
-<p>Chapters can be accessed either directly (by recursively iterating over
-chapters) or via the <code>Book::for_each_mut()</code> convenience method.</p>
-<p>The <code>chapter.content</code> is just a string which happens to be markdown. While it's
-entirely possible to use regular expressions or do a manual find &amp; replace,
-you'll probably want to process the input into something more computer-friendly.
-The <a href="https://crates.io/crates/pulldown-cmark"><code>pulldown-cmark</code></a> crate implements a production-quality event-based
-Markdown parser, with the <a href="https://crates.io/crates/pulldown-cmark-to-cmark"><code>pulldown-cmark-to-cmark</code></a> allowing you to
-translate events back into markdown text.</p>
-<p>The following code block shows how to remove all emphasis from markdown,
-without accidentally breaking the document.</p>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>fn remove_emphasis(
-    num_removed_items: &amp;mut usize,
-    chapter: &amp;mut Chapter,
-) -&gt; Result&lt;String&gt; {
-    let mut buf = String::with_capacity(chapter.content.len());
-
-    let events = Parser::new(&amp;chapter.content).filter(|e| {
-        let should_keep = match *e {
-            Event::Start(Tag::Emphasis)
-            | Event::Start(Tag::Strong)
-            | Event::End(Tag::Emphasis)
-            | Event::End(Tag::Strong) =&gt; false,
-            _ =&gt; true,
-        };
-        if !should_keep {
-            *num_removed_items += 1;
-        }
-        should_keep
-    });
-
-    cmark(events, &amp;mut buf, None).map(|_| buf).map_err(|err| {
-        Error::from(format!(&quot;Markdown serialization failed: {}&quot;, err))
-    })
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p>For everything else, have a look [at the complete example][example].</p>
-<h1><a class="header" href="#preprocessors-1" id="preprocessors-1">Preprocessors</a></h1>
-<p>A <em>preprocessor</em> is simply a bit of code which gets run immediately after the
-book is loaded and before it gets rendered, allowing you to update and mutate
-the book. Possible use cases are:</p>
-<ul>
-<li>Creating custom helpers like <code>{{#include /path/to/file.md}}</code></li>
-<li>Updating links so <code>[some chapter](some_chapter.md)</code> is automatically changed
-to <code>[some chapter](some_chapter.html)</code> for the HTML renderer</li>
-<li>Substituting in latex-style expressions (<code>$$ \frac{1}{3} $$</code>) with their
-mathjax equivalents</li>
-</ul>
-<h2><a class="header" href="#hooking-into-mdbook-1" id="hooking-into-mdbook-1">Hooking Into MDBook</a></h2>
-<p>MDBook uses a fairly simple mechanism for discovering third party plugins.
-A new table is added to <code>book.toml</code> (e.g. <code>preprocessor.foo</code> for the <code>foo</code>
-preprocessor) and then <code>mdbook</code> will try to invoke the <code>mdbook-foo</code> program as
-part of the build process.</p>
-<p>While preprocessors can be hard-coded to specify which backend it should be run
-for (e.g. it doesn't make sense for MathJax to be used for non-HTML renderers)
-with the <code>preprocessor.foo.renderer</code> key.</p>
-<pre><code class="language-toml">[book]
-title = &quot;My Book&quot;
-authors = [&quot;Michael-F-Bryan&quot;]
-
-[preprocessor.foo]
-# The command can also be specified manually
-command = &quot;python3 /path/to/foo.py&quot;
-# Only run the `foo` preprocessor for the HTML and EPUB renderer
-renderer = [&quot;html&quot;, &quot;epub&quot;]
-</code></pre>
-<p>In typical unix style, all inputs to the plugin will be written to <code>stdin</code> as
-JSON and <code>mdbook</code> will read from <code>stdout</code> if it is expecting output.</p>
-<p>The easiest way to get started is by creating your own implementation of the
-<code>Preprocessor</code> trait (e.g. in <code>lib.rs</code>) and then creating a shell binary which
-translates inputs to the correct <code>Preprocessor</code> method. For convenience, there
-is [an example no-op preprocessor] in the <code>examples/</code> directory which can easily
-be adapted for other preprocessors.</p>
-<details>
-<summary>Example no-op preprocessor</summary>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>// nop-preprocessors.rs
-
-<span class="boring">}
-</span></code></pre></pre>
-</details>
-<h2><a class="header" href="#hints-for-implementing-a-preprocessor-1" id="hints-for-implementing-a-preprocessor-1">Hints For Implementing A Preprocessor</a></h2>
-<p>By pulling in <code>mdbook</code> as a library, preprocessors can have access to the
-existing infrastructure for dealing with books.</p>
-<p>For example, a custom preprocessor could use the
-<a href="https://docs.rs/mdbook/latest/mdbook/preprocess/trait.Preprocessor.html#method.parse_input"><code>CmdPreprocessor::parse_input()</code></a> function to deserialize the JSON written to
-<code>stdin</code>. Then each chapter of the <code>Book</code> can be mutated in-place via
-<a href="https://docs.rs/mdbook/latest/mdbook/book/struct.Book.html#method.for_each_mut"><code>Book::for_each_mut()</code></a>, and then written to <code>stdout</code> with the <code>serde_json</code>
-crate.</p>
-<p>Chapters can be accessed either directly (by recursively iterating over
-chapters) or via the <code>Book::for_each_mut()</code> convenience method.</p>
-<p>The <code>chapter.content</code> is just a string which happens to be markdown. While it's
-entirely possible to use regular expressions or do a manual find &amp; replace,
-you'll probably want to process the input into something more computer-friendly.
-The <a href="https://crates.io/crates/pulldown-cmark"><code>pulldown-cmark</code></a> crate implements a production-quality event-based
-Markdown parser, with the <a href="https://crates.io/crates/pulldown-cmark-to-cmark"><code>pulldown-cmark-to-cmark</code></a> allowing you to
-translate events back into markdown text.</p>
-<p>The following code block shows how to remove all emphasis from markdown,
-without accidentally breaking the document.</p>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>fn remove_emphasis(
-    num_removed_items: &amp;mut usize,
-    chapter: &amp;mut Chapter,
-) -&gt; Result&lt;String&gt; {
-    let mut buf = String::with_capacity(chapter.content.len());
-
-    let events = Parser::new(&amp;chapter.content).filter(|e| {
-        let should_keep = match *e {
-            Event::Start(Tag::Emphasis)
-            | Event::Start(Tag::Strong)
-            | Event::End(Tag::Emphasis)
-            | Event::End(Tag::Strong) =&gt; false,
-            _ =&gt; true,
-        };
-        if !should_keep {
-            *num_removed_items += 1;
-        }
-        should_keep
-    });
-
-    cmark(events, &amp;mut buf, None).map(|_| buf).map_err(|err| {
-        Error::from(format!(&quot;Markdown serialization failed: {}&quot;, err))
-    })
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p>For everything else, have a look [at the complete example][example].</p>
-<h1><a class="header" href="#preprocessors-2" id="preprocessors-2">Preprocessors</a></h1>
-<p>A <em>preprocessor</em> is simply a bit of code which gets run immediately after the
-book is loaded and before it gets rendered, allowing you to update and mutate
-the book. Possible use cases are:</p>
-<ul>
-<li>Creating custom helpers like <code>{{#include /path/to/file.md}}</code></li>
-<li>Updating links so <code>[some chapter](some_chapter.md)</code> is automatically changed
-to <code>[some chapter](some_chapter.html)</code> for the HTML renderer</li>
-<li>Substituting in latex-style expressions (<code>$$ \frac{1}{3} $$</code>) with their
-mathjax equivalents</li>
-</ul>
-<h2><a class="header" href="#hooking-into-mdbook-2" id="hooking-into-mdbook-2">Hooking Into MDBook</a></h2>
-<p>MDBook uses a fairly simple mechanism for discovering third party plugins.
-A new table is added to <code>book.toml</code> (e.g. <code>preprocessor.foo</code> for the <code>foo</code>
-preprocessor) and then <code>mdbook</code> will try to invoke the <code>mdbook-foo</code> program as
-part of the build process.</p>
-<p>While preprocessors can be hard-coded to specify which backend it should be run
-for (e.g. it doesn't make sense for MathJax to be used for non-HTML renderers)
-with the <code>preprocessor.foo.renderer</code> key.</p>
-<pre><code class="language-toml">[book]
-title = &quot;My Book&quot;
-authors = [&quot;Michael-F-Bryan&quot;]
-
-[preprocessor.foo]
-# The command can also be specified manually
-command = &quot;python3 /path/to/foo.py&quot;
-# Only run the `foo` preprocessor for the HTML and EPUB renderer
-renderer = [&quot;html&quot;, &quot;epub&quot;]
-</code></pre>
-<p>In typical unix style, all inputs to the plugin will be written to <code>stdin</code> as
-JSON and <code>mdbook</code> will read from <code>stdout</code> if it is expecting output.</p>
-<p>The easiest way to get started is by creating your own implementation of the
-<code>Preprocessor</code> trait (e.g. in <code>lib.rs</code>) and then creating a shell binary which
-translates inputs to the correct <code>Preprocessor</code> method. For convenience, there
-is [an example no-op preprocessor] in the <code>examples/</code> directory which can easily
-be adapted for other preprocessors.</p>
-<details>
-<summary>Example no-op preprocessor</summary>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>// nop-preprocessors.rs
-
-<span class="boring">}
-</span></code></pre></pre>
-</details>
-<h2><a class="header" href="#hints-for-implementing-a-preprocessor-2" id="hints-for-implementing-a-preprocessor-2">Hints For Implementing A Preprocessor</a></h2>
-<p>By pulling in <code>mdbook</code> as a library, preprocessors can have access to the
-existing infrastructure for dealing with books.</p>
-<p>For example, a custom preprocessor could use the
-<a href="https://docs.rs/mdbook/latest/mdbook/preprocess/trait.Preprocessor.html#method.parse_input"><code>CmdPreprocessor::parse_input()</code></a> function to deserialize the JSON written to
-<code>stdin</code>. Then each chapter of the <code>Book</code> can be mutated in-place via
-<a href="https://docs.rs/mdbook/latest/mdbook/book/struct.Book.html#method.for_each_mut"><code>Book::for_each_mut()</code></a>, and then written to <code>stdout</code> with the <code>serde_json</code>
-crate.</p>
-<p>Chapters can be accessed either directly (by recursively iterating over
-chapters) or via the <code>Book::for_each_mut()</code> convenience method.</p>
-<p>The <code>chapter.content</code> is just a string which happens to be markdown. While it's
-entirely possible to use regular expressions or do a manual find &amp; replace,
-you'll probably want to process the input into something more computer-friendly.
-The <a href="https://crates.io/crates/pulldown-cmark"><code>pulldown-cmark</code></a> crate implements a production-quality event-based
-Markdown parser, with the <a href="https://crates.io/crates/pulldown-cmark-to-cmark"><code>pulldown-cmark-to-cmark</code></a> allowing you to
-translate events back into markdown text.</p>
-<p>The following code block shows how to remove all emphasis from markdown,
-without accidentally breaking the document.</p>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>fn remove_emphasis(
-    num_removed_items: &amp;mut usize,
-    chapter: &amp;mut Chapter,
-) -&gt; Result&lt;String&gt; {
-    let mut buf = String::with_capacity(chapter.content.len());
-
-    let events = Parser::new(&amp;chapter.content).filter(|e| {
-        let should_keep = match *e {
-            Event::Start(Tag::Emphasis)
-            | Event::Start(Tag::Strong)
-            | Event::End(Tag::Emphasis)
-            | Event::End(Tag::Strong) =&gt; false,
-            _ =&gt; true,
-        };
-        if !should_keep {
-            *num_removed_items += 1;
-        }
-        should_keep
-    });
-
-    cmark(events, &amp;mut buf, None).map(|_| buf).map_err(|err| {
-        Error::from(format!(&quot;Markdown serialization failed: {}&quot;, err))
-    })
-}
-<span class="boring">}
-</span></code></pre></pre>
-<p>For everything else, have a look [at the complete example][example].</p>
+<p>The first line in every html document is the &quot;doctype tag&quot;. This tag is
+stand alone (i.e. does not need to closed as it does not have content).
+It is meta data to the browser that the file is an HTML file (browsers
+rely on the file extensiomn and also the doctype tag to determine if
+valid html was served. However most browsers are forgiving if you forget
+the doctype tag.</p>
+<h2><a class="header" href="#editing-viewing" id="editing-viewing">Editing/ Viewing</a></h2>
+<p>Copy the above code and paste it into a new file (use atom if you dont
+have a favorite code editor). Save the file as <code>index.html</code>. Open this
+in the browser. Notice the title of the browser tab -- it was what we
+set (<code>Hello World</code>) as the content of the title tag. Try changint it
+and see it change in the browser.</p>
+<h2><a class="header" href="#inspecting" id="inspecting">Inspecting</a></h2>
+<p>In order to bring up the development tools, right-click anywhere on the
+html document. You should be able to choose <i>inspect</i> from the
+context menu that appears.</p>
+<img style="display:block;margin:auto" src='../../../imgs/inspect.png'>    
+ <figcaption> Fig: 2.1.1.1. Trigger inspector for contect menu
+(right-click)</figcaption>              
+<h1><a class="header" href="#attributes" id="attributes">Attributes</a></h1>
+<h1><a class="header" href="#other-concepts" id="other-concepts">Other Concepts</a></h1>
+<h1><a class="header" href="#a-simple-html-page" id="a-simple-html-page">A Simple HTML Page</a></h1>
+<h1><a class="header" href="#publish-static-client-usiung-github-pages" id="publish-static-client-usiung-github-pages">Publish Static Client Usiung Github Pages</a></h1>
 <h1><a class="header" href="#full-stack-programming" id="full-stack-programming">Full Stack Programming</a></h1>
 <h1><a class="header" href="#programming-the-internet-of-things-iot" id="programming-the-internet-of-things-iot">Programming the Internet of Things (IoT)</a></h1>
 

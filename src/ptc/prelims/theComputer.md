@@ -7,10 +7,10 @@ using the client server model. But <i>where within the nodes of the Internet
  <img style="display:block;margin:auto" src='../../imgs/pModel.png'>      
  <figcaption> Fig: 1.1.2.1. Programmer's model of a Computer</figcaption>   
 
-Clients and servers are applications that reside in the application
-layer of a computer (see Figure below). For eg. Github.com is a server which can be
+Clients and servers are <b>applications</b> that reside in the application
+layer of a computer (see Figure above). For eg. YouTube.com is a server which can be
 accessed via a web browser (on computers and phones) or apps (also on
-computers and phone). Other examples include YouTube.com, Slack,
+computers and phone). Other examples include GitHub.com, Slack,
 Facebook, Google etc. All these "Internet Software" have a server and
 client apps as part of their ecosystem. Developing and maintaining these
 is referred to as <b>devops</b> (Developer Operations).

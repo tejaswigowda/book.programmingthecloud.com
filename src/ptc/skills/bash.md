@@ -25,18 +25,20 @@ Here are some other basic commands to try out
 1. $ ``ls``
       List the contents of the present working directory. You can also 
 
-      - $``ls -a``
-      - $``ls -l``
+      - $``ls -a`` : lists all files including hidden ones.
+      - $``ls -l`` : list files with details
 
 2. $ ``cd <directory path>``
-
-
+        Change directory. If no directory name is specified then
+present working directory is set to your $HOME.
 
 
 3. $ ``cat <filename>``
+       Prints the contect of file `<filename>`.
 
 
 4. $ ``man <command>``
+      Prints the manual for `<command>`.
 
 
 

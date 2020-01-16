@@ -10,7 +10,7 @@ HTML.
 A HTML tag has 3 parts
 1. Start of Tag, writen with the tag name within angle brackets
 2. Content -- any valid html
-3. End of Tag -- Similar to start but the tag name has a forward slash
+3. End of Tag -- similar to start but the tag name has a forward slash
    (/) prefix.
 
 ```html
@@ -22,5 +22,46 @@ A HTML tag has 3 parts
 ```
 
 
-Let us start by wring out first HTML
+Let us start by writing out first HTML.
+
+```html
+<!doctype html>
+
+<html>
+<head>
+  <title> Hello World </title>
+</head>
+</body>
+  <h1> Hello World </h1>
+</body>
+</html>
+```
+
+The first line in every html document is the "doctype tag". This tag is
+stand alone (i.e. does not need to closed as it does not have content).
+It is meta data to the browser that the file is an HTML file (browsers
+rely on the file extensiomn and also the doctype tag to determine if
+valid html was served. However most browsers are forgiving if you forget
+the doctype tag.
+
+
+## Editing/ Viewing
+
+Copy the above code and paste it into a new file (use atom if you dont
+have a favorite code editor). Save the file as `index.html`. Open this
+in the browser. Notice the title of the browser tab -- it was what we
+set (``Hello World``) as the content of the title tag. Try changint it
+and see it change in the browser.
+
+
+## Inspecting 
+
+In order to bring up the development tools, right-click anywhere on the
+html document. You should be able to choose <i>inspect</i> from the
+context menu that appears.
+
+ <img style="display:block;margin:auto" src='../../../imgs/inspect.png'>    
+ <figcaption> Fig: 2.1.1.1. Trigger inspector for contect menu
+(right-click)</figcaption>              
+
 

@@ -166,7 +166,7 @@ HTML. </p>
 <ol>
 <li>Start of Tag, writen with the tag name within angle brackets</li>
 <li>Content -- any valid html</li>
-<li>End of Tag -- Similar to start but the tag name has a forward slash
+<li>End of Tag -- similar to start but the tag name has a forward slash
 (/) prefix.</li>
 </ol>
 <pre><code class="language-html">&lt;TAG_NAME&gt;
@@ -175,7 +175,37 @@ HTML. </p>
 
 &lt;/TAG_NAME&gt;
 </code></pre>
-<p>Let us start by wring out first HTML</p>
+<p>Let us start by writing out first HTML.</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt; Hello World &lt;/title&gt;
+&lt;/head&gt;
+&lt;/body&gt;
+  &lt;h1&gt; Hello World &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>The first line in every html document is the &quot;doctype tag&quot;. This tag is
+stand alone (i.e. does not need to closed as it does not have content).
+It is meta data to the browser that the file is an HTML file (browsers
+rely on the file extensiomn and also the doctype tag to determine if
+valid html was served. However most browsers are forgiving if you forget
+the doctype tag.</p>
+<h2><a class="header" href="#editing-viewing" id="editing-viewing">Editing/ Viewing</a></h2>
+<p>Copy the above code and paste it into a new file (use atom if you dont
+have a favorite code editor). Save the file as <code>index.html</code>. Open this
+in the browser. Notice the title of the browser tab -- it was what we
+set (<code>Hello World</code>) as the content of the title tag. Try changint it
+and see it change in the browser.</p>
+<h2><a class="header" href="#inspecting" id="inspecting">Inspecting</a></h2>
+<p>In order to bring up the development tools, right-click anywhere on the
+html document. You should be able to choose <i>inspect</i> from the
+context menu that appears.</p>
+<img style="display:block;margin:auto" src='../../../imgs/inspect.png'>    
+ <figcaption> Fig: 2.1.1.1. Trigger inspector for contect menu
+(right-click)</figcaption>              
 
                     </main>
 

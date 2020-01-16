@@ -6,16 +6,16 @@ comfortable with. It is recommended that you use an editir with syntax
 highlighting.
 
 Here is a list of recommended code editors
-- [Atom]()
-- [Brackets]()
-- [Sublime]()
-- [TextMate]()
-- [VI]()
-- [Emacs]()
+- [Atom](https://atom.io/)
+- [Brackets](http://brackets.io/)
+- [Sublime](https://www.sublimetext.com/3)
+- [TextMate](https://macromates.com/)
+- VI (use in bash)
+- Emacs (use in bash)
 
-The first 4 are What-you-see-is-what-you-get (WYSIWYG) editors and
-simple to use with a userfereindly GUI. VI and EMAcs on the other has
-are commandline (bash) editors. Thgis will come in handy when you need
+The first 4 are visual editors with a 
+simple to use with a user-friendly GUI. VI and EMACS on the other has
+are command-line (bash) editors. This will come in handy when you need
 to edit on a remote machine. However both have steep learning curves and
 will take practice to perfect. If you are new to programming this book
 suggests you start with Atom Editor (first choice in the above list). It

@@ -26,10 +26,11 @@
 -----------
 
 - [Full Stack Programming](fullstack/README.md)
-    - [Basic Servers](fullstack/html/README.md)
-        - [Tags](fewtech/html/concepts/tags.md)
-        - [Attributes](fewtech/html/concepts/attrs.md)
-        - [Other Concepts](fewtech/html/concepts/other.md)
+    - [Basic Servers](fullstack/basicServers/README.md)
+        - [Hello World](fullstack/basicServers/helloWorld.md)
+        - [Math Server](fullstack/basicServers/math.md)
+        - [Eval Server](fullstack/basicServers/eval.md)
+        - [Static Server](fullstack/basicServers/staticServer/README.md)
 
 -----------
 

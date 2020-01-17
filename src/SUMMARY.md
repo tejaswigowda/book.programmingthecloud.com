@@ -8,6 +8,8 @@
         - [URL](ptc/prelims/url.md)
     - [Basic Skills](ptc/skills/README.md)
         - [BASH](ptc/skills/bash.md)
+        - [Node.js](ptc/skills/node.md)
+        - [Browser Developer Tools](ptc/skills/devTools.md)
         - [GIT](ptc/skills/git.md)
         - [Editor](ptc/skills/codeEditor.md)
         - [Code Deployment](ptc/skills/codeMgmt.md)

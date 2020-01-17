@@ -43,35 +43,32 @@ present working directory is set to your $HOME.
 
 
 ## Reference of basic commands
+ 
+Use $`man <command>` to learn more about these commands and flags.
 
 ### basic shell 
  - clear : clear all previous commands' output text from the terminal
- -  exit (or logout) : quits the shell
+ - exit (or logout) : quits the shell
  - history : show a list of all past commands you have typed into this shell
 
-### directories 
+### manage directories 
   - ls : list files in a directory
   - pwd : displays the shell's current working directory
   - cd : changes the shell's working directory to the given directory; can be a relative or absolute path
   - mkdir : creates a new directory with the given name
   - rmdir : removes the directory with the given name (the directory must be empty)
 
-
 ### file operations 
   - cp : copies a file/directory
   - mv : moves (or renames) a file/directory
   - rm : deletes a file
   - touch : update the last-modified time of a file (or create an empty file)
-
-### file examination 
   - cat : output the contents of a file
   - more (or less) : output the contents of a file, one page at a time
   - head, tail : output the beginning or ending of a file
   - wc : output a count of the number of characters, lines, words, etc. in a file
   - du : report disk space used by a file/directory
   - diff : output differences between two files
-
-### file permissions 
   - chmod : change the permissions on a file or group of files
   - chown : change the owner of a file
   - chgrp : change the group associated with a file
@@ -87,7 +84,7 @@ present working directory is set to your $HOME.
   - which : shows the complete path of a command or file
 
 ### compression 
-  -  zip, unzip : create a .zip archive or extract its contents
+  - zip, unzip : create a .zip archive or extract its contents
   - tar : Unix archiving/de-archiving program
   - gzip, gunzip : GNU compression/decompression programs
   - bzip2, bunzip2 : improved compression/decompression programs
@@ -107,7 +104,7 @@ present working directory is set to your $HOME.
   - ^Z : (hotkey) suspends the currently running process
   - & : (special character) when & is placed at the end of a command, that command is run in the background (shell does not wait for the command to finish before returning to the input prompt)
 
-### users and groups 
+### users
   - whoami : outputs your user name
   - passwd : changes your password
   - groups : list the groups to which a user belongs
@@ -123,10 +120,6 @@ present working directory is set to your $HOME.
 ### text editors 
   - vi, vim : good command line editor
   - emacs : a complicated text editor with a steep learning curve
-
-### regular expressions 
-  - sed : stream editor; find/replace based on regular expressions
-  - egrep : extended version of grep that matches regular expressions
 
 ### programming 
   - node : run a JavaScript program, or enter JS shell

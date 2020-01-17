@@ -80,3 +80,7 @@ table thead tr{
   background: transparent;
   border:none;
 }
+
+a > .hljs {
+    color: #add8e6;
+}

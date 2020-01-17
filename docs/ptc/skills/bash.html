@@ -194,6 +194,108 @@ Prints the contect of file <code>&lt;filename&gt;</code>.</p>
 Prints the manual for <code>&lt;command&gt;</code>.</p>
 </li>
 </ol>
+<h2><a class="header" href="#reference-of-basic-commands" id="reference-of-basic-commands">Reference of basic commands</a></h2>
+<h3><a class="header" href="#basic-shell" id="basic-shell">basic shell</a></h3>
+<ul>
+<li>clear : clear all previous commands' output text from the terminal</li>
+<li>exit (or logout) : quits the shell</li>
+<li>history : show a list of all past commands you have typed into this shell</li>
+</ul>
+<h3><a class="header" href="#directories" id="directories">directories</a></h3>
+<ul>
+<li>ls : list files in a directory</li>
+<li>pwd : displays the shell's current working directory</li>
+<li>cd : changes the shell's working directory to the given directory; can be a relative or absolute path</li>
+<li>mkdir : creates a new directory with the given name</li>
+<li>rmdir : removes the directory with the given name (the directory must be empty)</li>
+</ul>
+<h3><a class="header" href="#file-operations" id="file-operations">file operations</a></h3>
+<ul>
+<li>cp : copies a file/directory</li>
+<li>mv : moves (or renames) a file/directory</li>
+<li>rm : deletes a file</li>
+<li>touch : update the last-modified time of a file (or create an empty file)</li>
+</ul>
+<h3><a class="header" href="#file-examination" id="file-examination">file examination</a></h3>
+<ul>
+<li>cat : output the contents of a file</li>
+<li>more (or less) : output the contents of a file, one page at a time</li>
+<li>head, tail : output the beginning or ending of a file</li>
+<li>wc : output a count of the number of characters, lines, words, etc. in a file</li>
+<li>du : report disk space used by a file/directory</li>
+<li>diff : output differences between two files</li>
+</ul>
+<h3><a class="header" href="#file-permissions" id="file-permissions">file permissions</a></h3>
+<ul>
+<li>chmod : change the permissions on a file or group of files</li>
+<li>chown : change the owner of a file</li>
+<li>chgrp : change the group associated with a file</li>
+<li>umask : change the default permissions given to newly created files</li>
+</ul>
+<h3><a class="header" href="#searching-and-sorting" id="searching-and-sorting">searching and sorting</a></h3>
+<ul>
+<li>grep : search a file for a given string or expression</li>
+<li>sort : convert an input into a sorted output</li>
+<li>uniq : strip duplicate lines</li>
+<li>find : search for files by name within a given directory</li>
+<li>xargs : launch a command over each of a set of lines of input (often used with find)</li>
+<li>locate : search for files by name on the entire system</li>
+<li>which : shows the complete path of a command or file</li>
+</ul>
+<h3><a class="header" href="#compression" id="compression">compression</a></h3>
+<ul>
+<li>zip, unzip : create a .zip archive or extract its contents</li>
+<li>tar : Unix archiving/de-archiving program</li>
+<li>gzip, gunzip : GNU compression/decompression programs</li>
+<li>bzip2, bunzip2 : improved compression/decompression programs</li>
+</ul>
+<h3><a class="header" href="#system-information" id="system-information">system information</a></h3>
+<ul>
+<li>date : outputs the current date/time</li>
+<li>cal : outputs an ASCII calendar</li>
+<li>uname : print information about the system</li>
+<li>time : measure how long a program takes to run</li>
+</ul>
+<h3><a class="header" href="#process-management" id="process-management">process management</a></h3>
+<ul>
+<li>ps, jobs : list the processes you are running; every process has a unique integer id number (PID)</li>
+<li>top : see what processes are using the most CPU/memory, and show system memory/CPU stats</li>
+<li>kill : terminate a process</li>
+<li>killall : terminate a group of processes by name</li>
+<li>^C or ^\ : (hotkey) terminates (kills) the currently running process</li>
+<li>^Z : (hotkey) suspends the currently running process</li>
+<li>&amp; : (special character) when &amp; is placed at the end of a command, that command is run in the background (shell does not wait for the command to finish before returning to the input prompt)</li>
+</ul>
+<h3><a class="header" href="#users-and-groups" id="users-and-groups">users and groups</a></h3>
+<ul>
+<li>whoami : outputs your user name</li>
+<li>passwd : changes your password</li>
+<li>groups : list the groups to which a user belongs</li>
+<li>sudo : execute a single command as the super-user</li>
+<li>su : log in to a shell as the super-user</li>
+</ul>
+<h3><a class="header" href="#network" id="network">network</a></h3>
+<ul>
+<li>lynx : text-only web browser</li>
+<li>ssh : connect to a remote Unix server</li>
+<li>wget : download from a URL and save it to a file on the local hard drive</li>
+<li>curl : download from a URL and output its contents to the console</li>
+</ul>
+<h3><a class="header" href="#text-editors" id="text-editors">text editors</a></h3>
+<ul>
+<li>vi, vim : good command line editor</li>
+<li>emacs : a complicated text editor with a steep learning curve</li>
+</ul>
+<h3><a class="header" href="#regular-expressions" id="regular-expressions">regular expressions</a></h3>
+<ul>
+<li>sed : stream editor; find/replace based on regular expressions</li>
+<li>egrep : extended version of grep that matches regular expressions</li>
+</ul>
+<h3><a class="header" href="#programming" id="programming">programming</a></h3>
+<ul>
+<li>node : run a JavaScript program, or enter JS shell</li>
+<li>javac, java, python, perl, ruby, gcc, sml, ... : compile or run programs in various other languages</li>
+</ul>
 
                     </main>
 

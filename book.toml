@@ -28,3 +28,9 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+[output.epub]
+
+[output.latex]
+latex    = false 
+pdf = false

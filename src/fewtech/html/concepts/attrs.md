@@ -3,9 +3,13 @@
 
 ## Attribute Reference
 
-<i>
+<i><b>
+Taken from [MDN web
+docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
+[contribute](https://www.smashingmagazine.com/2018/05/contributing-mdn-webdocs/) if you can.
+</b></i>
 
-</i>
+
 <article id="wikiArticle"><div></div>
 
 <p>Elements in HTML have <strong>attributes</strong>; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.</p>

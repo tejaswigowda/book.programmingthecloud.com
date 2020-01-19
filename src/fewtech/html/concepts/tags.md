@@ -57,6 +57,13 @@ and see it change in the browser.
 
 ## Tag Reference
 
+
+<i><b>
+Taken from [MDN web
+docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
+[contribute](https://www.smashingmagazine.com/2018/05/contributing-mdn-webdocs/) if you can.
+</b></i>
+
 <article id="wikiArticle"><div></div>
 
 <p><span class="seoSummary">This page&nbsp;lists all the <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" title="HTML: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.">HTML</a> <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Element" title="elements: An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.

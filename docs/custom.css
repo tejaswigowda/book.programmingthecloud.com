@@ -99,3 +99,7 @@ li.spacer{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+table thead th{
+  text-align:left;
+}

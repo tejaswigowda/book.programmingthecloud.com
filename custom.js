@@ -3,12 +3,15 @@ setTimeout(function(){
   console.log(hours)
   if(hours < 7 || hours >=20){
     $("html").removeClass("rust").addClass("coal");
+    var link = document.createElement('meta');
+    link.setAttribute('theme-color', 'black');
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
   else{
     $("html").removeClass("coal").addClass("rust");
     var link = document.createElement('meta');
     link.setAttribute('theme-color', 'hsl(60, 9%, 87%)');
-      document.getElementsByTagName('head')[0].appendChild(link);
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
 }, 0);
 

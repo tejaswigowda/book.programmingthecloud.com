@@ -22,5 +22,6 @@ suggests you start with Atom Editor (first choice in the above list). It
 has a tabbed editor and a project manager pane (Figure 1.2.3.1). You can easily add new
 files, manage folders and edit/modify/save individual files.
 
- <img style="display:block;margin:auto" src='../../imgs/atom.png'>    
+ <img style="display:block;margin:auto" src=''>    
  <figcaption> Fig: 1.2.3.1 Atom Editor </figcaption>               
+

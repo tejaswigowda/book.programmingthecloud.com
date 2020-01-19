@@ -84,3 +84,18 @@ table thead tr{
 a > .hljs {
     color: #add8e6;
 }
+
+.partT{
+  display: block;
+  text-transform: uppercase;
+      font-size: 130%;
+    text-align: right;
+        width: 80%;
+    margin-left: 20%;
+    color: var(--sidebar-active);
+}
+
+li.spacer{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

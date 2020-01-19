@@ -1,6 +1,8 @@
 # Summary
 
-- [INTRODUCTION](ptc/README.md)
+
+
+[Introduction](ptc/README.md)
 
 - [Preliminaries](ptc/prelims/README.md)
     - [Client Server Model](ptc/prelims/clientServer.md)
@@ -18,7 +20,6 @@
 
 -----------
 
-- [Front End Web Technologies](fewtech/README.md)
 
 - [HTML](fewtech/html/README.md)
   - [Tags](fewtech/html/concepts/tags.md)
@@ -29,12 +30,11 @@
 
 -----------
 
-- [Full Stack Programming](fullstack/README.md)
-    - [Basic Servers](fullstack/basicServers/README.md)
-        - [Hello World](fullstack/basicServers/helloWorld.md)
-        - [Math Server](fullstack/basicServers/math.md)
-        - [Eval Server](fullstack/basicServers/eval.md)
-        - [Static Server](fullstack/basicServers/staticServer/README.md)
+- [Basic Servers](fullstack/basicServers/README.md)
+  - [Hello World](fullstack/basicServers/helloWorld.md)
+  - [Math Server](fullstack/basicServers/math.md)
+  - [Eval Server](fullstack/basicServers/eval.md)
+  - [Static Server](fullstack/basicServers/staticServer/README.md)
 
 -----------
 

@@ -3,10 +3,21 @@ setTimeout(function(){
   console.log(hours)
   if(hours < 7 || hours >=20){
     $("html").removeClass("rust").addClass("coal");
+    var link = document.createElement('meta');
+    link.setAttribute('theme-color', 'black');
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
   else{
     $("html").removeClass("coal").addClass("rust");
+    var link = document.createElement('meta');
+    link.setAttribute('theme-color', 'hsl(60, 9%, 87%)');
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
+
+  $($(".chapter li.spacer")[0]).prepend("<div class='partT'>Front End Web Technologies</div><br>")
+  $($(".chapter li.spacer")[1]).prepend("<div class='partT'>Full Stack Programming</div><br>")
+  $($(".chapter li.spacer")[2]).prepend("<div class='partT'>Programming IoT</div><br>")
+
 }, 0);
 
 

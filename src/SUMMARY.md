@@ -28,6 +28,18 @@
   - [Single Page Resume](fewtech/html/singlePage.md)
   - [Host Resume (gh-pages)](fewtech/html/ghPages.md)
 
+- [CSS](fewtech/css/README.md)
+
+- [jQuery](fewtech/jquery/README.md)
+
+- [JavaScript](fewtech/js/README.md)
+
+- [JSON](fewtech/json/README.md)
+
+- [Mobile/Desktop Apps](fewtech/apps/README.md)
+
+- [Advanced Topics](fewtech/advConcepts/README.md)
+
 -----------
 
 - [Basic Servers](fullstack/basicServers/README.md)

@@ -1,6 +1,7 @@
 setTimeout(function(){
   var hours = new Date().getHours();
-  console.log(hours)
+  document.querySelector("[name='theme-color']").remove()
+
   if(hours < 7 || hours >=20){
     $("html").removeClass("rust").addClass("coal");
     var link = document.createElement('meta');

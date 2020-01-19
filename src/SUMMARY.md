@@ -1,19 +1,23 @@
 # Summary
 
-- [Programming The Cloud](ptc/README.md)
-    - [Preliminaries](ptc/prelims/README.md)
-        - [Client Server Model](ptc/prelims/clientServer.md)
-        - [Programming Model](ptc/prelims/theComputer.md)
-        - [The Internet](ptc/prelims/theInternet.md)
-        - [URL](ptc/prelims/url.md)
-    - [Basic Skills](ptc/skills/README.md)
-        - [BASH](ptc/skills/bash.md)
-        - [Node.js](ptc/skills/node.md)
-        - [Browser Developer Tools](ptc/skills/devTools.md)
-        - [GIT](ptc/skills/git.md)
-        - [Editor](ptc/skills/codeEditor.md)
-        - [Code Deployment](ptc/skills/codeMgmt.md)
-    - [Book Organization](ptc/org.md)
+[Programming the Cloud](ptc/README.md)
+-----------
+
+INTRODUCTION
+
+- [Preliminaries](ptc/prelims/README.md)
+    - [Client Server Model](ptc/prelims/clientServer.md)
+    - [Programming Model](ptc/prelims/theComputer.md)
+    - [The Internet](ptc/prelims/theInternet.md)
+    - [URL](ptc/prelims/url.md)
+- [Basic Skills](ptc/skills/README.md)
+    - [BASH](ptc/skills/bash.md)
+    - [Node.js](ptc/skills/node.md)
+    - [Browser Developer Tools](ptc/skills/devTools.md)
+    - [GIT](ptc/skills/git.md)
+    - [Editor](ptc/skills/codeEditor.md)
+    - [Code Deployment](ptc/skills/codeMgmt.md)
+- [Book Organization](ptc/org.md)
 
 -----------
 

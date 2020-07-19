@@ -1,5 +1,112 @@
 # Attributes
 
+Attributes can be applied to HTML tags to change their behavior. An
+attribute as 2 parts
+
+1. The attribute name
+2. The attribute value
+
+Attributes are specified within the start tag as follows:
+
+```html
+ATTR_NAME='ATTR_VAL'
+```
+The attribute name cannot have spaces and must be one word (underscore _
+allowed). Attribute value should be quated (single or double quotes --
+this is optional but it is best practive to use quotes) and *can*
+include spaces.
+
+A HTML tag can have any number of attributes (or none at all). The
+attribute-value pairs are speratated from each other by a white-space
+(one or more spaces). 
+
+```html
+<TAG_NAME ATTR_NAME1='ATTR_VAL1' ATTR_NAME2="ATTR_VAL2">
+
+      content
+
+</TAG_NAME>
+```
+
+
+## Uses of Attributes
+Attributes have 4 uses:
+
+1. *To modify the behavior of a HTML tag:* Conside the anchor `a` tag,
+   which is use to cross reference HTML pages. The `href` attribute
+specifies the html page to navigate to when clicked.
+```html
+  <a href='http://google.com'> Go to Google </a>
+```
+  <a href='http://google.com'> Go to Google </a>
+
+In order to open the page in a seperate tab speicy the `target`
+attribute and set it to `_blank`.
+```html
+  <a href='http://google.com' target="_blank"> Go to Google </a>
+```
+  <a href='http://google.com' target="_blank"> Go to Google </a>
+
+
+Next let us look at the `<img>` tag. The
+   `src` attribute specifies which image should be rendered within the
+`<img>` tag. For example:
+```html
+  <img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+```
+  <img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+
+will render the Google logo. We can also specify the height and width of
+the image (in pixels) by using the `height` and `width` attributes, like so:
+
+```html
+  <img height='100' width='200' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+```
+  <img height='100' width='200' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+
+<div class='notes'>
+
+- If you want to maintain the aspect-ratio of the image specify only one
+of the two (`height`/`width`) attributes.
+
+  <img height='100' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+
+- It is best to use CSS to speicfy these properties, more on this
+   later.
+</div>
+
+2. *To add CSS styling to the tag:* A special attribte called `style`
+   can be use to specify CSS declaration for a tag. This is one of the
+many ways CSS can be added to a tag. This will be discussed in detail in
+the CSS section.
+
+3. *To identify and group tags:* An attribte called `id` can be used to
+   assign an unique identifier to a tag. This identifier can be used
+only for one tag and a tag can have only one `id`. A tag can be
+categorized into a group by the `class` attribute. A tag can have more
+than one class. These class names are delimted by white spaces.
+
+```html
+  <div id="testID" class='class1 class2 class3'> </div>
+```
+
+4. *To attach **event listeners** to tags:*
+
+Events are actions done by the use on a tag like clicking, mouse hover
+etc. An event hadler is javascript that needs to execute ehen the event
+occurs. The following maerkup will pop up a message (100) when the
+button is cliked.
+
+```html
+  <button onclick="alert(100)"> Click me! </button>
+```
+  <button onclick="alert(100)"> Click me! </button>
+
+The event model will be discussed in more detail in the JavaScript
+section.
+
+The next section lists all HTML attributes that can be used with
+differnt html tags.
 
 ## Attribute Reference
 
@@ -755,8 +862,5 @@ docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
 
 <p>To be clear, the values "<code>true</code>" and "<code>false</code>" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether. This restriction clears up some common misunderstandings: With <code>checked="false"</code> for example, the element’s <code>checked</code> attribute would be interpreted as <strong>true</strong> because the attribute is present.</p>
 
-<h2 id="See_also">See also</h2>
 
-<ul>
- <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements</a></li>
-</ul></article>
+</article>

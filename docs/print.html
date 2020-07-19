@@ -1439,6 +1439,98 @@ docs</a>. Please
 </table>
 </article>
 <h1><a class="header" href="#attributes" id="attributes">Attributes</a></h1>
+<p>Attributes can be applied to HTML tags to change their behavior. An
+attribute as 2 parts</p>
+<ol>
+<li>The attribute name</li>
+<li>The attribute value</li>
+</ol>
+<p>Attributes are specified within the start tag as follows:</p>
+<pre><code class="language-html">ATTR_NAME='ATTR_VAL'
+</code></pre>
+<p>The attribute name cannot have spaces and must be one word (underscore _
+allowed). Attribute value should be quated (single or double quotes --
+this is optional but it is best practive to use quotes) and <em>can</em>
+include spaces.</p>
+<p>A HTML tag can have any number of attributes (or none at all). The
+attribute-value pairs are speratated from each other by a white-space
+(one or more spaces). </p>
+<pre><code class="language-html">&lt;TAG_NAME ATTR_NAME1='ATTR_VAL1' ATTR_NAME2=&quot;ATTR_VAL2&quot;&gt;
+
+      content
+
+&lt;/TAG_NAME&gt;
+</code></pre>
+<h2><a class="header" href="#uses-of-attributes" id="uses-of-attributes">Uses of Attributes</a></h2>
+<p>Attributes have 4 uses:</p>
+<ol>
+<li><em>To modify the behavior of a HTML tag:</em> Conside the anchor <code>a</code> tag,
+which is use to cross reference HTML pages. The <code>href</code> attribute
+specifies the html page to navigate to when clicked.</li>
+</ol>
+<pre><code class="language-html">  &lt;a href='http://google.com'&gt; Go to Google &lt;/a&gt;
+</code></pre>
+<p><a href='http://google.com'> Go to Google </a></p>
+<p>In order to open the page in a seperate tab speicy the <code>target</code>
+attribute and set it to <code>_blank</code>.</p>
+<pre><code class="language-html">  &lt;a href='http://google.com' target=&quot;_blank&quot;&gt; Go to Google &lt;/a&gt;
+</code></pre>
+<p><a href='http://google.com' target="_blank"> Go to Google </a></p>
+<p>Next let us look at the <code>&lt;img&gt;</code> tag. The
+<code>src</code> attribute specifies which image should be rendered within the
+<code>&lt;img&gt;</code> tag. For example:</p>
+<pre><code class="language-html">  &lt;img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'&gt;
+</code></pre>
+<img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+<p>will render the Google logo. We can also specify the height and width of
+the image (in pixels) by using the <code>height</code> and <code>width</code> attributes, like so:</p>
+<pre><code class="language-html">  &lt;img height='100' width='200' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'&gt;
+</code></pre>
+<img height='100' width='200' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+<div class='notes'>
+<ul>
+<li>
+<p>If you want to maintain the aspect-ratio of the image specify only one
+of the two (<code>height</code>/<code>width</code>) attributes.</p>
+<img height='100' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'>
+</li>
+<li>
+<p>It is best to use CSS to speicfy these properties, more on this
+later.</p>
+</li>
+</ul>
+</div>
+<ol start="2">
+<li>
+<p><em>To add CSS styling to the tag:</em> A special attribte called <code>style</code>
+can be use to specify CSS declaration for a tag. This is one of the
+many ways CSS can be added to a tag. This will be discussed in detail in
+the CSS section.</p>
+</li>
+<li>
+<p><em>To identify and group tags:</em> An attribte called <code>id</code> can be used to
+assign an unique identifier to a tag. This identifier can be used
+only for one tag and a tag can have only one <code>id</code>. A tag can be
+categorized into a group by the <code>class</code> attribute. A tag can have more
+than one class. These class names are delimted by white spaces.</p>
+</li>
+</ol>
+<pre><code class="language-html">  &lt;div id=&quot;testID&quot; class='class1 class2 class3'&gt; &lt;/div&gt;
+</code></pre>
+<ol start="4">
+<li><em>To attach <strong>event listeners</strong> to tags:</em></li>
+</ol>
+<p>Events are actions done by the use on a tag like clicking, mouse hover
+etc. An event hadler is javascript that needs to execute ehen the event
+occurs. The following maerkup will pop up a message (100) when the
+button is cliked.</p>
+<pre><code class="language-html">  &lt;button onclick=&quot;alert(100)&quot;&gt; Click me! &lt;/button&gt;
+</code></pre>
+<p><button onclick="alert(100)"> Click me! </button></p>
+<p>The event model will be discussed in more detail in the JavaScript
+section.</p>
+<p>The next section lists all HTML attributes that can be used with
+differnt html tags.</p>
 <h2><a class="header" href="#attribute-reference" id="attribute-reference">Attribute Reference</a></h2>
 <p><i><b>
 Taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN web
@@ -2174,11 +2266,39 @@ docs</a>. Please
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">itemscope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> This is valid HTML and also valid XML. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">itemscope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>itemscope<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> This is also valid HTML and XML, but perhaps a bit verbose. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>To be clear, the values "<code>true</code>" and "<code>false</code>" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether. This restriction clears up some common misunderstandings: With <code>checked="false"</code> for example, the element’s <code>checked</code> attribute would be interpreted as <strong>true</strong> because the attribute is present.</p>
-<h2 id="See_also">See also</h2>
-<ul>
- <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements</a></li>
-</ul></article>
+</article>
 <h1><a class="header" href="#other-concepts" id="other-concepts">Other Concepts</a></h1>
+<h2><a class="header" href="#standalone-tags" id="standalone-tags">Standalone Tags</a></h2>
+<p>HTML tags can be <em>nested</em> and this the HTML document has a tree
+structure. The root of this tree is the <code>&lt;html&gt;</code> tag whose child nodes
+are <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>. The document then branches out into different
+tags. Most tags can have child nodes, however there are a few exceptions
+to this. Certain tags are <em>standalone</em> i.e. they cannot have chhild
+nodes. Examples of thuch tags are:</p>
+<ul>
+<li><code>&lt;img&gt;</code></li>
+<li><code>&lt;hr&gt;</code></li>
+<li><code>&lt;input&gt;</code></li>
+<li><code>&lt;textarea&gt;</code></li>
+</ul>
+<p>These tags do not need the end tags (like <code>&lt;/img&gt;</code>, <code>&lt;/hr&gt;</code> etc.) since
+they cannot have content (child nodes).</p>
+<h2><a class="header" href="#viewport" id="viewport">Viewport</a></h2>
+<p>The <code>&lt;body&gt;</code> of the html page renders the <code>window</code>, which is the entire
+page. However with the advent of mobile devices the contents of the
+window can be panned and zoomed. The content (part of the window) that
+is now vidble to the user is called the <code>viewport</code>.</p>
+<img style="display:block;margin:auto" src='../../../imgs/viewport.png'>    
+ <figcaption> Fig: 1.2.3.1 Window v/s Viewport</figcaption>               
+<p>In the interest of reposive design it makes sense to make the window and
+the viewport the same, so we can proceed with web design using only one
+size canvas. This can be done by adding the following <code>&lt;meta&gt;</code> tag
+within the <code>&lt;head&gt;</code> of the HTML document.</p>
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</code></pre>
+<h2><a class="header" href="#style-and-script-tags" id="style-and-script-tags"><code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> Tags</a></h2>
+<h2><a class="header" href="#linking-external-files" id="linking-external-files">Linking External Files</a></h2>
+<h2><a class="header" href="#loading-sequence" id="loading-sequence">Loading Sequence</a></h2>
 <h1><a class="header" href="#a-simple-html-page" id="a-simple-html-page">A Simple HTML Page</a></h1>
 <h1><a class="header" href="#publish-static-client-usiung-github-pages" id="publish-static-client-usiung-github-pages">Publish Static Client Usiung Github Pages</a></h1>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>

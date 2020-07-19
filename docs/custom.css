@@ -92,7 +92,7 @@ a > .hljs {
     text-align: right;
         width: 80%;
     margin-left: 20%;
-    color: var(--sidebar-active);
+    color: white;
 }
 
 li.spacer{
@@ -102,4 +102,10 @@ li.spacer{
 
 table thead th{
   text-align:left;
+}
+
+.notes{
+  width: 90%;
+  margin-left: 5%;
+  background: rgba(0,0,0,.1);
 }

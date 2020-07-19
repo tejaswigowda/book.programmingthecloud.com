@@ -1,1 +1,1 @@
-# Publish Static Client Usiung Github Pages
+# Publish Static HTML Using Github Pages

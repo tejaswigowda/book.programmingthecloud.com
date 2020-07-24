@@ -2287,9 +2287,9 @@ they cannot have content (child nodes).</p>
 <p>The <code>&lt;body&gt;</code> of the html page renders the <code>window</code>, which is the entire
 page. However with the advent of mobile devices the contents of the
 window can be panned and zoomed. The content (part of the window) that
-is now vidble to the user is called the <code>viewport</code>.</p>
+is now visible to the user is called the <code>viewport</code>.</p>
 <img style="display:block;margin:auto" src='../../../imgs/vp.png'>    
- <figcaption> Fig: 1.2.3.1 Window v/s Viewport</figcaption>               
+ <figcaption> Fig: 3.3.1 Window v/s Viewport</figcaption>               
 <p>In the interest of reposive design it makes sense to make the window and
 the viewport the same, so we can proceed with web design using only one
 size canvas. This can be done by adding the following <code>&lt;meta&gt;</code> tag
@@ -2349,6 +2349,13 @@ concepts in CSS:</p>
 These pairs are themselves delimitted by semi-colons(<code>;</code>);</p>
 <p>The attribute value of <code>style</code> is known as <em>CSS declaration</em>.</p>
 <h1><a class="header" href="#css-properties" id="css-properties">CSS Properties</a></h1>
+<h2><a class="header" href="#box-model" id="box-model">Box model</a></h2>
+<p>&lt;img style=&quot;display:block;margin:auto&quot; [[src='../../../imgs/boxModel.png'&gt;]]</p>
+<figcaption> Fig: 4.1.1. CSS Box Model</figcaption>               
+<h2><a class="header" href="#value-types" id="value-types">Value types</a></h2>
+<h3><a class="header" href="#distance" id="distance">Distance</a></h3>
+<h3><a class="header" href="#color" id="color">Color</a></h3>
+<h2><a class="header" href="#property-list" id="property-list">Property List</a></h2>
 <table>
  <thead>
   <tr>
@@ -2359,35 +2366,36 @@ These pairs are themselves delimitted by semi-colons(<code>;</code>);</p>
  <tbody>
   <tr>
    <td>background</td>
-   <td>background</td>
+   <td>Background of tag (image/color/gradient etc.)</td>
   </tr>
   <tr>
    <td>background-attachment</td>
-   <td>backgroundAttachment</td>
+   <td>To make sure if the background is fixed or can scroll with
+content</td>
   </tr>
   <tr>
    <td>background-color</td>
-   <td>backgroundColor</td>
+   <td>Background color</td>
   </tr>
   <tr>
    <td>background-image</td>
-   <td>backgroundImage</td>
+   <td>Background image</td>
   </tr>
   <tr>
    <td>background-position</td>
-   <td>backgroundPosition</td>
+   <td>Background Position</td>
   </tr>
   <tr>
    <td>background-repeat</td>
-   <td>backgroundRepeat</td>
+   <td>Repeat background vertically, horizontally or not at all</td>
   </tr>
   <tr>
    <td>border</td>
    <td>border</td>
   </tr>
-  [[<tr>]]
+  <tr>
    <td>border-bottom</td>
-   <td>borderBottom</td>
+   <td>Bottom border of tag</td>
   </tr>
   <tr>
    <td>border-bottom-color</td>
@@ -2946,6 +2954,29 @@ These pairs are themselves delimitted by semi-colons(<code>;</code>);</p>
   </tr>
  </tbody>
 </table>
+<h1><a class="header" href="#css-selectors" id="css-selectors">CSS Selectors</a></h1>
+<p>In order to add CSS to html documents using an external file, CSS
+declarations need to be <em>attached</em> to HTML tags. This is done usinf CSS
+selectors.</p>
+<p>A CSS rule consists of a CSS selector and a CSS declaration.</p>
+<pre><code class="language-html">  CSS Rule:
+  &lt;CSS Selector&gt; {
+   &lt;CSS Declaration&gt; 
+  }
+</code></pre>
+<p>We know what CSS declarations look like (value of a <code>style</code>
+attribute). CSS seclectors determine which tags the CSS declaration must
+be attached to.</p>
+<h2><a class="header" href="#simple-css-selectors" id="simple-css-selectors">Simple CSS Selectors</a></h2>
+<ol>
+<li><strong>Tag name</strong>: Simplest of the CSS selectors is any HTML tag name.
+Consider the following example</li>
+</ol>
+<h2><a class="header" href="#combining-selectors" id="combining-selectors">Combining Selectors</a></h2>
+<h2><a class="header" href="#advanced-css-selectors" id="advanced-css-selectors">Advanced CSS Selectors</a></h2>
+<h1><a class="header" href="#other-concepts-1" id="other-concepts-1">Other Concepts</a></h1>
+<h2><a class="header" href="#cascading-rules" id="cascading-rules">Cascading Rules</a></h2>
+<h2><a class="header" href="#vendor-prefixes" id="vendor-prefixes">Vendor Prefixes</a></h2>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-1" id="front-end-web-technologies-1">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-2" id="front-end-web-technologies-2">Front End Web Technologies</a></h1>

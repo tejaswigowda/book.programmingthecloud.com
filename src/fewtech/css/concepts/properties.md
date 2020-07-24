@@ -1,5 +1,18 @@
 # CSS Properties
 
+## Box model
+
+ <img style="display:block;margin:auto" [[src='../../../imgs/boxModel.png'>]]    
+ <figcaption> Fig: 4.1.1. CSS Box Model</figcaption>               
+
+## Value types
+
+### Distance
+
+### Color
+
+## Property List
+
 <table>
  <thead>
   <tr>
@@ -10,35 +23,36 @@
  <tbody>
   <tr>
    <td>background</td>
-   <td>background</td>
+   <td>Background of tag (image/color/gradient etc.)</td>
   </tr>
   <tr>
    <td>background-attachment</td>
-   <td>backgroundAttachment</td>
+   <td>To make sure if the background is fixed or can scroll with
+content</td>
   </tr>
   <tr>
    <td>background-color</td>
-   <td>backgroundColor</td>
+   <td>Background color</td>
   </tr>
   <tr>
    <td>background-image</td>
-   <td>backgroundImage</td>
+   <td>Background image</td>
   </tr>
   <tr>
    <td>background-position</td>
-   <td>backgroundPosition</td>
+   <td>Background Position</td>
   </tr>
   <tr>
    <td>background-repeat</td>
-   <td>backgroundRepeat</td>
+   <td>Repeat background vertically, horizontally or not at all</td>
   </tr>
   <tr>
    <td>border</td>
    <td>border</td>
   </tr>
-  [[<tr>]]
+  <tr>
    <td>border-bottom</td>
-   <td>borderBottom</td>
+   <td>Bottom border of tag</td>
   </tr>
   <tr>
    <td>border-bottom-color</td>

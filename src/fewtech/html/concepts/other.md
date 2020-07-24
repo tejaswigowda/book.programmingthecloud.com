@@ -22,10 +22,10 @@ they cannot have content (child nodes).
 The `<body>` of the html page renders the `window`, which is the entire
 page. However with the advent of mobile devices the contents of the
 window can be panned and zoomed. The content (part of the window) that
-is now vidble to the user is called the `viewport`.
+is now visible to the user is called the `viewport`.
 
  <img style="display:block;margin:auto" src='../../../imgs/vp.png'>    
- <figcaption> Fig: 1.2.3.1 Window v/s Viewport</figcaption>               
+ <figcaption> Fig: 3.3.1 Window v/s Viewport</figcaption>               
 
 
 In the interest of reposive design it makes sense to make the window and

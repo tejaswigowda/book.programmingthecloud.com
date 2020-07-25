@@ -1,16 +1,5 @@
 # CSS Properties
 
-## Box model
-
- <img style="display:block;margin:auto" [[src='../../../imgs/boxModel.png'>]]    
- <figcaption> Fig: 4.1.1. CSS Box Model</figcaption>               
-
-## Value types
-
-### Distance
-
-### Color
-
 ## Property List
 
 <table>

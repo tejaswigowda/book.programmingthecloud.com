@@ -31,7 +31,7 @@
 - [CSS](fewtech/css/README.md)
   - [Properties](fewtech/css/concepts/properties.md)
   - [Values](fewtech/css/concepts/values.md)
-  - [CSS Seclectors](fewtech/css/concepts/tta.md)
+  - [Selectors](fewtech/css/concepts/tta.md)
   - [Other Concepts](fewtech/css/concepts/other.md)
   - [Single Page Resume](fewtech/css/singlePageCSS.md)
 

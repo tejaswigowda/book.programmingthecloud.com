@@ -15,8 +15,7 @@ div{
 
 ```
 
-`<CSS declaration 1>` will be applied to all `<p>` tags and `<CSS
-declaration 2>` will be applied to all `<div>` tags.
+`<CSS declaration 1>` will be applied to all `<p>` tags and `<CSS declaration 2>` will be applied to all `<div>` tags.
 
 2. **Tag id**: CSS declaration can be applied to a tag with a specific
    id by using the `#` prefix. For e.g.:
@@ -48,15 +47,14 @@ declaration 2>` will be applied to all `<div>` tags.
 }
 ```
 
-`<CSS declaration 1>` will be applied to all tags that have a class `first` and
-`<CSS declaration 2>` will be applied to all tags with the class name `second`.
+`<CSS declaration 1>` will be applied to all tags that have a class `first` and `<CSS declaration 2>` will be applied to all tags with the class name `second`.
 
 
 ## Combining Selectors
 
 Selectors can be combined by using commas (`,`).
 
-For example instead of rewriting the <CSS declaration like this:
+For example instead of rewriting the CSS declaration like this:
 
 ```css
 #first{

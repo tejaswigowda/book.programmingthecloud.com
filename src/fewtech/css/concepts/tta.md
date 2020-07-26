@@ -54,7 +54,7 @@ div{
 
 Selectors can be combined by using commas (`,`).
 
-For example instead of rewriting the CSS declaration like this:
+For example instead of rewriting the `<CSS declaration>` like this:
 
 ```css
 #first{
@@ -74,6 +74,19 @@ They can be combined like this:
 }
 ```
 
+Selectors written without spaces refer to tags that have all applicable
+selectors:
+
+For example:
+
+```css
+div#first.second{
+  <CSS declaration>
+}
+```
+
+The `<CSS selector>` will be applied to the `<div>` tag that has
+`[id='first']` and a class `second`.'
 
 ## Advanced CSS Selectors
 
@@ -84,7 +97,48 @@ They can be combined like this:
 }
 ```
 
-This `<CSS declaration>` will be applied to all tags.
+This `<CSS declaration>` will be applied to every tag in the HTML
+document.
+
+
+### Attribute selector (`[attr='value']`)
+
+### Decendent selector 
+
+When selectors are combined with a space in-between it is interpreted as
+decendent of elements (from left-to-right):
+
+Example:
+
+```css
+div #first .second{
+  <CSS declaration>
+}
+```
+
+This `<CSS declaration will be applied to a tag that has a class
+`second`, which is a decendent of a tag which has `[id='first']`, which
+in itself is a decendent of a `<div>` tag. Note that these tags only
+have to be decendent nodes and not strictly child nodes.
+
+### Child selector (`>`)
+
+
+
+
+
+
+### Sibling selector
+
+### Adjacent sibling selector
+
+### Column selector
+
+
+### Pseudo class selector (`:`)
+
+### Pseudo element selector (`::`)
+
 
 
 

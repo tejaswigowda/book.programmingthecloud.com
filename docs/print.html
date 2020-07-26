@@ -3065,7 +3065,7 @@ specific class by using the <code>.</code> prefix. Example:</li>
 <p><code>&lt;CSS declaration 1&gt;</code> will be applied to all tags that have a class <code>first</code> and <code>&lt;CSS declaration 2&gt;</code> will be applied to all tags with the class name <code>second</code>.</p>
 <h2><a class="header" href="#combining-selectors" id="combining-selectors">Combining Selectors</a></h2>
 <p>Selectors can be combined by using commas (<code>,</code>).</p>
-<p>For example instead of rewriting the CSS declaration like this:</p>
+<p>For example instead of rewriting the <code>&lt;CSS declaration&gt;</code> like this:</p>
 <pre><code class="language-css">#first{
   &lt;CSS declaration&gt;
 }
@@ -3079,18 +3079,49 @@ specific class by using the <code>.</code> prefix. Example:</li>
   &lt;CSS declaration&gt;
 }
 </code></pre>
+<p>Selectors written without spaces refer to tags that have all applicable
+selectors:</p>
+<p>For example:</p>
+<pre><code class="language-css">div#first.second{
+  &lt;CSS declaration&gt;
+}
+</code></pre>
+<p>The <code>&lt;CSS selector&gt;</code> will be applied to the <code>&lt;div&gt;</code> tag that has
+<code>[id='first']</code> and a class <code>second</code>.'</p>
 <h2><a class="header" href="#advanced-css-selectors" id="advanced-css-selectors">Advanced CSS Selectors</a></h2>
 <h3><a class="header" href="#universal-selector-" id="universal-selector-">Universal selector (<code>*</code>):</a></h3>
 <pre><code class="language-css">*{
   &lt;CSS declaration&gt;
 }
 </code></pre>
-<p>This <code>&lt;CSS declaration&gt;</code> will be applied to all tags.</p>
+<p>This <code>&lt;CSS declaration&gt;</code> will be applied to every tag in the HTML
+document.</p>
+<h3><a class="header" href="#attribute-selector-attrvalue" id="attribute-selector-attrvalue">Attribute selector (<code>[attr='value']</code>)</a></h3>
+<h3><a class="header" href="#decendent-selector" id="decendent-selector">Decendent selector</a></h3>
+<p>When selectors are combined with a space in-between it is interpreted as
+decendent of elements (from left-to-right):</p>
+<p>Example:</p>
+<pre><code class="language-css">div #first .second{
+  &lt;CSS declaration&gt;
+}
+</code></pre>
+<p>This <code>&lt;CSS declaration will be applied to a tag that has a class </code>second<code>, which is a decendent of a tag which has </code>[id='first']<code>, which in itself is a decendent of a </code><div>` tag. Note that these tags only
+have to be decendent nodes and not strictly child nodes.</p>
+<h3><a class="header" href="#child-selector-" id="child-selector-">Child selector (<code>&gt;</code>)</a></h3>
+<h3><a class="header" href="#sibling-selector" id="sibling-selector">Sibling selector</a></h3>
+<h3><a class="header" href="#adjacent-sibling-selector" id="adjacent-sibling-selector">Adjacent sibling selector</a></h3>
+<h3><a class="header" href="#column-selector" id="column-selector">Column selector</a></h3>
+<h3><a class="header" href="#pseudo-class-selector-" id="pseudo-class-selector-">Pseudo class selector (<code>:</code>)</a></h3>
+<h3><a class="header" href="#pseudo-element-selector-" id="pseudo-element-selector-">Pseudo element selector (<code>::</code>)</a></h3>
 <h1><a class="header" href="#other-concepts-1" id="other-concepts-1">Other Concepts</a></h1>
 <h2><a class="header" href="#cascading-rules" id="cascading-rules">Cascading Rules</a></h2>
 <h2><a class="header" href="#vendor-prefixes" id="vendor-prefixes">Vendor Prefixes</a></h2>
 <h2><a class="header" href="#combining-property-value-pairs" id="combining-property-value-pairs">Combining property-value Pairs</a></h2>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
+<h2><a class="header" href="#the--function" id="the--function">The <code>$()</code> function</a></h2>
+<h2><a class="header" href="#other-jquery-functions" id="other-jquery-functions">Other JQuery Functions</a></h2>
+<h2><a class="header" href="#chaining-jquery-functions" id="chaining-jquery-functions">Chaining jQuery functions</a></h2>
+<h2><a class="header" href="#single-page-resume" id="single-page-resume">Single Page Resume</a></h2>
 <h1><a class="header" href="#front-end-web-technologies-1" id="front-end-web-technologies-1">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-2" id="front-end-web-technologies-2">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-3" id="front-end-web-technologies-3">Front End Web Technologies</a></h1>

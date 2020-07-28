@@ -12,7 +12,7 @@ create-missing = false
 [output.html]
 mathjax-support = true
 additional-css = ["custom.css", "CNAME"]
-additional-js = ["jquery-3.4.1.min.js", "custom.js"]
+additional-js = ["jquery-3.4.1.min.js", "custom.js","iframeResizer.min.js"]
 default-theme = "coal"
 
 [output.html.playpen]

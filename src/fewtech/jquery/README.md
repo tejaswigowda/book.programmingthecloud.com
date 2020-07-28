@@ -13,7 +13,7 @@ network or via downloading and linking the jQuery JS file.
 Include the following into the `<head>` of your html document
 
 ```html
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 ```
 
 ### Via local copy
@@ -25,13 +25,20 @@ Include the following into the `<head>` of your html document
 
 - Add this scripot tag into your document `<head>`.
 ```html
-     <script src="jquery-3.5.1.min.js"></script> 
+<script src="jquery-3.5.1.min.js"></script> 
 ```
 
 
 ## The `$()` function
+jQuery implements the dollar function. The arguments for this function
+is any valid CSS selector. This makes using jQuery intuitive for
+designers who are familiar with CSS.
 
-## Other JQuery Functions
+```js
+$("<CSS selector>")
+``` 
+
+## Other jQuery Functions
 
 ## Chaining jQuery functions
 

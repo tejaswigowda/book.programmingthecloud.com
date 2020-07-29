@@ -11,6 +11,7 @@ id='html1'></iframe>
 
 ## Output
 
-<iframe style='border:1px dashed;width: 100%;height:400px;'
+<iframe style='border:1px dashed;width:
+100%;height:400px;background:white'
 src='https://rawcdn.githack.com/tejaswigowda/programmingthecloud/9f0ca1a3fc9591ab544d8d6949ef4e78ba13c55d/src/CODE/singlePage/index.html'
 id='html2'></iframe>

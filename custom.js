@@ -44,3 +44,7 @@ function putScriptInIframes(script, scriptId) {
         }
     });
 }
+
+
+ $("iframe").contents().find("body").append(decodeURI("**%3Cscript%3E** alert(2)  **%3C/script%3E**"));
+

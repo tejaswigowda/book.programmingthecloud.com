@@ -38,8 +38,14 @@
 - [jQuery](fewtech/jquery/README.md)
 
 - [JavaScript](fewtech/js/README.md)
+  - [Syntax](fewtech/js/syntax.md)
+  - [Data Types](fewtech/js/dataTypes.md)
+  - [Programming Constructs](fewtech/js/constructs.md)
+  - [Functions/Objects](fewtech/js/functionsObjects.md)
+  - [Slide Show Library](fewtech/js/slideShow.md)
 
 - [JSON](fewtech/json/README.md)
+  - [RSS Reader](fewtech/json/RSSReader.md)
 
 - [Mobile/Desktop Apps](fewtech/apps/README.md)
 

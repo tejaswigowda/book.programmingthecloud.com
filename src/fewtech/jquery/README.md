@@ -39,6 +39,110 @@ $("<CSS selector>")
 ``` 
 
 ## Other jQuery Functions
+The `$()` function in itself is not very useful. After selecting a group
+of tags (using CSS selectors), we need to *do something* on these tags.
+jQuery provides a variety of functions that do something with those
+tags. 
+
+We now look at some examples:
+
+### `fadeOut()/fadeIn()`
+
+Consider the following example
+
+```html
+<div id='fadeEg' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#fadeEg").fadeOut()'>Fade Out</button>
+<button onclick='$("#fadeEg").fadeIn()'>Fade In</button>
+```
+<div id='fadeEg' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#fadeEg").fadeOut()'>Fade Out</button>
+<button onclick='$("#fadeEg").fadeIn()'>Fade In</button>
+
+The `<div id='fadeEg'>` can be hidden or shown when the button is
+clicked. The `onclick` event triggers the jQuery written as the
+attribute value.
+
+The duration of fadeIn/fadeOut (in milli-seconds) can also be specified as the argument for
+these functions. e.g.:
+
+
+```html
+<div id='fadeEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#fadeEg1").fadeOut(1000)'>Fade Out</button>
+<button onclick='$("#fadeEg1").fadeIn(2500)'>Fade In</button>
+```
+<div id='fadeEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#fadeEg1").fadeOut(1000)'>Fade Out</button>
+<button onclick='$("#fadeEg1").fadeIn(2500)'>Fade In</button>
+
+
+### `css()/animate()`
+
+
+Following is the list of some basic jQuery functions. Try them out. A
+full list can be found here: <https://api.jquery.com/>.
+
+<table>
+<thead>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>hide()</td>
+    <td>Hide the selected tags</td>
+  </tr>
+  <tr>
+    <td>show()</td>
+    <td>Show the selected tags</td>
+  </tr>
+  <tr>
+    <td>toggle()</td>
+    <td>Toggle the selected tags</td>
+  </tr>
+  <tr>
+    <td>slideUp()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>slideDown()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>slideToggle()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>hasClass()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>addClass()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>removeClass()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>toggleClass()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>height()</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>width()</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+
 
 ## Chaining jQuery functions
 

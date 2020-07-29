@@ -1,1 +1,1 @@
-# Front End Web Technologies
+# JavaScript

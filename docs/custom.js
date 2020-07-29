@@ -25,3 +25,26 @@ setTimeout(function(){
 $("#content").on("touchstart", function(){
   setTimeout('$("html").removeClass("sidebar-visible").addClass("sidebar-hidden")', 100);
 })
+
+
+
+
+
+function putScriptInIframes(script, scriptId) {
+
+   var $iframes = $('iframe');
+   $iframes.each(function () {
+        var thisDoc = this.contentWindow.document;
+        if ( ! thisDoc.getElementById(scriptID)) {
+            var scriptObj = thisDoc.createElement("script");
+            scriptObj.type = "text/javascript";
+            scriptObj.id = scriptId;
+            scriptObj.innerHTML = script;
+            thisDoc.body.appendChild(scriptObj);
+        }
+    });
+}
+
+
+ $("iframe").contents().find("body").append(decodeURI("**%3Cscript%3E** alert(2)  **%3C/script%3E**"));
+

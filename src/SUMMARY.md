@@ -41,7 +41,7 @@
   - [Syntax](fewtech/js/syntax.md)
   - [Data Types](fewtech/js/dataTypes.md)
   - [Programming Constructs](fewtech/js/constructs.md)
-  - [Functions/Objects](fewtech/js/functionsObjects.md)
+  - [Objects/Functions](fewtech/js/functionsObjects.md)
   - [Slide Show Library](fewtech/js/slideShow.md)
 
 - [JSON](fewtech/json/README.md)

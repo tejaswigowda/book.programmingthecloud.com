@@ -40,6 +40,7 @@
 - [JavaScript](fewtech/js/README.md)
   - [Syntax](fewtech/js/syntax.md)
   - [Data Types](fewtech/js/dataTypes.md)
+  - [More On Operators](fewtech/js/operators.md)
   - [Programming Constructs](fewtech/js/constructs.md)
   - [Objects/Functions](fewtech/js/functionsObjects.md)
   - [Slide Show Library](fewtech/js/slideShow.md)

@@ -107,5 +107,8 @@ table thead th{
 .notes{
   width: 90%;
   margin-left: 5%;
-  background: rgba(0,0,0,.1);
+  background: rgba(0,0,0,.2);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px dashed;
 }

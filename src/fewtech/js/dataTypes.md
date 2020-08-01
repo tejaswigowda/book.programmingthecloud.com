@@ -29,11 +29,19 @@ typeof x; // string
 
 
 ## Undefined
-
+A variable that is yet to be assigned a value is of the type
+**Undefined**. It holds the value `undefined`. 
+<div class='notes'>
+Note that the
+**Undefined** data type has only one value `undefined`.
+</div>
 
 ## Numbers
 
+
 ## Boolean
+
+
 
 ## String
 

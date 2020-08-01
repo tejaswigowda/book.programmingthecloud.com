@@ -28,7 +28,12 @@ typeof x; // string
 ```
 
 
+## Undefined
+
+
 ## Numbers
+
+## Boolean
 
 ## String
 

@@ -19,8 +19,10 @@ variable.
 ```js
 var x;
 typeof x; // undefined
+
 x = 1;
 typeof x; // number
+
 x = "a string";
 typeof x; // string
 ```

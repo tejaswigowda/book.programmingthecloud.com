@@ -3472,8 +3472,25 @@ ensure readability of multiple word variable names (e.g.: `maxValue` or
 to limit it to 32 charecters).
 </div>
 <h1><a class="header" href="#js-data-types" id="js-data-types">JS Data Types</a></h1>
+<p>JavaScript variables are <strong>loosely typed</strong>, that is the data type of a
+variable can be changed at anytime. This is an important distinction
+from other <em>strongly typed</em> languages such as C, C++ and Java.</p>
 <h2><a class="header" href="#var-keyword" id="var-keyword"><code>var</code> Keyword</a></h2>
+<p>Since Js is loosely typed there is only one variable declaration type --
+using the <code>var</code> keyword.</p>
 <h2><a class="header" href="#typeof-operator" id="typeof-operator"><code>typeof</code> operator</a></h2>
+<p>Even though there is only one type of variable declaration, Js does have
+different dtat types. Loose typing allows for the same variable (think
+of it as a container for values) to be reassigned to diffent data types.
+The <code>typeof</code> operator allows us to inspect the datatype contained in a
+variable.</p>
+<pre><code class="language-js">var x;
+typeof x; // undefined
+x = 1;
+typeof x; // number
+x = &quot;a string&quot;;
+typeof x; // string
+</code></pre>
 <h2><a class="header" href="#numbers" id="numbers">Numbers</a></h2>
 <h2><a class="header" href="#string" id="string">String</a></h2>
 <h2><a class="header" href="#arrays" id="arrays">Arrays</a></h2>

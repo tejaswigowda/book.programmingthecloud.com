@@ -80,19 +80,6 @@ it does have some methods associated with it.
 </div>
 
 
-## Boolean
-
-The **Boolean** data type contains 2 values `true` and `false`;
-
-```js
-var x = true;
-typeof x // boolean
-
-x = false;
-typeof x // boolean
-```
-
-
 ## String
 
 ### String Methods
@@ -335,3 +322,19 @@ typeof x // boolean
     <td>Returns the primitive value of an array</td>
     </tr>
 </tbody></table>
+
+
+
+## Boolean
+
+The **Boolean** data type contains 2 values `true` and `false`;
+
+```js
+var x = true;
+typeof x // boolean
+
+x = false;
+typeof x // boolean
+```
+
+

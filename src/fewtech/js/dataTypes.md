@@ -9,7 +9,7 @@ from other *strongly typed* languages such as C, C++ and Java.
 Since Js is loosely typed there is only one variable declaration type --
 using the `var` keyword.
 
-## `typeof` operator
+## `typeof` Operator
 Even though there is only one type of variable declaration, Js does have
 different dtat types. Loose typing allows for the same variable (think
 of it as a container for values) to be reassigned to diffent data types.
@@ -57,24 +57,77 @@ typeof x; // number
 </div>
 
 ### Number Methods
-Number is not an object (objects will be discussed in detail later), but
-it does have some methods associated with it.
-
-### `toFixed()`
+Number is not an object (objects will be discussed in detail later),
+but a variable with typeof "number" has
+some methods associated with it.
 
 ### `toString()`
+A number can be converted to its string representation by the
+`toString()` method. 
+
+```js
+var x = 10;
+y = x.toString();
+typeof y; // string
+
+x = 3.142;
+y = x.toString();
+typeof y; // string
+```
+
+This method also allows for conversion from one base to another.
+
+```js
+var x = 13;
+y = x.toString(2); // 1101
+z = x.toString(16); // d
+```
+
+
+### `toFixed()`
+This function allows convertion to different precision strings
+
+```js
+var x = 13;
+y = x.toFixed(2); // 13.00
+z = x.toFixed(1); // 13.0
+```
 
 ### `toExponential()`
 
-### `toFixed()`
+This function converts numbers into its scientific notation string.
+
+```js
+var x = 13;
+y = x.toExponential(2); // 1.30e+1
+z = x.toExponential(1); // 1.3e+1
+a = x.toExponential(0); // 1e+1
+```
+
 
 <div class='notes'>
 <b>Other Number mainipulation Methods</b>
 
 ### `parseInt()`
+This function converts strings to respective integers.
 
+```js
+parseInt("13"); // 13
+parseInt("3.142"); // 3
+parseInt("3slndv"); // 3
+parseInt("3.14slndv"); // 3
+```
 
 ### `parseFloat()`
+
+```js
+parseFloat("13"); // 13
+parseFloat("3.142"); // 3.142
+parseFloat("3slndv"); // 3
+parseFloat("3.14slndv"); // 3.14
+```
+
+
 
 
 </div>

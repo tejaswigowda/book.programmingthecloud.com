@@ -160,7 +160,7 @@ from other <em>strongly typed</em> languages such as C, C++ and Java.</p>
 <h2><a class="header" href="#var-keyword" id="var-keyword"><code>var</code> Keyword</a></h2>
 <p>Since Js is loosely typed there is only one variable declaration type --
 using the <code>var</code> keyword.</p>
-<h2><a class="header" href="#typeof-operator" id="typeof-operator"><code>typeof</code> operator</a></h2>
+<h2><a class="header" href="#typeof-operator" id="typeof-operator"><code>typeof</code> Operator</a></h2>
 <p>Even though there is only one type of variable declaration, Js does have
 different dtat types. Loose typing allows for the same variable (think
 of it as a container for values) to be reassigned to diffent data types.
@@ -198,25 +198,54 @@ typeof x; // number
 </code></pre>
 </div>
 <h3><a class="header" href="#number-methods" id="number-methods">Number Methods</a></h3>
-<p>Number is not an object (objects will be discussed in detail later), but
-it does have some methods associated with it.</p>
-<h3><a class="header" href="#tofixed" id="tofixed"><code>toFixed()</code></a></h3>
+<p>Number is not an object (objects will be discussed in detail later),
+but a variable with typeof &quot;number&quot; has
+some methods associated with it.</p>
 <h3><a class="header" href="#tostring" id="tostring"><code>toString()</code></a></h3>
+<p>A number can be converted to its string representation by the
+<code>toString()</code> method. </p>
+<pre><code class="language-js">var x = 10;
+y = x.toString();
+typeof y; // string
+
+x = 3.142;
+y = x.toString();
+typeof y; // string
+</code></pre>
+<p>This method also allows for conversion from one base to another.</p>
+<pre><code class="language-js">var x = 13;
+y = x.toString(2); // 1101
+z = x.toString(16); // d
+</code></pre>
+<h3><a class="header" href="#tofixed" id="tofixed"><code>toFixed()</code></a></h3>
+<p>This function allows convertion to different precision strings</p>
+<pre><code class="language-js">var x = 13;
+y = x.toFixed(2); // 13.00
+z = x.toFixed(1); // 13.0
+</code></pre>
 <h3><a class="header" href="#toexponential" id="toexponential"><code>toExponential()</code></a></h3>
-<h3><a class="header" href="#tofixed-1" id="tofixed-1"><code>toFixed()</code></a></h3>
+<p>This function converts numbers into its scientific notation string.</p>
+<pre><code class="language-js">var x = 13;
+y = x.toExponential(2); // 1.30e+1
+z = x.toExponential(1); // 1.3e+1
+a = x.toExponential(0); // 1e+1
+</code></pre>
 <div class='notes'>
 <b>Other Number mainipulation Methods</b>
 <h3><a class="header" href="#parseint" id="parseint"><code>parseInt()</code></a></h3>
-<h3><a class="header" href="#parsefloat" id="parsefloat"><code>parseFloat()</code></a></h3>
-</div>
-<h2><a class="header" href="#boolean" id="boolean">Boolean</a></h2>
-<p>The <strong>Boolean</strong> data type contains 2 values <code>true</code> and <code>false</code>;</p>
-<pre><code class="language-js">var x = true;
-typeof x // boolean
-
-x = false;
-typeof x // boolean
+<p>This function converts strings to respective integers.</p>
+<pre><code class="language-js">parseInt(&quot;13&quot;); // 13
+parseInt(&quot;3.142&quot;); // 3
+parseInt(&quot;3slndv&quot;); // 3
+parseInt(&quot;3.14slndv&quot;); // 3
 </code></pre>
+<h3><a class="header" href="#parsefloat" id="parsefloat"><code>parseFloat()</code></a></h3>
+<pre><code class="language-js">parseFloat(&quot;13&quot;); // 13
+parseFloat(&quot;3.142&quot;); // 3.142
+parseFloat(&quot;3slndv&quot;); // 3
+parseFloat(&quot;3.14slndv&quot;); // 3.14
+</code></pre>
+</div>
 <h2><a class="header" href="#string" id="string">String</a></h2>
 <h3><a class="header" href="#string-methods" id="string-methods">String Methods</a></h3>
 <table class="w3-table-all notranslate">
@@ -453,6 +482,14 @@ typeof x // boolean
     <td>Returns the primitive value of an array</td>
     </tr>
 </tbody></table>
+<h2><a class="header" href="#boolean" id="boolean">Boolean</a></h2>
+<p>The <strong>Boolean</strong> data type contains 2 values <code>true</code> and <code>false</code>;</p>
+<pre><code class="language-js">var x = true;
+typeof x // boolean
+
+x = false;
+typeof x // boolean
+</code></pre>
 
                     </main>
 

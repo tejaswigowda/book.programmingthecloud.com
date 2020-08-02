@@ -3565,8 +3565,36 @@ parseFloat(&quot;3.14slndv&quot;); // 3.14
 </code></pre>
 </div>
 <h2><a class="header" href="#string" id="string">String</a></h2>
+<p>String is a built in data-type in all JS interpreters. A String can be
+assigned to any variable by the assignment (<code>=</code>) operator. A string
+literal can be enclosed with either single or double quotes.</p>
+<pre><code class="language-js">var st = &quot;a string&quot;; // string assignment
+var st1 = 'another string'; // string literals can use either sigal or
+double quotes
+</code></pre>
+<p>Each eleiment (charecter) of the string can be <strong>indexed</strong> by using its
+<strong>index</strong>, or the position. Remember strings are zero-indexed i.e.
+indexing starts with zero. Therfore <code>st[0]</code> refers to the first
+charecter in a string, <code>st[1]</code> refers to the second charecter and so on.
+The total number of charecters can be accessed by the <code>length</code> property.</p>
+<pre><code class="language-js">var st = &quot;a string&quot;; 
+var len = st.length; // 8
+</code></pre>
+<p>A string is also an object and has built-in methods. Let is look at a
+few of them in action.</p>
+<pre><code class="language-js">var st = &quot;a string&quot;;
+var x = st.indexOf(&quot;s&quot;); // 2
+
+var words = st.split(&quot; &quot;); // [ &quot;a&quot;, &quot;string&quot; ]
+
+var aChar = st.charAt(6); // &quot;n&quot;
+
+var charCode = st.charCodeAt(6); // 110 
+
+</code></pre>
+<p>A full list of String methods are listed below.</p>
 <h3><a class="header" href="#string-methods" id="string-methods">String Methods</a></h3>
-<table class="w3-table-all notranslate">
+<table>
   <tbody><tr>
     <th style="width:24%">Method</th>
     <th>Description</th>
@@ -3673,8 +3701,16 @@ parseFloat(&quot;3.14slndv&quot;); // 3.14
   </tr>
 </tbody></table>
 <h2><a class="header" href="#arrays" id="arrays">Arrays</a></h2>
+<p>Arrays are another built in data-type that allows the programmer to
+manage lists. Unlike strings, which only allows charecters to be part of
+the list, arrays can have any valid JS value/literal as members.
+Similar to string, the number of list members can be accessed via the
+<code>length</code> property.</p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, 1, &quot;a string&quot;, 3.14];
+var len = arr.length; // 4
+</code></pre>
 <h3><a class="header" href="#array-methods" id="array-methods">Array Methods</a></h3>
-<table class="w3-table-all notranslate">
+<table>
   <tbody><tr>
     <th style="width:20%">Method</th>
     <th>Description</th>

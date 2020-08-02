@@ -135,9 +135,46 @@ parseFloat("3.14slndv"); // 3.14
 
 ## String
 
+String is a built in data-type in all JS interpreters. A String can be
+assigned to any variable by the assignment (`=`) operator. A string
+literal can be enclosed with either single or double quotes.
+
+```js
+var st = "a string"; // string assignment
+var st1 = 'another string'; // string literals can use either sigal or
+double quotes
+```
+
+Each eleiment (charecter) of the string can be **indexed** by using its
+**index**, or the position. Remember strings are zero-indexed i.e.
+indexing starts with zero. Therfore `st[0]` refers to the first
+charecter in a string, `st[1]` refers to the second charecter and so on.
+The total number of charecters can be accessed by the `length` property.
+
+```js
+var st = "a string"; 
+var len = st.length; // 8
+```
+ 
+A string is also an object and has built-in methods. Let is look at a
+few of them in action.
+
+```js
+var st = "a string";
+var x = st.indexOf("s"); // 2
+
+var words = st.split(" "); // [ "a", "string" ]
+
+var aChar = st.charAt(6); // "n"
+
+var charCode = st.charCodeAt(6); // 110 
+
+```
+
+A full list of String methods are listed below.
 ### String Methods
 
-<table class="w3-table-all notranslate">
+<table>
   <tbody><tr>
     <th style="width:24%">Method</th>
     <th>Description</th>
@@ -246,10 +283,20 @@ parseFloat("3.14slndv"); // 3.14
 
 
 ## Arrays
+Arrays are another built in data-type that allows the programmer to
+manage lists. Unlike strings, which only allows charecters to be part of
+the list, arrays can have any valid JS value/literal as members.
+Similar to string, the number of list members can be accessed via the
+`length` property.
+
+```js
+var arr = ["a", 1, "a string", 3.14];
+var len = arr.length; // 4
+```
 
 ### Array Methods
 
-<table class="w3-table-all notranslate">
+<table>
   <tbody><tr>
     <th style="width:20%">Method</th>
     <th>Description</th>

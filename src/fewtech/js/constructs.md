@@ -1,3 +1,5 @@
+# Decisions and Looping 
+
 ## Code Blocks
 A code block in JS is statemets that are enclode in between curly braces
 (`{}`). Certain code-blocks allow for modification of the execution

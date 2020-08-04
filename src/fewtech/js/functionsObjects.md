@@ -26,7 +26,12 @@ var pos = s["indexOf"](a); // using box brackets
 
 ## Built In Objects
 
+In this section we look at more built in objects.
+
 ### `date`
+The `date` object provides an easy way to store and manipulate dates in
+JS.
+
 
 ### `window`
 

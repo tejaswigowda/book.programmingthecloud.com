@@ -86,9 +86,9 @@ switch (score){
 ```
 
 <div class='notes'>
-`break` keyword
-The break keyword exits the code block. It is necessary in `switch/case`
-as without a break the execution continues into the next set of
+<code>break</code> keyword
+The <code>break</code> keyword exits the code block. It is necessary in `switch/case`
+as without a <code>break</code> the execution continues into the next set of
 statements.
 </div>
 
@@ -170,9 +170,9 @@ for(var i = 0; i < values.length; i++){
 ```
 
 <div class='notes'>
-`continue` keyword
+<code>continue</code> keyword
 
-The `continue` keyword gets the control (executaion sequence to the end
+The <code>continue</code> keyword gets the control (executaion sequence to the end
 of the code block).
 
 Let us look at an example on how to use this. In this example we will

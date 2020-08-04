@@ -437,4 +437,6 @@ x = false;
 typeof x // boolean
 ```
 
-
+Before continuing with more complex data-types (objects) and fun ctions
+we will now look at more operators and programming constructs used in
+JavaScript.

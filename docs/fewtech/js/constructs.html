@@ -154,8 +154,159 @@
                 <div id="content" class="content">
                     <main>
                         <h2><a class="header" href="#code-blocks" id="code-blocks">Code Blocks</a></h2>
-<h2><a class="header" href="#ifelse" id="ifelse"><code>if()</code>/<code>else()</code></a></h2>
-<h2><a class="header" href="#while-and-for" id="while-and-for"><code>while()</code> and <code>for()</code></a></h2>
+<p>A code block in JS is statemets that are enclode in between curly braces
+(<code>{}</code>). Certain code-blocks allow for modification of the execution
+sequence in interesting ways -- decision making and iteration.</p>
+<h2><a class="header" href="#ifelse" id="ifelse"><code>if(){}</code>/<code>else(){}</code></a></h2>
+<p>The <code>if/else</code> construct lends itself to implementing binary decision
+trees in JS. An if/else block has the following syntax:</p>
+<pre><code class="language-js">if( &lt;CONDITION&gt; ){
+  // execute statements in block
+  // if the &lt;CONDITION&gt; is true
+}
+else{
+  // execute statements in block
+  // if the &lt;CONDITION&gt; is false
+}
+</code></pre>
+<p>The <code>&lt;CONDITION&gt;</code> can be any valid Js expression. Unlike other languages
+the <code>&lt;CONDITION&gt;</code> does not have to strictly evaluate to a Boolean <code>true</code> or
+<code>false</code>. The interpreter will typecast the <code>&lt;CONDITION&gt;</code> to the nearest
+Boolean value (Either <code>true</code> or <code>false</code>).</p>
+<p>Consider the following example where different entry prices apply
+depending on age.</p>
+<pre><code class="language-js">var entryPrice, moviePrice;
+if(age &lt; 3){
+  entryPrice = 0;
+  moviePrice = 0;
+}
+else if(age &lt; 16){
+  entryPrice = 10;
+  moviePrice = 2;
+}
+else{
+  entryPrice = 100;
+  moviePrice = 20;
+}
+
+</code></pre>
+<h2><a class="header" href="#switchcase" id="switchcase"><code>switch(){}</code>/<code>case</code></a></h2>
+<p>This construct allows implementation of decision trees and is best
+suited for more than 2 decison options. Consider the following example
+of assigning grades:</p>
+<pre><code class="language-js">// score variable holds the percent score earned by student
+var grade;
+if(score &lt; 60){
+  grade = &quot;D&quot;;
+}
+else if(score &lt; 70){
+  grade = &quot;C&quot;;
+}
+else if(score &lt; 90){
+  grade = &quot;B&quot;;
+}
+else{
+  grade = &quot;A&quot;;
+}
+</code></pre>
+<p>This can also be implemented using <code>switch/case</code>:</p>
+<pre><code class="language-js">switch (score){
+  case (score &lt; 60):
+    grade = &quot;D&quot;;
+    break;
+  case (score &lt; 70):
+    grade = &quot;C&quot;;
+    break;
+  case (score &lt; 90):
+    grade = &quot;B&quot;;
+    break;
+  default:
+    grade = &quot;A&quot;;
+    break;
+}
+
+</code></pre>
+<div class='notes'>
+`break` keyword
+The break keyword exits the code block. It is necessary in `switch/case`
+as without a break the execution continues into the next set of
+statements.
+</div>
+<h2><a class="header" href="#while-and-for" id="while-and-for"><code>while(){}</code> and <code>for(){}</code></a></h2>
+<p>The two constructs allow for iteration. This will be explained by
+iterating over an array to find the minimum and maximum value from a
+list of values.</p>
+<p>Consider the following list of values:</p>
+<pre><code class="language-js">var values = [3, 13, 14, 234, 12, 4, 13, 54, 64, 76, 65];
+</code></pre>
+<p>This list can be <strong>iterated</strong> using an index variable <code>i</code> and the while
+loop as follows:</p>
+<pre><code class="language-js">var i = 0; // define an initialize the index variable
+// JS arrays are zero-indexed
+
+while(i &lt; values.length){
+  console.log(values[i]);
+  i++; equivalent to i = i + 1;
+}
+</code></pre>
+<p>This same <code>while</code> loop can be written as a <code>for</code> loop as follows:</p>
+<pre><code class="language-js">for(var i = 0; i &lt; values.length; i++){
+  console.log(values[i]);
+}
+</code></pre>
+<p>As you can observe the <code>for</code> loop combines the index initialization and
+increment together with the conditional.</p>
+<div class='notes'>
+  `while` and `for` are equivalent -- anything you can do with `while`
+yiou can do with `for` and vice-versa.
+</div>
+<p>Now let us look how we can find the minimum and maximum value of an
+array using <code>while</code> and <code>for</code>.</p>
+<pre><code class="language-js">// Using while
+var values = [3, 13, 14, 234, 12, 4, 13, 54, 64, 76, 65];
+var min = Infinity;
+var max = 0;
+var i = 0;
+while(i &lt; values.length){
+  if(values[i]&gt;max){
+    max = values[i];
+  }
+  if(values[i]&lt;min){
+    min = values[i];
+  }
+  i++;
+}
+</code></pre>
+<pre><code class="language-js">// Using for
+var values = [3, 13, 14, 234, 12, 4, 13, 54, 64, 76, 65];
+var min = Infinity;
+var max = 0;
+for(var i = 0; i &lt; values.length; i++){
+  if(values[i]&gt;max){
+    max = values[i];
+  }
+  if(values[i]&lt;min){
+    min = values[i];
+  }
+}
+</code></pre>
+<div class='notes'>
+`continue` keyword
+<p>The <code>continue</code> keyword gets the control (executaion sequence to the end
+of the code block).</p>
+<p>Let us look at an example on how to use this. In this example we will
+calculate the average of a list of values that are positive.</p>
+<pre><code class="language-js">var values = [-1, -5, 35, 43, 234, -67, 76, 64, 34, 77];
+var sum = 0;
+for (var i = 0; i &lt; values.length; i++){
+  if(values[i] &lt; 0){
+    continue;
+  }
+  sum = sum + values[i];
+}
+var avg = sum/values.length;
+</code></pre>
+</div>
 
                     </main>
 

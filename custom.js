@@ -18,6 +18,7 @@ setTimeout(function(){
   $($(".chapter li.spacer")[0]).prepend("<div class='partT'>Front End Web Technologies</div><br>")
   $($(".chapter li.spacer")[1]).prepend("<div class='partT'>Full Stack Programming</div><br>")
   $($(".chapter li.spacer")[2]).prepend("<div class='partT'>Programming IoT</div><br>")
+  //$($(".chapter li.spacer")[3]).prepend("<div class='partT'>Programming IoT</div><br>")
   $("#sidebar-scrollbox .chapter").prepend("<div style='margin-bottom: 0; width: 100%;margin-left: 0; text-align: center;' class='partT'>Programming the Cloud</div><br>")
 }, 0);
 

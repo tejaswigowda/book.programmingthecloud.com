@@ -42,7 +42,8 @@
   - [Data Types](fewtech/js/dataTypes.md)
   - [More On Operators](fewtech/js/operators.md)
   - [Programming Constructs](fewtech/js/constructs.md)
-  - [Objects/Functions](fewtech/js/functionsObjects.md)
+  - [Objects](fewtech/js/objects.md)
+  - [Functions](fewtech/js/functions.md)
   - [Slide Show Library](fewtech/js/slideShow.md)
 
 - [JSON](fewtech/json/README.md)
@@ -51,6 +52,11 @@
 - [Mobile/Desktop Apps](fewtech/apps/README.md)
 
 - [Advanced Topics](fewtech/advConcepts/README.md)
+  - [Sorting](fewtech/advConcepts/sorting.md)
+  - [CSS Transitions](fewtech/advConcepts/cssTransitions.md)
+  - [CSS TransForms](fewtech/advConcepts/CSSTransforms.md)
+  - [CSS Animations](fewtech/advConcepts/cssAnimations.md)
+  - [Responsive Design](fewtech/advConcepts/rdesign.md)
 
 -----------
 
@@ -62,7 +68,17 @@
 
 -----------
 
-- [Programming IoT](iot/README.md)
+- [Basics](iot/README.md)
+  - [What is IoT?](iot/basics.md)
+  - [Development Environment](iot/devops.md)
+  - [Arduino C++](iot/cpp.md)
+
+- [T Watch + Sensor Kit](iot/twatch/README.md)
+
+- [Advanced Projects](iot/adv/README.md)
+
 
 -----------
+
+[References](bib.md)
 

@@ -4450,10 +4450,18 @@ var pos = s[&quot;indexOf&quot;](a); // using box brackets
 <p>The <code>date</code> object provides an easy way to store and manipulate dates in
 JS.</p>
 <p>Each <code>date</code> object stores a particular date and time. Instantiating a
-<code>date</code> object without arguments will give you ghe current date-time.</p>
+<code>date</code> object without arguments will give you the current date-time.</p>
 <pre><code class="language-js">var now = new Date();
 </code></pre>
-<p>As an object <code>Date()</code> has built in methods:</p>
+<div class='notes'>
+<h4><a class="header" href="#new-keyword" id="new-keyword"><code>new</code> keyword</a></h4>
+<p>The <code>new</code> keyword is used to create a new object. Notice that we did not
+use <code>new()</code> to create Arrays and Strings. That is because they are
+built-in objects which can be instantiated without <code>new</code>(although you
+could if you choose).</p>
+</div>
+<p>As an object <code>Date()</code> has built in methods[<a
+href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:</p>
 <table class="table table-bordered">
 <tbody><tr>
 <th style="text-align:center;">Method 
@@ -4653,8 +4661,8 @@ Description</th></tr>
 </td><td><p>Returns the primitive value of a Date object.</p></td>
 </tr>
 </tbody></table>
-<figcaption> Table: 6.5.1 Date Object Methods [<a href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]</figcaption>               
-<p>In Addition there are 2 static <code>Date()</code> methods:</p>
+<p>In Addition there are 2 static <code>Date()</code> methods[<a
+href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:</p>
 <table class="table table-bordered">
 <tbody><tr>
 <th style="text-align:center;">Method 
@@ -4670,15 +4678,9 @@ Description</th></tr>
 </td><td><p>Returns the millisecond representation of the specified UTC date and time.</p></td>
 </tr>
 </tbody></table>
-<figcaption> Table: 6.5.1 Date Object Static Methods [<a href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]</figcaption>               
-<div class='notes'>
-<code>new</code> keyword
-The `new` keyword is used to create a new object. Notice that we did not
-use `new()` to create Arrays and Strings. That is because they are
-built-in objects which can be instantiated without `new`(althoigh you
-could if you choose).
-</div>
 <h3><a class="header" href="#window" id="window"><code>window</code></a></h3>
+<img style="display:block;margin:auto" src='../../imgs/windowObject.png'>    
+ <figcaption> Fig: 6.5.1 <code>window</code> Object</figcaption>               
 <h3><a class="header" href="#document" id="document"><code>document</code></a></h3>
 <div class='notes'>
 <h4><a class="header" href="#document-object-model-dom" id="document-object-model-dom">Document Object Model (DOM)</a></h4>
@@ -4714,20 +4716,54 @@ could if you choose).
 <h1><a class="header" href="#programming-the-internet-of-things-iot-4" id="programming-the-internet-of-things-iot-4">Programming the Internet of Things (IoT)</a></h1>
 <h1><a class="header" href="#programming-the-internet-of-things-iot-5" id="programming-the-internet-of-things-iot-5">Programming the Internet of Things (IoT)</a></h1>
 <h1><a class="header" href="#references" id="references">References</a></h1>
+<div class='notes ref'>
 <ul>
 <li>
-<h2><a class="header" href="#html-tutorial-w3schoolscom" id="html-tutorial-w3schoolscom">HTML Tutorial. W3schools.com.</a></h2>
+<h4><a class="header" href="#getting-started-with-the-web-mdn-web-docs" id="getting-started-with-the-web-mdn-web-docs">Getting started with the Web. MDN Web Docs.</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web</a>. Published July 14, 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#html-hypertext-markup-language-mdn-web-docs" id="html-hypertext-markup-language-mdn-web-docs">HTML: Hypertext Markup Language. MDN Web Docs.</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a>. Published July 27, 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#css-cascading-style-sheets-mdn-web-docs" id="css-cascading-style-sheets-mdn-web-docs">CSS: Cascading Style Sheets. MDN Web Docs.</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a>. Published July 9, 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#javascript-mdn-web-docs" id="javascript-mdn-web-docs">JavaScript. MDN Web Docs.</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>. Published July 9, 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#html-tutorial-w3schoolscom" id="html-tutorial-w3schoolscom">HTML Tutorial. W3schools.com.</a></h4>
 <p><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a>. Published 2020. Accessed August 4, 2020.</p>
 </li>
 <li>
-<h2><a class="header" href="#javascript-tutorial-w3schoolscom" id="javascript-tutorial-w3schoolscom">JavaScript Tutorial. W3schools.com.</a></h2>
+<h4><a class="header" href="#javascript-tutorial-w3schoolscom" id="javascript-tutorial-w3schoolscom">JavaScript Tutorial. W3schools.com.</a></h4>
 <p><a href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a>. Published 2020. Accessed August 4, 2020.</p>
 </li>
 <li>
-<h2><a class="header" href="#javascript---the-date-object---tutorialspoint-tutorialspointcom" id="javascript---the-date-object---tutorialspoint-tutorialspointcom">JavaScript - The Date Object - Tutorialspoint. Tutorialspoint.com.</a></h2>
+<h4><a class="header" href="#javascript---the-date-object---tutorialspoint-tutorialspointcom" id="javascript---the-date-object---tutorialspoint-tutorialspointcom">JavaScript - The Date Object - Tutorialspoint. Tutorialspoint.com.</a></h4>
 <p><a href="https://www.tutorialspoint.com/javascript/javascript_date_object.htm">https://www.tutorialspoint.com/javascript/javascript_date_object.htm</a>. Published 2020. Accessed August 5, 2020.</p>
 </li>
+<li>
+<h4><a class="header" href="#javascript-array-reference-w3schoolscom" id="javascript-array-reference-w3schoolscom">JavaScript Array Reference. W3schools.com.</a></h4>
+<p><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">https://www.w3schools.com/jsref/jsref_obj_array.asp</a>. Published 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#javascript-comparison-and-logical-operators-w3schoolscom" id="javascript-comparison-and-logical-operators-w3schoolscom">JavaScript Comparison and Logical Operators. W3schools.com.</a></h4>
+<p><a href="https://www.w3schools.com/js/js_comparisons.asp">https://www.w3schools.com/js/js_comparisons.asp</a>. Published 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#javascript-string-reference-w3schoolscom" id="javascript-string-reference-w3schoolscom">JavaScript String Reference. W3schools.com.</a></h4>
+<p><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">https://www.w3schools.com/jsref/jsref_obj_string.asp</a>. Published 2020. Accessed August 5, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#operator-precedence-mdn-web-docs" id="operator-precedence-mdn-web-docs">Operator precedence. MDN Web Docs.</a></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>. Published July 7, 2020. Accessed August 5, 2020.</p>
+</li>
 </ul>
+</div>
 
                     </main>
 

@@ -33,22 +33,25 @@ The `date` object provides an easy way to store and manipulate dates in
 JS.
 
 Each `date` object stores a particular date and time. Instantiating a
-`date` object without arguments will give you ghe current date-time.
+`date` object without arguments will give you the current date-time.
 
 ```js
 var now = new Date();
 ```
 
 <div class='notes'>
-<code>new</code> keyword
+
+#### <code>new</code> keyword
+
 The `new` keyword is used to create a new object. Notice that we did not
 use `new()` to create Arrays and Strings. That is because they are
-built-in objects which can be instantiated without `new`(althoigh you
+built-in objects which can be instantiated without `new`(although you
 could if you choose).
 </div>
 
 
-As an object `Date()` has built in methods:
+As an object `Date()` has built in methods[<a
+href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:
 
 <table class="table table-bordered">
 <tbody><tr>
@@ -293,11 +296,12 @@ Description</th></tr>
 </tr>
 </tbody></table>
 
-<figcaption> Table: 6.5.1 Date Object Methods [<a href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]</figcaption>               
 
 
 
-In Addition there are 2 static `Date()` methods:
+
+In Addition there are 2 static `Date()` methods[<a
+href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:
 
 <table class="table table-bordered">
 <tbody><tr>
@@ -317,9 +321,12 @@ In Addition there are 2 static `Date()` methods:
 </tr>
 </tbody></table>
 
-<figcaption> Table: 6.5.1 Date Object Static Methods [<a href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]</figcaption>               
+
 
 ### `window`
+
+ <img style="display:block;margin:auto" src='../../imgs/windowObject.png'>    
+ <figcaption> Fig: 6.5.1 <code>window</code> Object</figcaption>               
 
 ### `document` 
 

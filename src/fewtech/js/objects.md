@@ -1,7 +1,7 @@
 # Objects
 
 Objects are built in data type. An Object is a collection of
-**properties** and **methods**, whcih are called **members** of the
+**properties**(variables) and **methods**(functions), which are called **members** of the
 Object. 
 
 We have already looked at 2 built in
@@ -26,6 +26,15 @@ var pos = s.indexOf(a); // using dot operator
 var pos = s["indexOf"](a); // using box brackets
 ```
 
+
+## Object Syntax
+
+```js
+var obj = { property_1:   value_1,   // property_# may be an identifier...
+            2:            value_2,   // or a number...
+            // ...,
+            'property n': value_n }; // or a string
+```
 
 ## Built In Objects
 
@@ -351,9 +360,29 @@ The window object encapsulates other important objects such as --
 </div>
 
 
+<div class='notes'>
+
+#### What about jQuery?
+
+</div>
+
+
+
+
 
 ### `Object` Object
 
+There is a built-in Object called `Object`. This has one useful static
+method that we will discuss here. `Object.keys()` returns the list of
+all the objects member keys. It is very handy when you want to iterate
+the Object.
 
-
+```js
+var keys = Object.keys(location) // can be used to get keys on any
+object
+for(var i = 0; i < keys.length; i++){
+  console.log("Key: " +keys[i]);
+  console.log("Key value: " + location[keys[i]]);
+}
+```
 

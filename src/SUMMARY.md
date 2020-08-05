@@ -42,8 +42,8 @@
   - [Data Types](fewtech/js/dataTypes.md)
   - [More On Operators](fewtech/js/operators.md)
   - [Programming Constructs](fewtech/js/constructs.md)
-  - [Objects](fewtech/js/objects.md)
   - [Functions](fewtech/js/functions.md)
+  - [Objects](fewtech/js/objects.md)
   - [Slide Show Library](fewtech/js/slideShow.md)
 
 - [JSON](fewtech/json/README.md)

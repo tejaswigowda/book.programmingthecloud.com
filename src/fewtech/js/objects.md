@@ -39,6 +39,15 @@ Each `date` object stores a particular date and time. Instantiating a
 var now = new Date();
 ```
 
+<div class='notes'>
+<code>new</code> keyword
+The `new` keyword is used to create a new object. Notice that we did not
+use `new()` to create Arrays and Strings. That is because they are
+built-in objects which can be instantiated without `new`(althoigh you
+could if you choose).
+</div>
+
+
 As an object `Date()` has built in methods:
 
 <table class="table table-bordered">
@@ -309,15 +318,6 @@ In Addition there are 2 static `Date()` methods:
 </tbody></table>
 
 <figcaption> Table: 6.5.1 Date Object Static Methods [<a href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]</figcaption>               
-
-<div class='notes'>
-<code>new</code> keyword
-The `new` keyword is used to create a new object. Notice that we did not
-use `new()` to create Arrays and Strings. That is because they are
-built-in objects which can be instantiated without `new`(althoigh you
-could if you choose).
-</div>
-
 
 ### `window`
 

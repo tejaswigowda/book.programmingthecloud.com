@@ -1,7 +1,10 @@
 # Objects
 
 Objects are built in data type. An Object is a collection of
-**properties** and **methods**. We have already looked at 2 built in
+**properties** and **methods**, whcih are called **members** of the
+Object. 
+
+We have already looked at 2 built in
 objects -- Strings and Arrays. They both have property `length` and many
 different methods. 
 
@@ -325,14 +328,32 @@ href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspoin
 
 ### `window`
 
+For browser based JS, the `window` is the topmost object. All other
+objects and variables are derived from the `window` object.
+
  <img style="display:block;margin:auto" src='../../imgs/windowObject.png'>    
  <figcaption> Fig: 6.5.1 <code>window</code> Object</figcaption>               
 
-### `document` 
+Therefore when we write `console.log()` it is interpreted as
+`window.console.log()`.
+
+The window object encapsulates other important objects such as --
+`location` (which has useful members such as `location.href`,
+`location.hash`, `location.host`,  `location.reload()` etc.) and
+`document`.
+ 
+### `document` Object
 
 <div class='notes'>
 
 #### Document Object Model (DOM)
 
 </div>
+
+
+
+### `Object` Object
+
+
+
 

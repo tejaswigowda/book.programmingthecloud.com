@@ -1,4 +1,4 @@
-# References
+# Bibliography
 
 <div class='notes ref'>
 

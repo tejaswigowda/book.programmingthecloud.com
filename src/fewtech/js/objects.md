@@ -40,6 +40,22 @@ var obj = { property_1:   value_1,   // property_# may be an identifier...
 
 In this section we look at more built in objects.
 
+### `Object` Object
+
+There is a built-in Object called `Object`. This has one useful static
+method that we will discuss here. `Object.keys()` returns the list of
+all the objects member keys. It is very handy when you want to iterate
+the Object.
+
+```js
+var keys = Object.keys(location) // can be used to get keys on any
+object
+for(var i = 0; i < keys.length; i++){
+  console.log("Key: " +keys[i]);
+  console.log("Key value: " + location[keys[i]]);
+}
+```
+
 ### `date`
 The `date` object provides an easy way to store and manipulate dates in
 JS.
@@ -335,7 +351,7 @@ href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspoin
 
 
 
-### `window`
+### `window` Object (browser only)
 
 For browser based JS, the `window` is the topmost object. All other
 objects and variables are derived from the `window` object.
@@ -351,7 +367,7 @@ The window object encapsulates other important objects such as --
 `location.hash`, `location.host`,  `location.reload()` etc.) and
 `document`.
  
-### `document` Object
+### `document` Object (browser only)
 
 <div class='notes'>
 
@@ -369,20 +385,4 @@ The window object encapsulates other important objects such as --
 
 
 
-
-### `Object` Object
-
-There is a built-in Object called `Object`. This has one useful static
-method that we will discuss here. `Object.keys()` returns the list of
-all the objects member keys. It is very handy when you want to iterate
-the Object.
-
-```js
-var keys = Object.keys(location) // can be used to get keys on any
-object
-for(var i = 0; i < keys.length; i++){
-  console.log("Key: " +keys[i]);
-  console.log("Key value: " + location[keys[i]]);
-}
-```
 

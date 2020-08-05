@@ -20,12 +20,14 @@ setTimeout(function(){
   $($(".chapter li.spacer")[2]).prepend("<div class='partT'>Programming IoT</div><br>")
   //$($(".chapter li.spacer")[3]).prepend("<div class='partT'>Programming IoT</div><br>")
   $("#sidebar-scrollbox .chapter").prepend("<div style='margin-bottom: 0; width: 100%;margin-left: 0; text-align: center;' class='partT'>Programming the Cloud</div><br>")
+  setTimeout("iFrameResize()", 300);
 }, 0);
 
 
 $("#content").on("touchstart", function(){
   setTimeout('$("html").removeClass("sidebar-visible").addClass("sidebar-hidden")', 100);
 })
+
 
 
 

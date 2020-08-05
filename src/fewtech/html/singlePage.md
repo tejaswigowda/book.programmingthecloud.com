@@ -13,5 +13,5 @@ id='html1'></iframe>
 
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'
-src='https://rawcdn.githack.com/tejaswigowda/programmingthecloud/9f0ca1a3fc9591ab544d8d6949ef4e78ba13c55d/src/CODE/singlePage/index.html'
+src='https://rawcdn.githack.com/tejaswigowda/PtC-simpleResume/338e05cfef9021dcdb50349aa7e013d06b6f8feb/index.html'
 id='html2'></iframe>

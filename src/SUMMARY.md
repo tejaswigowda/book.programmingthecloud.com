@@ -47,9 +47,8 @@
   - [Slide Show Library](fewtech/js/slideShow.md)
 
 - [JSON](fewtech/json/README.md)
-  - [RSS Reader](fewtech/json/RSSReader.md)
+  - [iTunes RSS Reader](fewtech/json/RSSReader.md)
 
-- [Mobile/Desktop Apps](fewtech/apps/README.md)
 
 - [Advanced Topics](fewtech/advConcepts/README.md)
   - [Sorting](fewtech/advConcepts/sorting.md)
@@ -57,6 +56,8 @@
   - [CSS TransForms](fewtech/advConcepts/CSSTransforms.md)
   - [CSS Animations](fewtech/advConcepts/cssAnimations.md)
   - [Responsive Design](fewtech/advConcepts/rdesign.md)
+
+- [Mobile/Desktop Apps](fewtech/apps/README.md)
 
 -----------
 

@@ -109,15 +109,15 @@ bottom is `goToSlide()`. This is defined
 in lines `104-112`.
 
 ```js
-      var goToSlide = function(n){
-        $("#imgWrapper div").css("opacity", 0);
-        $($("#imgWrapper div")[n]).css("opacity", 1);
-      
+var goToSlide = function(n){
+  $("#imgWrapper div").css("opacity", 0);
+  $($("#imgWrapper div")[n]).css("opacity", 1);
 
-        currSlide = n;
-        $("#numWrapper button").removeClass("active")
-        $($("#numWrapper button")[currSlide]).addClass("active")
-      }
+
+  currSlide = n;
+  $("#numWrapper button").removeClass("active")
+  $($("#numWrapper button")[currSlide]).addClass("active")
+}
 ```
 
 
@@ -126,22 +126,22 @@ clicks Previous button) and `goNext()` (invoked when user clicks Next
 button). These functions are defined in lines `115-129`.
 
 ```js
-      var goPrev = function(){
-        currSlide = currSlide - 1;
-        if(currSlide < 0){
-          currSlide = imgs.length - 1;
-        }
-        goToSlide(currSlide);
-      }
+var goPrev = function(){
+  currSlide = currSlide - 1;
+  if(currSlide < 0){
+    currSlide = imgs.length - 1;
+  }
+  goToSlide(currSlide);
+}
 
-      var goNext = function(){
-        currSlide = currSlide + 1;
-        if(currSlide > imgs.length - 1){
-          currSlide = 0;
-        }
-        goToSlide(currSlide);
-      }
+var goNext = function(){
+  currSlide = currSlide + 1;
+  if(currSlide > imgs.length - 1){
+    currSlide = 0;
+  }
+  goToSlide(currSlide);
+}
 ```
 
-In line `114` `goToSlide(0)` is called to initialize the slide show to
+On line `114`, `goToSlide(0)` is called to initialize the slide show to
 the first slide.

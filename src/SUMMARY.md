@@ -46,12 +46,11 @@
   - [Objects](fewtech/js/objects.md)
   - [Slide Show Library](fewtech/js/slideShow.md)
 
-- [JSON](fewtech/json/README.md)
-  - [iTunes RSS Reader](fewtech/json/RSSReader.md)
-
 
 - [Advanced Topics](fewtech/advConcepts/README.md)
   - [Sorting](fewtech/advConcepts/sorting.md)
+  - [JSON](fewtech/advConcepts/json.md)
+  - [HTML Canvas](fewtech/advConcepts/canvas.md)
   - [CSS Transitions](fewtech/advConcepts/cssTransitions.md)
   - [CSS TransForms](fewtech/advConcepts/CSSTransforms.md)
   - [CSS Animations](fewtech/advConcepts/cssAnimations.md)

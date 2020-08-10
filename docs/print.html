@@ -2707,87 +2707,63 @@ Can include valid values of the following:
   </tr>
   <tr>
    <td>background-repeat</td>
-   <td>backgroundRepeat</td>
+   <td>
+<ul>
+<li>repeat</li>
+<li>repeat-x</li>
+<li>repeat-y</li>
+<li>no-repeat</li>
+<li>initial</li>
+<li>inherit</li>
+</ul>
+</td>
   </tr>
   <tr>
    <td>border</td>
-   <td>border</td>
-  </tr>
-  <tr>
-   <td>border-bottom</td>
-   <td>borderBottom</td>
-  </tr>
-  <tr>
-   <td>border-bottom-color</td>
-   <td>borderBottomColor</td>
-  </tr>
-  <tr>
-   <td>border-bottom-style</td>
-   <td>borderBottomStyle</td>
-  </tr>
-  <tr>
-   <td>border-bottom-width</td>
-   <td>borderBottomWidth</td>
+   <td>
+Can include valid values of the following:
+<ul>
+<li><code>border-width</code></li>
+<li><code>border-style</code> (required)</li>
+<li><code>border-color</code></li>
+</ul>
+</td>
   </tr>
   <tr>
    <td>border-color</td>
-   <td>borderColor</td>
-  </tr>
-  <tr>
-   <td>border-left</td>
-   <td>borderLeft</td>
-  </tr>
-  <tr>
-   <td>border-left-color</td>
-   <td>borderLeftColor</td>
-  </tr>
-  <tr>
-   <td>border-left-style</td>
-   <td>borderLeftStyle</td>
-  </tr>
-  <tr>
-   <td>border-left-width</td>
-   <td>borderLeftWidth</td>
-  </tr>
-  <tr>
-   <td>border-right</td>
-   <td>borderRight</td>
-  </tr>
-  <tr>
-   <td>border-right-color</td>
-   <td>borderRightColor</td>
-  </tr>
-  <tr>
-   <td>border-right-style</td>
-   <td>borderRightStyle</td>
-  </tr>
-  <tr>
-   <td>border-right-width</td>
-   <td>borderRightWidth</td>
+   <td>Any valid CSS Color.</td>
   </tr>
   <tr>
    <td>border-style</td>
-   <td>borderStyle</td>
-  </tr>
-  <tr>
-   <td>border-top</td>
-   <td>borderTop</td>
-  </tr>
-  <tr>
-   <td>border-top-color</td>
-   <td>borderTopColor</td>
-  </tr>
-  <tr>
-   <td>border-top-style</td>
-   <td>borderTopStyle</td>
-  </tr>
-  <tr>
-   <td>border-top-width</td>
-   <td>borderTopWidth</td>
+   <td>
+<ul>
+<li>none</li>
+<li>hidden</li>
+<li>dotted</li>
+<li>dashed</li>
+<li>solid</li>
+<li>double</li>
+<li>groove</li>
+<li>ridge</li>
+<li>inset</li>
+<li>outset</li>
+<li>initial</li>
+<li>inherit</li>
+</ul>
+</td>
   </tr>
   <tr>
    <td>border-width</td>
-   <td>borderWidth</td>
+   <td>
+<ul>
+<li>medium</li>
+<li>thin</li>
+<li>thick</li>
+<li><code>CSS length</code><sup><i>len</i></sup></li>
+<li>initial</li>
+<li>inherit</li>
+</ul>
+</td>
   </tr>
   <tr>
    <td>clear</td>
@@ -2975,6 +2951,851 @@ Can include valid values of the following:
   </tr>
  </tbody>
 </table>
+<p><sup><i>len</i></sup> <code>CSS Length</code></p>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:12%">Unit</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>cm</td>
+    <td>centimeters
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_cm">Try it</a>
+    </td>
+  </tr>
+    <tr>
+    <td>mm</td>
+    <td>millimeters
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_mm">Try it</a>  
+    </td>
+    </tr>
+  <tr>
+    <td>in</td>
+    <td>inches (1in = 96px = 2.54cm)
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_in">Try it</a>
+    </td>
+  </tr>
+    <tr>
+    <td>px *</td>
+    <td>pixels (1px = 1/96th of 1in)
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_px">Try it</a> 
+    </td>
+    </tr>
+  <tr>
+    <td>pt</td>
+    <td>points (1pt = 1/72 of 1in)
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_pt">Try it</a> 
+    </td>
+  </tr>
+  <tr>
+    <td>pc</td>
+    <td>picas (1pc = 12 pt)
+    <a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_pc">Try it</a>  
+    </td>
+  </tr>
+</tbody></table>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:12%">Unit</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>em</td>
+    <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_em">Try it</a></td>
+  </tr>
+  <tr>
+    <td>ex</td>
+    <td>Relative to the x-height of the current font (rarely used)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_ex">Try it</a></td>
+  </tr>
+  <tr>
+    <td>ch</td>
+    <td>Relative to the width of the "0" (zero)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_ch">Try it</a></td>
+  </tr>
+  <tr>
+    <td>rem</td>
+    <td>Relative to font-size of the root element</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_rem">Try it</a></td>
+  </tr>
+  <tr>
+    <td>vw</td>
+    <td>Relative to 1% of the width of the viewport*</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_vw">Try it</a></td>
+  </tr>
+  <tr>
+    <td>vh</td>
+    <td>Relative to 1% of the height of the viewport*</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_vh">Try it</a></td>
+  </tr>
+  <tr>
+    <td>vmin</td>
+    <td>Relative to 1% of viewport's* smaller dimension</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_vmin">Try it</a></td>
+  </tr>
+  <tr>
+    <td>vmax</td>
+    <td>Relative to 1% of viewport's* larger dimension</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_vmax">Try it</a></td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Relative to the parent element</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="fewtech/css/concepts/tryit.asp?filename=trycss_unit_percentage">Try it</a></td>
+  </tr>
+    </tbody></table>
+<p><sup><i>color</i></sup> <code>CSS Color</code></p>
+<ul>
+<li>Hexadecimal colors</li>
+<li>RGB colors</li>
+<li>RGBA colors</li>
+<li>HSL colors</li>
+<li>HSLA colors</li>
+<li>Predefined/Cross-browser color names [<a href='../../../bib.html#named-colors-and-hex-equivalents--css-tricks-css-tricks'>Ref.</a>]:</li>
+</ul>
+<table id="color-table">
+<tbody><tr>
+<th>Color Name</th>
+<th>HEX</th>
+<th>Color</th>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#AliceBlue">AliceBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F0F8FF">#F0F8FF</a></td>
+<td style="background: #F0F8FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#AntiqueWhite">AntiqueWhite</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FAEBD7">#FAEBD7</a></td>
+<td style="background: #FAEBD7">&nbsp;</td>
+</tr>
+<tr><td><a href="fewtech/css/concepts/values.html#Aqua">Aqua</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00FFFF">#00FFFF</a></td>
+<td style="background: #00FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Aquamarine">Aquamarine</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#7FFFD4">#7FFFD4</a></td>
+<td style="background: #7FFFD4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Azure">Azure</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F0FFFF">#F0FFFF</a></td>
+<td style="background: #F0FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Beige">Beige</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F5F5DC">#F5F5DC</a></td>
+<td style="background: #F5F5DC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Bisque">Bisque</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFE4C4">#FFE4C4</a></td>
+<td style="background: #FFE4C4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Black">Black</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#000000">#000000</a></td>
+<td style="background: #000000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#BlanchedAlmond">BlanchedAlmond</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFEBCD">#FFEBCD</a></td>
+<td style="background: #FFEBCD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Blue">Blue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#0000FF">#0000FF</a></td>
+<td style="background: #0000FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#BlueViolet">BlueViolet</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#8A2BE2">#8A2BE2</a></td>
+<td style="background: #8A2BE2">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Brown">Brown</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#A52A2A">#A52A2A</a></td>
+<td style="background: #A52A2A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#BurlyWood">BurlyWood</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DEB887">#DEB887</a></td>
+<td style="background: #DEB887">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#CadetBlue">CadetBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#5F9EA0">#5F9EA0</a></td>
+<td style="background: #5F9EA0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Chartreuse">Chartreuse</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#7FFF00">#7FFF00</a></td>
+<td style="background: #7FFF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Chocolate">Chocolate</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D2691E">#D2691E</a></td>
+<td style="background: #D2691E">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Coral">Coral</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF7F50">#FF7F50</a></td>
+<td style="background: #FF7F50">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#CornflowerBlue">CornflowerBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#6495ED">#6495ED</a></td>
+<td style="background: #6495ED">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Cornsilk">Cornsilk</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFF8DC">#FFF8DC</a></td>
+<td style="background: #FFF8DC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Crimson">Crimson</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DC143C">#DC143C</a></td>
+<td style="background: #DC143C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Cyan">Cyan</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00FFFF">#00FFFF</a></td>
+<td style="background: #00FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkBlue">DarkBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00008B">#00008B</a></td>
+<td style="background: #00008B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkCyan">DarkCyan</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#008B8B">#008B8B</a></td>
+<td style="background: #008B8B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkGoldenRod">DarkGoldenRod</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#B8860B">#B8860B</a></td>
+<td style="background: #B8860B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkGray">DarkGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#A9A9A9">#A9A9A9</a></td>
+<td style="background: #A9A9A9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkGrey">DarkGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#A9A9A9">#A9A9A9</a></td>
+<td style="background: #A9A9A9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkGreen">DarkGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#006400">#006400</a></td>
+<td style="background: #006400">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkKhaki">DarkKhaki</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#BDB76B">#BDB76B</a></td>
+<td style="background: #BDB76B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkMagenta">DarkMagenta</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#8B008B">#8B008B</a></td>
+<td style="background: #8B008B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkOliveGreen">DarkOliveGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#556B2F">#556B2F</a></td>
+<td style="background: #556B2F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Darkorange">Darkorange</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF8C00">#FF8C00</a></td>
+<td style="background: #FF8C00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkOrchid">DarkOrchid</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#9932CC">#9932CC</a></td>
+<td style="background: #9932CC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkRed">DarkRed</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#8B0000">#8B0000</a></td>
+<td style="background: #8B0000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkSalmon">DarkSalmon</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#E9967A">#E9967A</a></td>
+<td style="background: #E9967A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkSeaGreen">DarkSeaGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#8FBC8F">#8FBC8F</a></td>
+<td style="background: #8FBC8F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkSlateBlue">DarkSlateBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#483D8B">#483D8B</a></td>
+<td style="background: #483D8B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkSlateGray">DarkSlateGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#2F4F4F">#2F4F4F</a></td>
+<td style="background: #2F4F4F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkSlateGrey">DarkSlateGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#2F4F4F">#2F4F4F</a></td>
+<td style="background: #2F4F4F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkTurquoise">DarkTurquoise</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00CED1">#00CED1</a></td>
+<td style="background: #00CED1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DarkViolet">DarkViolet</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#9400D3">#9400D3</a></td>
+<td style="background: #9400D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DeepPink">DeepPink</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF1493">#FF1493</a></td>
+<td style="background: #FF1493">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DeepSkyBlue">DeepSkyBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00BFFF">#00BFFF</a></td>
+<td style="background: #00BFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DimGray">DimGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#696969">#696969</a></td>
+<td style="background: #696969">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DimGrey">DimGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#696969">#696969</a></td>
+<td style="background: #696969">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#DodgerBlue">DodgerBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#1E90FF">#1E90FF</a></td>
+<td style="background: #1E90FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#FireBrick">FireBrick</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#B22222">#B22222</a></td>
+<td style="background: #B22222">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#FloralWhite">FloralWhite</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFAF0">#FFFAF0</a></td>
+<td style="background: #FFFAF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#ForestGreen">ForestGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#228B22">#228B22</a></td>
+<td style="background: #228B22">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Fuchsia">Fuchsia</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF00FF">#FF00FF</a></td>
+<td style="background: #FF00FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Gainsboro">Gainsboro</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DCDCDC">#DCDCDC</a></td>
+<td style="background: #DCDCDC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#GhostWhite">GhostWhite</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F8F8FF">#F8F8FF</a></td>
+<td style="background: #F8F8FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Gold">Gold</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFD700">#FFD700</a></td>
+<td style="background: #FFD700">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#GoldenRod">GoldenRod</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DAA520">#DAA520</a></td>
+<td style="background: #DAA520">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Gray">Gray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#808080">#808080</a></td>
+<td style="background: #808080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Grey">Grey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#808080">#808080</a></td>
+<td style="background: #808080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Green">Green</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#008000">#008000</a></td>
+<td style="background: #008000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#GreenYellow">GreenYellow</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#ADFF2F">#ADFF2F</a></td>
+<td style="background: #ADFF2F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#HoneyDew">HoneyDew</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F0FFF0">#F0FFF0</a></td>
+<td style="background: #F0FFF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#HotPink">HotPink</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF69B4">#FF69B4</a></td>
+<td style="background: #FF69B4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#IndianRed ">IndianRed </a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#CD5C5C">#CD5C5C</a></td>
+<td style="background: #CD5C5C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Indigo  ">Indigo </a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#4B0082">#4B0082</a></td>
+<td style="background: #4B0082">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Ivory">Ivory</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFFF0">#FFFFF0</a></td>
+<td style="background: #FFFFF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Khaki">Khaki</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F0E68C">#F0E68C</a></td>
+<td style="background: #F0E68C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Lavender">Lavender</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#E6E6FA">#E6E6FA</a></td>
+<td style="background: #E6E6FA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LavenderBlush">LavenderBlush</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFF0F5">#FFF0F5</a></td>
+<td style="background: #FFF0F5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LawnGreen">LawnGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#7CFC00">#7CFC00</a></td>
+<td style="background: #7CFC00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LemonChiffon">LemonChiffon</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFACD">#FFFACD</a></td>
+<td style="background: #FFFACD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightBlue">LightBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#ADD8E6">#ADD8E6</a></td>
+<td style="background: #ADD8E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightCoral">LightCoral</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F08080">#F08080</a></td>
+<td style="background: #F08080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightCyan">LightCyan</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#E0FFFF">#E0FFFF</a></td>
+<td style="background: #E0FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightGoldenRodYellow">LightGoldenRodYellow</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FAFAD2">#FAFAD2</a></td>
+<td style="background: #FAFAD2">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightGray">LightGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D3D3D3">#D3D3D3</a></td>
+<td style="background: #D3D3D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightGrey">LightGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D3D3D3">#D3D3D3</a></td>
+<td style="background: #D3D3D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightGreen">LightGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#90EE90">#90EE90</a></td>
+<td style="background: #90EE90">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightPink">LightPink</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFB6C1">#FFB6C1</a></td>
+<td style="background: #FFB6C1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSalmon">LightSalmon</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFA07A">#FFA07A</a></td>
+<td style="background: #FFA07A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSeaGreen">LightSeaGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#20B2AA">#20B2AA</a></td>
+<td style="background: #20B2AA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSkyBlue">LightSkyBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#87CEFA">#87CEFA</a></td>
+<td style="background: #87CEFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSlateGray">LightSlateGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#778899">#778899</a></td>
+<td style="background: #778899">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSlateGrey">LightSlateGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#778899">#778899</a></td>
+<td style="background: #778899">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightSteelBlue">LightSteelBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#B0C4DE">#B0C4DE</a></td>
+<td style="background: #B0C4DE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LightYellow">LightYellow</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFFE0">#FFFFE0</a></td>
+<td style="background: #FFFFE0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Lime">Lime</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00FF00">#00FF00</a></td>
+<td style="background: #00FF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#LimeGreen">LimeGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#32CD32">#32CD32</a></td>
+<td style="background: #32CD32">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Linen">Linen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FAF0E6">#FAF0E6</a></td>
+<td style="background: #FAF0E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Magenta">Magenta</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF00FF">#FF00FF</a></td>
+<td style="background: #FF00FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Maroon">Maroon</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#800000">#800000</a></td>
+<td style="background: #800000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumAquaMarine">MediumAquaMarine</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#66CDAA">#66CDAA</a></td>
+<td style="background: #66CDAA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumBlue">MediumBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#0000CD">#0000CD</a></td>
+<td style="background: #0000CD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumOrchid">MediumOrchid</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#BA55D3">#BA55D3</a></td>
+<td style="background: #BA55D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumPurple">MediumPurple</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#9370D8">#9370D8</a></td>
+<td style="background: #9370D8">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumSeaGreen">MediumSeaGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#3CB371">#3CB371</a></td>
+<td style="background: #3CB371">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumSlateBlue">MediumSlateBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#7B68EE">#7B68EE</a></td>
+<td style="background: #7B68EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumSpringGreen">MediumSpringGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00FA9A">#00FA9A</a></td>
+<td style="background: #00FA9A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumTurquoise">MediumTurquoise</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#48D1CC">#48D1CC</a></td>
+<td style="background: #48D1CC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MediumVioletRed">MediumVioletRed</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#C71585">#C71585</a></td>
+<td style="background: #C71585">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MidnightBlue">MidnightBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#191970">#191970</a></td>
+<td style="background: #191970">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MintCream">MintCream</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F5FFFA">#F5FFFA</a></td>
+<td style="background: #F5FFFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#MistyRose">MistyRose</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFE4E1">#FFE4E1</a></td>
+<td style="background: #FFE4E1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Moccasin">Moccasin</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFE4B5">#FFE4B5</a></td>
+<td style="background: #FFE4B5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#NavajoWhite">NavajoWhite</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFDEAD">#FFDEAD</a></td>
+<td style="background: #FFDEAD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Navy">Navy</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#000080">#000080</a></td>
+<td style="background: #000080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#OldLace">OldLace</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FDF5E6">#FDF5E6</a></td>
+<td style="background: #FDF5E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Olive">Olive</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#808000">#808000</a></td>
+<td style="background: #808000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#OliveDrab">OliveDrab</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#6B8E23">#6B8E23</a></td>
+<td style="background: #6B8E23">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Orange">Orange</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFA500">#FFA500</a></td>
+<td style="background: #FFA500">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#OrangeRed">OrangeRed</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF4500">#FF4500</a></td>
+<td style="background: #FF4500">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Orchid">Orchid</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DA70D6">#DA70D6</a></td>
+<td style="background: #DA70D6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PaleGoldenRod">PaleGoldenRod</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#EEE8AA">#EEE8AA</a></td>
+<td style="background: #EEE8AA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PaleGreen">PaleGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#98FB98">#98FB98</a></td>
+<td style="background: #98FB98">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PaleTurquoise">PaleTurquoise</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#AFEEEE">#AFEEEE</a></td>
+<td style="background: #AFEEEE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PaleVioletRed">PaleVioletRed</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D87093">#D87093</a></td>
+<td style="background: #D87093">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PapayaWhip">PapayaWhip</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFEFD5">#FFEFD5</a></td>
+<td style="background: #FFEFD5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PeachPuff">PeachPuff</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFDAB9">#FFDAB9</a></td>
+<td style="background: #FFDAB9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Peru">Peru</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#CD853F">#CD853F</a></td>
+<td style="background: #CD853F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Pink">Pink</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFC0CB">#FFC0CB</a></td>
+<td style="background: #FFC0CB">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Plum">Plum</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#DDA0DD">#DDA0DD</a></td>
+<td style="background: #DDA0DD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#PowderBlue">PowderBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#B0E0E6">#B0E0E6</a></td>
+<td style="background: #B0E0E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Purple">Purple</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#800080">#800080</a></td>
+<td style="background: #800080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Red">Red</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF0000">#FF0000</a></td>
+<td style="background: #FF0000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#RosyBrown">RosyBrown</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#BC8F8F">#BC8F8F</a></td>
+<td style="background: #BC8F8F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#RoyalBlue">RoyalBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#4169E1">#4169E1</a></td>
+<td style="background: #4169E1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SaddleBrown">SaddleBrown</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#8B4513">#8B4513</a></td>
+<td style="background: #8B4513">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Salmon">Salmon</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FA8072">#FA8072</a></td>
+<td style="background: #FA8072">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SandyBrown">SandyBrown</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F4A460">#F4A460</a></td>
+<td style="background: #F4A460">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SeaGreen">SeaGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#2E8B57">#2E8B57</a></td>
+<td style="background: #2E8B57">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SeaShell">SeaShell</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFF5EE">#FFF5EE</a></td>
+<td style="background: #FFF5EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Sienna">Sienna</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#A0522D">#A0522D</a></td>
+<td style="background: #A0522D">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Silver">Silver</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#C0C0C0">#C0C0C0</a></td>
+<td style="background: #C0C0C0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SkyBlue">SkyBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#87CEEB">#87CEEB</a></td>
+<td style="background: #87CEEB">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SlateBlue">SlateBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#6A5ACD">#6A5ACD</a></td>
+<td style="background: #6A5ACD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SlateGray">SlateGray</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#708090">#708090</a></td>
+<td style="background: #708090">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SlateGrey">SlateGrey</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#708090">#708090</a></td>
+<td style="background: #708090">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Snow">Snow</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFAFA">#FFFAFA</a></td>
+<td style="background: #FFFAFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SpringGreen">SpringGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#00FF7F">#00FF7F</a></td>
+<td style="background: #00FF7F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#SteelBlue">SteelBlue</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#4682B4">#4682B4</a></td>
+<td style="background: #4682B4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Tan">Tan</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D2B48C">#D2B48C</a></td>
+<td style="background: #D2B48C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Teal">Teal</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#008080">#008080</a></td>
+<td style="background: #008080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Thistle">Thistle</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#D8BFD8">#D8BFD8</a></td>
+<td style="background: #D8BFD8">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Tomato">Tomato</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FF6347">#FF6347</a></td>
+<td style="background: #FF6347">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Turquoise">Turquoise</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#40E0D0">#40E0D0</a></td>
+<td style="background: #40E0D0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Violet">Violet</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#EE82EE">#EE82EE</a></td>
+<td style="background: #EE82EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Wheat">Wheat</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F5DEB3">#F5DEB3</a></td>
+<td style="background: #F5DEB3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#White">White</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFFFF">#FFFFFF</a></td>
+<td style="background: #FFFFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#WhiteSmoke">WhiteSmoke</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#F5F5F5">#F5F5F5</a></td>
+<td style="background: #F5F5F5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#Yellow">Yellow</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#FFFF00">#FFFF00</a></td>
+<td style="background: #FFFF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="fewtech/css/concepts/values.html#YellowGreen">YellowGreen</a>&nbsp;</td>
+<td><a href="fewtech/css/concepts/values.html#9ACD32">#9ACD32</a></td>
+<td style="background: #9ACD32">&nbsp;</td>
+</tr>
+</tbody></table>
 <h1><a class="header" href="#css-selectors" id="css-selectors">CSS Selectors</a></h1>
 <h2><a class="header" href="#simple-css-selectors" id="simple-css-selectors">Simple CSS Selectors</a></h2>
 <ol>
@@ -4985,6 +5806,10 @@ with the exception of <code>functions</code>.</p>
 <li>
 <h4><a class="header" href="#css-reference-w3schoolscom" id="css-reference-w3schoolscom">CSS Reference. W3schools.com.</a></h4>
 <p><a href="https://www.w3schools.com/cssref/">https://www.w3schools.com/cssref/</a>. Published 2020. Accessed August 10, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#named-colors-and-hex-equivalents--css-tricks-css-tricks" id="named-colors-and-hex-equivalents--css-tricks-css-tricks">Named Colors and Hex Equivalents | CSS-Tricks. CSS-Tricks.</a></h4>
+<p><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/</a>. Published January 29, 2012. Accessed August 10, 2020.</p>
 </li>
 </ul>
 </div>

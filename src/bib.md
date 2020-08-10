@@ -43,5 +43,8 @@
 - #### CSS Properties Reference. MDN Web Docs. 
    <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference>. Published July 7, 2020. Accessed August 10, 2020.
 
+- #### CSS Reference. W3schools.com. 
+   <https://www.w3schools.com/cssref/>. Published 2020. Accessed August 10, 2020.
+
 
 </div>

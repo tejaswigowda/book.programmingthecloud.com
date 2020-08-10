@@ -3,6 +3,7 @@
 CSS properties are a list of tag style elements that you can set and
 manipulate. These include setting the parameters of the box model (like
 `border`, `margin`, `padding`) and the style of the content like
+`color`, `background`, 
 `font-family`, `font-size`, `line-height` etc.
 
 
@@ -14,7 +15,7 @@ responsible for the basic styling you see in the browser (for e.g. links
 are bule and button has a `background` and `border`). When stying your
 document please keep in mind that you are not working with a blank-slate
 -- you are building on top of the user-agent style sheet. This can be
-viewed in the ** CSS Inspector ** section of the browser's developer
+viewed in the <i>CSS Inspector</i> section of the browser's developer
 tools.
 
 </div>

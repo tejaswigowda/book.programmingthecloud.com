@@ -1,5 +1,15 @@
 # CSS Values
 
+<div class='notes'>
+
+#### Graceful fallback in CSS
+</div>
+
+## CSS Value List
+
+Below is a list of CSS values that can be used with CSS properties[<a
+href='../../../bib.html#css-reference-w3schoolscom'>Ref.</a>].
+
 <table>
  <thead>
   <tr>
@@ -9,24 +19,83 @@
  </thead>
  <tbody>
   <tr>
-   <td>background</td>
-   <td>background</td>
+   <td><code>background</code></td>
+   <td>
+Can include valid values of the following:
+
+- <code>background-color</code>
+- <code>background-image</code>
+- <code>background-position</code>
+- <code>background-size</code>
+- <code>background-repeat</code>
+- <code>background-origin</code>
+- <code>background-clip</code>
+- <code>background-attachment</code>
+</td>
   </tr>
   <tr>
-   <td>background-attachment</td>
-   <td>backgroundAttachment</td>
+   <td><code>background-attachment</code></td>
+   <td>
+
+- scroll
+- fixed
+- local
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>background-color</td>
-   <td>backgroundColor</td>
+   <td>Any valid CSS color.</td>
   </tr>
   <tr>
    <td>background-image</td>
-   <td>backgroundImage</td>
+   <td>url(<code>/path/to/image.png</code>)</td>
   </tr>
   <tr>
    <td>background-position</td>
-   <td>backgroundPosition</td>
+   <td>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:18%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>left top<br>
+      left center<br>
+      left bottom<br>
+      right top<br>
+      right center<br>
+      right bottom<br>
+      center top<br>
+      center center<br>
+      center bottom</td>
+    <td>If you only specify one keyword, the other value will be "center"</td>
+  </tr>
+  <tr>
+    <td><i>x% y%</i></td>
+    <td>The first value is the horizontal position and the second
+      value is the vertical. The top left corner is 0% 0%.
+      The right bottom corner is 100% 100%. If you only specify one
+      value, the other value will be 50%. . Default value is: 0% 0%</td>
+  </tr>
+  <tr>
+    <td><i>xpos ypos</i></td>
+    <td>The first value&nbsp;is the horizontal position and the second
+      value is the vertical. The top left corner is 0 0. Units can be pixels
+      (0px 0px) or any other <a href="css_units.asp">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
+
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table>
+</td>
   </tr>
   <tr>
    <td>background-repeat</td>

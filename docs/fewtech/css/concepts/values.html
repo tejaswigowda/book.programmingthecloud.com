@@ -154,6 +154,12 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#css-values" id="css-values">CSS Values</a></h1>
+<div class='notes'>
+<h4><a class="header" href="#graceful-fallback-in-css" id="graceful-fallback-in-css">Graceful fallback in CSS</a></h4>
+</div>
+<h2><a class="header" href="#css-value-list" id="css-value-list">CSS Value List</a></h2>
+<p>Below is a list of CSS values that can be used with CSS properties[<a
+href='../../../bib.html#css-reference-w3schoolscom'>Ref.</a>].</p>
 <table>
  <thead>
   <tr>
@@ -163,24 +169,84 @@
  </thead>
  <tbody>
   <tr>
-   <td>background</td>
-   <td>background</td>
+   <td><code>background</code></td>
+   <td>
+Can include valid values of the following:
+<ul>
+<li><code>background-color</code></li>
+<li><code>background-image</code></li>
+<li><code>background-position</code></li>
+<li><code>background-size</code></li>
+<li><code>background-repeat</code></li>
+<li><code>background-origin</code></li>
+<li><code>background-clip</code></li>
+<li><code>background-attachment</code></li>
+</ul>
+</td>
   </tr>
   <tr>
-   <td>background-attachment</td>
-   <td>backgroundAttachment</td>
+   <td><code>background-attachment</code></td>
+   <td>
+<ul>
+<li>scroll</li>
+<li>fixed</li>
+<li>local</li>
+<li>initial</li>
+<li>inherit</li>
+</ul>
+</td>
   </tr>
   <tr>
    <td>background-color</td>
-   <td>backgroundColor</td>
+   <td>Any valid CSS color.</td>
   </tr>
   <tr>
    <td>background-image</td>
-   <td>backgroundImage</td>
+   <td>url(<code>/path/to/image.png</code>)</td>
   </tr>
   <tr>
    <td>background-position</td>
-   <td>backgroundPosition</td>
+   <td>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:18%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>left top<br>
+      left center<br>
+      left bottom<br>
+      right top<br>
+      right center<br>
+      right bottom<br>
+      center top<br>
+      center center<br>
+      center bottom</td>
+    <td>If you only specify one keyword, the other value will be "center"</td>
+  </tr>
+  <tr>
+    <td><i>x% y%</i></td>
+    <td>The first value is the horizontal position and the second
+      value is the vertical. The top left corner is 0% 0%.
+      The right bottom corner is 100% 100%. If you only specify one
+      value, the other value will be 50%. . Default value is: 0% 0%</td>
+  </tr>
+  <tr>
+    <td><i>xpos ypos</i></td>
+    <td>The first value&nbsp;is the horizontal position and the second
+      value is the vertical. The top left corner is 0 0. Units can be pixels
+      (0px 0px) or any other <a href="css_units.asp">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
+</tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+    </tr>
+</tbody></table>
+</td>
   </tr>
   <tr>
    <td>background-repeat</td>

@@ -272,11 +272,27 @@ none
   </tr>
   <tr>
    <td>float</td>
-   <td>cssFloat</td>
+   <td>
+
+- none
+- left
+- right
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>font</td>
-   <td>font</td>
+   <td>
+Can include valid values of the following:
+
+- <code>font-style</code>
+- <code>font-variant</code>
+- <code>font-weight</code>
+- <code>font-size/line-height</code>
+- <code>font-family</code>
+
+</td>
   </tr>
   <tr>
    <td>font-family</td>

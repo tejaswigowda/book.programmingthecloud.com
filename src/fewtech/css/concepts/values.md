@@ -99,7 +99,15 @@ Can include valid values of the following:
   </tr>
   <tr>
    <td>background-repeat</td>
-   <td>backgroundRepeat</td>
+   <td>
+
+- repeat
+- repeat-x
+- repeat-y
+- no-repeat
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>border</td>

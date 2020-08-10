@@ -49,6 +49,8 @@
 - #### Named Colors and Hex Equivalents | CSS-Tricks. CSS-Tricks. 
    <https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/>. Published January 29, 2012. Accessed August 10, 2020.
 
+- #### CSS Units. W3schools.com. 
+   <https://www.w3schools.com/cssref/css_units.asp>. Published 2020. Accessed August 10, 2020.
 
 
 </div>

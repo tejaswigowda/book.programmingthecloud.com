@@ -192,3 +192,10 @@ The following are the list of CSS properties most browsers implement
   </tr>
  </tbody>
 </table>
+
+<div class='notes'>
+
+#### Graceful fallback in CSS
+</div>
+
+

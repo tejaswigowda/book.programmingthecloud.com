@@ -1,12 +1,5 @@
 # CSS Values
 
-<div class='notes'>
-
-#### Graceful fallback in CSS
-</div>
-
-## CSS Value List
-
 Below is a list of CSS values that can be used with CSS properties[<a
 href='../../../bib.html#css-reference-w3schoolscom'>Ref.</a>].
 
@@ -46,7 +39,8 @@ Can include valid values of the following:
   </tr>
   <tr>
    <td>background-color</td>
-   <td>Any valid CSS color.</td>
+   <td>Any valid <code>CSS color</code><a
+href='./values.html#supicolorisup-css-color'><sup><i><b>color</b></i></sup></a>.</td>
   </tr>
   <tr>
    <td>background-image</td>
@@ -83,16 +77,16 @@ Can include valid values of the following:
     <td><i>xpos ypos</i></td>
     <td>The first value&nbsp;is the horizontal position and the second
       value is the vertical. The top left corner is 0 0. Units can be pixels
-      (0px 0px) or any other <a href="css_units.asp">CSS units</a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
+      (0px 0px) or any other <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>. If you only specify one value, the other value will be 50%. You can mix % and positions</td>
 
   </tr>
   <tr>
     <td>initial</td>
-    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+    <td>Sets this property to its default value.</td>
     </tr>
   <tr>
     <td>inherit</td>
-    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+    <td>Inherits this property from its parent element. </td>
     </tr>
 </tbody></table>
 </td>
@@ -121,7 +115,8 @@ Can include valid values of the following:
   </tr>
   <tr>
    <td>border-color</td>
-   <td>Any valid CSS Color.</td>
+   <td>Any valid <code>CSS color</code><a
+href='./values.html#supicolorisup-css-color'><sup><i><b>color</b></i></sup></a>.</td>
   </tr>
   <tr>
    <td>border-style</td>
@@ -148,34 +143,132 @@ Can include valid values of the following:
 - medium
 - thin
 - thick
-- <code>CSS length</code><sup><i>len</i></sup>
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
 - initial
 - inherit
 </td>
   </tr>
   <tr>
    <td>clear</td>
-   <td>clear</td>
+   <td>
+
+- none
+- left
+- right
+- both
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>clip</td>
-   <td>clip</td>
+   <td>
+
+- auto
+- shape <code>rect (top, right, bottom, left)</code>
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>color</td>
-   <td>color</td>
+   <td>Any valid <code>CSS color</code><a
+href='./values.html#supicolorisup-css-color'><sup><i><b>color</b></i></sup></a>.</td>
   </tr>
   <tr>
    <td>cursor</td>
-   <td>cursor</td>
+   <td>
+
+- alias
+- all-scroll
+- auto
+- cell
+- context-menu
+- col-resize
+- copy
+- crosshair
+- default
+- e-resize
+- ew-resize
+- grab
+- grabbing
+- help
+- move
+- n-resize
+- ne-resize
+- nesw-resize
+- ns-resize
+- nw-resize
+- nwse-resize
+- no-drop
+- none
+- not-allowed
+- pointer
+- progress
+- row-resize
+- s-resize
+- se-resize
+- sw-resize
+- text
+- URL
+- vertical-text
+- w-resize
+- wait
+- zoom-in
+- zoom-out
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>display</td>
-   <td>display</td>
+   <td>
+
+- inline
+- block
+- contents
+- flex
+- grid
+- inline-block
+- inline-flex
+- inline-grid
+- inline-table
+- list-item
+- run-in
+- table
+- table-caption
+- table-column-group
+- table-header-group
+- table-footer-group
+- table-row-group
+- table-cell
+- table-column
+- table-row
+- none
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>filter</td>
-   <td>filter</td>
+   <td>
+
+none 
+- blur(<code>px</code>) 
+- brightness(<code>%</code>) 
+- contrast(<code>%</code>) 
+- drop-shadow(<code>h-offset v-offset blur spread color</code>) 
+- grayscale(<code>%</code>) 
+- hue-rotate(<code>deg</code>) 
+- invert(<code>%</code>) 
+- opacity(<code>%</code>) 
+- saturate(<code>%</code>) 
+- sepia(<code>%</code>) 
+- url(<code>/path/to/image.png</code>)
+
+(multiple values can be combined delimitted by spaces)
+</td>
   </tr>
   <tr>
    <td>float</td>
@@ -340,7 +433,11 @@ Can include valid values of the following:
  </tbody>
 </table>
 
-<sup><i>len</i></sup> <code>CSS Length</code>
+<div class='notes'>
+
+#### <sup><i><b>len</b></i></sup> <code>CSS Length</code>
+[<a
+href='../../../bib.html#css-units-w3schoolscom'> Ref.</a>]
 <table class="w3-table-all notranslate">
   <tbody><tr>
     <th style="width:12%">Unit</th>
@@ -349,98 +446,68 @@ Can include valid values of the following:
   <tr>
     <td>cm</td>
     <td>centimeters
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_cm">Try it</a>
     </td>
   </tr>
     <tr>
     <td>mm</td>
     <td>millimeters
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_mm">Try it</a>  
     </td>
     </tr>
   <tr>
     <td>in</td>
     <td>inches (1in = 96px = 2.54cm)
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_in">Try it</a>
     </td>
   </tr>
     <tr>
-    <td>px *</td>
+    <td>px</td>
     <td>pixels (1px = 1/96th of 1in)
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_px">Try it</a> 
     </td>
     </tr>
   <tr>
     <td>pt</td>
     <td>points (1pt = 1/72 of 1in)
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_pt">Try it</a> 
     </td>
   </tr>
   <tr>
     <td>pc</td>
     <td>picas (1pc = 12 pt)
-    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_pc">Try it</a>  
     </td>
-  </tr>
-</tbody></table>
-
-<table class="w3-table-all notranslate">
-  <tbody><tr>
-    <th style="width:12%">Unit</th>
-    <th>Description</th>
-    <th></th>
   </tr>
   <tr>
     <td>em</td>
     <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_em">Try it</a></td>
   </tr>
   <tr>
     <td>ex</td>
     <td>Relative to the x-height of the current font (rarely used)</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_ex">Try it</a></td>
   </tr>
   <tr>
     <td>ch</td>
     <td>Relative to the width of the "0" (zero)</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_ch">Try it</a></td>
   </tr>
   <tr>
     <td>rem</td>
     <td>Relative to font-size of the root element</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_rem">Try it</a></td>
   </tr>
   <tr>
     <td>vw</td>
-    <td>Relative to 1% of the width of the viewport*</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_vw">Try it</a></td>
+    <td>Relative to 1% of the width of the viewport</td>
   </tr>
   <tr>
     <td>vh</td>
-    <td>Relative to 1% of the height of the viewport*</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_vh">Try it</a></td>
-  </tr>
-  <tr>
-    <td>vmin</td>
-    <td>Relative to 1% of viewport's* smaller dimension</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_vmin">Try it</a></td>
-  </tr>
-  <tr>
-    <td>vmax</td>
-    <td>Relative to 1% of viewport's* larger dimension</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_vmax">Try it</a></td>
+    <td>Relative to 1% of the height of the viewport</td>
   </tr>
   <tr>
     <td>%</td>
     <td>Relative to the parent element</td>
-    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_unit_percentage">Try it</a></td>
   </tr>
     </tbody></table>
 
+</div>
 
+<div class='notes'>
 
-
-<sup><i>color</i></sup> <code>CSS Color</code>
+#### <sup><i>color</i></sup> <code>CSS Color</code>
 - Hexadecimal colors
 - RGB colors
 - RGBA colors
@@ -1190,3 +1257,7 @@ Can include valid values of the following:
 <td style="background: #9ACD32">&nbsp;</td>
 </tr>
 </tbody></table>
+
+</div>
+
+

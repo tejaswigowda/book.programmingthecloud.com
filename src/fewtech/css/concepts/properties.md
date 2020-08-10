@@ -1,303 +1,193 @@
 # CSS Properties
 
+CSS properties are a list of tag style elements that you can set and
+manipulate. These include setting the parameters of the box model (like
+`border`, `margin`, `padding`) and the style of the content like
+`font-family`, `font-size`, `line-height` etc.
+
+
+<div class='notes'>
+
+#### User agent style sheet
+The browser has a built-in stylesheet that it loads. This style sheet is
+responsible for the basic styling you see in the browser (for e.g. links
+are bule and button has a `background` and `border`). When stying your
+document please keep in mind that you are not working with a blank-slate
+-- you are building on top of the user-agent style sheet. This can be
+viewed in the ** CSS Inspector ** section of the browser's developer
+tools.
+
+</div>
+
 ## Property List
 
+The following are the list of CSS properties most browsers implement
+[<a href='../../../bib.html#css-properties-reference-mdn-web-docs'>Ref.</a>]
 <table>
  <thead>
   <tr>
    <th scope="col"><strong>CSS property</strong></th>
-   <th scope="col"><strong>Uses</strong></th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td>background</td>
-   <td>Background of tag (image/color/gradient etc.)</td>
+   <td><code>background</code></td>
   </tr>
   <tr>
-   <td>background-attachment</td>
-   <td>To make sure if the background is fixed or can scroll with
-content</td>
+   <td><code>background-attachment</code></td>
   </tr>
   <tr>
-   <td>background-color</td>
-   <td>Background color</td>
+   <td><code>background-color</code></td>
   </tr>
   <tr>
-   <td>background-image</td>
-   <td>Background image</td>
+   <td><code>background-image</code></td>
   </tr>
   <tr>
-   <td>background-position</td>
-   <td>Background Position</td>
+   <td><code>background-position</code></td>
   </tr>
   <tr>
-   <td>background-repeat</td>
-   <td>Repeat background vertically, horizontally or not at all</td>
+   <td><code>background-repeat</code></td>
   </tr>
   <tr>
-   <td>border</td>
-   <td>border</td>
+   <td><code>border</code>
+    (<code>border-top</code>, <code>border-right</code>, <code>border-bottom</code>,
+<code>border-left</code>)</td>
   </tr>
   <tr>
-   <td>border-bottom</td>
-   <td>Bottom border of tag</td>
+   <td><code>border-color</code>
+    (<code>border-top-color</code>, <code>border-right-color</code>,
+<code>border-bottom-color</code>,
+<code>border-left-color</code>)</td>
   </tr>
   <tr>
-   <td>border-bottom-color</td>
-   <td>borderBottomColor</td>
+   <td><code>border-style</code>
+    (<code>border-top-style</code>, <code>border-right-style</code>,
+<code>border-bottom-style</code>,
+<code>border-left-style</code>)</td>
   </tr>
   <tr>
-   <td>border-bottom-style</td>
-   <td>borderBottomStyle</td>
+   <td><code>border-width</code>
+    (<code>border-top-width</code>, <code>border-right-width</code>,
+<code>border-bottom-width</code>,
+<code>border-left-width</code>)</td>
   </tr>
   <tr>
-   <td>border-bottom-width</td>
-   <td>borderBottomWidth</td>
+   <td><code>clear</code></td>
   </tr>
   <tr>
-   <td>border-color</td>
-   <td>borderColor</td>
+   <td><code>clip</code></td>
   </tr>
   <tr>
-   <td>border-left</td>
-   <td>borderLeft</td>
+   <td><code>color</code></td>
   </tr>
   <tr>
-   <td>border-left-color</td>
-   <td>borderLeftColor</td>
+   <td><code>cursor</code></td>
   </tr>
   <tr>
-   <td>border-left-style</td>
-   <td>borderLeftStyle</td>
+   <td><code>display</code></td>
   </tr>
   <tr>
-   <td>border-left-width</td>
-   <td>borderLeftWidth</td>
+   <td><code>filter</code></td>
   </tr>
   <tr>
-   <td>border-right</td>
-   <td>borderRight</td>
+   <td><code>float</code></td>
   </tr>
   <tr>
-   <td>border-right-color</td>
-   <td>borderRightColor</td>
+   <td><code>font</code></td>
   </tr>
   <tr>
-   <td>border-right-style</td>
-   <td>borderRightStyle</td>
+   <td><code>font-family</code></td>
   </tr>
   <tr>
-   <td>border-right-width</td>
-   <td>borderRightWidth</td>
+   <td><code>font-size</code></td>
   </tr>
   <tr>
-   <td>border-style</td>
-   <td>borderStyle</td>
+   <td><code>font-variant</code></td>
   </tr>
   <tr>
-   <td>border-top</td>
-   <td>borderTop</td>
+   <td><code>font-weight</code></td>
   </tr>
   <tr>
-   <td>border-top-color</td>
-   <td>borderTopColor</td>
+   <td><code>height</code></td>
   </tr>
   <tr>
-   <td>border-top-style</td>
-   <td>borderTopStyle</td>
+   <td><code>left</code></td>
   </tr>
   <tr>
-   <td>border-top-width</td>
-   <td>borderTopWidth</td>
+   <td><code>letter-spacing</code></td>
   </tr>
   <tr>
-   <td>border-width</td>
-   <td>borderWidth</td>
+   <td><code>line-height</code></td>
   </tr>
   <tr>
-   <td>clear</td>
-   <td>clear</td>
+   <td><code>list-style</code></td>
   </tr>
   <tr>
-   <td>clip</td>
-   <td>clip</td>
+   <td><code>list-style-image</code></td>
   </tr>
   <tr>
-   <td>color</td>
-   <td>color</td>
+   <td><code>list-style-position</code></td>
   </tr>
   <tr>
-   <td>cursor</td>
-   <td>cursor</td>
+   <td><code>list-style-type</code></td>
   </tr>
   <tr>
-   <td>display</td>
-   <td>display</td>
+   <td><code>margin</code>
+    (<code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>,
+<code>margin-left</code>)</td>
   </tr>
   <tr>
-   <td>filter</td>
-   <td>filter</td>
+   <td><code>overflow</code></td>
   </tr>
   <tr>
-   <td>float</td>
-   <td>cssFloat</td>
+   <td><code>padding</code>
+    (<code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>,
+<code>padding-left</code>)</td>
   </tr>
   <tr>
-   <td>font</td>
-   <td>font</td>
+   <td><code>page-break-after</code></td>
   </tr>
   <tr>
-   <td>font-family</td>
-   <td>fontFamily</td>
+   <td><code>page-break-before</code></td>
   </tr>
   <tr>
-   <td>font-size</td>
-   <td>fontSize</td>
+   <td><code>position</code></td>
   </tr>
   <tr>
-   <td>font-variant</td>
-   <td>fontVariant</td>
+   <td><code>stroke-dasharray</code></td>
   </tr>
   <tr>
-   <td>font-weight</td>
-   <td>fontWeight</td>
+   <td><code>stroke-dashoffset</code></td>
   </tr>
   <tr>
-   <td>height</td>
-   <td>height</td>
+   <td><code>stroke-width</code></td>
   </tr>
   <tr>
-   <td>left</td>
-   <td>left</td>
+   <td><code>text-align</code></td>
   </tr>
   <tr>
-   <td>letter-spacing</td>
-   <td>letterSpacing</td>
+   <td><code>text-decoration</code></td>
   </tr>
   <tr>
-   <td>line-height</td>
-   <td>lineHeight</td>
+   <td><code>text-indent</code></td>
   </tr>
   <tr>
-   <td>list-style</td>
-   <td>listStyle</td>
+   <td><code>text-transform</code></td>
   </tr>
   <tr>
-   <td>list-style-image</td>
-   <td>listStyleImage</td>
+   <td><code>top</code></td>
   </tr>
   <tr>
-   <td>list-style-position</td>
-   <td>listStylePosition</td>
+   <td><code>vertical-align</code></td>
   </tr>
   <tr>
-   <td>list-style-type</td>
-   <td>listStyleType</td>
+   <td><code>visibility</code></td>
   </tr>
   <tr>
-   <td>margin</td>
-   <td>margin</td>
+   <td><code>width</code></td>
   </tr>
   <tr>
-   <td>margin-bottom</td>
-   <td>marginBottom</td>
-  </tr>
-  <tr>
-   <td>margin-left</td>
-   <td>marginLeft</td>
-  </tr>
-  <tr>
-   <td>margin-right</td>
-   <td>marginRight</td>
-  </tr>
-  <tr>
-   <td>margin-top</td>
-   <td>marginTop</td>
-  </tr>
-  <tr>
-   <td>overflow</td>
-   <td>overflow</td>
-  </tr>
-  <tr>
-   <td>padding</td>
-   <td>padding</td>
-  </tr>
-  <tr>
-   <td>padding-bottom</td>
-   <td>paddingBottom</td>
-  </tr>
-  <tr>
-   <td>padding-left</td>
-   <td>paddingLeft</td>
-  </tr>
-  <tr>
-   <td>padding-right</td>
-   <td>paddingRight</td>
-  </tr>
-  <tr>
-   <td>padding-top</td>
-   <td>paddingTop</td>
-  </tr>
-  <tr>
-   <td>page-break-after</td>
-   <td>pageBreakAfter</td>
-  </tr>
-  <tr>
-   <td>page-break-before</td>
-   <td>pageBreakBefore</td>
-  </tr>
-  <tr>
-   <td>position</td>
-   <td>position</td>
-  </tr>
-  <tr>
-   <td>stroke-dasharray</td>
-   <td>strokeDasharray</td>
-  </tr>
-  <tr>
-   <td>stroke-dashoffset</td>
-   <td>strokeDashoffset</td>
-  </tr>
-  <tr>
-   <td>stroke-width</td>
-   <td>strokeWidth</td>
-  </tr>
-  <tr>
-   <td>text-align</td>
-   <td>textAlign</td>
-  </tr>
-  <tr>
-   <td>text-decoration</td>
-   <td>textDecoration</td>
-  </tr>
-  <tr>
-   <td>text-indent</td>
-   <td>textIndent</td>
-  </tr>
-  <tr>
-   <td>text-transform</td>
-   <td>textTransform</td>
-  </tr>
-  <tr>
-   <td>top</td>
-   <td>top</td>
-  </tr>
-  <tr>
-   <td>vertical-align</td>
-   <td>verticalAlign</td>
-  </tr>
-  <tr>
-   <td>visibility</td>
-   <td>visibility</td>
-  </tr>
-  <tr>
-   <td>width</td>
-   <td>width</td>
-  </tr>
-  <tr>
-   <td>z-index</td>
-   <td>zIndex</td>
+   <td><code>z-index</code></td>
   </tr>
  </tbody>
 </table>

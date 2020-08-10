@@ -40,4 +40,8 @@
 - #### Operator precedence. MDN Web Docs. 
    <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence>. Published July 7, 2020. Accessed August 5, 2020.
 
+- #### CSS Properties Reference. MDN Web Docs. 
+   <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference>. Published July 7, 2020. Accessed August 10, 2020.
+
+
 </div>

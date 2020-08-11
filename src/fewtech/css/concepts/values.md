@@ -3,6 +3,19 @@
 Below is a list of CSS values that can be used with CSS properties[<a
 href='../../../bib.html#css-reference-w3schoolscom'>Ref.</a>].
 
+<div class='notes'>
+
+#### Special CSS values
+
+  1. <code> none </code>: This value **removes** the property.
+  2. <code> inherit </code>: This value **links** the parents CSS definition
+     to this property.
+  3. <code> initial </code>: Sets property to **default** value.
+
+</div>
+
+
+<div style='overflow-x:auto'>
 <table class="standard-table">
  <thead>
   <tr>
@@ -324,150 +337,342 @@ Can include valid values of the following:
   </tr>
   <tr>
    <td>font-variant</td>
-   <td>fontVariant</td>
+   <td>
+
+- normal
+- small-caps
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>font-weight</td>
-   <td>fontWeight</td>
+   <td>
+
+- normal
+- bold
+- bolder
+- lighter
+- <code>number</code> (e.g.: 100, 200, 300 etc.)
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>height</td>
-   <td>height</td>
+   <td>
+
+- auto (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>left</td>
-   <td>left</td>
+   <td>
+
+- auto (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>letter-spacing</td>
-   <td>letterSpacing</td>
+   <td>
+
+- normal (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>line-height</td>
-   <td>lineHeight</td>
+   <td>
+
+- normal (<i>(default)</i>)
+- <code>number</code> (e.g.: 1, 2, 2.5 etc.)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>list-style</td>
-   <td>listStyle</td>
+   <td>
+
+Can include valid values of the following:
+
+- <code>list-style-type</code>
+- <code>list-style-position</code>
+- <code>list-style-image</code>
+</td>
   </tr>
   <tr>
    <td>list-style-image</td>
-   <td>listStyleImage</td>
+   <td>
+
+- none
+- url(<code>/path/to/image.png</code>)
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>list-style-position</td>
-   <td>listStylePosition</td>
+   <td>
+
+- inside
+- outside
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>list-style-type</td>
-   <td>listStyleType</td>
+   <td>
+
+- disc
+- armenian
+- circle
+- cjk-ideographic
+- decimal
+- decimal-leading-zero
+- georgian
+- hebrew
+- hiragana
+- hiragana-iroha
+- katakana
+- katakana-iroha
+- lower-alpha
+- lower-greek
+- lower-latin
+- lower-roman
+- none
+- square
+- upper-alpha
+- upper-greek
+- upper-latin
+- upper-roman
+- initial
+- inherit
+</td>
   </tr>
   <tr>
-   <td>margin</td>
-   <td>margin</td>
-  </tr>
-  <tr>
-   <td>margin-bottom</td>
-   <td>marginBottom</td>
-  </tr>
-  <tr>
-   <td>margin-left</td>
-   <td>marginLeft</td>
-  </tr>
-  <tr>
-   <td>margin-right</td>
-   <td>marginRight</td>
-  </tr>
-  <tr>
-   <td>margin-top</td>
-   <td>marginTop</td>
+   <td>margin
+margin-top
+margin-right
+margin-bottom
+margin-left
+</td>
+
+<td>
+
+- auto (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+   <td>
+
+</td>
   </tr>
   <tr>
    <td>overflow</td>
-   <td>overflow</td>
+   <td>
+
+</td>
   </tr>
   <tr>
-   <td>padding</td>
-   <td>padding</td>
-  </tr>
-  <tr>
-   <td>padding-bottom</td>
-   <td>paddingBottom</td>
-  </tr>
-  <tr>
-   <td>padding-left</td>
-   <td>paddingLeft</td>
-  </tr>
-  <tr>
-   <td>padding-right</td>
-   <td>paddingRight</td>
-  </tr>
-  <tr>
-   <td>padding-top</td>
-   <td>paddingTop</td>
+   <td>padding
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+</td>
+   <td>
+
+- auto (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>page-break-after</td>
-   <td>pageBreakAfter</td>
+   <td>
+
+- auto
+- always
+- avoid
+- left
+- right
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>page-break-before</td>
-   <td>pageBreakBefore</td>
+   <td>
+
+- auto
+- always
+- avoid
+- left
+- right
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>position</td>
-   <td>position</td>
+   <td>
+
+- static
+- absolute
+- fixed
+- relative
+- sticky
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>stroke-dasharray</td>
-   <td>strokeDasharray</td>
+   <td>
+
+
+</td>
   </tr>
   <tr>
    <td>stroke-dashoffset</td>
-   <td>strokeDashoffset</td>
+   <td>
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- <code>number</code> (e.g.: 100, 200, 300 etc.)
+
+</td>
   </tr>
   <tr>
    <td>stroke-width</td>
-   <td>strokeWidth</td>
+   <td>
+ <code>number</code> (e.g.: 1, 2, 3 etc.)
+
+</td>
   </tr>
   <tr>
    <td>text-align</td>
-   <td>textAlign</td>
+   <td>
+
+- left
+- right
+- center
+- justify
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>text-decoration</td>
-   <td>textDecoration</td>
+   <td>
+
+Can include valid values of the following:
+
+- <code>text-decoration-line</code> <i>(required -- underline, overline,
+line-through)</i>
+- <code>text-decoration-color</code> (<code>CSS color</code><a
+href='./values.html#supicolorisup-css-color'><sup><i><b>color</b></i></sup></a>.
+- <code>text-decoration-style</code> (solid, wavy, dotted, dashed,
+double)
+</td>
   </tr>
   <tr>
    <td>text-indent</td>
-   <td>textIndent</td>
+   <td>
+
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>text-transform</td>
-   <td>textTransform</td>
+   <td>
+
+- none
+- capitalize
+- uppercase
+- lowercase
+- initial
+- inherit;
+</td>
   </tr>
   <tr>
    <td>top</td>
-   <td>top</td>
+   <td>
+
+- auto (<i>(default)</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>vertical-align</td>
-   <td>verticalAlign</td>
+   <td>
+
+- baseline
+- length
+- sub
+- super
+- top
+- text-top
+- middle
+- bottom
+- text-bottom
+- initial
+- inherit
+
+</td>
   </tr>
   <tr>
    <td>visibility</td>
-   <td>visibility</td>
+   <td>
+
+- visible
+- hidden
+- collapse
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>width</td>
-   <td>width</td>
+   <td>
+
+- auto (<i>default</i>)
+- <code>CSS length</code><a href='./values.html#supiblenbisup-css-length'><sup><i><b>len</b></i></sup><a>
+- initial
+- inherit
+</td>
   </tr>
   <tr>
    <td>z-index</td>
-   <td>zIndex</td>
+   <td>
+ <code>number</code> (e.g.: 1, 2, 3 etc.)
+</td>
   </tr>
  </tbody>
 </table>
+</div>
 
 <div class='notes'>
 
@@ -552,6 +757,7 @@ href='../../../bib.html#css-units-w3schoolscom'> Ref.</a>]
 - Predefined/Cross-browser color names [<a href='../../../bib.html#named-colors-and-hex-equivalents--css-tricks-css-tricks'>Ref.</a>]:
 
 
+<div style='overflow-x:auto'>
 <table id="color-table">
 <tbody><tr>
 <th>Color Name</th>
@@ -1294,6 +1500,7 @@ href='../../../bib.html#css-units-w3schoolscom'> Ref.</a>]
 </tr>
 </tbody></table>
 
+</div>
 </div>
 
 

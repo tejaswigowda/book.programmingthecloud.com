@@ -81,7 +81,9 @@ could if you choose).
 As an object `Date()` has built in methods[<a
 href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:
 
-<table class="table table-bordered">
+<div style='overflow:auto'>
+
+<table>
 <tbody><tr>
 <th style="text-align:center;">Method 
 </th><th>
@@ -324,6 +326,7 @@ Description</th></tr>
 </tr>
 </tbody></table>
 
+</div>
 
 
 
@@ -331,7 +334,9 @@ Description</th></tr>
 In Addition there are 2 static `Date()` methods[<a
 href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:
 
-<table class="table table-bordered">
+<div style='overflow:hidden'>
+
+<table>
 <tbody><tr>
 <th style="text-align:center;">Method 
 </th><th>
@@ -339,17 +344,18 @@ href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspoin
 </tr>
 <tr>
 
-<td>Date.parse( )
+<td><code>Date.parse()</code>
 </td><td><p>Parses a string representation of a date and time and returns the internal millisecond representation of that date.</p></td>
 </tr>
 <tr>
 
-<td>Date.UTC( )
+<td><code>Date.UTC()</code>
 </td><td><p>Returns the millisecond representation of the specified UTC date and time.</p></td>
 </tr>
 </tbody></table>
 
 
+</div>
 
 ### `window` Object (browser only)
 

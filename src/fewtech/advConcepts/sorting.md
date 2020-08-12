@@ -1,6 +1,4 @@
-# Other Concepts
-
-## Sorting
+# Sorting
 
 
 

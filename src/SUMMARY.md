@@ -48,8 +48,8 @@
 
 
 - [Advanced Topics](fewtech/advConcepts/README.md)
-  - [Sorting](fewtech/advConcepts/sorting.md)
   - [JSON](fewtech/advConcepts/json.md)
+  - [Sorting](fewtech/advConcepts/sorting.md)
   - [HTML Canvas](fewtech/advConcepts/canvas.md)
   - [CSS Transitions](fewtech/advConcepts/cssTransitions.md)
   - [CSS TransForms](fewtech/advConcepts/CSSTransforms.md)

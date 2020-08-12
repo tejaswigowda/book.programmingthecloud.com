@@ -238,14 +238,37 @@ decendent of elements (from left-to-right):</p>
   &lt;CSS declaration&gt;
 }
 </code></pre>
-<p>This <code>&lt;CSS declaration will be applied to a tag that has a class </code>second<code>, which is a decendent of a tag which has </code>[id='first']<code>, which in itself is a decendent of a </code><div>` tag. Note that these tags only
+<p>This <code>&lt;CSS declaration&gt;</code> will be applied to a tag that has a class
+<code>second</code>, which is a decendent of a tag which has <code>[id='first']</code>, which
+in itself is a decendent of a <code>&lt;div&gt;</code> tag. Note that these tags only
 have to be decendent nodes and not strictly child nodes.</p>
 <h3><a class="header" href="#child-selector-" id="child-selector-">Child selector (<code>&gt;</code>)</a></h3>
-<h3><a class="header" href="#sibling-selector" id="sibling-selector">Sibling selector</a></h3>
-<h3><a class="header" href="#adjacent-sibling-selector" id="adjacent-sibling-selector">Adjacent sibling selector</a></h3>
-<h3><a class="header" href="#column-selector" id="column-selector">Column selector</a></h3>
-<h3><a class="header" href="#pseudo-class-selector-" id="pseudo-class-selector-">Pseudo class selector (<code>:</code>)</a></h3>
-<h3><a class="header" href="#pseudo-element-selector-" id="pseudo-element-selector-">Pseudo element selector (<code>::</code>)</a></h3>
+<p>It is similar to the decendent selector, by now the decendent element
+has to be a <strong>direct</strong> decendent -- this selector looks for parent-child
+nodes.</p>
+<p>Example:</p>
+<pre><code class="language-css">#first &gt; .second{
+  &lt;CSS declaration&gt;
+}
+</code></pre>
+<p>This <code>&lt;CSS declaration&gt;</code> will be applied to a tag that has a class
+<code>second</code>, whose parent is a tag which has <code>[id='first']</code>.</p>
+<h3><a class="header" href="#sibling-selector-" id="sibling-selector-">Sibling selector (<code>~</code>)</a></h3>
+<p>This selector is used to select all sibling (have the same parent) elements.</p>
+<pre><code class="language-css">#first ~ .second{
+  &lt;CSS declaration&gt;
+}
+</code></pre>
+<p>This <code>&lt;CSS declaration&gt;</code> will be applied to all tags that has a class
+<code>second</code>, who have a tag which has <code>[id='first']</code> as sibling.</p>
+<h3><a class="header" href="#adjacent-sibling-selector-" id="adjacent-sibling-selector-">Adjacent sibling selector (<code>+</code>)</a></h3>
+<p>This selector is used to select all sibling (have the same parent) elements.</p>
+<pre><code class="language-css">#first + .second{
+  &lt;CSS declaration&gt;
+}
+</code></pre>
+<p>This <code>&lt;CSS declaration&gt;</code> will be applied to a single tags that has a class
+<code>second</code>, which immediately follows a tag with <code>[id='first']</code>.</p>
 
                     </main>
 

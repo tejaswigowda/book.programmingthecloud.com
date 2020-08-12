@@ -103,10 +103,15 @@ height, witdth etc.) it is best to use the following units.
 
 Color values can be expressed in
 
-1. *Color name*:
+1. *Color name*: Any valid CSS color name. <a href='./concepts/values.html#supicolorisup-css-color'>Full list here</a>.
 
 2. *Hexadecimal notation*:
+    e.g.: `#ffffff`, `#ff0000`, `#00ff00`, `#0000ff` etc.
 
 3. *RGB format*:
+    e.g.: `rgb(255,255,255)`, `rgba(5,2,128,.3)`, `rgb(25,155,35)`,
+`rgb(5,25,255)` etc.
 
 4. *HSL format*:
+    e.g.: `hsl(120deg, 3%, 1%)`, `hsl(10deg, 60%, 61%)`, `hsl(40deg, 50%, 17%)`,
+`hsl(0deg, 30%, 1%)` etc.

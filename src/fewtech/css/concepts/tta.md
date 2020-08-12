@@ -116,28 +116,53 @@ div #first .second{
 }
 ```
 
-This `<CSS declaration will be applied to a tag that has a class
+This `<CSS declaration>` will be applied to a tag that has a class
 `second`, which is a decendent of a tag which has `[id='first']`, which
 in itself is a decendent of a `<div>` tag. Note that these tags only
 have to be decendent nodes and not strictly child nodes.
 
 ### Child selector (`>`)
+It is similar to the decendent selector, by now the decendent element
+has to be a **direct** decendent -- this selector looks for parent-child
+nodes.
 
 
+Example:
+
+```css
+#first > .second{
+  <CSS declaration>
+}
+```
+
+This `<CSS declaration>` will be applied to a tag that has a class
+`second`, whose parent is a tag which has `[id='first']`.
+
+### Sibling selector (`~`)
+This selector is used to select all sibling (have the same parent) elements.
+
+```css
+#first ~ .second{
+  <CSS declaration>
+}
+```
+
+This `<CSS declaration>` will be applied to all tags that has a class
+`second`, who have a tag which has `[id='first']` as sibling.
+
+### Adjacent sibling selector (`+`)
+This selector is used to select all sibling (have the same parent) elements.
+
+```css
+#first + .second{
+  <CSS declaration>
+}
+```
+
+This `<CSS declaration>` will be applied to a single tags that has a class
+`second`, which immediately follows a tag with `[id='first']`.
 
 
-
-
-### Sibling selector
-
-### Adjacent sibling selector
-
-### Column selector
-
-
-### Pseudo class selector (`:`)
-
-### Pseudo element selector (`::`)
 
 
 

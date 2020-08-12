@@ -155,8 +155,39 @@
                     <main>
                         <h1><a class="header" href="#other-concepts" id="other-concepts">Other Concepts</a></h1>
 <h2><a class="header" href="#cascading-rules" id="cascading-rules">Cascading Rules</a></h2>
+<p>An HTML page is read top-down and hence any CSS included (whether using
+<code>&lt;link&gt;</code>, <code>&lt;style&gt;</code> tag or <code>style</code> attribute is also read in that order.
+If properties are redefined, then the values are <em>cascaded</em>, i.e the
+last encountered value is the one applied.</p>
 <h2><a class="header" href="#vendor-prefixes" id="vendor-prefixes">Vendor Prefixes</a></h2>
+<p>Certain browsers implement experimental CSS properties and they have a
+browser specific vendor prefix.</p>
+<pre><code class="language-css">-webkit-transform: scale(2); // For Safari and Chrome
+-ms-transform: scale(2);  // For Internet Explorer
+-moz-transform: scale(2); // For Firefox
+</code></pre>
+<p>Sometimes these experimental properties get adopted into CSS and then
+the vendor prefix gets dropped.</p>
+<pre><code class="language-css">transform: scale(2); // For all browsers
+</code></pre>
 <h2><a class="header" href="#combining-property-value-pairs" id="combining-property-value-pairs">Combining property-value Pairs</a></h2>
+<p>Certain hyphenated CSS properties can be combined into one. For example:</p>
+<pre><code class="language-css">margin-top: 10px;
+margin-right: auto;
+margin-bottom: 20px;
+margin-left: auto;
+
+border-width: 1px;
+border-style: dotted;
+border-color: red;
+</code></pre>
+<p>can be combined as:</p>
+<pre><code class="language-css">margin: 10px auto 20px auto;
+
+border: 1px dotted red;
+</code></pre>
+<p>Other examples include <code>background</code>, <code>padding</code>, <code>list-style</code>,
+<code>text-decoration</code>, <code>font</code> etc.</p>
 
                     </main>
 

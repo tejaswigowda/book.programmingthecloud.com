@@ -196,6 +196,9 @@ The following are the list of CSS properties most browsers implement
 <div class='notes'>
 
 #### Graceful fallback in CSS
+If CSS does not understand a property or value, it moves on to the next
+pair. A faulty property-value pair cannot make the entire CSS style
+sheet invalid. This behavior of CSS is know as **graceful fallback**.
 </div>
 
 

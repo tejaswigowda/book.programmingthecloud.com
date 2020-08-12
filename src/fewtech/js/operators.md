@@ -356,10 +356,11 @@ typeof z; // "string"
 
 ## Comparison Operators
 
+These are binary operators that compare if the operands are *equal to*,
+*greater than*, *less than* etc.
 
 <div style='overflow:auto'>
 <table>
- <caption>Comparison operators</caption>
  <thead>
   <tr>
    <th scope="col">Operator</th>
@@ -423,6 +424,9 @@ same type.</td>
 </div>
 
 ## Logical Operators
+
+These operators can be used to combine 2 comparison operators. The
+operands are Boolean (or they are typecast to it if other data type).
 
 <div style='overflow:auto'>
 <table>

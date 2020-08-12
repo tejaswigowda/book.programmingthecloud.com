@@ -1,5 +1,7 @@
-# Improving the Simple Resume
+# Improving the Simple Resume with CSS
 
+Adding CSS to the HTML resume from earlier(lines 6-42), we can improve
+it's look-and-feel.
 
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'

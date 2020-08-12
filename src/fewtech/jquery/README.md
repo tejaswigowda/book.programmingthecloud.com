@@ -1,13 +1,13 @@
 # jQuery
 
-jQuery is knoiwn as the syntactic-sugar for JavaScript. This means you
+jQuery is known as the syntactic-sugar for JavaScript. This means you
 can write valid JavaScript without having to learn the full syntax of
 JavaScript. jQuery is a JS library and hence all jQuery written is JS,
 but not the other way around.
 
 ## Including jQuery
-The jQuery library can be included either using a contect delivery
-network or via downloading and linking the jQuery JS file.
+The jQuery library can be included either using a content delivery
+network (CDN) or via downloading and linking the jQuery JS file.
 
 ### Via CDN
 Include the following into the `<head>` of your html document
@@ -23,7 +23,7 @@ Include the following into the `<head>` of your html document
 
 - Add the downloaded file to your project folder.
 
-- Add this scripot tag into your document `<head>`.
+- Add this `<script>` tag into your document `<head>`.
 ```html
 <script src="jquery-3.5.1.min.js"></script> 
 ```
@@ -92,52 +92,52 @@ full list can be found here: <https://api.jquery.com/>.
 </thead>
 <tbody>
   <tr>
-    <td>hide()</td>
+    <td><code>hide()</code></td>
     <td>Hide the selected tags</td>
   </tr>
   <tr>
-    <td>show()</td>
+    <td><code>show()</code></td>
     <td>Show the selected tags</td>
   </tr>
   <tr>
-    <td>toggle()</td>
+    <td><code>toggle()</code></td>
     <td>Toggle the selected tags</td>
   </tr>
   <tr>
-    <td>slideUp()</td>
-    <td></td>
+    <td><code>slideUp()</code></td>
+    <td>Slide up tag</td>
   </tr>
   <tr>
-    <td>slideDown()</td>
-    <td></td>
+    <td><code>slideDown()</code></td>
+    <td>Slide down tag</td>
   </tr>
   <tr>
-    <td>slideToggle()</td>
-    <td></td>
+    <td><code>slideToggle()</code></td>
+    <td>Toggle silde up/down status of tag</td>
   </tr>
   <tr>
-    <td>hasClass()</td>
-    <td></td>
+    <td><code>hasClass()</code></td>
+    <td>Check if selected tag has a class</td>
   </tr>
   <tr>
-    <td>addClass()</td>
-    <td></td>
+    <td><code>addClass()</code></td>
+    <td>Add class to selected tag</td>
   </tr>
   <tr>
-    <td>removeClass()</td>
-    <td></td>
+    <td><code>removeClass()</code></td>
+    <td>Remove class from selected tag</td>
   </tr>
   <tr>
-    <td>toggleClass()</td>
-    <td></td>
+    <td><code>toggleClass()</code></td>
+    <td>Add/remove class</td>
   </tr>
   <tr>
-    <td>height()</td>
-    <td></td>
+    <td><code>height()</code></td>
+    <td>Height of tag</td>
   </tr>
   <tr>
-    <td>width()</td>
-    <td></td>
+    <td><code>width()</code></td>
+    <td>Width of tag</td>
   </tr>
 </tbody>
 </table>
@@ -145,10 +145,52 @@ full list can be found here: <https://api.jquery.com/>.
 
 
 ## Chaining jQuery functions
+jQuery functions can be chain linked like so:
 
-## Single Page Resume
+```js
+$("body").addClass("night").delay(500).removeClass("night");
+```
 
+While chaining functions `delay()` (adds delay to the queue of
+transitions/animations) and `stop()` (which empties the
+transition/animation queue) are very useful.
 
+## Single Page Resume, with jQuery
+
+Improving on where we left off we add *night mode* to our resume. We add
+the following new CSS (lines 44-56):
+
+```css
+body.dark{
+  font-family: courier;
+  background: black;
+  color: white;
+}
+body.dark a{
+  color: white;
+}
+body.dark h2,
+body.dark tr{
+  background: white;
+  color: black;
+}
+```
+
+and makeup for 2 buttons (lines 61,62):
+
+```html
+<button onclick='$("body").removeClass("dark")'>Regular</button>
+<button onclick='$("body").addClass("dark")'>Dark Mode</button>
+```
+
+In order to enable night mode by default we attach an `onload` event
+listerner to `<body>` (line 60):
+
+```html
+<body onload='$("body").addClass("dark")'>
+```
+
+## Full HTML
 
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'

@@ -90,239 +90,239 @@ href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspoin
 Description</th></tr>
 <tr>
 
-<td>Date()
+<td><code>Date()</code>
 </td><td>
-<p>Returns today's date and time</p></td>
+<p>Gets today's date and time</p></td>
 </tr>
 <tr>
 
-<td>getDate()
+<td><code>getDate()</code>
 </td><td>
-<p>Returns the day of the month for the specified date according to local time.</p></td>
+<p>Gets the day of the month for the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getDay()
+<td><code>getDay()</code>
 </td><td>
-<p>Returns the day of the week for the specified date according to local time.</p></td>
+<p>Gets the day of the week for the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getFullYear()
+<td><code>getFullYear()</code>
 </td><td>
-<p>Returns the year of the specified date according to local time.</p></td>
+<p>Gets the year of the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getHours()
+<td><code>getHours()</code>
 </td><td>
-<p>Returns the hour in the specified date according to local time.</p></td>
+<p>Gets the hour in the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getMilliseconds()
-</td><td><p>Returns the milliseconds in the specified date according to local time.</p></td>
+<td><code>getMilliseconds()</code>
+</td><td><p>Gets the milliseconds in the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getMinutes()
-</td><td><p>Returns the minutes in the specified date according to local time.</p></td>
+<td><code>getMinutes()</code>
+</td><td><p>Gets the minutes in the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getMonth()
-</td><td><p>Returns the month in the specified date according to local time.</p></td>
+<td><code>getMonth()</code>
+</td><td><p>Gets the month in the specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>getSeconds()
-</td><td><p>Returns the seconds in the specified date according to local time.</p></td>
+<td><code>getSeconds()</code>
+</td><td><p>Gets the seconds in the specified date according to local time.</p></td>
 </tr>
 <tr>
-<td>getTime()
-</td><td><p>Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC.</p></td>
-</tr>
-<tr>
-
-<td>getTimezoneOffset()
-</td><td><p>Returns the time-zone offset in minutes for the current locale.</p></td>
+<td><code>getTime()</code>
+</td><td><p>Gets the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC.</p></td>
 </tr>
 <tr>
 
-<td>getUTCDate()
-</td><td><p>Returns the day (date) of the month in the specified date according to universal time.</p></td>
+<td><code>getTimezoneOffset()</code>
+</td><td><p>Gets the time-zone offset in minutes for the current locale.</p></td>
 </tr>
 <tr>
 
-<td>getUTCDay()
-</td><td><p>Returns the day of the week in the specified date according to universal time.</p></td>
+<td><code>getUTCDate()</code>
+</td><td><p>Gets the day (date) of the month in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCFullYear()
-</td><td><p>Returns the year in the specified date according to universal time.</p></td>
+<td><code>getUTCDay()</code>
+</td><td><p>Gets the day of the week in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCHours()
-</td><td><p>Returns the hours in the specified date according to universal time.</p></td>
+<td><code>getUTCFullYear()</code>
+</td><td><p>Gets the year in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCMilliseconds()
-</td><td><p>Returns the milliseconds in the specified date according to universal time.</p></td>
+<td><code>getUTCHours()</code>
+</td><td><p>Gets the hours in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCMinutes()
-</td><td><p>Returns the minutes in the specified date according to universal time.</p></td>
+<td><code>getUTCMilliseconds()</code>
+</td><td><p>Gets the milliseconds in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCMonth()
-</td><td><p>Returns the month in the specified date according to universal time.</p></td>
+<td><code>getUTCMinutes()</code>
+</td><td><p>Gets the minutes in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>getUTCSeconds()
-</td><td><p>Returns the seconds in the specified date according to universal time.</p></td>
-</tr>
-<tr>
-<td>getYear()
-</td><td><p><b>Deprecated</b> - Returns the year in the specified date according to local time. Use getFullYear instead.</p></td>
+<td><code>getUTCMonth()</code>
+</td><td><p>Gets the month in the specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setDate()
+<td><code>getUTCSeconds()</code>
+</td><td><p>Gets the seconds in the specified date according to universal time.</p></td>
+</tr>
+<tr>
+<td><code>getYear()</code>
+</td><td><p><b>Deprecated</b> - Gets the year in the specified date according to local time. Use getFullYear instead.</p></td>
+</tr>
+<tr>
+
+<td><code>setDate()</code>
 </td><td><p>Sets the day of the month for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setFullYear()
+<td><code>setFullYear()</code>
 </td><td><p>Sets the full year for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setHours()
+<td><code>setHours()</code>
 </td><td><p>Sets the hours for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setMilliseconds()
+<td><code>setMilliseconds()</code>
 </td><td><p>Sets the milliseconds for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setMinutes()
+<td><code>setMinutes()</code>
 </td><td><p>Sets the minutes for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setMonth()
+<td><code>setMonth()</code>
 </td><td><p>Sets the month for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setSeconds()
+<td><code>setSeconds()</code>
 </td><td><p>Sets the seconds for a specified date according to local time.</p></td>
 </tr>
 <tr>
 
-<td>setTime()
+<td><code>setTime()</code>
 </td><td><p>Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.</p></td>
 </tr>
 <tr>
 
-<td>setUTCDate()
+<td><code>setUTCDate()</code>
 </td><td><p>Sets the day of the month for a specified date according to universal time.</p></td>
 </tr>
 <tr>
-<td>setUTCFullYear()
+<td><code>setUTCFullYear()</code>
 </td><td><p>Sets the full year for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setUTCHours()
+<td><code>setUTCHours()</code>
 </td><td><p>Sets the hour for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setUTCMilliseconds()
+<td><code>setUTCMilliseconds()</code>
 </td><td><p>Sets the milliseconds for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setUTCMinutes()
+<td><code>setUTCMinutes()</code>
 </td><td><p>Sets the minutes for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setUTCMonth()
+<td><code>setUTCMonth()</code>
 </td><td><p>Sets the month for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setUTCSeconds()
+<td><code>setUTCSeconds()</code>
 </td><td><p>Sets the seconds for a specified date according to universal time.</p></td>
 </tr>
 <tr>
 
-<td>setYear()
+<td><code>setYear()</code>
 </td><td><p><b>Deprecated - </b> Sets the year for a specified date according to local time. Use setFullYear instead.</p></td>
 </tr>
 <tr>
 
-<td>toDateString()
-</td><td><p>Returns the "date" portion of the Date as a human-readable string.</p></td>
+<td><code>toDateString()</code>
+</td><td><p>Gets the "date" portion of the Date as a human-readable string.</p></td>
 </tr>
 <tr>
 
-<td>toGMTString()
+<td><code>toGMTString()</code>
 </td><td><p><b>Deprecated - </b> Converts a date to a string, using the Internet GMT conventions. Use toUTCString instead.</p></td>
 </tr>
 <tr>
 
-<td>toLocaleDateString()
-</td><td><p>Returns the "date" portion of the Date as a string, using the current locale's conventions.</p></td>
+<td><code>toLocaleDateString()</code>
+</td><td><p>Gets the "date" portion of the Date as a string, using the current locale's conventions.</p></td>
 </tr>
 <tr>
-<td>toLocaleFormat()
+<td><code>toLocaleFormat()</code>
 </td><td><p>Converts a date to a string, using a format string.</p></td>
 </tr>
 <tr>
 
-<td>toLocaleString()
+<td><code>toLocaleString()</code>
 </td><td><p>Converts a date to a string, using the current locale's conventions.</p></td>
 </tr>
 <tr>
 
-<td>toLocaleTimeString()
-</td><td><p>Returns the "time" portion of the Date as a string, using the current locale's conventions.</p></td>
+<td><code>toLocaleTimeString()</code>
+</td><td><p>Gets the "time" portion of the Date as a string, using the current locale's conventions.</p></td>
 </tr>
 <tr>
 
-<td>toSource()
-</td><td><p>Returns a string representing the source for an equivalent Date object; you can use this value to create a new object.</p></td>
+<td><code>toSource()</code>
+</td><td><p>Gets a string representing the source for an equivalent Date object; you can use this value to create a new object.</p></td>
 </tr>
 <tr>
 
-<td>toString()
-</td><td><p>Returns a string representing the specified Date object.</p></td>
+<td><code>toString()</code>
+</td><td><p>Gets a string representing the specified Date object.</p></td>
 </tr>
 <tr>
 
-<td>toTimeString()
-</td><td><p>Returns the "time" portion of the Date as a human-readable string.</p></td>
+<td><code>toTimeString()</code>
+</td><td><p>Gets the "time" portion of the Date as a human-readable string.</p></td>
 </tr>
 <tr>
 
-<td>toUTCString()
+<td><code>toUTCString()</code>
 </td><td><p>Converts a date to a string, using the universal time convention.</p></td>
 </tr>
 <tr>
 
-<td>valueOf()
-</td><td><p>Returns the primitive value of a Date object.</p></td>
+<td><code>valueOf()</code>
+</td><td><p>Gets the primitive value of a Date object.</p></td>
 </tr>
 </tbody></table>
 
@@ -350,7 +350,7 @@ href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspoin
 <tr>
 
 <td><code>Date.UTC()</code>
-</td><td><p>Returns the millisecond representation of the specified UTC date and time.</p></td>
+</td><td><p>Gets the millisecond representation of the specified UTC date and time.</p></td>
 </tr>
 </tbody></table>
 
@@ -379,12 +379,23 @@ The window object encapsulates other important objects such as --
 
 #### Document Object Model (DOM)
 
+The document object model (DOM) is the represenation of the HTML document
+within JS. The DOM has an *object* associated with each *element* within
+the HTML document. The corresponding object can be used to read (quaery
+status of attributes and their values) tag information as well as set
+tag attribute values. Thus a DOM provides a way to read attribute values
+from tags (including CSS declarations, since `style` is an attribute)
+and set them.
 </div>
 
 
 <div class='notes'>
 
 #### What about jQuery?
+jQuery is a wrapper that implements different fucntiuons on top of JS.
+The main dollar function (`$()`) in jQuery internally uses the DOM
+(`document` Object, more specifically the `document.querySelector()`
+function.
 
 </div>
 

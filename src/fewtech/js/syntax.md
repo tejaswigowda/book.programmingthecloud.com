@@ -235,6 +235,7 @@ etc. But can be anything as long as the following rules are followed:
 
 
 <div class='notes'>
+
 - Variable name are case sensitive. Therefore `age`, `Age` and `AGE` are
 considered as 3 distinct variables.
 - Variable names cannot start with numbers.

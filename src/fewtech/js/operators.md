@@ -25,6 +25,8 @@ The other operators also alter the execution sequence. The interpreter
 uses the precedence order to evaluate operators. The following tabel
 lists the precedence of each Js operator.
 
+<div style='overflow:auto'>
+
 <table class="fullwidth-table">
  <tbody>
   <tr>
@@ -323,6 +325,7 @@ lists the precedence of each Js operator.
  </tbody>
 </table>
 
+</div>
 ## Operator Polymorphism
 The same operator can perform different operations depending on the
 operands provided to it. This is known as operator polymorphism.
@@ -354,6 +357,7 @@ typeof z; // "string"
 ## Comparison Operators
 
 
+<div style='overflow:auto'>
 <table>
  <caption>Comparison operators</caption>
  <thead>
@@ -415,27 +419,32 @@ typeof z; // "string"
  </tbody>
 </table>
 
+</div>
+
 ## Logical Operators
 
+<div style='overflow:auto'>
 <table>
 <tbody><tr>
 <th style="width:12%">Operator</th>
 <th>Description</th>
-<th>Example</th>
+<th>Example <code> var x = 9, y = 2;</code></th>
 </tr>
 <tr>
-<td>&amp;&amp;</td>
+<td><code>&amp;&amp;</code></td>
 <td>and</td>
-<td> (x &lt; 10 &amp;&amp; y &gt; 1) is true</td>
+<td> <code>(x &lt; 10 &amp;&amp; y &gt; 1)</code> is <code>true</code></td>
 </tr>
 <tr>
-<td>||</td>
+<td><code>||</code></td>
 <td>or</td>
-<td>(x == 5 || y == 5) is false</td>
+<td><code>(x == 5 || y == 5)</code> is <code>false</code></td>
 </tr>
 <tr>
-<td>!</td>
+<td><code>!</code></td>
 <td>not</td>
-<td> !(x == y) is true</td>
+<td> <code>!(x == y)</code> is <code>true</code></td>
 </tr>
 </tbody></table>
+
+</div>

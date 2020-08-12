@@ -174,6 +174,7 @@ after the right-hand-side expression is evaluated.</p>
 <p>The other operators also alter the execution sequence. The interpreter
 uses the precedence order to evaluate operators. The following tabel
 lists the precedence of each Js operator.</p>
+<div style='overflow:auto'>
 <table class="fullwidth-table">
  <tbody>
   <tr>
@@ -471,9 +472,10 @@ lists the precedence of each Js operator.</p>
   </tr>
  </tbody>
 </table>
-<h2><a class="header" href="#operator-polymorphism" id="operator-polymorphism">Operator Polymorphism</a></h2>
-<p>The same operator can perform different operations depending on the
-operands provided to it. This is known as operator polymorphism.</p>
+</div>
+## Operator Polymorphism
+The same operator can perform different operations depending on the
+operands provided to it. This is known as operator polymorphism.
 <p>This concept is best explained using the addition(<code>+</code>) operator.</p>
 <p>Look sta the following examples:</p>
 <pre><code class="language-js">var num = 10;
@@ -495,6 +497,7 @@ z = st + num; &quot;hello10&quot;
 typeof z; // &quot;string&quot;
 </code></pre>
 <h2><a class="header" href="#comparison-operators" id="comparison-operators">Comparison Operators</a></h2>
+<div style='overflow:auto'>
 <table>
  <caption>Comparison operators</caption>
  <thead>
@@ -555,29 +558,32 @@ typeof z; // &quot;string&quot;
   </tr>
  </tbody>
 </table>
+</div>
 <h2><a class="header" href="#logical-operators" id="logical-operators">Logical Operators</a></h2>
+<div style='overflow:auto'>
 <table>
 <tbody><tr>
 <th style="width:12%">Operator</th>
 <th>Description</th>
-<th>Example</th>
+<th>Example <code> var x = 9, y = 2;</code></th>
 </tr>
 <tr>
-<td>&amp;&amp;</td>
+<td><code>&amp;&amp;</code></td>
 <td>and</td>
-<td> (x &lt; 10 &amp;&amp; y &gt; 1) is true</td>
+<td> <code>(x &lt; 10 &amp;&amp; y &gt; 1)</code> is <code>true</code></td>
 </tr>
 <tr>
-<td>||</td>
+<td><code>||</code></td>
 <td>or</td>
-<td>(x == 5 || y == 5) is false</td>
+<td><code>(x == 5 || y == 5)</code> is <code>false</code></td>
 </tr>
 <tr>
-<td>!</td>
+<td><code>!</code></td>
 <td>not</td>
-<td> !(x == y) is true</td>
+<td> <code>!(x == y)</code> is <code>true</code></td>
 </tr>
 </tbody></table>
+</div>
 
                     </main>
 

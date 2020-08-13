@@ -64,14 +64,9 @@ docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
 [contribute](https://www.smashingmagazine.com/2018/05/contributing-mdn-webdocs/) if you can.
 </b></i>
 
-<article id="wikiArticle"><div></div>
+<article><div></div>
 
-<p><span class="seoSummary">This page&nbsp;lists all the <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" title="HTML: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.">HTML</a> <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Element" title="elements: An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.
- ">elements</a>, which are created using <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Tag" title="tags: In HTML a tag is used for creating an element.&nbsp; The name of an HTML element is the name used in angle brackets such as <p> for paragraph.&nbsp; Note that the end tag's name is preceded by a slash character, &quot;</p>&quot;, and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case.">tags</a>.</span> They are grouped by function to help you find what you have in mind easily. An alphabetical list of all elements is provided in the sidebar on every element's page as well as this one.</p>
 
-<div class="note">
-<p>For more information about the basics of HTML elements and attributes, see <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction#Elements_%E2%80%94_the_basic_building_blocks">the section on elements in the Introduction to HTML article</a>.</p>
-</div>
 
 <h2 id="Main_root">Main root</h2>
 
@@ -87,7 +82,7 @@ docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
  
   <tr>
 
-   <td style="vertical-align: top;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" title="The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element."><code>&lt;html&gt;</code></a></td>
+   <td style="vertical-align: top;"><code>&lt;html&gt;</code></td>
    <td>The <strong>HTML <code>&lt;html&gt;</code> element</strong> represents the root (top-level element) of an HTML document, so it is also referred to as the <em>root element</em>. All other elements must be descendants of this element.</td>
   </tr>
 

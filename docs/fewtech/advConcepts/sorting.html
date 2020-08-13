@@ -157,10 +157,48 @@
 <p>With JSON data and JS arrays, dorting based on a particular key becomes
 an useful operation. In this section we discuss the basics of sorting by
 looking at <strong>bubbule sort</strong> as a standard sorting algorithm. </p>
-<h2><a class="header" href="#bubbule-sort" id="bubbule-sort">Bubbule Sort</a></h2>
-<p>Bubble Sort is a sorting al;gorithm that sorts the array two members at
+<h2><a class="header" href="#bubble-sort" id="bubble-sort">Bubble Sort</a></h2>
+<p>Bubble Sort is a sorting algorithm that sorts the array two members at
 a time. The idea of bubble sort is simple -- look at two adjacent
-elements in the array; <em>are they sorted?</em>:! </p>
+elements in the array; <em>are they sorted?</em>. If already sorted then do
+nothing; if unsorted swap the position of the 2 elements.</p>
+<img style="display:block;margin:auto" src='../../../imgs/sortingAlg.png'>    
+ <figcaption> Fig: 7.2.1 Sorting Logic </figcaption>               
+<p><em>How many passes (iterations) of the array is needed?</em> -- no more than
+the size of the array. Let us look at sorting an array <code>[6,5,3,1,8,7,2,4]</code></p>
+<pre><code class="language-js">var arr = [6,5,3,1,8,7,2,4];
+for (var i = 0; i &lt; arr.length; i++){
+  for (var j = 0; j &lt; arr.length -i; j++){
+    if(arr[j]&gt;arr[j+1]){
+      var temp = arr[j];
+      arr[j] = arr[j+1];
+      arr[j+1] = temp;
+    }
+  }
+}
+
+console.log(arr);
+</code></pre>
+<p>This process is visualized below [<a
+href='../../bib.html#contributors-to-wikimedia-projects-simple-sorting-algorithm-wikipediaorg'>Ref.</a>]:
+<img style="display:block;margin:auto" src='../../../imgs/Bubble-sort-example-300px.gif'></p>
+<h2><a class="header" href="#other-sorting-algorithms" id="other-sorting-algorithms">Other Sorting Algorithms</a></h2>
+<p>Bubble Sort is just one of the many different sorting algorithms. The
+similarity between all these is that they all employ the <em>sorting
+operator</em>. They differ in only how they traverse and iterate over
+arrays. Therefore the key to any sorting is the comparison operator.</p>
+<h2><a class="header" href="#sorting-js-arrays" id="sorting-js-arrays">Sorting Js Arrays</a></h2>
+<p>JS array has a built in <code>sort()</code> method. An array can be sorted like so:</p>
+<pre><code class="language-js">var arr = [6,5,3,1,8,7,2,4];
+arr.sort();
+</code></pre>
+<p>The above invocation of <code>sort()</code> uses the default sorting function
+<code>function(a,b){ return a &gt; b }</code>, and is equivalent to:</p>
+<pre><code class="language-js">arr.sort(function(a,b){ return a &gt; b });
+</code></pre>
+<p>To sort the array in decending order we reverse the sorting function.</p>
+<pre><code class="language-js">arr.sort(function(a,b){ return a &lt; b });
+</code></pre>
 
                     </main>
 

@@ -52,5 +52,8 @@
 - #### CSS Units. W3schools.com. 
    <https://www.w3schools.com/cssref/css_units.asp>. Published 2020. Accessed August 10, 2020.
 
+- #### Contributors to Wikimedia projects. simple sorting algorithm. Wikipedia.org. 
+   <https://en.m.wikipedia.org/wiki/Bubble_sort>. Published October 29, 2001. Accessed August 13, 2020.
+
 
 </div>

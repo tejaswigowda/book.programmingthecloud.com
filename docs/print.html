@@ -686,7 +686,7 @@ docs</a>. Please
 </tbody>
 </table>
 <h2 id="Document_metadata">Document metadata</h2>
-<p>Metadata contains information about the page. This includes information about styles, scripts and data to help software (<a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/search_engine" title="search engines: A search engine is a software system that collects information from the World Wide Web and presents it to users who are looking for specific information.">search engines</a>, <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Browser" title="browsers: A Web browser or browser is a program that retrieves and displays pages from&nbsp;the Web, and lets users access further pages through hyperlinks. A browser is the most familiar type of user agent.">browsers</a>, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information.&nbsp;</p>
+<p>Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information.&nbsp;</p>
 <table class="standard-table">
  <thead>
   <tr>
@@ -789,7 +789,7 @@ docs</a>. Please
 </tbody>
 </table>
 <h2 id="Text_content">Text content</h2>
-<p>Use HTML text content elements to organize blocks or sections of content placed between the opening <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."><code>&lt;body&gt;</code></a> and closing <code>&lt;/body&gt;</code> tags. Important for <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/accessibility" title="accessibility: Web Accessibility (A11Y) refers to best practices for keeping a website usable despite&nbsp;physical and technical restrictions.&nbsp;Web accessibility is formally defined and discussed at the W3C through the Web Accessibility Initiative (WAI).">accessibility</a> and <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/SEO" title="SEO: SEO (Search Engine Optimization) is the process of making a website more visible in search results, also termed improving search rankings.">SEO</a>, these elements identify the purpose or structure of that content.&nbsp; &nbsp;&nbsp;&nbsp;</p>
+<p>Use HTML text content elements to organize blocks or sections of content placed between the opening <code>&lt;body&gt;</code> and closing <code>&lt;/body&gt;</code> tags. 
 <table class="standard-table">
  <thead>
   <tr>
@@ -6036,10 +6036,48 @@ with the exception of <code>functions</code>.</p>
 <p>With JSON data and JS arrays, dorting based on a particular key becomes
 an useful operation. In this section we discuss the basics of sorting by
 looking at <strong>bubbule sort</strong> as a standard sorting algorithm. </p>
-<h2><a class="header" href="#bubbule-sort" id="bubbule-sort">Bubbule Sort</a></h2>
-<p>Bubble Sort is a sorting al;gorithm that sorts the array two members at
+<h2><a class="header" href="#bubble-sort" id="bubble-sort">Bubble Sort</a></h2>
+<p>Bubble Sort is a sorting algorithm that sorts the array two members at
 a time. The idea of bubble sort is simple -- look at two adjacent
-elements in the array; <em>are they sorted?</em>:! </p>
+elements in the array; <em>are they sorted?</em>. If already sorted then do
+nothing; if unsorted swap the position of the 2 elements.</p>
+<img style="display:block;margin:auto" src='../../../imgs/sortingAlg.png'>    
+ <figcaption> Fig: 7.2.1 Sorting Logic </figcaption>               
+<p><em>How many passes (iterations) of the array is needed?</em> -- no more than
+the size of the array. Let us look at sorting an array <code>[6,5,3,1,8,7,2,4]</code></p>
+<pre><code class="language-js">var arr = [6,5,3,1,8,7,2,4];
+for (var i = 0; i &lt; arr.length; i++){
+  for (var j = 0; j &lt; arr.length -i; j++){
+    if(arr[j]&gt;arr[j+1]){
+      var temp = arr[j];
+      arr[j] = arr[j+1];
+      arr[j+1] = temp;
+    }
+  }
+}
+
+console.log(arr);
+</code></pre>
+<p>This process is visualized below [<a
+href='../../bib.html#contributors-to-wikimedia-projects-simple-sorting-algorithm-wikipediaorg'>Ref.</a>]:
+<img style="display:block;margin:auto" src='../../../imgs/Bubble-sort-example-300px.gif'></p>
+<h2><a class="header" href="#other-sorting-algorithms" id="other-sorting-algorithms">Other Sorting Algorithms</a></h2>
+<p>Bubble Sort is just one of the many different sorting algorithms. The
+similarity between all these is that they all employ the <em>sorting
+operator</em>. They differ in only how they traverse and iterate over
+arrays. Therefore the key to any sorting is the comparison operator.</p>
+<h2><a class="header" href="#sorting-js-arrays" id="sorting-js-arrays">Sorting Js Arrays</a></h2>
+<p>JS array has a built in <code>sort()</code> method. An array can be sorted like so:</p>
+<pre><code class="language-js">var arr = [6,5,3,1,8,7,2,4];
+arr.sort();
+</code></pre>
+<p>The above invocation of <code>sort()</code> uses the default sorting function
+<code>function(a,b){ return a &gt; b }</code>, and is equivalent to:</p>
+<pre><code class="language-js">arr.sort(function(a,b){ return a &gt; b });
+</code></pre>
+<p>To sort the array in decending order we reverse the sorting function.</p>
+<pre><code class="language-js">arr.sort(function(a,b){ return a &lt; b });
+</code></pre>
 <h1><a class="header" href="#front-end-web-technologies" id="front-end-web-technologies">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-1" id="front-end-web-technologies-1">Front End Web Technologies</a></h1>
 <h1><a class="header" href="#front-end-web-technologies-2" id="front-end-web-technologies-2">Front End Web Technologies</a></h1>
@@ -6119,6 +6157,10 @@ elements in the array; <em>are they sorted?</em>:! </p>
 <li>
 <h4><a class="header" href="#css-units-w3schoolscom" id="css-units-w3schoolscom">CSS Units. W3schools.com.</a></h4>
 <p><a href="https://www.w3schools.com/cssref/css_units.asp">https://www.w3schools.com/cssref/css_units.asp</a>. Published 2020. Accessed August 10, 2020.</p>
+</li>
+<li>
+<h4><a class="header" href="#contributors-to-wikimedia-projects-simple-sorting-algorithm-wikipediaorg" id="contributors-to-wikimedia-projects-simple-sorting-algorithm-wikipediaorg">Contributors to Wikimedia projects. simple sorting algorithm. Wikipedia.org.</a></h4>
+<p><a href="https://en.m.wikipedia.org/wiki/Bubble_sort">https://en.m.wikipedia.org/wiki/Bubble_sort</a>. Published October 29, 2001. Accessed August 13, 2020.</p>
 </li>
 </ul>
 </div>

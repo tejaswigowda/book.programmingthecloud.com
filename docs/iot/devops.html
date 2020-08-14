@@ -154,11 +154,83 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#development-environment" id="development-environment">Development Environment</a></h1>
+<p>ESP32 is a low-power system-on-chip (SoC) that integrates bluetooth and
+Wifi capabilities on a single board. It is made by Espressif and has
+been deployed in IoT products. IT is a good chio to learn to program to
+glearn basic IoT concepts.</p>
 <h2><a class="header" href="#esp32" id="esp32">ESP32</a></h2>
+<p>The ESP32 chip has the following features:</p>
+<ul>
+<li>Processors:
+<ul>
+<li>CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS</li>
+<li>Ultra low power (ULP) co-processor</li>
+</ul>
+</li>
+<li>Memory: 520 KiB SRAM</li>
+<li>Wireless connectivity:
+<ul>
+<li>Wi-Fi: 802.11 b/g/n</li>
+<li>Bluetooth: v4.2 BR/EDR and BLE (shares the radio with Wi-Fi)</li>
+</ul>
+</li>
+<li>Peripheral interfaces:
+<ul>
+<li>12-bit SAR ADC up to 18 channels</li>
+<li>2 × 8-bit DACs</li>
+<li>10 × touch sensors (capacitive sensing GPIOs)</li>
+<li>4 × SPI</li>
+<li>2 × I²S interfaces</li>
+<li>2 × I²C interfaces</li>
+<li>3 × UART</li>
+<li>SD/SDIO/CE-ATA/MMC/eMMC host controller</li>
+<li>SDIO/SPI slave controller</li>
+<li>Ethernet MAC interface with dedicated DMA and IEEE 1588 Precision Time Protocol support</li>
+<li>CAN bus 2.0</li>
+<li>Infrared remote controller (TX/RX, up to 8 channels)</li>
+<li>Motor PWM</li>
+<li>LED PWM (up to 16 channels)</li>
+<li>Hall effect sensor</li>
+<li>Ultra low power analog pre-amplifier</li>
+</ul>
+</li>
+<li>Security:
+<ul>
+<li>IEEE 802.11 standard security features all supported, including WFA, WPA/WPA2 and WAPI</li>
+<li>Secure boot</li>
+<li>Flash encryption</li>
+<li>1024-bit OTP, up to 768-bit for customers</li>
+<li>Cryptographic hardware acceleration: AES, SHA-2, RSA, elliptic curve cryptography (ECC), random number generator (RNG)</li>
+</ul>
+</li>
+<li>Power management:
+<ul>
+<li>Internal low-dropout regulator</li>
+<li>Individual power domain for RTC</li>
+<li>5μA deep sleep current</li>
+<li>Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt</li>
+</ul>
+</li>
+</ul>
 <img style="display:block;margin:auto" src='../../../imgs/pinout.png'>    
  <figcaption> Fig: 10.2.1 ESP 32 pinout</figcaption>               
+<h2><a class="header" href="#t-watch" id="t-watch">T Watch</a></h2>
+<p>T Watch is a wearable <em>development module</em> that integrates ESP32 along
+with many sensors. IT has a USC-C interface using which it can be
+charged and programmed. It has 2 free GPIOs that can be used to hook up
+additional sensors.</p>
+<img style="display:block;margin:auto" src='../../../imgs/header.jpg'>    
+ <figcaption> Fig: 10.2.2 T Watch </figcaption>               
 <h2><a class="header" href="#arduino-ide" id="arduino-ide">Arduino IDE</a></h2>
-<h2><a class="header" href="#checklist" id="checklist">Checklist</a></h2>
+<p>Even though we are not programming Arduino chips, we can use their
+Integrated Development Environment (IDE) to program ESP32 chips. The
+Arduino IDE includes:</p>
+<ol>
+<li>Code editor</li>
+<li>Code compilier</li>
+<li>Binary loader</li>
+</ol>
+<h2><a class="header" href="#hello-world" id="hello-world">Hello World</a></h2>
 <ol>
 <li>
 <p>Download and install Arduino:

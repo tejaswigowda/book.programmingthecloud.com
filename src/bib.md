@@ -56,4 +56,8 @@
    <https://en.m.wikipedia.org/wiki/Bubble_sort>. Published October 29, 2001. Accessed August 13, 2020.
 
 
+- #### ESP32 Series Datasheet Including.
+   <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf>.
+
+
 </div>

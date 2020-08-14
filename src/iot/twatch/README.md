@@ -1,13 +1,16 @@
 # T-Watch and Sensor Kit
 
-## T Watch
+## T Watch Specs
 
- <img style="display:block;margin:auto" src='../../../../imgs/header.jpg'>    
+ <img style="display:block;margin:auto"
+src='../../../../imgs/watchPinout.png'>    
  <figcaption> Fig: 11.1 T Watch </figcaption>               
 
  <img style="display:block;margin:auto" src='../../../../imgs/peri.png'>    
  <figcaption> Fig: 11.1 T Watch </figcaption>               
 
+
+## Sensor Kit 
  <img style="display:block;margin:auto"
-src='../../../../imgs/watchPinout.png'>    
+src='../../../../imgs/sensorKit.jpg'>    
  <figcaption> Fig: 11.1 T Watch </figcaption>               

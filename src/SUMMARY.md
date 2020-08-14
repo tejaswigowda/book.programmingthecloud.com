@@ -52,7 +52,7 @@
   - [Sorting](fewtech/advConcepts/sorting.md)
   - [HTML Canvas](fewtech/advConcepts/canvas.md)
   - [CSS Transitions](fewtech/advConcepts/cssTransitions.md)
-  - [CSS TransForms](fewtech/advConcepts/CSSTransforms.md)
+  - [CSS Transforms](fewtech/advConcepts/CSSTransforms.md)
   - [CSS Animations](fewtech/advConcepts/cssAnimations.md)
   - [Responsive Design](fewtech/advConcepts/rdesign.md)
 

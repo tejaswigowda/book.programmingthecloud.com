@@ -44,7 +44,7 @@ operator*. They differ in only how they traverse and iterate over
 arrays. Therefore the key to any sorting is the comparison operator.
 
 
-## Sorting Js Arrays
+## Sorting JS Arrays
 
 JS array has a built in `sort()` method. An array can be sorted like so:
 
@@ -66,3 +66,28 @@ To sort the array in decending order we reverse the sorting function.
 arr.sort(function(a,b){ return a < b });
 ```
 
+Since the built-in `sort()` method of Arrays, allows us to customize the
+sorting operator we can now sort Arrays of object based on any key.
+
+```js
+var arr = [
+{fname:"John",
+ lname:"Smith"},
+{fname:"Jane",
+ lname:"Dow"},
+{fname:"Alice",
+ lname:"Hernandez"},
+{fname:"Bob",
+ lname:"Patel"},
+{fname:"Rob",
+ lname:"Grande"},
+{fname:"Sally",
+ lname:"Mendez"}
+];
+
+// sort by first name (alphabetical order)
+arr.sort(function(a,b){return a.fname > b.fname});
+
+// sort by first name (reverse alphabetical order)
+arr.sort(function(a,b){return a.fname < b.fname});
+```

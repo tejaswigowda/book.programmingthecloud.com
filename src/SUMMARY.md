@@ -69,7 +69,6 @@
 -----------
 
 - [Basics](iot/README.md)
-  - [What is IoT?](iot/basics.md)
   - [Development Environment](iot/devops.md)
   - [Arduino C++](iot/cpp.md)
 

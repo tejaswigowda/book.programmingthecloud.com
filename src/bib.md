@@ -59,5 +59,11 @@
 - #### ESP32 Series Datasheet Including.
    <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf>.
 
+- #### Wikipedia Contributors. Internet of things. Wikipedia. 
+   <https://en.wikipedia.org/wiki/Internet_of_things>. Published August 13, 2020. Accessed August 15, 2020.
+
+- #### ResearchGate. Graph showing increase of IoT devices over time. 
+   <https://www.researchgate.net/figure/Graph-showing-increase-of-IoT-devices-over-time-2-shows-the-expected-increase-in-the_fig7_313113813>. Published May 15, 2016. Accessed August 15, 2020.1.
+
 
 </div>

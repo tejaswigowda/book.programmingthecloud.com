@@ -75,21 +75,35 @@ Arduino IDE includes:
   <https://www.arduino.cc/en/Main/Software>
  <img style="display:block;margin:auto" src='../../../imgs/arduino.png'>    
 2. Add this to your boards:
-   <https://dl.espressif.com/dl/package_esp32_dev_index.json>
    
-    (more instructions:
-<https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md>)
+```js
+https://dl.espressif.com/dl/package_esp32_dev_index.json
+```
+   
+
  <img style="display:block;margin:auto" src='../../../imgs/aPref.png'>    
+    
+*more instructions:* <https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md>
+
 3. Install USB to UART Driver:
    <https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>
  <img style="display:block;margin:auto" src='../../../imgs/driver.png'>    
 4. Install T-Watch library
    <https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library>.
-5. Download `helloWorld.ino`
+5. Clone <https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git>
+
+```sh
+git clone https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git
+```
 
 6. Open `helloWorld.ino`
+<iframe style='border:1px dashed;width:
+100%;height:400px;background:white'
+src='https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Ftejaswigowda%2FPtC-tWatchHelloWorld%2Fblob%2Fmaster%2FhelloWorld%2FhelloWorld.ino'
+id=''></iframe>
 
-7. Connect watch via USB cable and choose your port in Arduino IDE.
+
+7. Connect watch via USB cable and **choose your port** in Arduino IDE.
 
 8. Compile and run!
 

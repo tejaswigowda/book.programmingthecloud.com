@@ -1,6 +1,6 @@
 # What is IoT?
 
-Internet of Things (IoT) is an emerging feild that focusses on
+Internet of Things (IoT) is an emerging field that focusses on
 connecting everyday objects to the Internet. *What does it mean to
 connect everyday objects to the Internet?* It means to implement clients
 and servers on low-power, low-cost, small computers (known as

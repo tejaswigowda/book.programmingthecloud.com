@@ -14,7 +14,7 @@ with each other. There are 2 rules in the client server protocol:
  <figcaption> Fig: 1.1.1.1. The Client Server Model</figcaption>              
 
 The server is an application program and can hence respond differently
-based on the request URL <b>path</b>. For Eg: the URLs <https://google.com> and
-<https://google.com/maps> both send a request to google.com, but based on the
-path (if it has "maps" or not) a different page is <b>served</b>.
+based on the request URL's <b>path</b>. For Eg: the URLs <https://google.com> and
+<https://google.com/maps> both send a request to `google.com`, but based on the
+path (if it has "`/maps`" or not) a different page is <b>served</b>.
 

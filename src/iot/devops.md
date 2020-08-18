@@ -1,9 +1,9 @@
 # Development Environment
 
-ESP32 is a low-power system-on-chip (SoC) that integrates bluetooth and
+ESP32 is a low-power system-on-chip (SoC) that integrates Bluetooth and
 Wifi capabilities on a single board. It is made by Espressif and has
-been deployed in IoT products. IT is a good chio to learn to program to
-glearn basic IoT concepts.
+been deployed in working IoT products. It is a good choice to learn to program to
+learn basic IoT concepts.
 
 ## ESP32
 The ESP32 chip has the following features:
@@ -45,18 +45,18 @@ The ESP32 chip has the following features:
   - Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt
 
  <img style="display:block;margin:auto" src='../../../imgs/pinout.png'>    
- <figcaption> Fig: 10.2.1 ESP 32 pinout</figcaption>               
+ <figcaption> Fig: 11.1 ESP 32 pinout</figcaption>               
 
 
 ## T Watch
 
 T Watch is a wearable *development module* that integrates ESP32 along
-with many sensors. IT has a USC-C interface using which it can be
+with many sensors. It has a USB-C interface using which it can be
 charged and programmed. It has 2 free GPIOs that can be used to hook up
 additional sensors.
 
  <img style="display:block;margin:auto" src='../../../imgs/header.jpg'>    
- <figcaption> Fig: 10.2.2 T Watch </figcaption>               
+ <figcaption> Fig: 11.2 T Watch </figcaption>               
 
 
 ## Arduino IDE
@@ -64,17 +64,19 @@ Even though we are not programming Arduino chips, we can use their
 Integrated Development Environment (IDE) to program ESP32 chips. The
 Arduino IDE includes:
 
-1. Code editor
-2. Code compilier
-3. Binary loader
+1. Code Editor
+2. Code Compilier
+3. Binary Loader
 
 ## Hello World
 
 
 1. Download and install Arduino:
+
   <https://www.arduino.cc/en/Main/Software>
  <img style="display:block;margin:auto" src='../../../imgs/arduino.png'>    
-2. Add this to your boards:
+
+2. Add this to your boards (in `Arduino`-->`Preferences`):
    
 ```js
 https://dl.espressif.com/dl/package_esp32_dev_index.json
@@ -89,14 +91,16 @@ https://dl.espressif.com/dl/package_esp32_dev_index.json
    <https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>
  <img style="display:block;margin:auto" src='../../../imgs/driver.png'>    
 4. Install T-Watch library
-   <https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library>.
+   <https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library> 
+(Clone this
+git repository into your `Arduino/libraries` folder).
 5. Clone <https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git>
 
 ```sh
 git clone https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git
 ```
 
-6. Open `helloWorld.ino`
+6. Open `helloWorld.ino` in Arduino IDE.
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'
 src='https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Ftejaswigowda%2FPtC-tWatchHelloWorld%2Fblob%2Fmaster%2FhelloWorld%2FhelloWorld.ino'
@@ -107,3 +111,14 @@ id=''></iframe>
 
 8. Compile and run!
 
+
+## Arduino C++
+
+The code in this section will be written in Arduino C++. Since this book
+has introduced JS, it should be easy to transition into Arduino C++,
+since both languages have borrowed syntax from C.
+
+Please take a look at the <a
+href='https://www.arduino.cc/reference/en/'>Arduino C++ language
+reference</a> for details. The code will be explained when first
+introduced.

@@ -69,10 +69,17 @@
 -----------
 
 - [Basics](iot/README.md)
-  - [Development Environment](iot/devops.md)
-  - [Arduino C++](iot/cpp.md)
+- [Development Environment](iot/devops.md)
 
-- [T Watch + Sensor Kit](iot/twatch/README.md)
+- [T Watch Experiments](iot/twatch/README.md)
+  - [I/O](iot/twatch/io.md)
+  - [User Button](iot/twatch/button.md)
+  - [PWM](iot/twatch/pwm.md)
+  - [Wifi](iot/twatch/wifi.md)
+  - [HTTP Server](iot/twatch/httpServer.md)
+  - [HTTP Client](iot/twatch/httpClient.md)
+
+- [Sensor Kit Experiments](iot/sensorKit/README.md)
 
 - [Advanced Projects](iot/adv/README.md)
 

@@ -161,11 +161,11 @@ statements</strong>) and returns an output (known as <strong>return value</stron
 <img style="display:block;margin:auto" src='../../imgs/functionBD.png'>    
  <figcaption> Fig: 6.6.1 <code>function()</code> Block Diagram</figcaption>               
 <p>Syntactically the function is a code block (a list of statements) that
-assume treat input arguments as local variables. It returns an empty
+treat input arguments as local variables. It returns an empty
 value (when no return statement is found, or there is an empty <code>return</code>
-statement) or any JS variable. The return value can be captured by a JS
+statement) or any JS variable. The return value can be assigned to any JS
 variable.</p>
-<pre><code class="language-js">vat function = &lt;FUNCTION_NAME&gt;(&lt;ARGUMENTS&gt;){
+<pre><code class="language-js">var function = &lt;FUNCTION_NAME&gt;(&lt;ARGUMENTS&gt;){
   /*
     Valid JS statements
     to execute

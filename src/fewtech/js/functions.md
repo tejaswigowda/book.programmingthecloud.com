@@ -15,7 +15,7 @@ statement) or any JS variable. The return value can be assigned to any JS
 variable.
 
 ```js
-vat function = <FUNCTION_NAME>(<ARGUMENTS>){
+var function = <FUNCTION_NAME>(<ARGUMENTS>){
   /*
     Valid JS statements
     to execute

@@ -6,14 +6,15 @@ from other *strongly typed* languages such as C, C++ and Java.
 
 ## `var` Keyword
 
-Since Js is loosely typed there is only one variable declaration type --
-using the `var` keyword.
+Since JS is loosely typed there is only one variable declaration type --
+using the `var` keyword (as opposed to a language like C, which has
+`int`, `float`, `char` and other variable types).
 
 ## `typeof` Operator
-Even though there is only one type of variable declaration, Js does have
-different dtat types. Loose typing allows for the same variable (think
-of it as a container for values) to be reassigned to diffent data types.
-The `typeof` operator allows us to inspect the datatype contained in a
+Even though there is only one type of variable declaration, JS does have
+different data types. Loose typing allows for the same variable (think
+of it as a container for values) to be reassigned to different data types.
+The `typeof` operator allows us to inspect the datatype of the 
 variable.
 
 ```js
@@ -32,6 +33,7 @@ typeof x; // string
 A variable that is yet to be assigned a value is of the type
 **Undefined**. It holds the value `undefined`. 
 <div class='notes'>
+
 Note that the <b>Undefined</b> data type has only one value `undefined`.
 </div>
 
@@ -141,15 +143,15 @@ literal can be enclosed with either single or double quotes.
 
 ```js
 var st = "a string"; // string assignment
-var st1 = 'another string'; // string literals can use either sigal or
+var st1 = 'another string'; // string literals can use either single or
 double quotes
 ```
 
-Each eleiment (charecter) of the string can be **indexed** by using its
+Each element (character) of the string can be **indexed** by using its
 **index**, or the position. Remember strings are zero-indexed i.e.
 indexing starts with zero. Therfore `st[0]` refers to the first
-charecter in a string, `st[1]` refers to the second charecter and so on.
-The total number of charecters can be accessed by the `length` property.
+character in a string, `st[1]` refers to the second character and so on.
+The total number of characters can be accessed by the `length` property.
 
 ```js
 var st = "a string"; 
@@ -290,8 +292,8 @@ A full list of String methods are listed below.
 
 ## Arrays
 Arrays are another built in data-type that allows the programmer to
-manage lists. Unlike strings, which only allows charecters to be part of
-the list, arrays can have any valid JS value/literal as members.
+manage lists. Unlike strings, which only allows characters to be part of
+the list, arrays can have any valid JS value(variable/literal) as members.
 Similar to string, the number of list members can be accessed via the
 `length` property.
 
@@ -447,6 +449,6 @@ x = false;
 typeof x // boolean
 ```
 
-Before continuing with more complex data-types (objects) and fun ctions
+Before continuing with more complex data-types (objects) and functions
 we will now look at more operators and programming constructs used in
 JavaScript.

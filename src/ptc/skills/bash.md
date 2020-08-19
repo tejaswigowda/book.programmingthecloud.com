@@ -2,7 +2,7 @@
 
 Bash is available by default on Mac and Linux and can be access via
 git-bash (installed when git is installed) on Windows. Bash is a
-"command line interpretor" meaning that it awaits your commands, usually
+"command line interpreter" meaning that it awaits your commands, usually
 one line at a time and executes them.
 
 You know you are in a bash shell if you see a dollar ($) prompt with a

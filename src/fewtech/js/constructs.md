@@ -1,7 +1,7 @@
 # Decisions and Looping 
 
 ## Code Blocks
-A code block in JS is statemets that are enclode in between curly braces
+A code block is a group of JS statements that are enclosed in between curly braces
 (`{}`). Certain code-blocks allow for modification of the execution
 sequence in interesting ways -- decision making and iteration.
 
@@ -20,9 +20,9 @@ else{
 }
 ```
 
-The `<CONDITION>` can be any valid Js expression. Unlike other languages
+The `<CONDITION>` can be any valid JS expression. Unlike other languages
 the `<CONDITION>` does not have to strictly evaluate to a Boolean `true` or
-`false`. The interpreter will typecast the `<CONDITION>` to the nearest
+`false`. The Interpreter will typecast the `<CONDITION>` to the nearest
 Boolean value (Either `true` or `false`).
 
 Consider the following example where different entry prices apply
@@ -88,7 +88,9 @@ switch (score){
 ```
 
 <div class='notes'>
-<code>break</code> keyword
+
+#### The <code>break</code> keyword
+
 The <code>break</code> keyword exits the code block. It is necessary in `switch/case`
 as without a <code>break</code> the execution continues into the next set of
 statements.
@@ -105,7 +107,8 @@ Consider the following list of values:
 var values = [3, 13, 14, 234, 12, 4, 13, 54, 64, 76, 65];
 ```
 
-This list can be **iterated** using an index variable `i` and the while
+This list can be **iterated** using an index variable `i` and the
+`while()`
 loop as follows:
 
 ```js
@@ -114,7 +117,7 @@ var i = 0; // define an initialize the index variable
 
 while(i < values.length){
   console.log(values[i]);
-  i++; equivalent to i = i + 1;
+  i++; //equivalent to i = i + 1;
 }
 ```
 
@@ -130,6 +133,7 @@ As you can observe the `for` loop combines the index initialization and
 increment together with the conditional.
 
 <div class='notes'>
+
   `while` and `for` are equivalent -- anything you can do with `while`
 yiou can do with `for` and vice-versa.
 </div>
@@ -172,10 +176,11 @@ for(var i = 0; i < values.length; i++){
 ```
 
 <div class='notes'>
-<code>continue</code> keyword
 
-The <code>continue</code> keyword gets the control (executaion sequence to the end
-of the code block).
+The <code>continue</code> keyword
+
+The <code>continue</code> keyword gets the control (execution sequence) to the end
+of the code block.
 
 Let us look at an example on how to use this. In this example we will
 calculate the average of a list of values that are positive.

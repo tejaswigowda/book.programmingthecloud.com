@@ -26,7 +26,7 @@
   - [Attributes](fewtech/html/concepts/attrs.md)
   - [Other Concepts](fewtech/html/concepts/other.md)
   - [Single Page Resume](fewtech/html/singlePage.md)
-  - [Host Resume (gh-pages)](fewtech/html/ghPages.md)
+  - [Host Resume (github pages)](fewtech/html/ghPages.md)
 
 - [CSS](fewtech/css/README.md)
   - [Properties](fewtech/css/concepts/properties.md)

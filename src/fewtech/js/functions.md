@@ -1,17 +1,17 @@
 # Functions
 
 Function in JS allow you to reuse code (easy to copy bits)
-again-and-again with differemt inputs(known as **arguments**) and
-depending ion the input the function does computation (**processing of
+again-and-again with differemt inputs(known as **arguments**).
+Depending on the input the function does computation (**processing of
 statements**) and returns an output (known as **return value**).
 
  <img style="display:block;margin:auto" src='../../imgs/functionBD.png'>    
  <figcaption> Fig: 6.6.1 <code>function()</code> Block Diagram</figcaption>               
 
 Syntactically the function is a code block (a list of statements) that
-assume treat input arguments as local variables. It returns an empty
+treat input arguments as local variables. It returns an empty
 value (when no return statement is found, or there is an empty `return`
-statement) or any JS variable. The return value can be captured by a JS
+statement) or any JS variable. The return value can be assigned to any JS
 variable.
 
 ```js

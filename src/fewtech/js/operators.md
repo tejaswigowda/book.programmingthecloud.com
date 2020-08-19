@@ -1,9 +1,8 @@
 # More on Operators
-The JavaScriot execution sequence is one statement at-a-time,
+The JavaScript execution sequence is one statement at-a-time,
 left-to-right (like we would read English). However operators and
 certain programming constructs(`if/else`, `for`, `while` etc.) can alter
-this. We now look at how operators affect the execution sequence in the
-next section.
+this. We now look at how operators affect the execution sequence.
 
 ## Operator Precedence
 Consider the assignment operator:
@@ -12,18 +11,18 @@ Consider the assignment operator:
 var x = 2 + 3;
 ```
 
-The assignment operator has 2 operands, commany known as the
+The assignment operator has 2 operands, commonly known as the
 left-hand-side (`var x`) and the right-hand-side (`2 + 3`).
 The default execution sequence dicatates that the left-hand-side be
 evaluated by the interpreter first. The assignment operator changes
 this. It dictates that the right-hand-side is evaluated first. Thus the
-expression `2 + 3` is evaluated (=`5`) and then is **assigned to the
-left-hand-side. That is, the variable declaration and assignmnet happens
+expression `2 + 3` is evaluated (`5`) and then is **assigned** to the
+left-hand-side. That is, the variable declaration and assignment happens
 after the right-hand-side expression is evaluated.
 
-The other operators also alter the execution sequence. The interpreter
-uses the precedence order to evaluate operators. The following tabel
-lists the precedence of each Js operator.
+All other operators also alter the execution sequence. The interpreter
+uses the precedence order to evaluate operators. The following table
+lists the precedence of each JS operator.
 
 <div style='overflow:auto'>
 
@@ -326,13 +325,14 @@ lists the precedence of each Js operator.
 </table>
 
 </div>
+
 ## Operator Polymorphism
 The same operator can perform different operations depending on the
 operands provided to it. This is known as operator polymorphism.
 
 This concept is best explained using the addition(`+`) operator.
 
-Look sta the following examples:
+Look at the following examples:
 
 ```js
 var num = 10;
@@ -426,7 +426,7 @@ same type.</td>
 ## Logical Operators
 
 These operators can be used to combine 2 comparison operators. The
-operands are Boolean (or they are typecast to it if other data type).
+operands are Boolean (or else they are typecast to Boolean).
 
 <div style='overflow:auto'>
 <table>

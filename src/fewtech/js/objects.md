@@ -1,6 +1,6 @@
 # Objects
 
-Objects are built in data type. An Object is a collection of
+Objects are a built in data type. An Object is a collection of
 **properties**(variables) and **methods**(functions), which are called **members** of the
 Object. 
 
@@ -18,7 +18,7 @@ var len = s.length; // using dot operator
 var len = s["length"]; // using box brackets
 ```
 
-Similarly any methoids (say `indexOf()`) can be accessed similarly:
+Similarly any methods (say `indexOf()`) can be accessed similarly:
 
 ```js
 var s = "a test string";
@@ -40,7 +40,7 @@ var obj = { property_1:   value_1,   // property_# may be an identifier...
 
 In this section we look at more built in objects.
 
-### `Object` Object
+### The `Object` Object
 
 There is a built-in Object called `Object`. This has one useful static
 method that we will discuss here. `Object.keys()` returns the list of
@@ -48,20 +48,20 @@ all the objects member keys. It is very handy when you want to iterate
 the Object.
 
 ```js
-var keys = Object.keys(location) // can be used to get keys on any
-object
+var keys = Object.keys(location) // can be used to get keys on any object
+
 for(var i = 0; i < keys.length; i++){
   console.log("Key: " +keys[i]);
   console.log("Key value: " + location[keys[i]]);
 }
 ```
 
-### `date`
-The `date` object provides an easy way to store and manipulate dates in
+### The `Date` Object
+The `Date` object provides an easy way to store and manipulate dates in
 JS.
 
-Each `date` object stores a particular date and time. Instantiating a
-`date` object without arguments will give you the current date-time.
+Each `Date` object stores a particular date and time. Initializing a
+`Date` object without arguments will give you the current date-time.
 
 ```js
 var now = new Date();
@@ -69,12 +69,12 @@ var now = new Date();
 
 <div class='notes'>
 
-#### <code>new</code> keyword
+#### The <code>new</code> keyword
 
 The `new` keyword is used to create a new object. Notice that we did not
 use `new()` to create Arrays and Strings. That is because they are
 built-in objects which can be instantiated without `new`(although you
-could if you choose).
+could if you choose to).
 </div>
 
 
@@ -379,23 +379,29 @@ The window object encapsulates other important objects such as --
 
 #### Document Object Model (DOM)
 
-The document object model (DOM) is the represenation of the HTML document
-within JS. The DOM has an *object* associated with each *element* within
-the HTML document. The corresponding object can be used to read (quaery
-status of attributes and their values) tag information as well as set
+The Document Object Model (DOM) is the represenation of the HTML document
+within JS. The DOM has an *object* associated with each *element* (tag) within
+the HTML document. The corresponding object can be used to read tag information (query
+status of attributes and their values) as well as set
 tag attribute values. Thus a DOM provides a way to read attribute values
 from tags (including CSS declarations, since `style` is an attribute)
 and set them.
+
+
 </div>
+
+The `document` Object has important DOM access methods such as
+`document.getElementById()`, `document.getElementsByTagName()` ,
+`document.getElementsByClassName()`  etc
 
 
 <div class='notes'>
 
 #### What about jQuery?
-jQuery is a wrapper that implements different fucntiuons on top of JS.
+jQuery is a wrapper that implements different functions on top of JS.
 The main dollar function (`$()`) in jQuery internally uses the DOM
-(`document` Object, more specifically the `document.querySelector()`
-function.
+(`document` Object, more specifically the `document.querySelectorAll()`
+function).
 
 </div>
 

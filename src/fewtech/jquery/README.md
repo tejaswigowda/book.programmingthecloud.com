@@ -30,8 +30,8 @@ Include the following into the `<head>` of your html document
 
 
 ## The `$()` function
-jQuery implements the dollar function. The arguments for this function
-is any valid CSS selector. This makes using jQuery intuitive for
+jQuery implements the dollar function. The argument to this function
+can be any valid CSS selector. This makes using jQuery intuitive for
 designers who are familiar with CSS.
 
 ```js
@@ -40,7 +40,7 @@ $("<CSS selector>")
 
 ## Other jQuery Functions
 The `$()` function in itself is not very useful. After selecting a group
-of tags (using CSS selectors), we need to *do something* on these tags.
+of tags (using CSS selectors), we need to *do something* with these tags.
 jQuery provides a variety of functions that do something with those
 tags. 
 
@@ -77,7 +77,42 @@ these functions. e.g.:
 <button onclick='$("#fadeEg1").fadeIn(2500)'>Fade In</button>
 
 
-### `css()/animate()`
+### `css()`
+
+```html
+<div id='cssEg' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg").css("border", "10px solid")'>Add Border</button>
+<button onclick='$("#cssEg").css("border", "")'>Remove Border</button>
+```
+
+<div id='cssEg' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg").css("border", "10px solid")'>Add Border</button>
+<button onclick='$("#cssEg").css("border", "")'>Remove Border</button>
+
+```html
+<div id='cssEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg1").css({"border": "10px solid","background":"green"})'>Add style</button>
+<button onclick='$("#cssEg1").css({"border": "","background":"red"})'>Remove style </button>
+```
+
+<div id='cssEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg1").css({"border": "10px solid","background":"green"})'>Add style</button>
+<button onclick='$("#cssEg1").css({"border": "","background":"red"})'>Remove style </button>
+
+### `animate()`
+
+```html
+<div id='aniEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#aniEg1").animate({"margin-left":"70%","height":"10px"},2000)'>Add style</button>
+<button onclick='$("#aniEg1").animate({"margin-left":"","height":"100px"}, 4000)'>Remove style </button>
+```
+
+<div id='aniEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#aniEg1").animate({"margin-left":"70%","height":"10px"},2000)'>Add style</button>
+<button onclick='$("#aniEg1").animate({"margin-left":"","height":"100px"}, 4000)'>Remove style </button>
+
+
+
 
 
 Following is the list of some basic jQuery functions. Try them out. A

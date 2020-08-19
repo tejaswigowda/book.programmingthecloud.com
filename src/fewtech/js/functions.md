@@ -26,7 +26,7 @@ var function = <FUNCTION_NAME>(<ARGUMENTS>){
 ```
 
 Sementically the function is just another variable, hence function names
-have the same naming restrictions that is applicable to variables.
+have the same naming restrictions as variables.
 
 Let is consider the following example in which a function converts
 temperature from Celcius to Farenheit.
@@ -39,8 +39,8 @@ var c2f = function(c)
 }
 ```
 
-This function returns the Farenheit value of inpit temperature in
-Celcius. It can be invked as follows:
+This function returns the Farenheit value of input temperature in
+Celcius. It can be *invoked* as follows:
 
 ```js
 var c = 100;
@@ -77,6 +77,8 @@ for the user. Try these in your browsers JS console:
 alert(1);
 alert("hello world")
 ```
+<button onclick='alert(1)'>alert(1)</button>
+<button onclick='alert("hello world")'>alert("hello world")</button>
 
 ### `confirm()`
 
@@ -87,6 +89,7 @@ String is shown as a prompt.
 var response = confirm("Yes or No?");
 alert(response);
 ```
+<button onclick='alert(confirm("Yes or No?"))'> Try It!</button>
 
 ### `prompt()`
 
@@ -94,9 +97,10 @@ This function is used to get single line input feedback from user. The argument
 String is shown as a prompt.
 
 ```js
-var response = confirm("Enter your name:");
+var response = prompt("Enter your name:");
 alert(response);
 ```
+<button onclick='alert(prompt("Enter your name:"))'> Try it!</button>
 
 ### `console.log()`
 
@@ -104,3 +108,5 @@ This function is used to print debug information into the console. On
 the browser this can be accessed via **Developer Tools**. It prints to
 console any string given as argument (other data types are typecast).
 
+<button onclick='console.log(1)'>console.log(1)</button>
+<button onclick='console.log("hello world")'>console.log("hello world")</button>

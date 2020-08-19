@@ -3,13 +3,17 @@
 In this section we will discuss how to implement an library for creating
 embeddable sildeshows using HTML/CSS and JS.
 
+
 ## Demo
  
+<a target='_blank' href='https://github.com/tejaswigowda/PtC-slideShowLibrary.git'> Code
+Repo </a>
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'
 src='https://tejaswigowda.github.io/PtC-slideShowLibrary/lib.html#https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg,https://upload.wikimedia.org/wikipedia/commons/1/1a/VIC0725Stevenson1944_%28cropped%29.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dáil_Chamber.jpg/320px-Dáil_Chamber.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sinustrombus_sinuatus%2C_Bohol%2C_Philippines.jpg/320px-Sinustrombus_sinuatus%2C_Bohol%2C_Philippines.jpg'> </iframe>
 
 ## Usage
+
 
 In order to create an embeddable slideshow, create `<iframe>` with source as
 `lib.html` with hash as a list of comma-seperated URLs to images.
@@ -21,10 +25,10 @@ Example:
 
 
 To run this example locally:
-1.    $ git clone
-      <https://github.com/tejaswigowda/PtC-slideShowLibrary.git>
-2.    $ cd PtC-slideShowLibrary
-3.    $ http-server -p 9005
+1.    $ `git clone
+      https://github.com/tejaswigowda/PtC-slideShowLibrary.git`
+2.    $ `cd PtC-slideShowLibrary`
+3.    $ `http-server -p 9005`
 4.    Open <http://127.0.0.1:9005> in browser.
 
 ## Implementation
@@ -39,7 +43,7 @@ src='https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Ft
 id=''></iframe>
 
 The static markup for this example is straight-forward (lines `76-87`).
-It included `<div id="imgWrapper">` that will be popluated by the slides
+It included `<div id="imgWrapper">` that will be populated by the slides
 and `<div id="numWrapper">` that will hold the numbers of the slides.
 There are also navigation buttons -- Next (line `85`) and Previous (line
 `80`).

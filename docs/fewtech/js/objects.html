@@ -154,7 +154,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#objects" id="objects">Objects</a></h1>
-<p>Objects are built in data type. An Object is a collection of
+<p>Objects are a built in data type. An Object is a collection of
 <strong>properties</strong>(variables) and <strong>methods</strong>(functions), which are called <strong>members</strong> of the
 Object. </p>
 <p>We have already looked at 2 built in
@@ -167,7 +167,7 @@ can be accessed as follows:</p>
 var len = s.length; // using dot operator
 var len = s[&quot;length&quot;]; // using box brackets
 </code></pre>
-<p>Similarly any methoids (say <code>indexOf()</code>) can be accessed similarly:</p>
+<p>Similarly any methods (say <code>indexOf()</code>) can be accessed similarly:</p>
 <pre><code class="language-js">var s = &quot;a test string&quot;;
 var pos = s.indexOf(a); // using dot operator
 var pos = s[&quot;indexOf&quot;](a); // using box brackets
@@ -180,31 +180,31 @@ var pos = s[&quot;indexOf&quot;](a); // using box brackets
 </code></pre>
 <h2><a class="header" href="#built-in-objects" id="built-in-objects">Built In Objects</a></h2>
 <p>In this section we look at more built in objects.</p>
-<h3><a class="header" href="#object-object" id="object-object"><code>Object</code> Object</a></h3>
+<h3><a class="header" href="#the-object-object" id="the-object-object">The <code>Object</code> Object</a></h3>
 <p>There is a built-in Object called <code>Object</code>. This has one useful static
 method that we will discuss here. <code>Object.keys()</code> returns the list of
 all the objects member keys. It is very handy when you want to iterate
 the Object.</p>
-<pre><code class="language-js">var keys = Object.keys(location) // can be used to get keys on any
-object
+<pre><code class="language-js">var keys = Object.keys(location) // can be used to get keys on any object
+
 for(var i = 0; i &lt; keys.length; i++){
   console.log(&quot;Key: &quot; +keys[i]);
   console.log(&quot;Key value: &quot; + location[keys[i]]);
 }
 </code></pre>
-<h3><a class="header" href="#date" id="date"><code>date</code></a></h3>
-<p>The <code>date</code> object provides an easy way to store and manipulate dates in
+<h3><a class="header" href="#the-date-object" id="the-date-object">The <code>Date</code> Object</a></h3>
+<p>The <code>Date</code> object provides an easy way to store and manipulate dates in
 JS.</p>
-<p>Each <code>date</code> object stores a particular date and time. Instantiating a
-<code>date</code> object without arguments will give you the current date-time.</p>
+<p>Each <code>Date</code> object stores a particular date and time. Initializing a
+<code>Date</code> object without arguments will give you the current date-time.</p>
 <pre><code class="language-js">var now = new Date();
 </code></pre>
 <div class='notes'>
-<h4><a class="header" href="#new-keyword" id="new-keyword"><code>new</code> keyword</a></h4>
+<h4><a class="header" href="#the-new-keyword" id="the-new-keyword">The <code>new</code> keyword</a></h4>
 <p>The <code>new</code> keyword is used to create a new object. Notice that we did not
 use <code>new()</code> to create Arrays and Strings. That is because they are
 built-in objects which can be instantiated without <code>new</code>(although you
-could if you choose).</p>
+could if you choose to).</p>
 </div>
 <p>As an object <code>Date()</code> has built in methods[<a
 href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:</p>
@@ -442,20 +442,23 @@ objects and variables are derived from the <code>window</code> object.</p>
 <h3><a class="header" href="#document-object-browser-only" id="document-object-browser-only"><code>document</code> Object (browser only)</a></h3>
 <div class='notes'>
 <h4><a class="header" href="#document-object-model-dom" id="document-object-model-dom">Document Object Model (DOM)</a></h4>
-<p>The document object model (DOM) is the represenation of the HTML document
-within JS. The DOM has an <em>object</em> associated with each <em>element</em> within
-the HTML document. The corresponding object can be used to read (quaery
-status of attributes and their values) tag information as well as set
+<p>The Document Object Model (DOM) is the represenation of the HTML document
+within JS. The DOM has an <em>object</em> associated with each <em>element</em> (tag) within
+the HTML document. The corresponding object can be used to read tag information (query
+status of attributes and their values) as well as set
 tag attribute values. Thus a DOM provides a way to read attribute values
 from tags (including CSS declarations, since <code>style</code> is an attribute)
 and set them.</p>
 </div>
+<p>The <code>document</code> Object has important DOM access methods such as
+<code>document.getElementById()</code>, <code>document.getElementsByTagName()</code> ,
+<code>document.getElementsByClassName()</code>  etc</p>
 <div class='notes'>
 <h4><a class="header" href="#what-about-jquery" id="what-about-jquery">What about jQuery?</a></h4>
-<p>jQuery is a wrapper that implements different fucntiuons on top of JS.
+<p>jQuery is a wrapper that implements different functions on top of JS.
 The main dollar function (<code>$()</code>) in jQuery internally uses the DOM
-(<code>document</code> Object, more specifically the <code>document.querySelector()</code>
-function.</p>
+(<code>document</code> Object, more specifically the <code>document.querySelectorAll()</code>
+function).</p>
 </div>
 
                     </main>

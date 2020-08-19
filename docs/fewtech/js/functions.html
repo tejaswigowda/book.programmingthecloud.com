@@ -175,7 +175,7 @@ variable.</p>
 }
 </code></pre>
 <p>Sementically the function is just another variable, hence function names
-have the same naming restrictions that is applicable to variables.</p>
+have the same naming restrictions as variables.</p>
 <p>Let is consider the following example in which a function converts
 temperature from Celcius to Farenheit.</p>
 <pre><code class="language-js">var c2f = function(c)
@@ -184,8 +184,8 @@ temperature from Celcius to Farenheit.</p>
   return f;
 }
 </code></pre>
-<p>This function returns the Farenheit value of inpit temperature in
-Celcius. It can be invked as follows:</p>
+<p>This function returns the Farenheit value of input temperature in
+Celcius. It can be <em>invoked</em> as follows:</p>
 <pre><code class="language-js">var c = 100;
 var f;
 f = c2f(c); // 212
@@ -212,22 +212,28 @@ for the user. Try these in your browsers JS console:</p>
 <pre><code class="language-js">alert(1);
 alert(&quot;hello world&quot;)
 </code></pre>
+<p><button onclick='alert(1)'>alert(1)</button>
+<button onclick='alert("hello world")'>alert(&quot;hello world&quot;)</button></p>
 <h3><a class="header" href="#confirm" id="confirm"><code>confirm()</code></a></h3>
 <p>This function is used to get <code>true</code>/<code>false</code> feedback from user. The argument
 String is shown as a prompt.</p>
 <pre><code class="language-js">var response = confirm(&quot;Yes or No?&quot;);
 alert(response);
 </code></pre>
+<p><button onclick='alert(confirm("Yes or No?"))'> Try It!</button></p>
 <h3><a class="header" href="#prompt" id="prompt"><code>prompt()</code></a></h3>
 <p>This function is used to get single line input feedback from user. The argument
 String is shown as a prompt.</p>
-<pre><code class="language-js">var response = confirm(&quot;Enter your name:&quot;);
+<pre><code class="language-js">var response = prompt(&quot;Enter your name:&quot;);
 alert(response);
 </code></pre>
+<p><button onclick='alert(prompt("Enter your name:"))'> Try it!</button></p>
 <h3><a class="header" href="#consolelog" id="consolelog"><code>console.log()</code></a></h3>
 <p>This function is used to print debug information into the console. On
 the browser this can be accessed via <strong>Developer Tools</strong>. It prints to
 console any string given as argument (other data types are typecast).</p>
+<p><button onclick='console.log(1)'>console.log(1)</button>
+<button onclick='console.log("hello world")'>console.log(&quot;hello world&quot;)</button></p>
 
                     </main>
 

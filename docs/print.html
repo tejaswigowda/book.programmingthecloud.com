@@ -4165,14 +4165,14 @@ network (CDN) or via downloading and linking the jQuery JS file.</p>
 <pre><code class="language-html">&lt;script src=&quot;jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt; 
 </code></pre>
 <h2><a class="header" href="#the--function" id="the--function">The <code>$()</code> function</a></h2>
-<p>jQuery implements the dollar function. The arguments for this function
-is any valid CSS selector. This makes using jQuery intuitive for
+<p>jQuery implements the dollar function. The argument to this function
+can be any valid CSS selector. This makes using jQuery intuitive for
 designers who are familiar with CSS.</p>
 <pre><code class="language-js">$(&quot;&lt;CSS selector&gt;&quot;)
 </code></pre>
 <h2><a class="header" href="#other-jquery-functions" id="other-jquery-functions">Other jQuery Functions</a></h2>
 <p>The <code>$()</code> function in itself is not very useful. After selecting a group
-of tags (using CSS selectors), we need to <em>do something</em> on these tags.
+of tags (using CSS selectors), we need to <em>do something</em> with these tags.
 jQuery provides a variety of functions that do something with those
 tags. </p>
 <p>We now look at some examples:</p>
@@ -4197,7 +4197,29 @@ these functions. e.g.:</p>
 <div id='fadeEg1' style='height:100px; width:100px;background:red'></div>
 <button onclick='$("#fadeEg1").fadeOut(1000)'>Fade Out</button>
 <button onclick='$("#fadeEg1").fadeIn(2500)'>Fade In</button>
-<h3><a class="header" href="#cssanimate" id="cssanimate"><code>css()/animate()</code></a></h3>
+<h3><a class="header" href="#css" id="css"><code>css()</code></a></h3>
+<pre><code class="language-html">&lt;div id='cssEg' style='height:100px; width:100px;background:red'&gt;&lt;/div&gt;
+&lt;button onclick='$(&quot;#cssEg&quot;).css(&quot;border&quot;, &quot;10px solid&quot;)'&gt;Add Border&lt;/button&gt;
+&lt;button onclick='$(&quot;#cssEg&quot;).css(&quot;border&quot;, &quot;&quot;)'&gt;Remove Border&lt;/button&gt;
+</code></pre>
+<div id='cssEg' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg").css("border", "10px solid")'>Add Border</button>
+<button onclick='$("#cssEg").css("border", "")'>Remove Border</button>
+<pre><code class="language-html">&lt;div id='cssEg1' style='height:100px; width:100px;background:red'&gt;&lt;/div&gt;
+&lt;button onclick='$(&quot;#cssEg1&quot;).css({&quot;border&quot;: &quot;10px solid&quot;,&quot;background&quot;:&quot;green&quot;})'&gt;Add style&lt;/button&gt;
+&lt;button onclick='$(&quot;#cssEg1&quot;).css({&quot;border&quot;: &quot;&quot;,&quot;background&quot;:&quot;red&quot;})'&gt;Remove style &lt;/button&gt;
+</code></pre>
+<div id='cssEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#cssEg1").css({"border": "10px solid","background":"green"})'>Add style</button>
+<button onclick='$("#cssEg1").css({"border": "","background":"red"})'>Remove style </button>
+<h3><a class="header" href="#animate" id="animate"><code>animate()</code></a></h3>
+<pre><code class="language-html">&lt;div id='aniEg1' style='height:100px; width:100px;background:red'&gt;&lt;/div&gt;
+&lt;button onclick='$(&quot;#aniEg1&quot;).animate({&quot;margin-left&quot;:&quot;70%&quot;,&quot;height&quot;:&quot;10px&quot;},2000)'&gt;Add style&lt;/button&gt;
+&lt;button onclick='$(&quot;#aniEg1&quot;).animate({&quot;margin-left&quot;:&quot;&quot;,&quot;height&quot;:&quot;100px&quot;}, 4000)'&gt;Remove style &lt;/button&gt;
+</code></pre>
+<div id='aniEg1' style='height:100px; width:100px;background:red'></div>
+<button onclick='$("#aniEg1").animate({"margin-left":"70%","height":"10px"},2000)'>Add style</button>
+<button onclick='$("#aniEg1").animate({"margin-left":"","height":"100px"}, 4000)'>Remove style </button>
 <p>Following is the list of some basic jQuery functions. Try them out. A
 full list can be found here: <a href="https://api.jquery.com/">https://api.jquery.com/</a>.</p>
 <table>
@@ -5529,7 +5551,7 @@ variable.</p>
 }
 </code></pre>
 <p>Sementically the function is just another variable, hence function names
-have the same naming restrictions that is applicable to variables.</p>
+have the same naming restrictions as variables.</p>
 <p>Let is consider the following example in which a function converts
 temperature from Celcius to Farenheit.</p>
 <pre><code class="language-js">var c2f = function(c)
@@ -5538,8 +5560,8 @@ temperature from Celcius to Farenheit.</p>
   return f;
 }
 </code></pre>
-<p>This function returns the Farenheit value of inpit temperature in
-Celcius. It can be invked as follows:</p>
+<p>This function returns the Farenheit value of input temperature in
+Celcius. It can be <em>invoked</em> as follows:</p>
 <pre><code class="language-js">var c = 100;
 var f;
 f = c2f(c); // 212
@@ -5566,24 +5588,30 @@ for the user. Try these in your browsers JS console:</p>
 <pre><code class="language-js">alert(1);
 alert(&quot;hello world&quot;)
 </code></pre>
+<p><button onclick='alert(1)'>alert(1)</button>
+<button onclick='alert("hello world")'>alert(&quot;hello world&quot;)</button></p>
 <h3><a class="header" href="#confirm" id="confirm"><code>confirm()</code></a></h3>
 <p>This function is used to get <code>true</code>/<code>false</code> feedback from user. The argument
 String is shown as a prompt.</p>
 <pre><code class="language-js">var response = confirm(&quot;Yes or No?&quot;);
 alert(response);
 </code></pre>
+<p><button onclick='alert(confirm("Yes or No?"))'> Try It!</button></p>
 <h3><a class="header" href="#prompt" id="prompt"><code>prompt()</code></a></h3>
 <p>This function is used to get single line input feedback from user. The argument
 String is shown as a prompt.</p>
-<pre><code class="language-js">var response = confirm(&quot;Enter your name:&quot;);
+<pre><code class="language-js">var response = prompt(&quot;Enter your name:&quot;);
 alert(response);
 </code></pre>
+<p><button onclick='alert(prompt("Enter your name:"))'> Try it!</button></p>
 <h3><a class="header" href="#consolelog" id="consolelog"><code>console.log()</code></a></h3>
 <p>This function is used to print debug information into the console. On
 the browser this can be accessed via <strong>Developer Tools</strong>. It prints to
 console any string given as argument (other data types are typecast).</p>
+<p><button onclick='console.log(1)'>console.log(1)</button>
+<button onclick='console.log("hello world")'>console.log(&quot;hello world&quot;)</button></p>
 <h1><a class="header" href="#objects" id="objects">Objects</a></h1>
-<p>Objects are built in data type. An Object is a collection of
+<p>Objects are a built in data type. An Object is a collection of
 <strong>properties</strong>(variables) and <strong>methods</strong>(functions), which are called <strong>members</strong> of the
 Object. </p>
 <p>We have already looked at 2 built in
@@ -5596,7 +5624,7 @@ can be accessed as follows:</p>
 var len = s.length; // using dot operator
 var len = s[&quot;length&quot;]; // using box brackets
 </code></pre>
-<p>Similarly any methoids (say <code>indexOf()</code>) can be accessed similarly:</p>
+<p>Similarly any methods (say <code>indexOf()</code>) can be accessed similarly:</p>
 <pre><code class="language-js">var s = &quot;a test string&quot;;
 var pos = s.indexOf(a); // using dot operator
 var pos = s[&quot;indexOf&quot;](a); // using box brackets
@@ -5609,31 +5637,31 @@ var pos = s[&quot;indexOf&quot;](a); // using box brackets
 </code></pre>
 <h2><a class="header" href="#built-in-objects" id="built-in-objects">Built In Objects</a></h2>
 <p>In this section we look at more built in objects.</p>
-<h3><a class="header" href="#object-object" id="object-object"><code>Object</code> Object</a></h3>
+<h3><a class="header" href="#the-object-object" id="the-object-object">The <code>Object</code> Object</a></h3>
 <p>There is a built-in Object called <code>Object</code>. This has one useful static
 method that we will discuss here. <code>Object.keys()</code> returns the list of
 all the objects member keys. It is very handy when you want to iterate
 the Object.</p>
-<pre><code class="language-js">var keys = Object.keys(location) // can be used to get keys on any
-object
+<pre><code class="language-js">var keys = Object.keys(location) // can be used to get keys on any object
+
 for(var i = 0; i &lt; keys.length; i++){
   console.log(&quot;Key: &quot; +keys[i]);
   console.log(&quot;Key value: &quot; + location[keys[i]]);
 }
 </code></pre>
-<h3><a class="header" href="#date" id="date"><code>date</code></a></h3>
-<p>The <code>date</code> object provides an easy way to store and manipulate dates in
+<h3><a class="header" href="#the-date-object" id="the-date-object">The <code>Date</code> Object</a></h3>
+<p>The <code>Date</code> object provides an easy way to store and manipulate dates in
 JS.</p>
-<p>Each <code>date</code> object stores a particular date and time. Instantiating a
-<code>date</code> object without arguments will give you the current date-time.</p>
+<p>Each <code>Date</code> object stores a particular date and time. Initializing a
+<code>Date</code> object without arguments will give you the current date-time.</p>
 <pre><code class="language-js">var now = new Date();
 </code></pre>
 <div class='notes'>
-<h4><a class="header" href="#new-keyword" id="new-keyword"><code>new</code> keyword</a></h4>
+<h4><a class="header" href="#the-new-keyword" id="the-new-keyword">The <code>new</code> keyword</a></h4>
 <p>The <code>new</code> keyword is used to create a new object. Notice that we did not
 use <code>new()</code> to create Arrays and Strings. That is because they are
 built-in objects which can be instantiated without <code>new</code>(although you
-could if you choose).</p>
+could if you choose to).</p>
 </div>
 <p>As an object <code>Date()</code> has built in methods[<a
 href='../../bib.html#javascript---the-date-object---tutorialspoint-tutorialspointcom'>Ref</a>]:</p>
@@ -5871,25 +5899,30 @@ objects and variables are derived from the <code>window</code> object.</p>
 <h3><a class="header" href="#document-object-browser-only" id="document-object-browser-only"><code>document</code> Object (browser only)</a></h3>
 <div class='notes'>
 <h4><a class="header" href="#document-object-model-dom" id="document-object-model-dom">Document Object Model (DOM)</a></h4>
-<p>The document object model (DOM) is the represenation of the HTML document
-within JS. The DOM has an <em>object</em> associated with each <em>element</em> within
-the HTML document. The corresponding object can be used to read (quaery
-status of attributes and their values) tag information as well as set
+<p>The Document Object Model (DOM) is the represenation of the HTML document
+within JS. The DOM has an <em>object</em> associated with each <em>element</em> (tag) within
+the HTML document. The corresponding object can be used to read tag information (query
+status of attributes and their values) as well as set
 tag attribute values. Thus a DOM provides a way to read attribute values
 from tags (including CSS declarations, since <code>style</code> is an attribute)
 and set them.</p>
 </div>
+<p>The <code>document</code> Object has important DOM access methods such as
+<code>document.getElementById()</code>, <code>document.getElementsByTagName()</code> ,
+<code>document.getElementsByClassName()</code>  etc</p>
 <div class='notes'>
 <h4><a class="header" href="#what-about-jquery" id="what-about-jquery">What about jQuery?</a></h4>
-<p>jQuery is a wrapper that implements different fucntiuons on top of JS.
+<p>jQuery is a wrapper that implements different functions on top of JS.
 The main dollar function (<code>$()</code>) in jQuery internally uses the DOM
-(<code>document</code> Object, more specifically the <code>document.querySelector()</code>
-function.</p>
+(<code>document</code> Object, more specifically the <code>document.querySelectorAll()</code>
+function).</p>
 </div>
 <h1><a class="header" href="#slideshow-library" id="slideshow-library">Slideshow Library</a></h1>
 <p>In this section we will discuss how to implement an library for creating
 embeddable sildeshows using HTML/CSS and JS.</p>
 <h2><a class="header" href="#demo" id="demo">Demo</a></h2>
+<p><a target='_blank' href='https://github.com/tejaswigowda/PtC-slideShowLibrary.git'> Code
+Repo </a></p>
 <iframe style='border:1px dashed;width:
 100%;height:400px;background:white'
 src='https://tejaswigowda.github.io/PtC-slideShowLibrary/lib.html#https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg,https://upload.wikimedia.org/wikipedia/commons/1/1a/VIC0725Stevenson1944_%28cropped%29.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dáil_Chamber.jpg/320px-Dáil_Chamber.jpg,https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sinustrombus_sinuatus%2C_Bohol%2C_Philippines.jpg/320px-Sinustrombus_sinuatus%2C_Bohol%2C_Philippines.jpg'> </iframe>
@@ -5901,10 +5934,9 @@ src='https://tejaswigowda.github.io/PtC-slideShowLibrary/lib.html#https://upload
 </code></pre>
 <p>To run this example locally:</p>
 <ol>
-<li>$ git clone
-<a href="https://github.com/tejaswigowda/PtC-slideShowLibrary.git">https://github.com/tejaswigowda/PtC-slideShowLibrary.git</a></li>
-<li>$ cd PtC-slideShowLibrary</li>
-<li>$ http-server -p 9005</li>
+<li>$ <code>git clone https://github.com/tejaswigowda/PtC-slideShowLibrary.git</code></li>
+<li>$ <code>cd PtC-slideShowLibrary</code></li>
+<li>$ <code>http-server -p 9005</code></li>
 <li>Open <a href="http://127.0.0.1:9005">http://127.0.0.1:9005</a> in browser.</li>
 </ol>
 <h2><a class="header" href="#implementation" id="implementation">Implementation</a></h2>
@@ -5915,7 +5947,7 @@ src='https://tejaswigowda.github.io/PtC-slideShowLibrary/lib.html#https://upload
 src='https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Ftejaswigowda%2FPtC-slideShowLibrary%2Fblob%2Fmaster%2Flib.html'
 id=''></iframe>
 <p>The static markup for this example is straight-forward (lines <code>76-87</code>).
-It included <code>&lt;div id=&quot;imgWrapper&quot;&gt;</code> that will be popluated by the slides
+It included <code>&lt;div id=&quot;imgWrapper&quot;&gt;</code> that will be populated by the slides
 and <code>&lt;div id=&quot;numWrapper&quot;&gt;</code> that will hold the numbers of the slides.
 There are also navigation buttons -- Next (line <code>85</code>) and Previous (line
 <code>80</code>).</p>
@@ -6013,7 +6045,7 @@ the first slide.</p>
 <h1><a class="header" href="#json" id="json">JSON</a></h1>
 <p>JavaScript Object Notation (JSON) is exactly what the name implies -- it
 is representing data as JS Objects. Therefore JSON syntax is identical
-to the object definition syntax.</p>
+to the object syntax.</p>
 <pre><code class="language-js">// JSON Syntax
 {
     property_1:   value_1,   // property_# may be an identifier...
@@ -6272,6 +6304,23 @@ Arduino IDE includes:</p>
 <li>Code Compilier</li>
 <li>Binary Loader</li>
 </ol>
+<h2><a class="header" href="#arduino-c" id="arduino-c">Arduino C++</a></h2>
+<p>The code in this section will be written in Arduino C++. Since this book
+has introduced JS, it should be easy to transition into Arduino C++,
+since both languages have borrowed syntax from C.</p>
+<p>Please take a look at the <a
+href='https://www.arduino.cc/reference/en/'>Arduino C++ language
+reference</a> for details. The code will be explained when first
+introduced.</p>
+<h1><a class="header" href="#t-watch-1" id="t-watch-1">T-Watch</a></h1>
+<p>The TTGO T Watch comnines ESP32 and other sensors onto a single board.</p>
+<p><img style="display:block;margin:auto"
+src='../../../../imgs/watchPinout.png'></p>
+<figcaption> Fig: 12.1 T Watch Pinout</figcaption>               
+<img style="display:block;margin:auto" src='../../../../imgs/peri.png'>    
+ <figcaption> Fig: 12.1 T Watch </figcaption>               
+<p>Let us now write our first program, compile it and <em>run</em> it on the T
+Watch.</p>
 <h2><a class="header" href="#hello-world" id="hello-world">Hello World</a></h2>
 <ol>
 <li>Download and install Arduino:</li>
@@ -6312,27 +6361,6 @@ id=''></iframe>
 <p>Compile and run!</p>
 </li>
 </ol>
-<h2><a class="header" href="#arduino-c" id="arduino-c">Arduino C++</a></h2>
-<p>The code in this section will be written in Arduino C++. Since this book
-has introduced JS, it should be easy to transition into Arduino C++,
-since both languages have borrowed syntax from C.</p>
-<p>Please take a look at the <a
-href='https://www.arduino.cc/reference/en/'>Arduino C++ language
-reference</a> for details. The code will be explained when first
-introduced.</p>
-<h1><a class="header" href="#t-watch-1" id="t-watch-1">T-Watch</a></h1>
-<div class='notes'>
- Please make sure you have finished <a
-href='../devops.html#hello-world'><code>Hello World</code> example</a> before
-continuing
-</div>
-<p>The TTGO T Watch comnines ESP32 and other sensors onto a single board.</p>
-<p><img style="display:block;margin:auto"
-src='../../../../imgs/watchPinout.png'></p>
-<figcaption> Fig: 12.1 T Watch Pinout</figcaption>               
-<img style="display:block;margin:auto" src='../../../../imgs/peri.png'>    
- <figcaption> Fig: 12.1 T Watch </figcaption>               
-<p>Most importantly th:w</p>
 <h1><a class="header" href="#touch-pad" id="touch-pad">Touch Pad</a></h1>
 <p>The T Watch has a reliable input output using the touchpad module. We
 have seen how rto print to the touch screen in the <code>Hello World</code>

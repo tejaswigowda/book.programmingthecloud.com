@@ -230,46 +230,6 @@ Arduino IDE includes:</p>
 <li>Code Compilier</li>
 <li>Binary Loader</li>
 </ol>
-<h2><a class="header" href="#hello-world" id="hello-world">Hello World</a></h2>
-<ol>
-<li>Download and install Arduino:</li>
-</ol>
-<p><a href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>
-<img style="display:block;margin:auto" src='../../../imgs/arduino.png'></p>
-<ol start="2">
-<li>Add this to your boards (in <code>Arduino</code>--&gt;<code>Preferences</code>):</li>
-</ol>
-<pre><code class="language-js">https://dl.espressif.com/dl/package_esp32_dev_index.json
-</code></pre>
-<img style="display:block;margin:auto" src='../../../imgs/aPref.png'>    
-<p><em>more instructions:</em> <a href="https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md">https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md</a></p>
-<ol start="3">
-<li>Install USB to UART Driver:
-<a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers</a>
-<img style="display:block;margin:auto" src='../../../imgs/driver.png'></li>
-<li>Install T-Watch library
-<a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library">https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library</a> 
-(Clone this
-git repository into your <code>Arduino/libraries</code> folder).</li>
-<li>Clone <a href="https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git">https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git</a></li>
-</ol>
-<pre><code class="language-sh">git clone https://github.com/tejaswigowda/PtC-tWatchHelloWorld.git
-</code></pre>
-<ol start="6">
-<li>Open <code>helloWorld.ino</code> in Arduino IDE.</li>
-</ol>
-<iframe style='border:1px dashed;width:
-100%;height:400px;background:white'
-src='https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Ftejaswigowda%2FPtC-tWatchHelloWorld%2Fblob%2Fmaster%2FhelloWorld%2FhelloWorld.ino'
-id=''></iframe>
-<ol start="7">
-<li>
-<p>Connect watch via USB cable and <strong>choose your port</strong> in Arduino IDE.</p>
-</li>
-<li>
-<p>Compile and run!</p>
-</li>
-</ol>
 <h2><a class="header" href="#arduino-c" id="arduino-c">Arduino C++</a></h2>
 <p>The code in this section will be written in Arduino C++. Since this book
 has introduced JS, it should be easy to transition into Arduino C++,

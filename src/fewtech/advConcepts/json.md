@@ -12,7 +12,7 @@ Please complete the section of <a href='../../fewtech/js/objects.html'>JS Object
 
 JavaScript Object Notation (JSON) is exactly what the name implies -- it
 is representing data as JS Objects. Therefore JSON syntax is identical
-to the object definition syntax.
+to the object syntax.
 
 
 ```js

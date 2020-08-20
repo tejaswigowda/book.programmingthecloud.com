@@ -5,7 +5,7 @@ according to the client-server model. But <i>where within the nodes of the Inter
 (computers, phones, tablets) do clients and servers exist?</i>.
 
  <img style="display:block;margin:auto" src='../../imgs/pModel.png'>      
- <figcaption> Fig: 1.2.1. Programmer's model of a Computer</figcaption>   
+ <figcaption> Fig: 1.2.1. Programming model of a Computer</figcaption>   
 
 Clients and servers are <b>applications</b> that reside in the application
 layer of a computer (see Figure above). For eg. YouTube.com is a server which can be

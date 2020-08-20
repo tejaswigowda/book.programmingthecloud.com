@@ -1,4 +1,4 @@
-# Programmer's Model of a Computer
+# Programming Model of a Computer
 
 We now know that clients and servers are programs that communicate with one another
 according to the client-server model. But <i>where within the nodes of the Internet

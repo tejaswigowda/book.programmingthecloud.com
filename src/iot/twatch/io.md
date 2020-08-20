@@ -2,7 +2,8 @@
 
 The T Watch has a reliable input output using the touchpad module. We
 have seen how to print to the touch screen in the `Hello World`
-example. In this section we will get user input (touches) using the
+example. In this section we will get user input (touches) and display
+output using the
 touch pad.
 
 <iframe style='border:1px dashed;width:

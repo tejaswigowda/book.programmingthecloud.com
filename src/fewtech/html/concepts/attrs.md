@@ -1,23 +1,24 @@
 # Attributes
 
 Attributes can be applied to HTML tags to change their behavior. An
-attribute as 2 parts
+attribute as 2 parts:
 
-1. The attribute name
-2. The attribute value
+1. The attribute **name**
+2. The attribute **value**
 
 Attributes are specified within the start tag as follows:
 
 ```html
 ATTR_NAME='ATTR_VAL'
 ```
-The attribute name cannot have spaces and must be one word (underscore _
-allowed). Attribute value should be quated (single or double quotes --
-this is optional but it is best practive to use quotes) and *can*
+The attribute name cannot have spaces and must be one word (underscore
+`_`
+allowed). Attribute value should be quoted (single or double quotes --
+this is optional but it is best practice to use quotes) and *can*
 include spaces.
 
 A HTML tag can have any number of attributes (or none at all). The
-attribute-value pairs are speratated from each other by a white-space
+attribute-value pairs are seperated from each other by a white-space
 (one or more spaces). 
 
 ```html
@@ -32,8 +33,8 @@ attribute-value pairs are speratated from each other by a white-space
 ## Uses of Attributes
 Attributes have 4 uses:
 
-1. *To modify the behavior of a HTML tag:* Conside the anchor `a` tag,
-   which is use to cross reference HTML pages. The `href` attribute
+1. *To modify the behavior of a HTML tag:* Conside the anchor `<a>` tag,
+   which is used to cross reference HTML pages. The `href` attribute
 specifies the html page to navigate to when clicked.
 ```html
   <a href='http://google.com'> Go to Google </a>
@@ -75,12 +76,12 @@ of the two (`height`/`width`) attributes.
    later.
 </div>
 
-2. *To add CSS styling to the tag:* A special attribte called `style`
+2. *To add CSS styling to the tag:* A special attribute called `style`
    can be use to specify CSS declaration for a tag. This is one of the
 many ways CSS can be added to a tag. This will be discussed in detail in
 the CSS section.
 
-3. *To identify and group tags:* An attribte called `id` can be used to
+3. *To identify and group tags:* An attribute called `id` can be used to
    assign an unique identifier to a tag. This identifier can be used
 only for one tag and a tag can have only one `id`. A tag can be
 categorized into a group by the `class` attribute. A tag can have more
@@ -92,9 +93,9 @@ than one class. These class names are delimted by white spaces.
 
 4. *To attach **event listeners** to tags:*
 
-Events are actions done by the use on a tag like clicking, mouse hover
-etc. An event hadler is javascript that needs to execute ehen the event
-occurs. The following maerkup will pop up a message (100) when the
+Events are actions done by the user on a tag like clicking, mouse hover
+etc. An event handler is JavaScript that needs to execute when the event
+occurs. The following markup will pop up a message (`100`) when the
 button is cliked.
 
 ```html
@@ -106,7 +107,7 @@ The event model will be discussed in more detail in the JavaScript
 section.
 
 The next section lists all HTML attributes that can be used with
-differnt html tags.
+different html tags.
 
 ## Attribute Reference
 
@@ -119,14 +120,10 @@ docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Please
 
 <article id="wikiArticle"><div></div>
 
-<p>Elements in HTML have <strong>attributes</strong>; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.</p>
-
-<h2 id="Attribute_list">Attribute list</h2>
-
 The following table lists the defined attributes of the HTML standard.
 A *global
 attribute* can be used with any tag, whereas most attributes have
-certain tags with which they are most used.
+certain tags with which they are most commonly used.
 
 <div id='attrList' style="overflow-x:auto;">
 <table>

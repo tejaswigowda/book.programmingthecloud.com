@@ -155,20 +155,21 @@
                     <main>
                         <h1><a class="header" href="#attributes" id="attributes">Attributes</a></h1>
 <p>Attributes can be applied to HTML tags to change their behavior. An
-attribute as 2 parts</p>
+attribute as 2 parts:</p>
 <ol>
-<li>The attribute name</li>
-<li>The attribute value</li>
+<li>The attribute <strong>name</strong></li>
+<li>The attribute <strong>value</strong></li>
 </ol>
 <p>Attributes are specified within the start tag as follows:</p>
 <pre><code class="language-html">ATTR_NAME='ATTR_VAL'
 </code></pre>
-<p>The attribute name cannot have spaces and must be one word (underscore _
-allowed). Attribute value should be quated (single or double quotes --
-this is optional but it is best practive to use quotes) and <em>can</em>
+<p>The attribute name cannot have spaces and must be one word (underscore
+<code>_</code>
+allowed). Attribute value should be quoted (single or double quotes --
+this is optional but it is best practice to use quotes) and <em>can</em>
 include spaces.</p>
 <p>A HTML tag can have any number of attributes (or none at all). The
-attribute-value pairs are speratated from each other by a white-space
+attribute-value pairs are seperated from each other by a white-space
 (one or more spaces). </p>
 <pre><code class="language-html">&lt;TAG_NAME ATTR_NAME1='ATTR_VAL1' ATTR_NAME2=&quot;ATTR_VAL2&quot;&gt;
 
@@ -179,8 +180,8 @@ attribute-value pairs are speratated from each other by a white-space
 <h2><a class="header" href="#uses-of-attributes" id="uses-of-attributes">Uses of Attributes</a></h2>
 <p>Attributes have 4 uses:</p>
 <ol>
-<li><em>To modify the behavior of a HTML tag:</em> Conside the anchor <code>a</code> tag,
-which is use to cross reference HTML pages. The <code>href</code> attribute
+<li><em>To modify the behavior of a HTML tag:</em> Conside the anchor <code>&lt;a&gt;</code> tag,
+which is used to cross reference HTML pages. The <code>href</code> attribute
 specifies the html page to navigate to when clicked.</li>
 </ol>
 <pre><code class="language-html">  &lt;a href='http://google.com'&gt; Go to Google &lt;/a&gt;
@@ -217,13 +218,13 @@ later.</p>
 </div>
 <ol start="2">
 <li>
-<p><em>To add CSS styling to the tag:</em> A special attribte called <code>style</code>
+<p><em>To add CSS styling to the tag:</em> A special attribute called <code>style</code>
 can be use to specify CSS declaration for a tag. This is one of the
 many ways CSS can be added to a tag. This will be discussed in detail in
 the CSS section.</p>
 </li>
 <li>
-<p><em>To identify and group tags:</em> An attribte called <code>id</code> can be used to
+<p><em>To identify and group tags:</em> An attribute called <code>id</code> can be used to
 assign an unique identifier to a tag. This identifier can be used
 only for one tag and a tag can have only one <code>id</code>. A tag can be
 categorized into a group by the <code>class</code> attribute. A tag can have more
@@ -235,9 +236,9 @@ than one class. These class names are delimted by white spaces.</p>
 <ol start="4">
 <li><em>To attach <strong>event listeners</strong> to tags:</em></li>
 </ol>
-<p>Events are actions done by the use on a tag like clicking, mouse hover
-etc. An event hadler is javascript that needs to execute ehen the event
-occurs. The following maerkup will pop up a message (100) when the
+<p>Events are actions done by the user on a tag like clicking, mouse hover
+etc. An event handler is JavaScript that needs to execute when the event
+occurs. The following markup will pop up a message (<code>100</code>) when the
 button is cliked.</p>
 <pre><code class="language-html">  &lt;button onclick=&quot;alert(100)&quot;&gt; Click me! &lt;/button&gt;
 </code></pre>
@@ -245,7 +246,7 @@ button is cliked.</p>
 <p>The event model will be discussed in more detail in the JavaScript
 section.</p>
 <p>The next section lists all HTML attributes that can be used with
-differnt html tags.</p>
+different html tags.</p>
 <h2><a class="header" href="#attribute-reference" id="attribute-reference">Attribute Reference</a></h2>
 <p><i><b>
 Taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN web
@@ -253,12 +254,10 @@ docs</a>. Please
 <a href="https://www.smashingmagazine.com/2018/05/contributing-mdn-webdocs/">contribute</a> if you can.
 </b></i></p>
 <article id="wikiArticle"><div></div>
-<p>Elements in HTML have <strong>attributes</strong>; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.</p>
-<h2 id="Attribute_list">Attribute list</h2>
 <p>The following table lists the defined attributes of the HTML standard.
 A <em>global
 attribute</em> can be used with any tag, whereas most attributes have
-certain tags with which they are most used.</p>
+certain tags with which they are most commonly used.</p>
 <div id='attrList' style="overflow-x:auto;">
 <table>
  <thead>

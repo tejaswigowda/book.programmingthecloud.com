@@ -8,9 +8,9 @@ Everything discussed in here is current with this latest version of
 HTML. 
 
 A HTML tag has 3 parts
-1. Start of Tag, written with the tag name within angle brackets
-2. Content -- any valid html
-3. End of Tag -- similar to start but the tag name has a forward slash
+1. **Start** of Tag, written with the tag name within angle brackets
+2. **Content** -- any valid html
+3. **End** of Tag -- similar to start but the tag name has a forward slash
    (/) prefix.
 
 ```html
@@ -37,12 +37,12 @@ Let us start by writing out first HTML.
 </html>
 ```
 
-The first line in every html document is the "doctype tag". This tag is
+The first line in every html document is the `<doctype>` tag. This tag is
 stand alone (i.e. does not need to closed as it does not have content).
 It is meta data to the browser that the file is an HTML file (browsers
-rely on the file extension and also the doctype tag to determine if
+rely on the file extension and also the `<doctype>` tag to determine if
 valid html was served. However most browsers are forgiving if you forget
-the doctype tag.
+the `<doctype>` tag.
 
 
 ## Editing/ Viewing

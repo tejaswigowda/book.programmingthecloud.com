@@ -634,9 +634,9 @@ Everything discussed in here is current with this latest version of
 HTML. </p>
 <p>A HTML tag has 3 parts</p>
 <ol>
-<li>Start of Tag, written with the tag name within angle brackets</li>
-<li>Content -- any valid html</li>
-<li>End of Tag -- similar to start but the tag name has a forward slash
+<li><strong>Start</strong> of Tag, written with the tag name within angle brackets</li>
+<li><strong>Content</strong> -- any valid html</li>
+<li><strong>End</strong> of Tag -- similar to start but the tag name has a forward slash
 (/) prefix.</li>
 </ol>
 <pre><code class="language-html">&lt;TAG_NAME&gt;
@@ -657,12 +657,12 @@ HTML. </p>
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p>The first line in every html document is the &quot;doctype tag&quot;. This tag is
+<p>The first line in every html document is the <code>&lt;doctype&gt;</code> tag. This tag is
 stand alone (i.e. does not need to closed as it does not have content).
 It is meta data to the browser that the file is an HTML file (browsers
-rely on the file extension and also the doctype tag to determine if
+rely on the file extension and also the <code>&lt;doctype&gt;</code> tag to determine if
 valid html was served. However most browsers are forgiving if you forget
-the doctype tag.</p>
+the <code>&lt;doctype&gt;</code> tag.</p>
 <h2><a class="header" href="#editing-viewing" id="editing-viewing">Editing/ Viewing</a></h2>
 <p>Copy the above code and paste it into a new file (use atom if you don't
 have a favorite code editor). Save the file as <code>index.html</code>. Serve this
@@ -1440,20 +1440,21 @@ docs</a>. Please
 </article>
 <h1><a class="header" href="#attributes" id="attributes">Attributes</a></h1>
 <p>Attributes can be applied to HTML tags to change their behavior. An
-attribute as 2 parts</p>
+attribute as 2 parts:</p>
 <ol>
-<li>The attribute name</li>
-<li>The attribute value</li>
+<li>The attribute <strong>name</strong></li>
+<li>The attribute <strong>value</strong></li>
 </ol>
 <p>Attributes are specified within the start tag as follows:</p>
 <pre><code class="language-html">ATTR_NAME='ATTR_VAL'
 </code></pre>
-<p>The attribute name cannot have spaces and must be one word (underscore _
-allowed). Attribute value should be quated (single or double quotes --
-this is optional but it is best practive to use quotes) and <em>can</em>
+<p>The attribute name cannot have spaces and must be one word (underscore
+<code>_</code>
+allowed). Attribute value should be quoted (single or double quotes --
+this is optional but it is best practice to use quotes) and <em>can</em>
 include spaces.</p>
 <p>A HTML tag can have any number of attributes (or none at all). The
-attribute-value pairs are speratated from each other by a white-space
+attribute-value pairs are seperated from each other by a white-space
 (one or more spaces). </p>
 <pre><code class="language-html">&lt;TAG_NAME ATTR_NAME1='ATTR_VAL1' ATTR_NAME2=&quot;ATTR_VAL2&quot;&gt;
 
@@ -1464,8 +1465,8 @@ attribute-value pairs are speratated from each other by a white-space
 <h2><a class="header" href="#uses-of-attributes" id="uses-of-attributes">Uses of Attributes</a></h2>
 <p>Attributes have 4 uses:</p>
 <ol>
-<li><em>To modify the behavior of a HTML tag:</em> Conside the anchor <code>a</code> tag,
-which is use to cross reference HTML pages. The <code>href</code> attribute
+<li><em>To modify the behavior of a HTML tag:</em> Conside the anchor <code>&lt;a&gt;</code> tag,
+which is used to cross reference HTML pages. The <code>href</code> attribute
 specifies the html page to navigate to when clicked.</li>
 </ol>
 <pre><code class="language-html">  &lt;a href='http://google.com'&gt; Go to Google &lt;/a&gt;
@@ -1502,13 +1503,13 @@ later.</p>
 </div>
 <ol start="2">
 <li>
-<p><em>To add CSS styling to the tag:</em> A special attribte called <code>style</code>
+<p><em>To add CSS styling to the tag:</em> A special attribute called <code>style</code>
 can be use to specify CSS declaration for a tag. This is one of the
 many ways CSS can be added to a tag. This will be discussed in detail in
 the CSS section.</p>
 </li>
 <li>
-<p><em>To identify and group tags:</em> An attribte called <code>id</code> can be used to
+<p><em>To identify and group tags:</em> An attribute called <code>id</code> can be used to
 assign an unique identifier to a tag. This identifier can be used
 only for one tag and a tag can have only one <code>id</code>. A tag can be
 categorized into a group by the <code>class</code> attribute. A tag can have more
@@ -1520,9 +1521,9 @@ than one class. These class names are delimted by white spaces.</p>
 <ol start="4">
 <li><em>To attach <strong>event listeners</strong> to tags:</em></li>
 </ol>
-<p>Events are actions done by the use on a tag like clicking, mouse hover
-etc. An event hadler is javascript that needs to execute ehen the event
-occurs. The following maerkup will pop up a message (100) when the
+<p>Events are actions done by the user on a tag like clicking, mouse hover
+etc. An event handler is JavaScript that needs to execute when the event
+occurs. The following markup will pop up a message (<code>100</code>) when the
 button is cliked.</p>
 <pre><code class="language-html">  &lt;button onclick=&quot;alert(100)&quot;&gt; Click me! &lt;/button&gt;
 </code></pre>
@@ -1530,7 +1531,7 @@ button is cliked.</p>
 <p>The event model will be discussed in more detail in the JavaScript
 section.</p>
 <p>The next section lists all HTML attributes that can be used with
-differnt html tags.</p>
+different html tags.</p>
 <h2><a class="header" href="#attribute-reference" id="attribute-reference">Attribute Reference</a></h2>
 <p><i><b>
 Taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN web
@@ -1538,12 +1539,10 @@ docs</a>. Please
 <a href="https://www.smashingmagazine.com/2018/05/contributing-mdn-webdocs/">contribute</a> if you can.
 </b></i></p>
 <article id="wikiArticle"><div></div>
-<p>Elements in HTML have <strong>attributes</strong>; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.</p>
-<h2 id="Attribute_list">Attribute list</h2>
 <p>The following table lists the defined attributes of the HTML standard.
 A <em>global
 attribute</em> can be used with any tag, whereas most attributes have
-certain tags with which they are most used.</p>
+certain tags with which they are most commonly used.</p>
 <div id='attrList' style="overflow-x:auto;">
 <table>
  <thead>
@@ -2116,7 +2115,7 @@ structure. The root of this tree is the <code>&lt;html&gt;</code> tag whose chil
 are <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>. The document then branches out into different
 tags. Most tags can have child nodes, however there are a few exceptions
 to this. Certain tags are <em>standalone</em> i.e. they cannot have child
-nodes. Examples of thuch tags are:</p>
+nodes. Examples of such tags are:</p>
 <ul>
 <li><code>&lt;img&gt;</code></li>
 <li><code>&lt;hr&gt;</code></li>
@@ -2132,20 +2131,20 @@ window can be panned and zoomed. The content (part of the window) that
 is now visible to the user is called the <code>viewport</code>.</p>
 <img style="display:block;margin:auto" src='../../../imgs/vp.png'>    
  <figcaption> Fig: 3.3.1 Window v/s Viewport</figcaption>               
-<p>In the interest of reposive design it makes sense to make the window and
-the viewport the same, so we can proceed with web design using only one
+<p>In the interest of responsive design it makes sense to make the window and
+the viewport the same, so we can proceed with designing for a one
 size canvas. This can be done by adding the following <code>&lt;meta&gt;</code> tag
 within the <code>&lt;head&gt;</code> of the HTML document.</p>
 <pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 </code></pre>
 <h2><a class="header" href="#style-and-script-tags" id="style-and-script-tags"><code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> Tags</a></h2>
 <p>You can add CSS declarations directly into the html file using the
-<code>&lt;style&gt;</code> tag. This will be disucssed in detail in CSS section.</p>
+<code>&lt;style&gt;</code> tag. This will be discussed in detail in CSS section.</p>
 <p>JavaScript can be added directly into the HTML document using the
 <code>&lt;script&gt;</code> tag.</p>
 <h2><a class="header" href="#linking-external-files" id="linking-external-files">Linking External Files</a></h2>
-<p>Although both CSS and JavaScriot can be embedded within the HTNL
-document it is a good practive to use external files for each. These
+<p>Although both CSS and JavaScript can be embedded within the HTML
+document it is a good practice to use external files for each. These
 external files can be <em>linked</em> into the HTML document by using the
 <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags as follows:</p>
 <pre><code class="language-html"> &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;

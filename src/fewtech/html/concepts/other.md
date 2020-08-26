@@ -6,7 +6,7 @@ structure. The root of this tree is the `<html>` tag whose child nodes
 are `<head>` and `<body>`. The document then branches out into different
 tags. Most tags can have child nodes, however there are a few exceptions
 to this. Certain tags are *standalone* i.e. they cannot have child
-nodes. Examples of thuch tags are:
+nodes. Examples of such tags are:
 
 - `<img>`
 - `<hr>`
@@ -28,8 +28,8 @@ is now visible to the user is called the `viewport`.
  <figcaption> Fig: 3.3.1 Window v/s Viewport</figcaption>               
 
 
-In the interest of reposive design it makes sense to make the window and
-the viewport the same, so we can proceed with web design using only one
+In the interest of responsive design it makes sense to make the window and
+the viewport the same, so we can proceed with designing for a one
 size canvas. This can be done by adding the following `<meta>` tag
 within the `<head>` of the HTML document.
 
@@ -39,15 +39,15 @@ within the `<head>` of the HTML document.
 
 ## `<style>` and `<script>` Tags
 You can add CSS declarations directly into the html file using the
-`<style>` tag. This will be disucssed in detail in CSS section.
+`<style>` tag. This will be discussed in detail in CSS section.
 
 JavaScript can be added directly into the HTML document using the
 `<script>` tag.
 
 
 ## Linking External Files
-Although both CSS and JavaScriot can be embedded within the HTNL
-document it is a good practive to use external files for each. These
+Although both CSS and JavaScript can be embedded within the HTML
+document it is a good practice to use external files for each. These
 external files can be *linked* into the HTML document by using the
 `<link>` and `<script>` tags as follows:
 
